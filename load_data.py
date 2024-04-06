@@ -109,7 +109,8 @@ def tokenize_and_align(
 
 def get_ss_frequencies(res: list):
     """prints out the relative frequencies of each SS, SS2 and lextag after a file has been tokenized and aligned.
-    The relative frequencies can be used for weighting a loss function during training. """
+    The relative frequencies can be used for weighting a loss function during training. 
+    CURRENTLY NOT IN USE"""
     print("STARTING FREQUENCIES")
     inv_freqs = {}
     freqs = defaultdict(lambda: defaultdict(int))
@@ -142,7 +143,9 @@ def get_ss_frequencies(res: list):
     return freqs
 
 def inversify_freqs(freqs):
-    """basically turns frequencies into log inverse freqs / surprisal"""
+    """basically turns frequencies into log inverse freqs / surprisal
+    CURRENTLY NOT IN USE
+    """
 
     inv_freqs = {"lt": {}, "ss": {}, "ss2": {}}
     #gotta populate the inverse frequencies using the frequencies

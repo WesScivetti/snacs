@@ -1,5 +1,6 @@
 # newdoc id = lpp_1943
 # sent_id = lpp_1943.1
+# chapter = 1
 # text = Chapter 1 .
 # mwe = Chapter 1 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -734,6 +735,7 @@
 
 # newdoc id = lpp_1943_en_ch-02
 # sent_id = lpp_1943.36
+# chapter = 2
 # text = Chapter 2 .
 # mwe = Chapter 2 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -1939,6 +1941,7 @@
 
 # newdoc id = lpp_1943_en_ch-03
 # sent_id = lpp_1943.103
+# chapter = 3
 # text = Chapter 3 .
 # mwe = Chapter 3 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -2691,6 +2694,7 @@
 25	"	"	PUNCT	''	_	11	punct	_	_	_	PUNCT	"	_	_	_	_	_	O-PUNCT
 
 # sent_id = lpp_1943.146
+# chapter = 4
 # text = Chapter 4 .
 # mwe = Chapter 4 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -3997,6 +4001,7 @@
 7	.	.	PUNCT	.	_	3	punct	_	_	_	PUNCT	.	_	_	_	_	_	O-PUNCT
 
 # sent_id = lpp_1943.208
+# chapter = 5
 # text = Chapter 5 .
 # mwe = Chapter 5 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -5232,6 +5237,7 @@
 
 # newdoc id = lpp_1943_en_ch-06
 # sent_id = lpp_1943.263
+# chapter = 6
 # text = Chapter 6 .
 # mwe = Chapter 6 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -5649,6 +5655,7 @@
 
 # newdoc id = lpp_1943_en_ch-07
 # sent_id = lpp_1943.289
+# chapter = 7
 # text = Chapter 7 .
 # mwe = Chapter 7 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -7017,6 +7024,7 @@
 
 # newdoc id = lpp_1943_en_ch-08
 # sent_id = lpp_1943.367
+# chapter = 8
 # text = Chapter 8 .
 # mwe = Chapter 8 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -8255,6 +8263,7 @@
 
 # newdoc id = lpp_1943_en_ch-09
 # sent_id = lpp_1943.432
+# chapter = 9
 # text = Chapter 9 .
 # mwe = Chapter 9 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -9011,6 +9020,7 @@
 
 # newdoc id = lpp_1943_en_ch-10
 # sent_id = lpp_1943.480
+# chapter = 10
 # text = Chapter 10 .
 # mwe = Chapter 10 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -11163,6 +11173,7 @@
 
 # newdoc id = lpp_1943_en_ch-11
 # sent_id = lpp_1943.603
+# chapter = 11
 # text = Chapter 11 .
 # mwe = Chapter 11 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -11698,6 +11709,7 @@
 
 # newdoc id = lpp_1943_en_ch-12
 # sent_id = lpp_1943.634
+# chapter = 12
 # text = Chapter 12 .
 # mwe = Chapter 12 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -11966,6 +11978,7 @@
 
 # newdoc id = lpp_1943_en_ch-13
 # sent_id = lpp_1943.648
+# chapter = 13
 # text = Chapter 13 .
 # mwe = Chapter 13 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -13620,6 +13633,7 @@
 
 # newdoc id = lpp_1943_en_ch-14
 # sent_id = lpp_1943.754
+# chapter = 14
 # text = Chapter 14 .
 # mwe = Chapter 14 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -14850,6 +14864,7 @@
 
 # newdoc id = lpp_1943_en_ch-15
 # sent_id = lpp_1943.825
+# chapter = 15
 # text = Chapter 15 .
 # mwe = Chapter 15 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -16326,6 +16341,7 @@
 
 # newdoc id = lpp_1943_en_ch-16
 # sent_id = lpp_1943.917
+# chapter = 16
 # text = Chapter 16 .
 # mwe = Chapter 16 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -16697,6 +16713,7 @@
 
 # newdoc id = lpp_1943_en_ch-17
 # sent_id = lpp_1943.931
+# chapter = 17
 # text = Chapter 17 .
 # mwe = Chapter 17 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -17700,6 +17717,7 @@
 # sent_id = lpp_1943.991
 # newdoc id = lpp_1943_en_ch-18
 # doc_id = lpp_1943_en_ch-18
+# chapter = 18
 # text = Chapter 18 .
 # mwe = Chapter 18 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -17923,6 +17941,7 @@
 
 # newdoc id = lpp_1943_en_ch-19
 # sent_id = lpp_1943.1006
+# chapter = 19
 # text = Chapter 19 .
 # mwe = Chapter 19 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -18238,6 +18257,7 @@
 
 # newdoc id = lpp_1943_en_ch-20
 # sent_id = lpp_1943.1024
+# chapter = 20
 # text = Chapter 20 .
 # mwe = Chapter 20 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -18622,6 +18642,7 @@
 
 # newdoc id = lpp_1943_en_ch-21
 # sent_id = lpp_1943.1042
+# chapter = 21
 # text = Chapter 21 .
 # mwe = Chapter 21 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -21025,6 +21046,7 @@
 
 # newdoc id = lpp_1943_en_ch-22
 # sent_id = lpp_1943.1182
+# chapter = 22
 # text = Chapter 22 .
 # mwe = Chapter 22 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -21456,6 +21478,7 @@
 
 # newdoc id = lpp_1943_en_ch-23
 # sent_id = lpp_1943.1206
+# chapter = 23
 # text = Chapter 23 .
 # mwe = Chapter 23 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -21674,6 +21697,7 @@
 
 # newdoc id = lpp_1943_en_ch-24
 # sent_id = lpp_1943.1218
+# chapter = 24
 # text = Chapter 24 .
 # mwe = Chapter 24 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -22847,6 +22871,7 @@
 
 # newdoc id = lpp_1943_en_ch-25
 # sent_id = lpp_1943.1276
+# chapter = 25
 # text = Chapter 25 .
 # mwe = Chapter 25 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -24237,6 +24262,7 @@
 
 # newdoc id = lpp_1943_en_ch-26
 # sent_id = lpp_1943.1360
+# chapter = 26
 # text = Chapter 26 .
 # mwe = Chapter 26 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
@@ -26952,6 +26978,7 @@
 
 # newdoc id = lpp_1943_en_ch-27
 # sent_id = lpp_1943.1526
+# chapter = 27
 # text = Chapter 27 .
 # mwe = Chapter 27 .
 1	Chapter	Chapter	PROPN	NNP	Number=Sing	0	root	_	_	_	N	Chapter	_	_	_	_	_	O-N
