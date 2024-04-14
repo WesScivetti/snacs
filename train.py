@@ -512,14 +512,13 @@ def hyper_sweep(args):
             'type': 'hyperband',
             'min_iter': 3,
             'eta': 2
-        },
-        'count': 50  # Limits the sweep to 50 runs
+        }
     }
 
 
     sweep_id = wandb.sweep(sweep_config, project="huggingface")
 
-    wandb.agent(sweep_id, train2)
+    wandb.agent(sweep_id, train2, count=50)
 
 
 def main():
