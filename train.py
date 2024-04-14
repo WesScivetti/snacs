@@ -305,13 +305,9 @@ def train(
 
         #this is most simple case: 1 file, split it into train + eval
         else:
-            if "lp" in config.file:
-                train_dataset = data["train"]
-                eval_dataset = data["dev"]
-                test_dataset = data["test"]
-            else:
-                train_dataset = data["train"][len(data["train"]) // 5:]
-                eval_dataset = data["train"][:len(data["train"]) // 5]
+            train_dataset = data["train"]
+            eval_dataset = data["dev"]
+            test_dataset = data["test"]
 
     #if you supply a test file separately, you will test on that, and train on training data
     else:

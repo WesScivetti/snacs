@@ -33,18 +33,16 @@ def tokenize_and_align(
             text = sent.metadata['text']
             
             #only check chapter for lpp
-            if "lp" in file:
-                chapter = int(sent.metadata["chapter"])
-                if chapter in dev_chaps:
-                    split = "dev"
-                elif chapter in test_chaps:
-                    split = "test"
-                else:
-                    split = "train"
-                split = "train"
+            chapter = int(sent.metadata["chapter"])
+            if chapter in dev_chaps:
+                split = "dev"
+            elif chapter in test_chaps:
+                split = "test"
             else:
-                #all train split for streusle, will get separated later
                 split = "train"
+            # else:
+            #     #all train split for streusle, will get separated later
+            #     split = "train"
 
             tokens, mask, labels, lexlemmas = [], [], [], []
             work = True
