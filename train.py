@@ -65,7 +65,7 @@ def load_data(file: str, tokenizer: AutoTokenizer, id_to_label = None, label_to_
         id_to_label[-100] = "None"
 
     # convert labels to ids
-    for sent, mask, label, lexlemma in res:
+    for sent, mask, label, lexlemma, split in res:
         for i in range(len(sent)):
             if mask[i]:
                 if label[i] not in label_to_id:
@@ -77,9 +77,10 @@ def load_data(file: str, tokenizer: AutoTokenizer, id_to_label = None, label_to_
     lang_code = file.split("/")[-1].split("-")[0]
 
     # convert labels to ids
-    for sent, mask, label, lexlemma in res:
+    res2 = { "train":[], "dev":[], "test":[] }
+    for sent, mask, label, lexlemma, split in res:
         label = [label_to_id[x] for x in label]
-        res2.append({
+        res2[split].append({
             'input_ids': sent,
             'mask': mask,
             'labels': label,
@@ -92,8 +93,11 @@ def load_data(file: str, tokenizer: AutoTokenizer, id_to_label = None, label_to_
 
     # shuffle
     #will probably need to change to a train/test split
-    
-    random.shuffle(res2)
+
+
+    random.shuffle(res2["train"])
+    random.shuffle(res2["dev"])
+    random.shuffle(res2["test"])
 
     return res2, label_to_id, id_to_label, freqs
 
@@ -151,7 +155,7 @@ def compute_metrics(p, id_to_label, eval_dataset):
     for key in results:
         if isinstance(results[key], dict) and results[key]["number"] != 0:
             ret[key] = results[key]
-    
+
     # acc for each lexlemma type
     lexlemma = defaultdict(lambda: {"correct": 0, "total": 0})
     for i in range(len(predictions)):
@@ -161,7 +165,7 @@ def compute_metrics(p, id_to_label, eval_dataset):
             lexlemma[eval_dataset[i]['lexlemma'][j]]["total"] += 1
             if predictions[i][j] == labels[i][j]:
                 lexlemma[eval_dataset[i]['lexlemma'][j]]["correct"] += 1
-    
+
     # calculate acc and put in ret
     for key in lexlemma:
         ret[f"{key}.acc"] = lexlemma[key]["correct"] / lexlemma[key]["total"]
@@ -169,74 +173,75 @@ def compute_metrics(p, id_to_label, eval_dataset):
     return ret
 
 # custom trainer which is used for custom weighted loss function
-class MyTrainer(Trainer):
-    def add_freqs(self, freqs):
-        self.freqs = freqs
-        self.inv_freqs = inversify_freqs(self.freqs)
-
-    def compute_loss(self, model, inputs, return_outputs=False):
-        """
-        custom loss function which overwrites the standard compute_loss function. We use this to implement the weighted CE loss
-        """
-
-        labels = inputs.pop("labels")
-        outputs = model(**inputs)
-        logits = outputs.logits
-        logits = logits.view(
-            -1, logits.shape[-1]
-        )  # have to reshape to (batch_size * sequence_length, # labels)
-
-        num_labels = logits.size(1)
-
-        #TO DO: compute weights based on frequency of relative labels in input
-        #below is just some random experiments with changing the weights to see if there was significant effect
-
-        weights = [1] * num_labels
-
-        weights2 = [.0001] +list(self.inv_freqs["lt"].values())
-        weights[1] = 0.1 #downweighting label "O" which seems to be label 1 almost always
-        weights[0] = 0.0001 #downweighting label "-100" ... not sure if would ever matter
-
-        # print(len(weights), len(weights2), file=sys.stderr)
-        assert len(weights2) == len(weights)
-
-        weights = [float(w) for w  in weights]
-
-        weights2 = [float(w) for w in weights2]
-
-        weights = torch.tensor(weights).to(DEVICE)
-        weights2 = torch.tensor(weights2).to(DEVICE)
-
-
-        labels = labels.view(-1) #batch_size * sequence length
-
-        loss_fn = CrossEntropyLoss(weight=weights2)
-        loss = loss_fn(logits, labels)
-
-        if return_outputs:
-            return loss, outputs
-        else:
-            return loss
+# class MyTrainer(Trainer):
+#     def add_freqs(self, freqs):
+#         self.freqs = freqs
+#         self.inv_freqs = inversify_freqs(self.freqs)
+#
+#     def compute_loss(self, model, inputs, return_outputs=False):
+#         """
+#         custom loss function which overwrites the standard compute_loss function. We use this to implement the weighted CE loss
+#         """
+#
+#         labels = inputs.pop("labels")
+#         outputs = model(**inputs)
+#         logits = outputs.logits
+#         logits = logits.view(
+#             -1, logits.shape[-1]
+#         )  # have to reshape to (batch_size * sequence_length, # labels)
+#
+#         num_labels = logits.size(1)
+#
+#         #TO DO: compute weights based on frequency of relative labels in input
+#         #below is just some random experiments with changing the weights to see if there was significant effect
+#
+#         weights = [1] * num_labels
+#
+#         weights2 = [.0001] +list(self.inv_freqs["lt"].values())
+#         weights[1] = 0.1 #downweighting label "O" which seems to be label 1 almost always
+#         weights[0] = 0.0001 #downweighting label "-100" ... not sure if would ever matter
+#
+#         # print(len(weights), len(weights2), file=sys.stderr)
+#         assert len(weights2) == len(weights)
+#
+#         weights = [float(w) for w  in weights]
+#
+#         weights2 = [float(w) for w in weights2]
+#
+#         weights = torch.tensor(weights).to(DEVICE)
+#         weights2 = torch.tensor(weights2).to(DEVICE)
+#
+#
+#         labels = labels.view(-1) #batch_size * sequence length
+#
+#         loss_fn = CrossEntropyLoss(weight=weights2)
+#         loss = loss_fn(logits, labels)
+#
+#         if return_outputs:
+#             return loss, outputs
+#         else:
+#             return loss
 
 
 # model training
 def train(
-    model_name: str,
-    file: str,
-    learning_rate: float,
-    batch_size: int,
-    epochs: int,
-    weight_decay: float,
-    freeze: bool,
-    test_file: str,
-    extra_file: str,
-    multilingual: bool,
-    loss_fn: str
+    model_name: str, #need - added
+    file: str, #need - added
+    learning_rate: float, #don't need
+    batch_size: int, #don't need
+    epochs: int, #don't need
+    weight_decay: float, #don't need
+    freeze: bool, #need - added
+    test_file: str, #need
+    extra_file: str, #need
+    multilingual: bool, #need
+    loss_fn: str #need - added
 ):
     """Train model."""
 
     # update summary for wandb
     command_line_args = locals()
+    # print(locals())
 
     # load data
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -300,8 +305,9 @@ def train(
 
         #this is most simple case: 1 file, split it into train + eval
         else:
-            train_dataset = data[len(data) // 5:]
-            eval_dataset = data[:len(data) // 5]
+            train_dataset = data["train"]
+            eval_dataset = data["dev"]
+            test_dataset = data["test"]
 
     #if you supply a test file separately, you will test on that, and train on training data
     else:
@@ -324,9 +330,10 @@ def train(
     }
     trainer = None
     if loss_fn == "weighted":
-        trainer = MyTrainer(**trainer_args)
+        trainer = MyTrainer(**trainer_args, save_strategy="no", save_model=False)
         trainer.add_freqs(freqs)
     else:
+        #adding in manually supplied stuff
         trainer = Trainer(**trainer_args)
 
     # update
@@ -335,6 +342,184 @@ def train(
 
     # train
     trainer.train()
+
+
+def train2(config=None):
+    """Train model -- set up for wandb hyperparam sweep"""
+
+    wandb.init()
+    config = wandb.config
+
+    # load data
+    tokenizer = AutoTokenizer.from_pretrained(config.model_name)
+    data, label_to_id, id_to_label, freqs = load_data(f"data/{config.file}", tokenizer)
+
+    # could alter this to take a list of extra files so that it could be as many as you want.
+    if config.extra_file:
+        #for ex_file in extra_file: do this iteratively, add each extra file onto eachother, take the new label_to_id etc
+        extra_data, label_to_id, id_to_label, freqs = load_data(f"data/{config.extra_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #use the existing id_to_label and just add to them
+
+
+    if config.test_file:
+        test_data, _, _, _ = load_data(f"data/{config.test_file}", tokenizer) #don't need label to id for this
+
+
+    # load model
+    model = AutoModelForTokenClassification.from_pretrained(
+        config.model_name,
+        num_labels=len(label_to_id),
+        id2label=id_to_label,
+        label2id=label_to_id,
+    )
+
+    print("NUM labels", len(label_to_id), file=sys.stderr)
+
+    # freeze layers
+    if config.freeze:
+        for name, param in model.named_parameters():
+            if "classifier" not in name:
+                param.requires_grad = False
+
+    # set up trainer
+    data_collator = DataCollatorForTokenClassification(tokenizer=tokenizer)
+    training_args = TrainingArguments(
+        output_dir="models",
+        learning_rate=config.learning_rate,
+        per_device_train_batch_size=config.batch_size,
+        per_device_eval_batch_size=config.batch_size,
+        num_train_epochs=config.epochs,
+        weight_decay=config.weight_decay,
+        lr_scheduler_type=config.scheduler_type,  # dynamic scheduler type
+        warmup_steps=config.warmup_steps,
+        evaluation_strategy="epoch",
+        save_strategy="epoch",
+        save_total_limit=1,
+        load_best_model_at_end=False,
+        push_to_hub=False
+    )
+
+    # split the file into train and eval if not separate eval file
+    if not config.test_file:
+
+        #this asks if you want to train and test on combination of languages or just train on combination and test on single
+        #for example: you could train on en + hi and test on en + hi (multilingual = True)
+        #or you could train on en + hi and test on hi only (multilingual = False)
+        if config.extra_file:
+            if config.multilingual:
+                data = data + extra_data #combine first then split
+                train_dataset = data[len(data) // 5:]
+                eval_dataset = data[:len(data) // 5]
+            else:
+                train_dataset = data[len(data) // 5:] + extra_data #combine extra only with training
+                eval_dataset = data[:len(data) // 5]
+
+        #this is most simple case: 1 file, split it into train + eval
+        else:
+            train_dataset = data["train"]
+            eval_dataset = data["dev"]
+            test_dataset = data["test"]
+
+    #if you supply a test file separately, you will test on that, and train on training data
+    else:
+        #if you supply extra data, add that into training too
+        if config.extra_file:
+            data = data + extra_data
+
+        train_dataset = data
+        eval_dataset = test_data
+
+
+
+    # set up trainer
+    trainer_args = {
+        "model": model,
+        "args": training_args,
+        "train_dataset": train_dataset,
+        "eval_dataset": eval_dataset,
+        "tokenizer": tokenizer,
+        "data_collator": data_collator,
+        "compute_metrics": lambda x: compute_metrics(x, id_to_label, eval_dataset),
+    }
+    trainer = None
+    if config.loss_fn == "weighted":
+        trainer = MyTrainer(**trainer_args, save_strategy="no", save_model=False)
+        trainer.add_freqs(freqs)
+    else:
+        #adding in manually supplied stuff
+        trainer = Trainer(**trainer_args)
+
+    # train
+    trainer.train()
+
+    wandb.log({"evaluation_loss": trainer.evaluate()['eval_loss']})
+
+    wandb.finish()
+
+
+
+def hyper_sweep(args):
+
+    sweep_config = {
+        'method': 'bayes',
+        'metric': {
+            'name': 'f1',
+            'goal': 'maximize'
+        },
+        'parameters': {
+            'learning_rate': {
+                'min': 1e-5,
+                'max': 1e-3
+            },
+            'batch_size': {
+                'values': [1, 4, 8, 16, 32, 64]
+            },
+            'weight_decay': {
+                'values': [0.0, 0.01, 0.1]
+            },
+            'file': {
+                'value': args.file
+            },
+            'model_name': {
+                'value': args.model_name
+            },
+            'freeze': {
+                "value": False
+            },
+            'loss_fn': {
+                "value": None
+            },
+            'test_file': {
+                "value": args.test_file
+            },
+            'extra_file': {
+                "value": args.extra_file
+            },
+            'multilingual': {
+                "value": False
+            },
+            'epochs': {
+                "value": 8
+            },
+            'scheduler_type': {
+                'values': ['linear', 'cosine', 'constant_with_warmup']
+            },
+            'warmup_steps': {
+                'min': 0,
+                'max': 500
+            },
+        },
+        'early_terminate': {
+            'type': 'hyperband',
+            'min_iter': 3,
+            'eta': 2
+        },
+        'count': 50  # Limits the sweep to 50 runs
+    }
+
+
+    sweep_id = wandb.sweep(sweep_config, project="huggingface")
+
+    wandb.agent(sweep_id, train2)
 
 
 def main():
@@ -353,7 +538,8 @@ def main():
     
     args = parser.parse_args()
 
-    train(**vars(args))
+    # train(**vars(args))
+    hyper_sweep(args)
 
 
 if __name__ == "__main__":

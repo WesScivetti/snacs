@@ -101,7 +101,7 @@ def tokenize_and_align(
             # append to result
             if work:
                 assert len(tokens) == len(mask) == len(labels)
-                res.append([tokens, mask, labels, lexlemmas])
+                res.append([tokens, mask, labels, lexlemmas, split])
 
     # print out some examples
     if verbose:
@@ -126,7 +126,7 @@ def get_ss_frequencies(res: list):
     inv_freqs = {}
     freqs = defaultdict(lambda: defaultdict(int))
 
-    for tokens, mask, labels, lexlemmas in res:
+    for tokens, mask, labels, lexlemmas, split in res:
 
         #filter out masked tokens from labels
         labels = [l for i, l in enumerate(labels) if mask[i] == 1]
