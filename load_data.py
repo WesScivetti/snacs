@@ -31,13 +31,19 @@ def tokenize_and_align(
         failed = 0
         for sent in tqdm(conllu.parse_incr(fin, fields=conllulex)):
             text = sent.metadata['text']
-
-            chapter = int(sent.metadata["chapter"])
-            if chapter in dev_chaps:
-                split = "dev"
-            elif chapter in test_chaps:
-                split = "test"
+            
+            #only check chapter for lpp
+            if "lp" in file:
+                chapter = int(sent.metadata["chapter"])
+                if chapter in dev_chaps:
+                    split = "dev"
+                elif chapter in test_chaps:
+                    split = "test"
+                else:
+                    split = "train"
+                split = "train"
             else:
+                #all train split for streusle, will get separated later
                 split = "train"
 
             tokens, mask, labels, lexlemmas = [], [], [], []
