@@ -498,7 +498,7 @@ def hyper_sweep(args):
                 "value": False
             },
             'epochs': {
-                "value": 8
+                "values": [10, 20]
             },
             'scheduler_type': {
                 'values': ['linear', 'cosine', 'constant_with_warmup']
