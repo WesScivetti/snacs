@@ -513,7 +513,6 @@ def hyper_sweep(args):
             "min_iter": 3,
             "top_p": 0.8  # Keeps the top 80% of runs
         }
-        }
     }
 
 
