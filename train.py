@@ -150,7 +150,15 @@ def compute_metrics(p, id_to_label, eval_dataset):
         "f1": results["overall_f1"],
         "accuracy": results["overall_accuracy"],
     }
-    
+
+    #log the metrics
+    # wandb.log({
+    #     "precision": results["overall_precision"],
+    #     "recall": results["overall_recall"],
+    #     "f1": results["overall_f1"],
+    #     "accuracy": results["overall_accuracy"],
+    # })
+
     # add metrics for each label
     for key in results:
         if isinstance(results[key], dict) and results[key]["number"] != 0:
@@ -462,7 +470,7 @@ def hyper_sweep(args):
     sweep_config = {
         'method': 'bayes',
         'metric': {
-            'name': 'f1',
+            'name': 'eval/f1',
             'goal': 'maximize'
         },
         'parameters': {
@@ -471,7 +479,7 @@ def hyper_sweep(args):
                 'max': 1e-3
             },
             'batch_size': {
-                'values': [1, 4, 8, 16, 32, 64]
+                'values': [4, 8, 16, 32, 64]
             },
             'weight_decay': {
                 'values': [0.0, 0.01, 0.1]
@@ -498,27 +506,22 @@ def hyper_sweep(args):
                 "value": False
             },
             'epochs': {
-                "values": [10, 20]
+                "value": 10
             },
             'scheduler_type': {
-                'values': ['linear', 'cosine', 'constant_with_warmup']
+                'values': ['linear', 'cosine']
             },
             'warmup_steps': {
                 'min': 0,
                 'max': 500
             },
-        },
-        "early_terminate": {
-            "type": "truncation_selection",
-            "min_iter": 3,
-            "top_p": 0.8  # Keeps the top 80% of runs
         }
     }
 
 
     sweep_id = wandb.sweep(sweep_config, project="huggingface")
 
-    wandb.agent(sweep_id, train2, count=50)
+    wandb.agent(sweep_id, train2, count=100)
 
 
 def main():
