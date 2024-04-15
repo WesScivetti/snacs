@@ -508,10 +508,11 @@ def hyper_sweep(args):
                 'max': 500
             },
         },
-        'early_terminate': {
-            'type': 'hyperband',
-            'min_iter': 3,
-            'eta': 2
+        "early_terminate": {
+            "type": "truncation_selection",
+            "min_iter": 3,
+            "top_p": 0.8  # Keeps the top 80% of runs
+        }
         }
     }
 
