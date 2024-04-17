@@ -17,6 +17,7 @@ import sys
 from collections import defaultdict
 import wandb
 import json
+import glob
 
 # random seed
 random.seed(42)
@@ -65,7 +66,7 @@ def load_data(file: str, tokenizer: AutoTokenizer, id_to_label = None, label_to_
         id_to_label[-100] = "None"
 
     # convert labels to ids
-    for sent, mask, label, lexlemma, split in res:
+    for sent, mask, label, lexlemma in res: #removed split
         for i in range(len(sent)):
             if mask[i]:
                 if label[i] not in label_to_id:
@@ -77,10 +78,10 @@ def load_data(file: str, tokenizer: AutoTokenizer, id_to_label = None, label_to_
     lang_code = file.split("/")[-1].split("-")[0]
 
     # convert labels to ids
-    res2 = { "train":[], "dev":[], "test":[] }
-    for sent, mask, label, lexlemma, split in res:
+    
+    for sent, mask, label, lexlemma in res: #removed split
         label = [label_to_id[x] for x in label]
-        res2[split].append({
+        res2.append({
             'input_ids': sent,
             'mask': mask,
             'labels': label,
@@ -94,10 +95,8 @@ def load_data(file: str, tokenizer: AutoTokenizer, id_to_label = None, label_to_
     # shuffle
     #will probably need to change to a train/test split
 
-
-    random.shuffle(res2["train"])
-    random.shuffle(res2["dev"])
-    random.shuffle(res2["test"])
+    random.seed(1000)
+    random.shuffle(res2)
 
     return res2, label_to_id, id_to_label, freqs
 
@@ -253,7 +252,7 @@ def train(
 
     # load data
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    data, label_to_id, id_to_label, freqs = load_data(f"data/{file}", tokenizer)
+    data, label_to_id, id_to_label, freqs = load_data(f"data/splits/{file}", tokenizer)
 
     # could alter this to take a list of extra files so that it could be as many as you want.
     if extra_file:
@@ -358,18 +357,27 @@ def train2(config=None):
     wandb.init()
     config = wandb.config
 
+    # try:
+    #     with open("/best_model/metric/f1.txt", "r") as f:
+    #         best_metric = float(f.read().strip())
+    # except FileNotFoundError:
+    #     best_metric = None
+
     # load data
     tokenizer = AutoTokenizer.from_pretrained(config.model_name)
-    data, label_to_id, id_to_label, freqs = load_data(f"data/{config.file}", tokenizer)
+    data, label_to_id, id_to_label, freqs = load_data(f"data/splits/{config.file}", tokenizer)
 
     # could alter this to take a list of extra files so that it could be as many as you want.
     if config.extra_file:
         #for ex_file in extra_file: do this iteratively, add each extra file onto eachother, take the new label_to_id etc
         extra_data, label_to_id, id_to_label, freqs = load_data(f"data/{config.extra_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #use the existing id_to_label and just add to them
 
+    if config.dev_file:
+        dev_data, _, _, _ = load_data(f"data/splits/{config.dev_file}", tokenizer) #don't need label to id for this
+
 
     if config.test_file:
-        test_data, _, _, _ = load_data(f"data/{config.test_file}", tokenizer) #don't need label to id for this
+        test_data, _, _, _ = load_data(f"data/splits/{config.test_file}", tokenizer) #don't need label to id for this
 
 
     # load model
@@ -402,13 +410,12 @@ def train2(config=None):
         evaluation_strategy="epoch",
         save_strategy="epoch",
         save_total_limit=1,
-        load_best_model_at_end=False,
+        load_best_model_at_end=False, #change to True
         push_to_hub=False
     )
 
     # split the file into train and eval if not separate eval file
     if not config.test_file:
-
         #this asks if you want to train and test on combination of languages or just train on combination and test on single
         #for example: you could train on en + hi and test on en + hi (multilingual = True)
         #or you could train on en + hi and test on hi only (multilingual = False)
@@ -423,9 +430,8 @@ def train2(config=None):
 
         #this is most simple case: 1 file, split it into train + eval
         else:
-            train_dataset = data["train"]
-            eval_dataset = data["dev"]
-            test_dataset = data["test"]
+            train_dataset = data[len(data) // 5:]
+            eval_dataset = data[:len(data) // 5]
 
     #if you supply a test file separately, you will test on that, and train on training data
     else:
@@ -434,7 +440,8 @@ def train2(config=None):
             data = data + extra_data
 
         train_dataset = data
-        eval_dataset = test_data
+        eval_dataset = dev_data
+        test_dataset = test_data
 
 
 
@@ -461,7 +468,25 @@ def train2(config=None):
 
     wandb.log({"evaluation_loss": trainer.evaluate()['eval_loss']})
 
+    #best_f1 = trainer.evaluate()['eval_f1']
+
+    # if best_metric is None or best_f1 > best_metric:
+    #     with open("./best_model/metric/f1.txt", "w") as f:
+    #         f.write(str(best_f1))
+    #
+    #     model_files = glob.glob("./best_model/model/.*")
+    #     for f in model_files:
+    #         os.remove(f)
+    #
+    #     model_path = "./best_model/model/"
+    #     trainer.model.save_pretrained(model_path)
+    #     trainer.tokenizer.save_pretrained(model_path)
+
+
+
+
     wandb.finish()
+
 
 
 
@@ -475,7 +500,7 @@ def hyper_sweep(args):
         },
         'parameters': {
             'learning_rate': {
-                'min': 1e-5,
+                'min': 1e-6,
                 'max': 1e-3
             },
             'batch_size': {
@@ -502,6 +527,9 @@ def hyper_sweep(args):
             'extra_file': {
                 "value": args.extra_file
             },
+            'dev_file': {
+                "value": args.dev_file
+            },
             'multilingual': {
                 "value": False
             },
@@ -527,14 +555,15 @@ def hyper_sweep(args):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_name", type=str, default="bert-base-uncased")
-    parser.add_argument("--loss_fn", type=str, default=None)
+    parser.add_argument("--loss_fn", type=str, default=None) #overwritten by wandb sweep
     parser.add_argument("--file", type=str, default="en-test.conllulex")
-    parser.add_argument("--learning_rate", type=float, default=2e-5)
-    parser.add_argument("--batch_size", type=int, default=16)
-    parser.add_argument("--epochs", type=int, default=10)
-    parser.add_argument("--weight_decay", type=float, default=0.01)
-    parser.add_argument("--freeze", action="store_true")
-    parser.add_argument("--test_file", type=str, default=None, help="If you want to test on a different file than training. Otherwise, splits the main file into train/eval splits.")
+    parser.add_argument("--learning_rate", type=float, default=2e-5) #overwritten by wandb sweep
+    parser.add_argument("--batch_size", type=int, default=16) #overwritten by wandb sweep
+    parser.add_argument("--epochs", type=int, default=10) #overwritten by wandb sweep
+    parser.add_argument("--weight_decay", type=float, default=0.01) #overwritten by wandb sweep
+    parser.add_argument("--freeze", action="store_true") #overwritten by wandb sweep
+    parser.add_argument("--test_file", type=str, default=None, help="Need to put file for test split")
+    parser.add_argument("--dev_file", type=str, default=None, help="Need to put file for dev split")
     parser.add_argument("--extra_file", type=str, default=None, help="If you want to add an extra file to add more data during the fine-tuning stage. Evaluation is still only perfomed on the original file test split.")
     parser.add_argument("--multilingual", action="store_true", help="If supplying an extra lang file, put true to include that language in eval. Otherwise it will only test on original lang")
     

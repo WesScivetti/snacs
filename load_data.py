@@ -32,14 +32,15 @@ def tokenize_and_align(
         for sent in tqdm(conllu.parse_incr(fin, fields=conllulex)):
             text = sent.metadata['text']
             
-            #only check chapter for lpp
-            chapter = int(sent.metadata["chapter"])
-            if chapter in dev_chaps:
-                split = "dev"
-            elif chapter in test_chaps:
-                split = "test"
-            else:
-                split = "train"
+            #REMOVE SPLIT FROM THIS FUNCTION
+            #
+            # chapter = int(sent.metadata["chapter"])
+            # if chapter in dev_chaps:
+            #     split = "dev"
+            # elif chapter in test_chaps:
+            #     split = "test"
+            # else:
+            #     split = "train"
             # else:
             #     #all train split for streusle, will get separated later
             #     split = "train"
@@ -105,7 +106,7 @@ def tokenize_and_align(
             # append to result
             if work:
                 assert len(tokens) == len(mask) == len(labels)
-                res.append([tokens, mask, labels, lexlemmas, split])
+                res.append([tokens, mask, labels, lexlemmas]) #split has been removed
 
     # print out some examples
     if verbose:
@@ -130,7 +131,7 @@ def get_ss_frequencies(res: list):
     inv_freqs = {}
     freqs = defaultdict(lambda: defaultdict(int))
 
-    for tokens, mask, labels, lexlemmas, split in res:
+    for tokens, mask, labels, lexlemmas in res:
 
         #filter out masked tokens from labels
         labels = [l for i, l in enumerate(labels) if mask[i] == 1]

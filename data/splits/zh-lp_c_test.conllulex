@@ -1,0 +1,3456 @@
+# newdoc_id = lpp_1943_zh_ch-07
+# sent_id = lpp_1943_zh-289
+# chapter = 7
+# text = VII。
+# en_sent_id = lpp_1943.289
+# en_text = Chapter 7 .
+1	VII	VII	PROPN	NR	_	0	root	_	_	_	N	VII	_	_	_	_	_	O-N
+2	。	。	PUNCT	PU	_	1	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-290
+# chapter = 7
+# text = 第五天，还是羊的事，把小王子的生活秘密向我揭开了。
+# en_sent_id = lpp_1943.290
+# en_text = On the fifth day -- again , as always , it was thanks to the sheep -- the secret of the little prince 's life was revealed to me .
+1	第五	第五	NUM	OD	_	16	dep	_	_	_	NUM	第五	_	_	_	_	_	O-NUM
+2	天	天	NOUN	M	_	1	mark:clf	_	_	_	N	天	_	_	_	_	_	O-N
+3	，	，	PUNCT	PU	_	16	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+4	还是	还是	ADV	AD	_	5	advmod	_	_	_	ADV	还是	_	_	_	_	_	O-ADV
+5	羊	羊	NOUN	NN	_	7	nmod:assmod	_	_	_	N	羊	_	_	_	_	_	O-N
+6	的	的	PART	DEC	_	5	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+7	事	事	NOUN	NN	_	16	nsubj	_	_	_	N	事	_	_	_	_	_	O-N
+8	，	，	PUNCT	PU	_	16	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+9	把	把	ADP	BA	_	16	aux:ba	_	AlignedAdposition=None	_	BA	把	p.Theme	p.Theme	_	_	_	O-BA-p.Theme
+10	小王子	小王子	PROPN	NR	_	12	nmod:assmod	_	_	_	N	小王子	_	_	_	_	_	O-N
+11	的	的	PART	DEG	_	10	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+12	生活	生活	NOUN	NN	_	16	dep	_	_	_	N	生活	_	_	_	_	_	O-N
+13	秘密	秘密	ADV	AD	_	16	advmod	_	_	_	ADV	秘密	_	_	_	_	_	O-ADV
+14	向	向	ADP	P	_	15	case	_	AlignedTokId=28|AlignedAdposition=to	_	P	向	p.Recipient	p.Direction	_	_	_	O-P-p.Recipient|p.Direction
+15	我	我	PRON	PN	_	16	obl:prep	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+16	揭开	揭开	VERB	VV	_	0	root	_	_	_	V	揭开	_	_	_	_	_	O-V
+17	了	了	AUX	AS	_	16	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+18	。	。	PUNCT	PU	_	16	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-291
+# chapter = 7
+# text = 好象默默地思索了很长时间以后，得出了什么结果一样，他突然没头没脑地问我：“羊，要是吃小灌木，它也要吃花罗？”
+# en_sent_id = lpp_1943.291
+# en_text = Abruptly , without anything to lead up to it , and as if the question had been born of long and silent meditation on his problem , he demanded : " A sheep -- if it eats little bushes , does it eat flowers , too ? "
+1	好象	好象	ADV	AD	_	21	advmod	_	_	_	ADV	好象	_	_	_	_	_	O-ADV
+2	默默	默默	VERB	VA	_	4	advmod:dvp	_	_	_	V	默默	_	_	_	_	_	O-V
+3	地	地	PART	DEV	_	2	mark	_	_	_	DE	地	_	_	_	_	_	O-DE
+4	思索	思索	VERB	VV	_	21	advcl:loc	_	_	_	V	思索	_	_	_	_	_	O-V
+5	了	了	AUX	AS	_	4	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+6	很	很	ADV	AD	_	7	advmod	_	_	_	ADV	很	_	_	_	_	_	O-ADV
+7	长	长	ADJ	JJ	_	8	amod	_	_	_	ADJ	长	_	_	_	_	_	O-ADJ
+8	时间	时间	NOUN	NN	_	4	obj	_	_	_	N	时间	_	_	_	_	_	O-N
+9	以后	以后	ADP	LC	_	4	case	_	AlignedAdposition=None	_	LC	以后	p.Time	p.Time	_	_	_	O-LC-p.Time
+10	，	，	PUNCT	PU	_	11	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+11	得出	得出	VERB	VV	_	21	advcl:loc	_	_	_	V	得出	_	_	_	_	_	O-V
+12	了	了	AUX	AS	_	11	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+13	什么	什么	DET	DT	_	14	det	_	_	_	DET	什么	_	_	_	_	_	O-DET
+14	结果	结果	NOUN	NN	_	11	obj	_	_	_	N	结果	_	_	_	_	_	O-N
+15	一样	一样	VERB	VA	_	11	conj	_	_	_	V	一样	_	_	_	_	_	O-V
+16	，	，	PUNCT	PU	_	21	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+17	他	他	PRON	PN	_	21	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+18	突然	突然	ADV	AD	_	21	advmod	_	_	_	ADV	突然	_	_	_	_	_	O-ADV
+19	没头没脑	没头没脑	VERB	VV	_	21	advmod:dvp	_	_	_	V	没头没脑	_	_	_	_	_	O-V
+20	地	地	PART	DEV	_	19	mark	_	_	_	DE	地	_	_	_	_	_	O-DE
+21	问	问	VERB	VV	_	0	root	_	_	_	V	问	_	_	_	_	_	O-V
+22	我	我	PRON	PN	_	21	obj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+23	：	：	PUNCT	PU	_	21	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+24	“	“	PUNCT	PU	_	35	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+25	羊	羊	NOUN	NN	_	35	nsubj	_	_	_	N	羊	_	_	_	_	_	O-N
+26	，	，	PUNCT	PU	_	35	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+27	要是	要是	SCONJ	CS	_	28	advmod	_	_	_	SCONJ	要是	_	_	_	_	_	O-SCONJ
+28	吃	吃	VERB	VV	_	35	dep	_	_	_	V	吃	_	_	_	_	_	O-V
+29	小	小	ADJ	JJ	_	30	amod	_	_	_	ADJ	小	_	_	_	_	_	O-ADJ
+30	灌木	灌木	NOUN	NN	_	28	obj	_	_	_	N	灌木	_	_	_	_	_	O-N
+31	，	，	PUNCT	PU	_	35	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+32	它	它	PRON	PN	_	35	nsubj	_	_	_	PRON	它	_	_	_	_	_	O-PRON
+33	也	也	ADV	AD	_	35	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+34	要	要	VERB	VV	_	35	xcomp	_	_	_	V	要	_	_	_	_	_	O-V
+35	吃	吃	VERB	VV	_	21	ccomp	_	_	_	V	吃	_	_	_	_	_	O-V
+36	花	花	VERB	VV	_	35	ccomp	_	_	_	V	花	_	_	_	_	_	O-V
+37	罗	罗	NOUN	NN	_	36	obj	_	_	_	N	罗	_	_	_	_	_	O-N
+38	？	？	PUNCT	PU	_	21	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+39	”	”	PUNCT	PU	_	21	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-292
+# chapter = 7
+# text = 一只羊
+# en_sent_id = lpp_1943.292
+# en_text = " A sheep , "
+1	一	一	NUM	CD	_	3	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+2	只	只	NOUN	M	_	1	mark:clf	_	_	_	N	只	_	_	_	_	_	O-N
+3	羊	羊	NOUN	NN	_	0	root	_	_	_	N	羊	_	_	_	_	_	O-N
+
+
+# sent_id = lpp_1943_zh-293
+# chapter = 7
+# text = “它碰到什么吃什么。”我回答。
+# en_sent_id = lpp_1943.293
+# en_text = I answered , " eats anything it finds in its reach . "
+1	“	“	PUNCT	PU	_	3	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	它	它	PRON	PN	_	3	nsubj	_	_	_	PRON	它	_	_	_	_	_	O-PRON
+3	碰到	碰到	VERB	VV	_	10	dep	_	_	_	V	碰到	_	_	_	_	_	O-V
+4	什么	什么	PRON	PN	_	3	obj	_	_	_	PRON	什么	_	_	_	_	_	O-PRON
+5	吃	吃	VERB	VV	_	3	ccomp	_	_	_	V	吃	_	_	_	_	_	O-V
+6	什么	什么	PRON	PN	_	5	obj	_	_	_	PRON	什么	_	_	_	_	_	O-PRON
+7	。	。	PUNCT	PU	_	10	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+8	”	”	PUNCT	PU	_	10	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+9	我	我	PRON	PN	_	10	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+10	回答	回答	VERB	VV	_	0	root	_	_	_	V	回答	_	_	_	_	_	O-V
+11	。	。	PUNCT	PU	_	10	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-294
+# chapter = 7
+# text = “连有刺的花也吃吗？”
+# en_sent_id = lpp_1943.294
+# en_text = " Even flowers that have thorns ? "
+1	“	“	PUNCT	PU	_	8	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	连	连	ADV	AD	_	3	advmod	_	_	_	ADV	连	_	_	_	_	_	O-ADV
+3	有	有	VERB	VE	_	6	dep	_	_	_	V	有	_	_	_	_	_	O-V
+4	刺	刺	NOUN	NN	_	3	obj	_	_	_	N	刺	_	_	_	_	_	O-N
+5	的	的	PART	DEC	_	3	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+6	花	花	NOUN	NN	_	8	nsubj	_	_	_	N	花	_	_	_	_	_	O-N
+7	也	也	ADV	AD	_	8	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+8	吃	吃	VERB	VV	_	11	dep	_	_	_	V	吃	_	_	_	_	_	O-V
+9	吗	吗	PART	SP	_	11	discourse	_	_	_	PART	吗	_	_	_	_	_	O-PART
+10	？	？	PUNCT	PU	_	11	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+11	”	”	PUNCT	PU	_	0	root	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-295
+# chapter = 7
+# text = “有刺的也吃！”
+# en_sent_id = lpp_1943.295
+# en_text = " Yes , even flowers that have thorns . "
+1	“	“	PUNCT	PU	_	6	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	有	有	VERB	VE	_	6	dep	_	_	_	V	有	_	_	_	_	_	O-V
+3	刺	刺	VERB	VV	_	6	nsubj	_	_	_	V	刺	_	_	_	_	_	O-V
+4	的	的	PART	DEC	_	3	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+5	也	也	ADV	AD	_	6	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+6	吃	吃	VERB	VV	_	0	root	_	_	_	V	吃	_	_	_	_	_	O-V
+7	！	！	PUNCT	PU	_	6	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+8	”	”	PUNCT	PU	_	6	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-296
+# chapter = 7
+# text = “那么刺有什么用呢？”
+# en_sent_id = lpp_1943.296
+# en_text = " Then the thorns -- what use are they ? "
+1	“	“	PUNCT	PU	_	4	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	那么	那么	ADV	AD	_	3	advmod	_	_	_	ADV	那么	_	_	_	_	_	O-ADV
+3	刺	刺	VERB	VV	_	4	dep	_	_	_	V	刺	_	_	_	_	_	O-V
+4	有	有	VERB	VE	_	9	dep	_	_	_	V	有	_	_	_	_	_	O-V
+5	什么	什么	DET	DT	_	6	det	_	_	_	DET	什么	_	_	_	_	_	O-DET
+6	用	用	NOUN	NN	_	4	obj	_	_	_	N	用	_	_	_	_	_	O-N
+7	呢	呢	PART	SP	_	9	discourse	_	_	_	PART	呢	_	_	_	_	_	O-PART
+8	？	？	PUNCT	PU	_	9	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+9	”	”	PUNCT	PU	_	0	root	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-297
+# chapter = 7
+# text = 我不知道该怎么回答。
+# en_sent_id = lpp_1943.297
+# en_text = I did not know .
+1	我	我	PRON	PN	_	3	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	不	不	ADV	AD	Polarity=Neg	3	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+3	知道	知道	VERB	VV	_	0	root	_	_	_	V	知道	_	_	_	_	_	O-V
+4	该	该	VERB	VV	_	6	xcomp	_	_	_	V	该	_	_	_	_	_	O-V
+5	怎么	怎么	ADV	AD	_	6	advmod	_	_	_	ADV	怎么	_	_	_	_	_	O-ADV
+6	回答	回答	VERB	VV	_	3	ccomp	_	_	_	V	回答	_	_	_	_	_	O-V
+7	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-298
+# chapter = 7
+# text = 那会儿我正忙着要从发动机上卸下一颗拧得太紧的螺丝。
+# en_sent_id = lpp_1943.298
+# en_text = At that moment I was very busy trying to unscrew a bolt that had got stuck in my engine .
+1	那会儿	那会儿	ADV	AD	_	4	advmod	_	_	_	ADV	那会儿	_	_	_	_	_	O-ADV
+2	我	我	PRON	PN	_	4	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+3	正	正	ADV	AD	_	4	advmod	_	_	_	ADV	正	_	_	_	_	_	O-ADV
+4	忙	忙	VERB	VV	_	0	root	_	_	_	V	忙	_	_	_	_	_	O-V
+5	着	着	AUX	AS	_	4	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+6	要	要	VERB	VV	_	10	xcomp	_	_	_	V	要	_	_	_	_	_	O-V
+7	从	从	ADP	P	_	8	case	_	AlignedAdposition=None	_	P	从	p.Source	p.Source	_	_	_	O-P-p.Source
+8	发动机	发动机	NOUN	NN	_	10	obl:prep	_	_	_	N	发动机	_	_	_	_	_	O-N
+9	上	上	ADP	LC	_	8	case	_	AlignedTokId=17|AlignedAdposition=in	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+10	卸下	卸下	VERB	VV	_	4	ccomp	_	_	_	V	卸下	_	_	_	_	_	O-V
+11	一	一	NUM	CD	_	18	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+12	颗	颗	NOUN	M	_	11	mark:clf	_	_	_	N	颗	_	_	_	_	_	O-N
+13	拧	拧	VERB	VV	_	16	dep	_	_	_	V	拧	_	_	_	_	_	O-V
+14	得	得	PART	DER	_	16	dep	_	_	_	DE	得	_	_	_	_	_	O-DE
+15	太	太	ADV	AD	_	16	advmod	_	_	_	ADV	太	_	_	_	_	_	O-ADV
+16	紧	紧	VERB	VA	_	18	amod	_	_	_	V	紧	_	_	_	_	_	O-V
+17	的	的	PART	DEC	_	16	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+18	螺丝	螺丝	NOUN	NN	_	10	obj	_	_	_	N	螺丝	_	_	_	_	_	O-N
+19	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-299
+# chapter = 7
+# text = 我发现机器故障似乎很严重，
+# en_sent_id = lpp_1943.299
+# en_text = I was very much worried , for it was becoming clear to me that the breakdown of my plane was extremely serious .
+1	我	我	PRON	PN	_	2	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	发现	发现	VERB	VV	_	0	root	_	_	_	V	发现	_	_	_	_	_	O-V
+3	机器	机器	NOUN	NN	_	4	compound:nn	_	_	_	N	机器	_	_	_	_	_	O-N
+4	故障	故障	NOUN	NN	_	7	nsubj	_	_	_	N	故障	_	_	_	_	_	O-N
+5	似乎	似乎	ADV	AD	_	7	advmod	_	_	_	ADV	似乎	_	_	_	_	_	O-ADV
+6	很	很	ADV	AD	_	7	advmod	_	_	_	ADV	很	_	_	_	_	_	O-ADV
+7	严重	严重	VERB	VA	_	2	ccomp	_	_	_	V	严重	_	_	_	_	_	O-V
+8	，	，	PUNCT	PU	_	2	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-300
+# chapter = 7
+# text = 饮水也快完了，担心可能发生最坏的情况，心里很着急。
+# en_sent_id = lpp_1943.300
+# en_text = And I had so little drinking - water left that I had to fear for the worst .
+1	饮水	饮水	NOUN	NN	_	4	nsubj	_	_	_	N	饮水	_	_	_	_	_	O-N
+2	也	也	ADV	AD	_	4	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+3	快	快	ADV	AD	_	4	advmod	_	_	_	ADV	快	_	_	_	_	_	O-ADV
+4	完	完	VERB	VV	_	0	root	_	_	_	V	完	_	_	_	_	_	O-V
+5	了	了	AUX	AS	_	4	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+6	，	，	PUNCT	PU	_	4	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+7	担心	担心	VERB	VV	_	4	conj	_	_	_	V	担心	_	_	_	_	_	O-V
+8	可能	可能	VERB	VV	_	9	aux:modal	_	_	_	V	可能	_	_	_	_	_	O-V
+9	发生	发生	VERB	VV	_	7	ccomp	_	_	_	V	发生	_	_	_	_	_	O-V
+10	最	最	ADV	AD	_	11	advmod	_	_	_	ADV	最	_	_	_	_	_	O-ADV
+11	坏	坏	VERB	VA	_	13	amod	_	_	_	V	坏	_	_	_	_	_	O-V
+12	的	的	PART	DEC	_	11	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+13	情况	情况	NOUN	NN	_	9	obj	_	_	_	N	情况	_	_	_	_	_	O-N
+14	，	，	PUNCT	PU	_	4	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+15	心里	心里	NOUN	NN	_	17	nsubj	_	_	_	N	心里	_	_	_	_	_	O-N
+16	很	很	ADV	AD	_	17	advmod	_	_	_	ADV	很	_	_	_	_	_	O-ADV
+17	着急	着急	VERB	VV	_	4	conj	_	_	_	V	着急	_	_	_	_	_	O-V
+18	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-301
+# chapter = 7
+# text = “那么刺有什么用呢？”
+# en_sent_id = lpp_1943.301
+# en_text = " The thorns - - what use are they ? "
+1	“	“	PUNCT	PU	_	4	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	那么	那么	ADV	AD	_	3	advmod	_	_	_	ADV	那么	_	_	_	_	_	O-ADV
+3	刺	刺	VERB	VV	_	4	dep	_	_	_	V	刺	_	_	_	_	_	O-V
+4	有	有	VERB	VE	_	9	dep	_	_	_	V	有	_	_	_	_	_	O-V
+5	什么	什么	DET	DT	_	6	det	_	_	_	DET	什么	_	_	_	_	_	O-DET
+6	用	用	NOUN	NN	_	4	obj	_	_	_	N	用	_	_	_	_	_	O-N
+7	呢	呢	PART	SP	_	9	discourse	_	_	_	PART	呢	_	_	_	_	_	O-PART
+8	？	？	PUNCT	PU	_	9	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+9	”	”	PUNCT	PU	_	0	root	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-302
+# chapter = 7
+# text = 小王子一旦提出了问题，从来不会放过。
+# en_sent_id = lpp_1943.302
+# en_text = The little prince never let go of a question , once he had asked it .
+1	小王子	小王子	PROPN	NR	_	3	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+2	一旦	一旦	SCONJ	CS	_	3	advmod	_	_	_	SCONJ	一旦	_	_	_	_	_	O-SCONJ
+3	提出	提出	VERB	VV	_	10	dep	_	_	_	V	提出	_	_	_	_	_	O-V
+4	了	了	AUX	AS	_	3	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+5	问题	问题	NOUN	NN	_	3	obj	_	_	_	N	问题	_	_	_	_	_	O-N
+6	，	，	PUNCT	PU	_	10	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+7	从来	从来	ADV	AD	_	10	advmod	_	_	_	ADV	从来	_	_	_	_	_	O-ADV
+8	不	不	ADV	AD	Polarity=Neg	10	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+9	会	会	VERB	VV	_	10	aux:modal	_	_	_	V	会	_	_	_	_	_	O-V
+10	放过	放过	VERB	VV	_	0	root	_	_	_	V	放过	_	_	_	_	_	O-V
+11	。	。	PUNCT	PU	_	10	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-303
+# chapter = 7
+# text = 这个该死的螺丝使我很恼火，
+# en_sent_id = lpp_1943.303
+# en_text = As for me , I was upset over that bolt .
+1	这个	这个	DET	DT	_	4	det	_	_	_	DET	这个	_	_	_	_	_	O-DET
+2	该死	该死	VERB	VV	_	4	acl	_	_	_	V	该死	_	_	_	_	_	O-V
+3	的	的	PART	DEC	_	2	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+4	螺丝	螺丝	NOUN	NN	_	5	nsubj	_	_	_	N	螺丝	_	_	_	_	_	O-N
+5	使	使	VERB	VV	_	0	root	_	_	_	V	使	_	_	_	_	_	O-V
+6	我	我	PRON	PN	_	5	obj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+7	很	很	ADV	AD	_	8	advmod	_	_	_	ADV	很	_	_	_	_	_	O-ADV
+8	恼火	恼火	VERB	VV	_	5	ccomp	_	_	_	V	恼火	_	_	_	_	_	O-V
+9	，	，	PUNCT	PU	_	5	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-304
+# chapter = 7
+# text = 我于是就随便回答了他一句：“刺么，什么用都没有，
+# en_sent_id = lpp_1943.304
+# en_text = And I answered with the first thing that came into my head : " The thorns are of no use at all .
+1	我	我	PRON	PN	_	5	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	于是	于是	ADV	AD	_	5	advmod	_	_	_	ADV	于是	_	_	_	_	_	O-ADV
+3	就	就	ADV	AD	_	5	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+4	随便	随便	ADV	AD	_	5	advmod	_	_	_	ADV	随便	_	_	_	_	_	O-ADV
+5	回答	回答	VERB	VV	_	0	root	_	_	_	V	回答	_	_	_	_	_	O-V
+6	了	了	AUX	AS	_	5	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+7	他	他	PRON	PN	_	5	obj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+8	一	一	NUM	CD	_	5	dep	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+9	句	句	NOUN	M	_	8	mark:clf	_	_	_	N	句	_	_	_	_	_	O-N
+10	：	：	PUNCT	PU	_	5	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+11	“	“	PUNCT	PU	_	12	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+12	刺	刺	VERB	VV	_	18	dep	_	_	_	V	刺	_	_	_	_	_	O-V
+13	么	么	PART	SP	_	12	discourse	_	_	_	PART	么	_	_	_	_	_	O-PART
+14	，	，	PUNCT	PU	_	18	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+15	什么	什么	PRON	PN	_	16	det	_	_	_	PRON	什么	_	_	_	_	_	O-PRON
+16	用	用	NOUN	NN	_	18	nsubj	_	_	_	N	用	_	_	_	_	_	O-N
+17	都	都	ADV	AD	_	18	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+18	没有	没有	VERB	VE	_	5	conj	_	_	_	V	没有	_	_	_	_	_	O-V
+19	，	，	PUNCT	PU	_	5	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-305
+# chapter = 7
+# text = 这纯粹是花的恶劣表现。”
+# en_sent_id = lpp_1943.305
+# en_text = Flowers have thorns just for spite ! "
+1	这	这	PRON	PN	_	7	nsubj	_	_	_	PRON	这	_	_	_	_	_	O-PRON
+2	纯粹	纯粹	ADV	AD	_	7	advmod	_	_	_	ADV	纯粹	_	_	_	_	_	O-ADV
+3	是	是	AUX	VC	_	7	cop	_	_	_	V	是	_	_	_	_	_	O-V
+4	花	花	NOUN	NN	_	7	nmod:assmod	_	ToDo=nmod	_	N	花	_	_	_	_	_	O-N
+5	的	的	PART	DEG	_	4	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+6	恶劣	恶劣	ADJ	JJ	_	7	amod	_	_	_	ADJ	恶劣	_	_	_	_	_	O-ADJ
+7	表现	表现	NOUN	NN	_	0	root	_	_	_	N	表现	_	_	_	_	_	O-N
+8	。	。	PUNCT	PU	_	7	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+9	”	”	PUNCT	PU	_	7	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-306
+# chapter = 7
+# text = “噢！”
+# en_sent_id = lpp_1943.306
+# en_text = " Oh ! "
+1	“	“	PUNCT	PU	_	2	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	噢	噢	INTJ	IJ	_	0	root	_	_	_	INTJ	噢	_	_	_	_	_	O-INTJ
+3	！	！	PUNCT	PU	_	2	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+4	”	”	PUNCT	PU	_	2	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-307
+# chapter = 7
+# text = 可是他沉默了一会儿之后，
+# en_sent_id = lpp_1943.307
+# en_text = There was a moment of complete silence .
+1	可是	可是	ADV	AD	_	3	advmod	_	_	_	ADV	可是	_	_	_	_	_	O-ADV
+2	他	他	PRON	PN	_	3	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+3	沉默	沉默	VERB	VV	_	0	root	_	_	_	V	沉默	_	_	_	_	_	O-V
+4	了	了	AUX	AS	_	3	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+5	一会儿	一会儿	ADV	AD	_	3	advmod	_	_	_	ADV	一会儿	_	_	_	_	_	O-ADV
+6	之后	之后	ADP	LC	_	3	case	_	AlignedTokId=5|AlignedAdposition=of	_	LC	之后	p.Time	p.Interval	_	_	_	O-LC-p.Time|p.Interval
+7	，	，	PUNCT	PU	_	3	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-308
+# chapter = 7
+# text = 怀着不满的心情冲我说：“我不信！
+# en_sent_id = lpp_1943.308
+# en_text = Then the little prince flashed back at me , with a kind of resentfulness : " I do n't believe you !
+1	怀	怀	VERB	VV	_	5	acl	_	_	_	V	怀	_	_	_	_	_	O-V
+2	着	着	AUX	AS	_	1	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+3	不满	不满	NOUN	NN	_	1	obj	_	_	_	N	不满	_	_	_	_	_	O-N
+4	的	的	PART	DEC	_	1	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+5	心情	心情	NOUN	NN	_	6	nsubj	_	_	_	N	心情	_	_	_	_	_	O-N
+6	冲	冲	VERB	VV	_	0	root	_	AlignedTokId=7|AlignedAdposition=at	_	V	冲	p.Direction	p.Direction	_	_	_	O-V-p.Direction
+7	我	我	PRON	PN	_	8	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+8	说	说	VERB	VV	_	6	conj	_	_	_	V	说	_	_	_	_	_	O-V
+9	：	：	PUNCT	PU	_	8	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+10	“	“	PUNCT	PU	_	13	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+11	我	我	PRON	PN	_	13	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+12	不	不	ADV	AD	Polarity=Neg	13	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+13	信	信	VERB	VV	_	8	ccomp	_	_	_	V	信	_	_	_	_	_	O-V
+14	！	！	PUNCT	PU	_	6	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-309
+# chapter = 7
+# text = 花是弱小的、
+# en_sent_id = lpp_1943.309
+# en_text = Flowers are weak creatures .
+1	花	花	NOUN	NN	_	3	nsubj	_	_	_	N	花	_	_	_	_	_	O-N
+2	是	是	AUX	VC	_	3	cop	_	_	_	V	是	_	_	_	_	_	O-V
+3	弱小	弱小	VERB	VA	_	0	root	_	_	_	V	弱小	_	_	_	_	_	O-V
+4	的	的	PART	SP	_	3	discourse	_	_	_	PART	的	_	_	_	_	_	O-PART
+5	、	、	PUNCT	PU	_	3	punct	_	_	_	PUNCT	、	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-310
+# chapter = 7
+# text = 他们是淳朴的，
+# en_sent_id = lpp_1943.310
+# en_text = They are naïve .
+1	他们	他	PRON	PN	_	3	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	是	是	AUX	VC	_	3	cop	_	_	_	V	是	_	_	_	_	_	O-V
+3	淳朴	淳朴	VERB	VA	_	5	dep	_	_	_	V	淳朴	_	_	_	_	_	O-V
+4	的	的	PART	SP	_	5	discourse	_	_	_	PART	的	_	_	_	_	_	O-PART
+5	，	，	PUNCT	PU	_	0	root	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-311
+# chapter = 7
+# text = 它们总是设法保护自己，
+# en_sent_id = lpp_1943.311
+# en_text = They reassure themselves as best they can .
+1	它们	它	PRON	PN	_	3	nsubj	_	_	_	PRON	它	_	_	_	_	_	O-PRON
+2	总是	总是	ADV	AD	_	3	advmod	_	_	_	ADV	总是	_	_	_	_	_	O-ADV
+3	设法	设法	VERB	VV	_	0	root	_	_	_	V	设法	_	_	_	_	_	O-V
+4	保护	保护	VERB	VV	_	3	ccomp	_	_	_	V	保护	_	_	_	_	_	O-V
+5	自己	自己	PRON	PN	_	4	obj	_	_	_	PRON	自己	_	_	_	_	_	O-PRON
+6	，	，	PUNCT	PU	_	3	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-312
+# chapter = 7
+# text = 以为有了刺就可以显出自己的厉害…”
+# en_sent_id = lpp_1943.312
+# en_text = They believe that their thorns are terrible weapons ... "
+1	以为	以为	VERB	VV	_	0	root	_	_	_	V	以为	_	_	_	_	_	O-V
+2	有	有	VERB	VE	_	1	ccomp	_	_	_	V	有	_	_	_	_	_	O-V
+3	了	了	AUX	AS	_	2	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+4	刺	刺	NOUN	NN	_	2	obj	_	_	_	N	刺	_	_	_	_	_	O-N
+5	就	就	ADV	AD	_	7	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+6	可以	可以	VERB	VV	_	7	aux:modal	_	_	_	V	可以	_	_	_	_	_	O-V
+7	显出	显出	VERB	VV	_	1	ccomp	_	_	_	V	显出	_	_	_	_	_	O-V
+8	自己	自己	PRON	PN	_	10	nmod:assmod	_	_	_	PRON	自己	_	_	_	_	_	O-PRON
+9	的	的	PART	DEG	_	8	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+10	厉害	厉害	NOUN	NN	_	7	obj	_	_	_	N	厉害	_	_	_	_	_	O-N
+11	…	…	PUNCT	PU	_	1	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+12	”	”	PUNCT	PU	_	1	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-313
+# chapter = 7
+# text = 我默不作声。
+# en_sent_id = lpp_1943.313
+# en_text = I did not answer .
+1	我	我	PRON	PN	_	2	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	默不作声	默不作声	VERB	VV	_	0	root	_	_	_	V	默不作声	_	_	_	_	_	O-V
+3	。	。	PUNCT	PU	_	2	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-314
+# chapter = 7
+# text = 我当时想的，如果这个螺丝再和我作对，我就一锤子敲掉它。
+# en_sent_id = lpp_1943.314
+# en_text = At that instant I was saying to myself : " If this bolt still will n't turn , I am going to knock it out with the hammer . "
+1	我	我	PRON	PN	_	3	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	当时	当时	NOUN	NT	_	3	obl:tmod	_	_	_	N	当时	_	_	_	_	_	O-N
+3	想	想	VERB	VV	_	18	dep	_	_	_	V	想	_	_	_	_	_	O-V
+4	的	的	PART	SP	_	3	discourse	_	_	_	PART	的	_	_	_	_	_	O-PART
+5	，	，	PUNCT	PU	_	18	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+6	如果	如果	SCONJ	CS	_	12	advmod	_	_	_	SCONJ	如果	_	_	_	_	_	O-SCONJ
+7	这个	这个	DET	DT	_	8	det	_	_	_	DET	这个	_	_	_	_	_	O-DET
+8	螺丝	螺丝	NOUN	NN	_	12	nsubj	_	_	_	N	螺丝	_	_	_	_	_	O-N
+9	再	再	ADV	AD	_	12	advmod	_	_	_	ADV	再	_	_	_	_	_	O-ADV
+10	和	和	ADP	P	_	11	case	_	AlignedAdposition=None	_	P	和	p.Agent	p.Agent	_	_	_	O-P-p.Agent
+11	我	我	PRON	PN	_	12	obl:prep	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+12	作对	作对	VERB	VV	_	18	dep	_	_	_	V	作对	_	_	_	_	_	O-V
+13	，	，	PUNCT	PU	_	18	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+14	我	我	PRON	PN	_	18	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+15	就	就	ADV	AD	_	18	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+16	一	一	NUM	CD	_	17	dep	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+17	锤子	锤子	NOUN	NN	_	18	nsubj	_	_	_	N	锤子	_	_	_	_	_	O-N
+18	敲掉	敲掉	VERB	VV	_	0	root	_	_	_	V	敲掉	_	_	_	_	_	O-V
+19	它	它	PRON	PN	_	18	obj	_	_	_	PRON	它	_	_	_	_	_	O-PRON
+20	。	。	PUNCT	PU	_	18	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-315
+# chapter = 7
+# text = 小王子又来打搅我的思绪了：
+# en_sent_id = lpp_1943.315
+# en_text = Again the little prince disturbed my thoughts .
+1	小王子	小王子	PROPN	NR	_	4	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+2	又	又	ADV	AD	_	4	advmod	_	_	_	ADV	又	_	_	_	_	_	O-ADV
+3	来	来	VERB	VV	_	4	xcomp	_	_	_	V	来	_	_	_	_	_	O-V
+4	打搅	打搅	VERB	VV	_	9	dep	_	_	_	V	打搅	_	_	_	_	_	O-V
+5	我	我	PRON	PN	_	7	nmod:assmod	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+6	的	的	PART	DEG	_	5	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+7	思绪	思绪	NOUN	NN	_	4	obj	_	_	_	N	思绪	_	_	_	_	_	O-N
+8	了	了	PART	SP	_	9	discourse	_	_	_	PART	了	_	_	_	_	_	O-PART
+9	：	：	PUNCT	PU	_	0	root	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-316
+# chapter = 7
+# text = “你却认为花…”
+# en_sent_id = lpp_1943.316
+# en_text = " And you actually believe that the flowers - - "
+1	“	“	PUNCT	PU	_	4	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	你	你	PRON	PN	_	4	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+3	却	却	ADV	AD	_	4	advmod	_	_	_	ADV	却	_	_	_	_	_	O-ADV
+4	认为	认为	VERB	VV	_	0	root	_	_	_	V	认为	_	_	_	_	_	O-V
+5	花	花	VERB	VV	_	4	ccomp	_	_	_	V	花	_	_	_	_	_	O-V
+6	…	…	PUNCT	PU	_	4	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+7	”	”	PUNCT	PU	_	4	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-317
+# chapter = 7
+# text = “算了吧！
+# en_sent_id = lpp_1943.317
+# en_text = " Oh , no ! "
+1	“	“	PUNCT	PU	_	2	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	算了	算了	VERB	VV	_	4	dep	_	_	_	V	算了	_	_	_	_	_	O-V
+3	吧	吧	PART	SP	_	4	discourse	_	_	_	PART	吧	_	_	_	_	_	O-PART
+4	！	！	PUNCT	PU	_	0	root	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-318
+# chapter = 7
+# text = 我哭着说。
+# en_sent_id = lpp_1943.318
+# en_text = I cried .
+1	我	我	PRON	PN	_	2	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	哭	哭	VERB	VV	_	0	root	_	_	_	V	哭	_	_	_	_	_	O-V
+3	着	着	AUX	AS	_	2	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+4	说	说	VERB	VV	_	2	conj	_	_	_	V	说	_	_	_	_	_	O-V
+5	。	。	PUNCT	PU	_	2	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-319
+# chapter = 7
+# text = “算了吧，算了吧！
+# en_sent_id = lpp_1943.319
+# en_text = " No , no no !
+1	“	“	PUNCT	PU	_	2	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	算了	算了	VERB	VV	_	7	dep	_	_	_	V	算了	_	_	_	_	_	O-V
+3	吧	吧	PART	SP	_	2	discourse	_	_	_	PART	吧	_	_	_	_	_	O-PART
+4	，	，	PUNCT	PU	_	7	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+5	算了	算了	VERB	VV	_	7	dep	_	_	_	V	算了	_	_	_	_	_	O-V
+6	吧	吧	PART	SP	_	5	discourse	_	_	_	PART	吧	_	_	_	_	_	O-PART
+7	！	！	PUNCT	PU	_	0	root	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-320
+# chapter = 7
+# text = 我什么也不认为！
+# en_sent_id = lpp_1943.320
+# en_text = I do n't believe anything .
+1	我	我	PRON	PN	_	2	dep	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	什么	什么	PRON	PN	_	5	nsubj	_	_	_	PRON	什么	_	_	_	_	_	O-PRON
+3	也	也	ADV	AD	_	5	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+4	不	不	ADV	AD	Polarity=Neg	5	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+5	认为	认为	VERB	VV	_	0	root	_	_	_	V	认为	_	_	_	_	_	O-V
+6	！	！	PUNCT	PU	_	5	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-321
+# chapter = 7
+# text = 我是随便回答你的。
+# en_sent_id = lpp_1943.321
+# en_text = I answered you with the first thing that came into my head .
+1	我	我	PRON	PN	_	4	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	是	是	AUX	VC	_	4	cop	_	_	_	V	是	_	_	_	_	_	O-V
+3	随便	随便	ADV	AD	_	4	advmod	_	_	_	ADV	随便	_	_	_	_	_	O-ADV
+4	回答	回答	VERB	VV	_	7	dep	_	_	_	V	回答	_	_	_	_	_	O-V
+5	你	你	PRON	PN	_	4	obj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+6	的	的	PART	SP	_	7	discourse	_	_	_	PART	的	_	_	_	_	_	O-PART
+7	。	。	PUNCT	PU	_	0	root	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-322
+# chapter = 7
+# text = 我可有正经事要做。”
+# en_sent_id = lpp_1943.322
+# en_text = Do n't you see - - I am very busy with matters of consequence ! "
+1	我	我	PRON	PN	_	3	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	可	可	ADV	AD	_	3	advmod	_	_	_	ADV	可	_	_	_	_	_	O-ADV
+3	有	有	VERB	VE	_	0	root	_	_	_	V	有	_	_	_	_	_	O-V
+4	正经	正经	ADJ	JJ	_	5	amod	_	_	_	ADJ	正经	_	_	_	_	_	O-ADJ
+5	事	事	NOUN	NN	_	7	nsubj	_	_	_	N	事	_	_	_	_	_	O-N
+6	要	要	VERB	VV	_	7	xcomp	_	_	_	V	要	_	_	_	_	_	O-V
+7	做	做	VERB	VV	_	3	ccomp	_	_	_	V	做	_	_	_	_	_	O-V
+8	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+9	”	”	PUNCT	PU	_	3	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-323
+# chapter = 7
+# text = 他惊讶地看着我。
+# en_sent_id = lpp_1943.323
+# en_text = He stared at me , thunderstruck .
+1	他	他	PRON	PN	_	4	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	惊讶	惊讶	VERB	VA	_	4	advmod:dvp	_	_	_	V	惊讶	_	_	_	_	_	O-V
+3	地	地	PART	DEV	_	2	mark	_	_	_	DE	地	_	_	_	_	_	O-DE
+4	看	看	VERB	VV	_	0	root	_	_	_	V	看	_	_	_	_	_	O-V
+5	着	着	AUX	AS	_	4	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+6	我	我	PRON	PN	_	4	obj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+7	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-324
+# chapter = 7
+# text = “正经事？”
+# en_sent_id = lpp_1943.324
+# en_text = " Matters of consequence ! "
+1	“	“	PUNCT	PU	_	3	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	正经	正经	ADJ	JJ	_	3	amod	_	_	_	ADJ	正经	_	_	_	_	_	O-ADJ
+3	事	事	NOUN	NN	_	0	root	_	_	_	N	事	_	_	_	_	_	O-N
+4	？	？	PUNCT	PU	_	3	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+5	”	”	PUNCT	PU	_	3	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-325
+# chapter = 7
+# text = 他瞅着我手拿锤子，手指沾满了油污，伏在一个在他看来丑不可言的机件上。
+# en_sent_id = lpp_1943.325
+# en_text = He looked at me there , with my hammer in my hand , my fingers black with engine - grease , bending down over an object which seemed to him extremely ugly ...
+1	他	他	PRON	PN	_	2	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	瞅	瞅	VERB	VV	_	0	root	_	_	_	V	瞅	_	_	_	_	_	O-V
+3	着	着	AUX	AS	_	2	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+4	我	我	PRON	PN	_	2	obj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+5	手拿	手拿	VERB	VV	_	2	conj	_	_	_	V	手拿	_	_	_	_	_	O-V
+6	锤子	锤子	NOUN	NN	_	5	obj	_	_	_	N	锤子	_	_	_	_	_	O-N
+7	，	，	PUNCT	PU	_	2	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+8	手指	手指	NOUN	NN	_	9	nsubj	_	_	_	N	手指	_	_	_	_	_	O-N
+9	沾满	沾满	VERB	VV	_	2	conj	_	_	_	V	沾满	_	_	_	_	_	O-V
+10	了	了	AUX	AS	_	9	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+11	油污	油污	NOUN	NN	_	9	obj	_	_	_	N	油污	_	_	_	_	_	O-N
+12	，	，	PUNCT	PU	_	2	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+13	伏	伏	VERB	VV	_	2	conj	_	_	_	V	伏	_	_	_	_	_	O-V
+14	在	在	ADP	P	_	22	case	_	AlignedTokId=24|AlignedAdposition=over	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+15	一	一	NUM	CD	_	22	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+16	个	个	NOUN	M	_	15	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+17	在	在	ADP	P	_	22	case	_	AlignedTokId=29|AlignedAdposition=to	_	P	在	p.`d	p.`d	_	_	_	O-P-p.`d
+18	他	他	PRON	PN	_	20	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+19	看来	看来	VERB	VV	_	20	xcomp	_	AlignedTokId=29|AlignedAdposition=to	_	V	看来	p.`d	p.`d	_	_	_	O-V-p.`d
+20	丑不可言	丑不可言	VERB	VV	_	22	acl	_	_	_	V	丑不可言	_	_	_	_	_	O-V
+21	的	的	PART	DEC	_	20	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+22	机件	机件	NOUN	NN	_	13	obl:prep	_	_	_	N	机件	_	_	_	_	_	O-N
+23	上	上	ADP	LC	_	22	case	_	AlignedTokId=24|AlignedAdposition=over	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+24	。	。	PUNCT	PU	_	2	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-326
+# chapter = 7
+# text = “你说话就和那些大人一样！”
+# en_sent_id = lpp_1943.326
+# en_text = " You talk just like the grown - ups ! "
+1	“	“	PUNCT	PU	_	8	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	你	你	PRON	PN	_	3	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+3	说话	说话	VERB	VV	_	8	dep	_	_	_	V	说话	_	_	_	_	_	O-V
+4	就	就	ADV	AD	_	8	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+5	和	和	ADP	P	_	7	case	_	AlignedTokId=5|AlignedAdposition=like	_	P	和	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
+6	那些	那些	DET	DT	_	7	det	_	_	_	DET	那些	_	_	_	_	_	O-DET
+7	大人	大人	NOUN	NN	_	8	obl:prep	_	_	_	N	大人	_	_	_	_	_	O-N
+8	一样	一样	VERB	VA	_	0	root	_	_	_	V	一样	_	_	_	_	_	O-V
+9	！	！	PUNCT	PU	_	8	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+10	”	”	PUNCT	PU	_	8	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-327
+# chapter = 7
+# text = 这话使我有点难堪。
+# en_sent_id = lpp_1943.327
+# en_text = That made me a little ashamed .
+1	这	这	DET	DT	_	2	det	_	_	_	DET	这	_	_	_	_	_	O-DET
+2	话	话	NOUN	NN	_	3	nsubj	_	_	_	N	话	_	_	_	_	_	O-N
+3	使	使	VERB	VV	_	0	root	_	_	_	V	使	_	_	_	_	_	O-V
+4	我	我	PRON	PN	_	3	obj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+5	有点	有点	ADV	AD	_	6	advmod	_	_	_	ADV	有点	_	_	_	_	_	O-ADV
+6	难堪	难堪	VERB	VA	_	3	ccomp	_	_	_	V	难堪	_	_	_	_	_	O-V
+7	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-328
+# chapter = 7
+# text = 可是他又尖刻无情地说道：“你什么都分不清…
+# en_sent_id = lpp_1943.328
+# en_text = But he went on , relentlessly : " You mix everything up together ...
+1	可是	可是	ADV	AD	_	7	advmod	_	_	_	ADV	可是	_	_	_	_	_	O-ADV
+2	他	他	PRON	PN	_	7	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+3	又	又	ADV	AD	_	7	advmod	_	_	_	ADV	又	_	_	_	_	_	O-ADV
+4	尖刻	尖刻	VERB	VA	_	7	advmod:dvp	_	_	_	V	尖刻	_	_	_	_	_	O-V
+5	无情	无情	VERB	VA	_	4	compound:vc	_	_	_	V	无情	_	_	_	_	_	O-V
+6	地	地	PART	DEV	_	4	mark	_	_	_	DE	地	_	_	_	_	_	O-DE
+7	说道	说道	VERB	VV	_	0	root	_	_	_	V	说道	_	_	_	_	_	O-V
+8	：	：	PUNCT	PU	_	7	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+9	“	“	PUNCT	PU	_	13	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+10	你	你	PRON	PN	_	11	compound:nn	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+11	什么	什么	PRON	PN	_	13	nsubj	_	_	_	PRON	什么	_	_	_	_	_	O-PRON
+12	都	都	ADV	AD	_	13	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+13	分	分	VERB	VV	_	7	ccomp	_	_	_	V	分	_	_	_	_	_	O-V
+14	不	不	ADV	AD	_	13	dep	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+15	清	清	VERB	VA	_	13	dep	_	_	_	V	清	_	_	_	_	_	O-V
+16	…	…	PUNCT	PU	_	7	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-329
+# chapter = 7
+# text = 你把什么都混在一起！”
+# en_sent_id = lpp_1943.329
+# en_text = You confuse everything ... "
+1	你	你	PRON	PN	_	5	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+2	把	把	ADP	BA	_	5	aux:ba	_	AlignedAdposition=None	_	BA	把	p.Theme	p.Theme	_	_	_	O-BA-p.Theme
+3	什么	什么	PRON	PN	_	5	dep	_	_	_	PRON	什么	_	_	_	_	_	O-PRON
+4	都	都	ADV	AD	_	5	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+5	混	混	VERB	VV	_	0	root	_	_	_	V	混	_	_	_	_	_	O-V
+6	在	在	VERB	VV	_	5	advmod:rcomp	_	AlignedAdposition=None	_	V	在	p.Manner	p.Locus	_	_	_	O-V-p.Manner|p.Locus
+7	一起	一起	ADV	AD	_	5	advmod	_	_	_	ADV	一起	_	_	_	_	_	O-ADV
+8	！	！	PUNCT	PU	_	5	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+9	”	”	PUNCT	PU	_	5	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-330
+# chapter = 7
+# text = 他着实非常恼火。
+# en_sent_id = lpp_1943.330
+# en_text = He was really very angry .
+1	他	他	PRON	PN	_	4	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	着实	着实	ADV	AD	_	4	advmod	_	_	_	ADV	着实	_	_	_	_	_	O-ADV
+3	非常	非常	ADV	AD	_	4	advmod	_	_	_	ADV	非常	_	_	_	_	_	O-ADV
+4	恼火	恼火	VERB	VV	_	0	root	_	_	_	V	恼火	_	_	_	_	_	O-V
+5	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-331
+# chapter = 7
+# text = 摇动着脑袋，金黄色的头发随风颤动着。
+# en_sent_id = lpp_1943.331
+# en_text = He tossed his golden curls in the breeze .
+1	摇动	摇动	VERB	VV	_	9	dep	_	_	_	V	摇动	_	_	_	_	_	O-V
+2	着	着	AUX	AS	_	1	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+3	脑袋	脑袋	NOUN	NN	_	1	obj	_	_	_	N	脑袋	_	_	_	_	_	O-N
+4	，	，	PUNCT	PU	_	9	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+5	金黄色	金黄色	ADJ	JJ	_	7	amod	_	_	_	ADJ	金黄色	_	_	_	_	_	O-ADJ
+6	的	的	PART	DEG	_	5	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+7	头发	头发	NOUN	NN	_	9	nsubj	_	_	_	N	头发	_	_	_	_	_	O-N
+8	随风	随风	ADV	AD	_	9	advmod	_	_	_	ADV	随风	_	_	_	_	_	O-ADV
+9	颤动	颤动	VERB	VV	_	0	root	_	_	_	V	颤动	_	_	_	_	_	O-V
+10	着	着	AUX	AS	_	9	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+11	。	。	PUNCT	PU	_	9	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-332
+# chapter = 7
+# text = “我到过一个星球，上面住着一个红脸先生。
+# en_sent_id = lpp_1943.332
+# en_text = " I know a planet where there is a certain red - faced gentleman .
+1	“	“	PUNCT	PU	_	3	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	我	我	PRON	PN	_	3	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+3	到	到	VERB	VV	_	0	root	_	_	_	V	到	_	_	_	_	_	O-V
+4	过	过	AUX	AS	_	3	aux:asp	_	_	_	AUX	过	_	_	_	_	_	O-AUX
+5	一	一	NUM	CD	_	7	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+6	个	个	NOUN	M	_	5	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+7	星球	星球	NOUN	NN	_	3	obj	_	_	_	N	星球	_	_	_	_	_	O-N
+8	，	，	PUNCT	PU	_	3	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+9	上面	上面	NOUN	NN	_	10	nsubj	_	_	_	N	上面	_	_	_	_	_	O-N
+10	住	住	VERB	VV	_	3	conj	_	_	_	V	住	_	_	_	_	_	O-V
+11	着	着	AUX	AS	_	10	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+12	一	一	NUM	CD	_	15	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+13	个	个	NOUN	M	_	12	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+14	红脸	红脸	ADJ	JJ	_	15	amod	_	_	_	ADJ	红脸	_	_	_	_	_	O-ADJ
+15	先生	先生	NOUN	NN	_	10	obj	_	_	_	N	先生	_	_	_	_	_	O-N
+16	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-333
+# chapter = 7
+# text = 他从来没闻过一朵花。
+# en_sent_id = lpp_1943.333
+# en_text = He has never smelled a flower .
+1	他	他	PRON	PN	_	4	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	从来	从来	ADV	AD	_	4	advmod	_	_	_	ADV	从来	_	_	_	_	_	O-ADV
+3	没	没	ADV	AD	Polarity=Neg	4	advmod	_	_	_	ADV	没	_	_	_	_	_	O-ADV
+4	闻	闻	VERB	VV	_	0	root	_	_	_	V	闻	_	_	_	_	_	O-V
+5	过	过	AUX	AS	_	4	aux:asp	_	_	_	AUX	过	_	_	_	_	_	O-AUX
+6	一	一	NUM	CD	_	8	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+7	朵	朵	NOUN	M	_	6	mark:clf	_	_	_	N	朵	_	_	_	_	_	O-N
+8	花	花	NOUN	NN	_	4	obj	_	_	_	N	花	_	_	_	_	_	O-N
+9	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-334
+# chapter = 7
+# text = 他从来没有看过一颗星星。
+# en_sent_id = lpp_1943.334
+# en_text = He has never looked at a star .
+1	他	他	PRON	PN	_	4	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	从来	从来	ADV	AD	_	4	advmod	_	_	_	ADV	从来	_	_	_	_	_	O-ADV
+3	没有	没有	ADV	AD	Polarity=Neg	4	advmod	_	_	_	ADV	没有	_	_	_	_	_	O-ADV
+4	看	看	VERB	VV	_	0	root	_	_	_	V	看	_	_	_	_	_	O-V
+5	过	过	AUX	AS	_	4	aux:asp	_	_	_	AUX	过	_	_	_	_	_	O-AUX
+6	一	一	NUM	CD	_	8	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+7	颗	颗	NOUN	M	_	6	mark:clf	_	_	_	N	颗	_	_	_	_	_	O-N
+8	星星	星星	NOUN	NN	_	4	obj	_	_	_	N	星星	_	_	_	_	_	O-N
+9	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-335
+# chapter = 7
+# text = 他什么人也没有喜欢过。
+# en_sent_id = lpp_1943.335
+# en_text = He has never loved any one .
+1	他	他	PRON	PN	_	3	compound:nn	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	什么	什么	DET	DT	_	3	det	_	_	_	DET	什么	_	_	_	_	_	O-DET
+3	人	人	NOUN	NN	_	6	nsubj	_	_	_	N	人	_	_	_	_	_	O-N
+4	也	也	ADV	AD	_	6	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+5	没有	没有	ADV	AD	Polarity=Neg	6	advmod	_	_	_	ADV	没有	_	_	_	_	_	O-ADV
+6	喜欢	喜欢	VERB	VV	_	0	root	_	_	_	V	喜欢	_	_	_	_	_	O-V
+7	过	过	AUX	AS	_	6	aux:asp	_	_	_	AUX	过	_	_	_	_	_	O-AUX
+8	。	。	PUNCT	PU	_	6	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-336
+# chapter = 7
+# text = 除了算帐以外，他什么也没有做过。
+# en_sent_id = lpp_1943.336
+# en_text = He has never done anything in his life but add up figures .
+1	除了	除了	ADP	P	_	2	case	_	AlignedAdposition=None	_	P	除了	p.PartPortion	p.PartPortion	_	_	_	O-P-p.PartPortion
+2	算帐	算帐	NOUN	NN	_	9	obl:prep	_	_	_	N	算帐	_	_	_	_	_	O-N
+3	以外	以外	ADP	LC	_	2	case	_	AlignedAdposition=None	_	LC	以外	p.PartPortion	p.PartPortion	_	_	_	O-LC-p.PartPortion
+4	，	，	PUNCT	PU	_	9	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+5	他	他	PRON	PN	_	6	compound:nn	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+6	什么	什么	PRON	PN	_	9	nsubj	_	_	_	PRON	什么	_	_	_	_	_	O-PRON
+7	也	也	ADV	AD	_	9	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+8	没有	没有	ADV	AD	Polarity=Neg	9	advmod	_	_	_	ADV	没有	_	_	_	_	_	O-ADV
+9	做	做	VERB	VV	_	0	root	_	_	_	V	做	_	_	_	_	_	O-V
+10	过	过	AUX	AS	_	9	aux:asp	_	_	_	AUX	过	_	_	_	_	_	O-AUX
+11	。	。	PUNCT	PU	_	9	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-337
+# chapter = 7
+# text = 他整天同你一样老是说：‘我有正经事，我是个严肃的人’。这使他傲气十足。
+# en_sent_id = lpp_1943.337
+# en_text = And all day he says over and over , just like you : ' I am busy with matters of consequence ! ' And that makes him swell up with pride .
+1	他	他	PRON	PN	_	7	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	整天	整天	ADV	AD	_	7	advmod	_	_	_	ADV	整天	_	_	_	_	_	O-ADV
+3	同	同	ADP	P	_	4	case	_	AlignedTokId=11|AlignedAdposition=like	_	P	同	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
+4	你	你	PRON	PN	_	5	obl:prep	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+5	一样	一样	VERB	VA	_	7	advmod	_	_	_	V	一样	_	_	_	_	_	O-V
+6	老是	老是	ADV	AD	_	7	advmod	_	_	_	ADV	老是	_	_	_	_	_	O-ADV
+7	说	说	VERB	VV	_	0	root	_	_	_	V	说	_	_	_	_	_	O-V
+8	：	：	PUNCT	PU	_	7	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+9	‘	‘	PUNCT	PU	_	11	punct	_	_	_	PUNCT	‘	_	_	_	_	_	O-PUNCT
+10	我	我	PRON	PN	_	11	dep	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+11	有	有	VERB	VE	_	7	ccomp	_	_	_	V	有	_	_	_	_	_	O-V
+12	正经事	正经事	NOUN	NN	_	11	obj	_	_	_	N	正经事	_	_	_	_	_	O-N
+13	，	，	PUNCT	PU	_	11	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+14	我	我	PRON	PN	_	19	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+15	是	是	AUX	VC	_	19	cop	_	_	_	V	是	_	_	_	_	_	O-V
+16	个	个	NOUN	M	_	19	nummod	_	_	_	N	个	_	_	_	_	_	O-N
+17	严肃	严肃	ADJ	JJ	_	19	amod	_	_	_	ADJ	严肃	_	_	_	_	_	O-ADJ
+18	的	的	PART	DEG	_	17	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+19	人	人	NOUN	NN	_	11	conj	_	_	_	N	人	_	_	_	_	_	O-N
+20	’	’	PUNCT	PU	_	19	punct	_	_	_	PUNCT	’	_	_	_	_	_	O-PUNCT
+21	。	。	PUNCT	PU	_	11	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+22	这	这	PRON	PN	_	23	nsubj	_	_	_	PRON	这	_	_	_	_	_	O-PRON
+23	使	使	VERB	VV	_	11	conj	_	_	_	V	使	_	_	_	_	_	O-V
+24	他	他	PRON	PN	_	23	obj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+25	傲气	傲气	VERB	VA	_	23	ccomp	_	_	_	V	傲气	_	_	_	_	_	O-V
+26	十足	十足	VERB	VA	_	25	compound:vc	_	_	_	V	十足	_	_	_	_	_	O-V
+27	。	。	PUNCT	PU	_	7	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-338
+# chapter = 7
+# text = 他简直不象是个人，他是个蘑菇。”
+# en_sent_id = lpp_1943.338
+# en_text = But he is not a man - - he is a mushroom ! "
+1	他	他	PRON	PN	_	7	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	简直	简直	ADV	AD	_	7	advmod	_	_	_	ADV	简直	_	_	_	_	_	O-ADV
+3	不	不	ADV	AD	Polarity=Neg	7	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+4	象	象	VERB	VV	_	7	xcomp	_	_	_	V	象	_	_	_	_	_	O-V
+5	是	是	AUX	VC	_	7	cop	_	_	_	V	是	_	_	_	_	_	O-V
+6	个	个	NOUN	M	_	7	nummod	_	_	_	N	个	_	_	_	_	_	O-N
+7	人	人	NOUN	NN	_	0	root	_	_	_	N	人	_	_	_	_	_	O-N
+8	，	，	PUNCT	PU	_	7	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+9	他	他	PRON	PN	_	12	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+10	是	是	AUX	VC	_	12	cop	_	_	_	V	是	_	_	_	_	_	O-V
+11	个	个	NOUN	M	_	12	nummod	_	_	_	N	个	_	_	_	_	_	O-N
+12	蘑菇	蘑菇	NOUN	NN	_	7	conj	_	_	_	N	蘑菇	_	_	_	_	_	O-N
+13	。	。	PUNCT	PU	_	7	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+14	”	”	PUNCT	PU	_	7	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-339
+# chapter = 7
+# text = “是个什么？”
+# en_sent_id = lpp_1943.339
+# en_text = " A what ? "
+1	“	“	PUNCT	PU	_	4	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	是	是	AUX	VC	_	4	cop	_	_	_	V	是	_	_	_	_	_	O-V
+3	个	个	NOUN	M	_	4	nummod	_	_	_	N	个	_	_	_	_	_	O-N
+4	什么	什么	PRON	PN	_	0	root	_	_	_	PRON	什么	_	_	_	_	_	O-PRON
+5	？	？	PUNCT	PU	_	4	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+6	”	”	PUNCT	PU	_	4	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-340
+# chapter = 7
+# text = “是个蘑菇！”
+# en_sent_id = lpp_1943.340
+# en_text = " A mushroom ! "
+1	“	“	PUNCT	PU	_	4	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	是	是	AUX	VC	_	4	cop	_	_	_	V	是	_	_	_	_	_	O-V
+3	个	个	NOUN	M	_	4	nummod	_	_	_	N	个	_	_	_	_	_	O-N
+4	蘑菇	蘑菇	NOUN	NN	_	0	root	_	_	_	N	蘑菇	_	_	_	_	_	O-N
+5	！	！	PUNCT	PU	_	4	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+6	”	”	PUNCT	PU	_	4	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-341
+# chapter = 7
+# text = 小王子当时气得脸色发白。
+# en_sent_id = lpp_1943.341
+# en_text = The little prince was now white with rage .
+1	小王子	小王子	PROPN	NR	_	3	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+2	当时	当时	NOUN	NT	_	3	obl:tmod	_	_	_	N	当时	_	_	_	_	_	O-N
+3	气	气	VERB	VV	_	0	root	_	_	_	V	气	_	_	_	_	_	O-V
+4	得	得	PART	DER	_	3	dep	_	_	_	DE	得	_	_	_	_	_	O-DE
+5	脸色	脸色	NOUN	NN	_	6	nsubj	_	_	_	N	脸色	_	_	_	_	_	O-N
+6	发白	发白	VERB	VV	_	3	ccomp	_	_	_	V	发白	_	_	_	_	_	O-V
+7	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-342
+# chapter = 7
+# text = “几百万年以来花儿都在制造着刺，
+# en_sent_id = lpp_1943.342
+# en_text = " The flowers have been growing thorns for millions of years .
+1	“	“	PUNCT	PU	_	8	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	几百万	几百万	NUM	CD	_	8	advmod:loc	_	_	_	NUM	几百万	_	_	_	_	_	O-NUM
+3	年	年	NOUN	M	_	2	mark:clf	_	_	_	N	年	_	_	_	_	_	O-N
+4	以来	以来	ADP	LC	_	2	case	_	AlignedTokId=8|AlignedAdposition=for	_	LC	以来	p.Duration	p.Duration	_	_	_	O-LC-p.Duration
+5	花儿	花儿	NOUN	NN	_	8	nsubj	_	_	_	N	花儿	_	_	_	_	_	O-N
+6	都	都	ADV	AD	_	8	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+7	在	在	ADV	AD	_	8	advmod	_	_	_	ADV	在	_	_	_	_	_	O-ADV
+8	制造	制造	VERB	VV	_	0	root	_	_	_	V	制造	_	_	_	_	_	O-V
+9	着	着	AUX	AS	_	8	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+10	刺	刺	NOUN	NN	_	8	obj	_	_	_	N	刺	_	_	_	_	_	O-N
+11	，	，	PUNCT	PU	_	8	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-343
+# chapter = 7
+# text = 几百万年以来羊仍然在吃花。
+# en_sent_id = lpp_1943.343
+# en_text = For millions of years the sheep have been eating them just the same .
+1	几百万	几百万	NUM	CD	_	7	advmod:loc	_	_	_	NUM	几百万	_	_	_	_	_	O-NUM
+2	年	年	NOUN	M	_	1	mark:clf	_	_	_	N	年	_	_	_	_	_	O-N
+3	以来	以来	ADP	LC	_	1	case	_	AlignedTokId=1|AlignedAdposition=For	_	LC	以来	p.Duration	p.Duration	_	_	_	O-LC-p.Duration
+4	羊	羊	NOUN	NN	_	7	nsubj	_	_	_	N	羊	_	_	_	_	_	O-N
+5	仍然	仍然	ADV	AD	_	7	advmod	_	_	_	ADV	仍然	_	_	_	_	_	O-ADV
+6	在	在	ADV	AD	_	7	advmod	_	_	_	ADV	在	_	_	_	_	_	O-ADV
+7	吃	吃	VERB	VV	_	0	root	_	_	_	V	吃	_	_	_	_	_	O-V
+8	花	花	NOUN	NN	_	7	obj	_	_	_	N	花	_	_	_	_	_	O-N
+9	。	。	PUNCT	PU	_	7	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-344
+# chapter = 7
+# text = 要搞清楚为什么花儿费那么大劲给自己制造没有什么用的刺，这难道不是正经事？
+# en_sent_id = lpp_1943.344
+# en_text = And is it not a matter of consequence to try to understand why the flowers go to so much trouble to grow thorns which are never of any use to them ?
+1	要	要	VERB	VV	_	2	xcomp	_	_	_	V	要	_	_	_	_	_	O-V
+2	搞	搞	VERB	VV	_	0	root	_	_	_	V	搞	_	_	_	_	_	O-V
+3	清楚	清楚	VERB	VA	_	2	advmod:rcomp	_	_	_	V	清楚	_	_	_	_	_	O-V
+4	为什么	为什么	ADV	AD	_	6	advmod	_	_	_	ADV	为什么	_	_	_	_	_	O-ADV
+5	花儿	花儿	NOUN	NN	_	6	nsubj	_	_	_	N	花儿	_	_	_	_	_	O-N
+6	费	费	VERB	VV	_	2	conj	_	_	_	V	费	_	_	_	_	_	O-V
+7	那么	那么	ADV	AD	_	8	advmod	_	_	_	ADV	那么	_	_	_	_	_	O-ADV
+8	大	大	ADJ	JJ	_	9	amod	_	_	_	ADJ	大	_	_	_	_	_	O-ADJ
+9	劲	劲	NOUN	NN	_	6	obj	_	_	_	N	劲	_	_	_	_	_	O-N
+10	给	给	ADP	P	_	11	case	_	AlignedTokId=30|AlignedAdposition=to	_	P	给	p.Beneficiary	p.Beneficiary	_	_	_	O-P-p.Beneficiary
+11	自己	自己	PRON	PN	_	12	obl:prep	_	_	_	PRON	自己	_	_	_	_	_	O-PRON
+12	制造	制造	VERB	VV	_	6	ccomp	_	_	_	V	制造	_	_	_	_	_	O-V
+13	没有	没有	VERB	VE	_	12	advmod:rcomp	_	_	_	V	没有	_	_	_	_	_	O-V
+14	什么	什么	DET	DT	_	15	det	_	_	_	DET	什么	_	_	_	_	_	O-DET
+15	用	用	NOUN	NN	_	17	nmod:assmod	_	_	_	N	用	_	_	_	_	_	O-N
+16	的	的	PART	DEG	_	15	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+17	刺	刺	NOUN	NN	_	12	obj	_	_	_	N	刺	_	_	_	_	_	O-N
+18	，	，	PUNCT	PU	_	2	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+19	这	这	PRON	PN	_	23	nsubj	_	_	_	PRON	这	_	_	_	_	_	O-PRON
+20	难道	难道	ADV	AD	_	23	advmod	_	_	_	ADV	难道	_	_	_	_	_	O-ADV
+21	不	不	ADV	AD	Polarity=Neg	23	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+22	是	是	AUX	VC	_	23	cop	_	_	_	V	是	_	_	_	_	_	O-V
+23	正经事	正经事	NOUN	NN	_	2	conj	_	_	_	N	正经事	_	_	_	_	_	O-N
+24	？	？	PUNCT	PU	_	2	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-345
+# chapter = 7
+# text = 难道羊和花之间的战争不重要？
+# en_sent_id = lpp_1943.345
+# en_text = Is the warfare between the sheep and the flowers not important ?
+1	难道	难道	ADV	AD	_	9	advmod	_	_	_	ADV	难道	_	_	_	_	_	O-ADV
+2	羊	羊	NOUN	NN	_	4	conj	_	_	_	N	羊	_	_	_	_	_	O-N
+3	和	和	CCONJ	CC	_	4	cc	_	ToDo=cc-after-conj	_	CCONJ	和	_	_	_	_	_	O-CCONJ
+4	花	花	NOUN	NN	_	7	nmod	_	_	_	N	花	_	_	_	_	_	O-N
+5	之间	之间	ADP	LC	_	4	case	_	AlignedTokId=4|AlignedAdposition=between	_	LC	之间	p.Agent	p.Locus	_	_	_	O-LC-p.Agent|p.Locus
+6	的	的	PART	DEG	_	4	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+7	战争	战争	NOUN	NN	_	9	nsubj	_	_	_	N	战争	_	_	_	_	_	O-N
+8	不	不	ADV	AD	Polarity=Neg	9	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+9	重要	重要	VERB	VA	_	0	root	_	_	_	V	重要	_	_	_	_	_	O-V
+10	？	？	PUNCT	PU	_	9	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-346
+# chapter = 7
+# text = 这难道不比那个大胖子红脸先生的帐目更重要？
+# en_sent_id = lpp_1943.346
+# en_text = Is this not of more consequence than a fat red - faced gentleman 's sums ?
+1	这	这	PRON	PN	_	13	nsubj	_	_	_	PRON	这	_	_	_	_	_	O-PRON
+2	难道	难道	ADV	AD	_	13	advmod	_	_	_	ADV	难道	_	_	_	_	_	O-ADV
+3	不	不	ADV	AD	Polarity=Neg	13	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+4	比	比	ADP	P	_	11	case	_	AlignedTokId=7|AlignedAdposition=than	_	P	比	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
+5	那个	那个	DET	DT	_	9	det	_	_	_	DET	那个	_	_	_	_	_	O-DET
+6	大	大	ADJ	JJ	_	7	amod	_	_	_	ADJ	大	_	_	_	_	_	O-ADJ
+7	胖子	胖子	NOUN	NN	_	9	compound:nn	_	_	_	N	胖子	_	_	_	_	_	O-N
+8	红脸	红脸	NOUN	NN	_	9	compound:nn	_	_	_	N	红脸	_	_	_	_	_	O-N
+9	先生	先生	NOUN	NN	_	11	nmod:assmod	_	_	_	N	先生	_	_	_	_	_	O-N
+10	的	的	PART	DEG	_	9	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+11	帐目	帐目	NOUN	NN	_	13	obl:prep	_	_	_	N	帐目	_	_	_	_	_	O-N
+12	更	更	ADV	AD	_	13	advmod	_	_	_	ADV	更	_	_	_	_	_	O-ADV
+13	重要	重要	VERB	VA	_	0	root	_	_	_	V	重要	_	_	_	_	_	O-V
+14	？	？	PUNCT	PU	_	13	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-347
+# chapter = 7
+# text = 如果我认识一朵人世间唯一的花，只有我的星球上有它，别的地方都不存在，而一只小羊胡里胡涂就这样把它一下子毁掉了，
+# en_sent_id = lpp_1943.347
+# en_text = And if I know - - I , myself - - one flower which is unique in the world , which grows nowhere but on my planet , but which one little sheep can destroy in a single bite some morning , without even noticing what he is doing - - Oh !
+1	如果	如果	SCONJ	CS	_	3	advmod	_	_	_	SCONJ	如果	_	_	_	_	_	O-SCONJ
+2	我	我	PRON	PN	_	3	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+3	认识	认识	VERB	VV	_	24	dep	_	_	_	V	认识	_	_	_	_	_	O-V
+4	一	一	NUM	CD	_	6	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+5	朵	朵	NOUN	M	_	4	mark:clf	_	_	_	N	朵	_	_	_	_	_	O-N
+6	人世	人世	NOUN	NN	_	10	dep	_	_	_	N	人世	_	_	_	_	_	O-N
+7	间	间	ADP	LC	_	6	case	_	AlignedTokId=17|AlignedAdposition=in	_	LC	间	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+8	唯一	唯一	ADJ	JJ	_	10	amod	_	_	_	ADJ	唯一	_	_	_	_	_	O-ADJ
+9	的	的	PART	DEG	_	8	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+10	花	花	NOUN	NN	_	3	obj	_	_	_	N	花	_	_	_	_	_	O-N
+11	，	，	PUNCT	PU	_	24	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+12	只有	只有	ADV	AD	_	17	advmod	_	_	_	ADV	只有	_	_	_	_	_	O-ADV
+13	我	我	PRON	PN	_	15	nmod:assmod	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+14	的	的	PART	DEG	_	13	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+15	星球	星球	NOUN	NN	_	17	advmod:loc	_	_	_	N	星球	_	_	_	_	_	O-N
+16	上	上	ADP	LC	_	15	case	_	AlignedTokId=25|AlignedAdposition=on	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+17	有	有	VERB	VE	_	24	dep	_	_	_	V	有	_	_	_	_	_	O-V
+18	它	它	PRON	PN	_	17	obj	_	_	_	PRON	它	_	_	_	_	_	O-PRON
+19	，	，	PUNCT	PU	_	24	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+20	别的	别的	DET	DT	_	21	det	_	_	_	DET	别的	_	_	_	_	_	O-DET
+21	地方	地方	NOUN	NN	_	24	nsubj	_	_	_	N	地方	_	_	_	_	_	O-N
+22	都	都	ADV	AD	_	24	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+23	不	不	ADV	AD	Polarity=Neg	24	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+24	存在	存在	VERB	VV	_	0	root	_	_	_	V	存在	_	_	_	_	_	O-V
+25	，	，	PUNCT	PU	_	24	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+26	而	而	ADV	AD	_	37	advmod	_	_	_	ADV	而	_	_	_	_	_	O-ADV
+27	一	一	NUM	CD	_	31	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+28	只	只	NOUN	M	_	27	mark:clf	_	_	_	N	只	_	_	_	_	_	O-N
+29	小	小	ADJ	JJ	_	30	amod	_	_	_	ADJ	小	_	_	_	_	_	O-ADJ
+30	羊	羊	NOUN	NN	_	31	compound:nn	_	_	_	N	羊	_	_	_	_	_	O-N
+31	胡里胡涂	胡里胡涂	NOUN	NN	_	37	nsubj	_	_	_	N	胡里胡涂	_	_	_	_	_	O-N
+32	就	就	ADV	AD	_	37	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+33	这样	这样	ADV	AD	_	37	advmod	_	_	_	ADV	这样	_	_	_	_	_	O-ADV
+34	把	把	ADP	BA	_	37	aux:ba	_	AlignedAdposition=None	_	BA	把	p.Theme	p.Theme	_	_	_	O-BA-p.Theme
+35	它	它	PRON	PN	_	37	dep	_	_	_	PRON	它	_	_	_	_	_	O-PRON
+36	一下子	一下子	ADV	AD	_	37	advmod	_	_	_	ADV	一下子	_	_	_	_	_	O-ADV
+37	毁掉	毁掉	VERB	VV	_	24	conj	_	_	_	V	毁掉	_	_	_	_	_	O-V
+38	了	了	AUX	AS	_	37	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+39	，	，	PUNCT	PU	_	24	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-348
+# chapter = 7
+# text = 这难道不重要？”
+# en_sent_id = lpp_1943.348
+# en_text = You think that is not important ! "
+1	这	这	PRON	PN	_	4	nsubj	_	_	_	PRON	这	_	_	_	_	_	O-PRON
+2	难道	难道	ADV	AD	_	4	advmod	_	_	_	ADV	难道	_	_	_	_	_	O-ADV
+3	不	不	ADV	AD	Polarity=Neg	4	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+4	重要	重要	VERB	VA	_	0	root	_	_	_	V	重要	_	_	_	_	_	O-V
+5	？	？	PUNCT	PU	_	4	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+6	”	”	PUNCT	PU	_	4	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-349
+# chapter = 7
+# text = 他的脸气得发红，然后又接着说道：“如果有人爱上了在这亿万颗星星中独一无二的一株花，当他看着这些星星的时候，这就足以使他感到幸福。
+# en_sent_id = lpp_1943.349
+# en_text = His face turned from white to red as he continued : " If some one loves a flower , of which just one single blossom grows in all the millions and millions of stars , it is enough to make him happy just to look at the stars .
+1	他	他	PRON	PN	_	3	nmod:assmod	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	的	的	PART	DEG	_	1	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+3	脸	脸	NOUN	NN	_	6	nsubj	_	_	_	N	脸	_	_	_	_	_	O-N
+4	气	气	VERB	VV	_	6	dep	_	_	_	V	气	_	_	_	_	_	O-V
+5	得	得	PART	DER	_	6	dep	_	_	_	DE	得	_	_	_	_	_	O-DE
+6	发红	发红	VERB	VV	_	0	root	_	_	_	V	发红	_	_	_	_	_	O-V
+7	，	，	PUNCT	PU	_	6	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+8	然后	然后	ADV	AD	_	11	advmod	_	_	_	ADV	然后	_	_	_	_	_	O-ADV
+9	又	又	ADV	AD	_	11	advmod	_	_	_	ADV	又	_	_	_	_	_	O-ADV
+10	接着	接着	ADV	AD	_	11	advmod	_	_	_	ADV	接着	_	_	_	_	_	O-ADV
+11	说道	说道	VERB	VV	_	6	conj	_	_	_	V	说道	_	_	_	_	_	O-V
+12	：	：	PUNCT	PU	_	11	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+13	“	“	PUNCT	PU	_	11	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+14	如果	如果	SCONJ	CS	_	15	advmod	_	_	_	SCONJ	如果	_	_	_	_	_	O-SCONJ
+15	有	有	VERB	VE	_	42	dep	_	_	_	V	有	_	_	_	_	_	O-V
+16	人	人	NOUN	NN	_	17	nsubj	_	_	_	N	人	_	_	_	_	_	O-N
+17	爱上	爱上	VERB	VV	_	15	ccomp	_	_	_	V	爱上	_	_	_	_	_	O-V
+18	了	了	AUX	AS	_	17	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+19	在	在	ADP	P	_	23	case	_	AlignedTokId=27|AlignedAdposition=in	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+20	这	这	DET	DT	_	23	det	_	_	_	DET	这	_	_	_	_	_	O-DET
+21	亿万	亿万	NUM	CD	_	20	dep	_	_	_	NUM	亿万	_	_	_	_	_	O-NUM
+22	颗	颗	NOUN	M	_	21	mark:clf	_	_	_	N	颗	_	_	_	_	_	O-N
+23	星星	星星	NOUN	NN	_	25	obl:prep	_	_	_	N	星星	_	_	_	_	_	O-N
+24	中	中	ADP	LC	_	23	case	_	AlignedTokId=27|AlignedAdposition=in	_	LC	中	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+25	独一无二	独一无二	VERB	VV	_	29	acl	_	_	_	V	独一无二	_	_	_	_	_	O-V
+26	的	的	PART	DEC	_	25	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+27	一	一	NUM	CD	_	29	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+28	株	株	NOUN	M	_	27	mark:clf	_	_	_	N	株	_	_	_	_	_	O-N
+29	花	花	NOUN	NN	_	17	obj	_	_	_	N	花	_	_	_	_	_	O-N
+30	，	，	PUNCT	PU	_	42	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+31	当	当	ADP	P	_	38	case	_	AlignedAdposition=None	_	P	当	p.Time	p.Time	_	_	_	O-P-p.Time
+32	他	他	PRON	PN	_	33	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+33	看	看	VERB	VV	_	38	acl	_	_	_	V	看	_	_	_	_	_	O-V
+34	着	着	AUX	AS	_	33	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+35	这些	这些	DET	DT	_	36	det	_	_	_	DET	这些	_	_	_	_	_	O-DET
+36	星星	星星	NOUN	NN	_	33	obj	_	_	_	N	星星	_	_	_	_	_	O-N
+37	的	的	PART	DEC	_	33	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+38	时候	时候	NOUN	NN	_	42	obl:prep	_	_	_	N	时候	_	_	_	_	_	O-N
+39	，	，	PUNCT	PU	_	42	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+40	这	这	PRON	PN	_	42	nsubj	_	_	_	PRON	这	_	_	_	_	_	O-PRON
+41	就	就	ADV	AD	_	42	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+42	足以	足以	VERB	VV	_	6	conj	_	_	_	V	足以	_	_	_	_	_	O-V
+43	使	使	VERB	VV	_	42	ccomp	_	_	_	V	使	_	_	_	_	_	O-V
+44	他	他	PRON	PN	_	43	obj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+45	感到	感到	VERB	VV	_	43	ccomp	_	_	_	V	感到	_	_	_	_	_	O-V
+46	幸福	幸福	NOUN	NN	_	45	obj	_	_	_	N	幸福	_	_	_	_	_	O-N
+47	。	。	PUNCT	PU	_	6	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-350
+# chapter = 7
+# text = 他可以自言自语地说：‘我的那朵花就在其中的一颗星星上…’，但是如果羊吃掉了这朵花，对他来说，好象所有的星星一下子全都熄灭了一样！
+# en_sent_id = lpp_1943.350
+# en_text = He can say to himself , ' Somewhere , my flower is there ... ' But if the sheep eats the flower , in one moment all his stars will be darkened ...
+1	他	他	PRON	PN	_	5	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	可以	可以	VERB	VV	_	5	aux:modal	_	_	_	V	可以	_	_	_	_	_	O-V
+3	自言自语	自言自语	VERB	VV	_	5	advmod:dvp	_	_	_	V	自言自语	_	_	_	_	_	O-V
+4	地	地	PART	DEV	_	3	mark	_	_	_	DE	地	_	_	_	_	_	O-DE
+5	说	说	VERB	VV	_	0	root	_	_	_	V	说	_	_	_	_	_	O-V
+6	：	：	PUNCT	PU	_	5	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+7	‘	‘	PUNCT	PU	_	14	punct	_	_	_	PUNCT	‘	_	_	_	_	_	O-PUNCT
+8	我	我	PRON	PN	_	12	nmod:assmod	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+9	的	的	PART	DEG	_	8	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+10	那	那	DET	DT	_	12	det	_	_	_	DET	那	_	_	_	_	_	O-DET
+11	朵	朵	NOUN	M	_	10	mark:clf	_	_	_	N	朵	_	_	_	_	_	O-N
+12	花	花	NOUN	NN	_	14	nsubj	_	_	_	N	花	_	_	_	_	_	O-N
+13	就	就	ADV	AD	_	14	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+14	在	在	VERB	VV	_	5	ccomp	_	_	_	V	在	_	_	_	_	_	O-V
+15	其中	其中	NOUN	NN	_	19	nmod:assmod	_	_	_	N	其中	_	_	_	_	_	O-N
+16	的	的	PART	DEG	_	15	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+17	一	一	NUM	CD	_	19	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+18	颗	颗	NOUN	M	_	17	mark:clf	_	_	_	N	颗	_	_	_	_	_	O-N
+19	星星	星星	NOUN	NN	_	14	advmod:loc	_	_	_	N	星星	_	_	_	_	_	O-N
+20	上	上	ADP	LC	_	19	case	_	AlignedAdposition=None	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+21	…	…	PUNCT	PU	_	14	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+22	’	’	PUNCT	PU	_	5	punct	_	_	_	PUNCT	’	_	_	_	_	_	O-PUNCT
+23	，	，	PUNCT	PU	_	5	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+24	但是	但是	ADV	AD	_	45	advmod	_	_	_	ADV	但是	_	_	_	_	_	O-ADV
+25	如果	如果	SCONJ	CS	_	27	advmod	_	_	_	SCONJ	如果	_	_	_	_	_	O-SCONJ
+26	羊	羊	NOUN	NN	_	27	nsubj	_	_	_	N	羊	_	_	_	_	_	O-N
+27	吃掉	吃掉	VERB	VV	_	45	dep	_	_	_	V	吃掉	_	_	_	_	_	O-V
+28	了	了	AUX	AS	_	27	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+29	这	这	DET	DT	_	31	det	_	_	_	DET	这	_	_	_	_	_	O-DET
+30	朵	朵	NOUN	M	_	29	mark:clf	_	_	_	N	朵	_	_	_	_	_	O-N
+31	花	花	NOUN	NN	_	27	obj	_	_	_	N	花	_	_	_	_	_	O-N
+32	，	，	PUNCT	PU	_	45	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+33	对	对	ADP	P	_	34	case	_	AlignedAdposition=None	_	P	对	p.Experiencer	p.Experiencer	_	_	_	O-P-p.Experiencer
+34	他	他	PRON	PN	_	45	obl:prep	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+35	来说	来说	ADP	LC	_	34	case	_	AlignedAdposition=None	_	LC	来说	p.Experiencer	p.Experiencer	_	_	_	O-LC-p.Experiencer
+36	，	，	PUNCT	PU	_	45	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+37	好象	好象	ADV	AD	_	45	advmod	_	_	_	ADV	好象	_	_	_	_	_	O-ADV
+38	所有	所有	DET	DT	_	40	dep	_	_	_	DET	所有	_	_	_	_	_	O-DET
+39	的	的	PART	DEG	_	38	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+40	星星	星星	NOUN	NN	_	45	nsubj	_	_	_	N	星星	_	_	_	_	_	O-N
+41	一下子	一下子	ADV	AD	_	45	advmod	_	_	_	ADV	一下子	_	_	_	_	_	O-ADV
+42	全都	全都	ADV	AD	_	43	advmod	_	_	_	ADV	全都	_	_	_	_	_	O-ADV
+43	熄灭	熄灭	VERB	VV	_	45	dep	_	_	_	V	熄灭	_	_	_	_	_	O-V
+44	了	了	AUX	AS	_	45	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+45	一样	一样	VERB	VA	_	5	ccomp	_	_	_	V	一样	_	_	_	_	_	O-V
+46	！	！	PUNCT	PU	_	5	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-351
+# chapter = 7
+# text = 这难道也不重要吗？！”
+# en_sent_id = lpp_1943.351
+# en_text = And you think that is not important ! "
+1	这	这	PRON	PN	_	5	nsubj	_	_	_	PRON	这	_	_	_	_	_	O-PRON
+2	难道	难道	ADV	AD	_	5	advmod	_	_	_	ADV	难道	_	_	_	_	_	O-ADV
+3	也	也	ADV	AD	_	5	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+4	不	不	ADV	AD	Polarity=Neg	5	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+5	重要	重要	VERB	VA	_	9	dep	_	_	_	V	重要	_	_	_	_	_	O-V
+6	吗	吗	PART	SP	_	9	discourse	_	_	_	PART	吗	_	_	_	_	_	O-PART
+7	？	？	PUNCT	PU	_	9	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+8	！	！	PUNCT	PU	_	9	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+9	”	”	PUNCT	PU	_	0	root	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-352
+# chapter = 7
+# text = 他无法再说下去了，
+# en_sent_id = lpp_1943.352
+# en_text = He could not say anything more .
+1	他	他	PRON	PN	_	4	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	无法	无法	ADV	AD	_	4	advmod	_	_	_	ADV	无法	_	_	_	_	_	O-ADV
+3	再	再	ADV	AD	_	4	advmod	_	_	_	ADV	再	_	_	_	_	_	O-ADV
+4	说	说	VERB	VV	_	0	root	_	_	_	V	说	_	_	_	_	_	O-V
+5	下去	下去	VERB	VV	_	4	advmod:rcomp	_	_	_	V	下去	_	_	_	_	_	O-V
+6	了	了	AUX	AS	_	4	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+7	，	，	PUNCT	PU	_	4	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-353
+# chapter = 7
+# text = 突然泣不成声。
+# en_sent_id = lpp_1943.353
+# en_text = His words were choked by sobbing .
+1	突然	突然	ADV	AD	_	2	advmod	_	_	_	ADV	突然	_	_	_	_	_	O-ADV
+2	泣不成声	泣不成声	VERB	VV	_	0	root	_	_	_	V	泣不成声	_	_	_	_	_	O-V
+3	。	。	PUNCT	PU	_	2	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-354
+# chapter = 7
+# text = 夜幕已经降临。
+# en_sent_id = lpp_1943.354
+# en_text = The night had fallen .
+1	夜幕	夜幕	NOUN	NN	_	3	nsubj	_	_	_	N	夜幕	_	_	_	_	_	O-N
+2	已经	已经	ADV	AD	_	3	advmod	_	_	_	ADV	已经	_	_	_	_	_	O-ADV
+3	降临	降临	VERB	VV	_	0	root	_	_	_	V	降临	_	_	_	_	_	O-V
+4	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-355
+# chapter = 7
+# text = 我放下手中的工具。
+# en_sent_id = lpp_1943.355
+# en_text = I had let my tools drop from my hands .
+1	我	我	PRON	PN	_	2	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	放下	放下	VERB	VV	_	0	root	_	_	_	V	放下	_	_	_	_	_	O-V
+3	手	手	NOUN	NN	_	6	nmod	_	_	_	N	手	_	_	_	_	_	O-N
+4	中	中	ADP	LC	_	3	case	_	AlignedAdposition=None	_	LC	中	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+5	的	的	PART	DEG	_	3	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+6	工具	工具	NOUN	NN	_	2	obj	_	_	_	N	工具	_	_	_	_	_	O-N
+7	。	。	PUNCT	PU	_	2	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-356
+# chapter = 7
+# text = 我把锤子、螺钉、饥渴、死亡，全都抛在脑后。
+# en_sent_id = lpp_1943.356
+# en_text = Of what moment now was my hammer , my bolt , or thirst , or death ?
+1	我	我	PRON	PN	_	12	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	把	把	ADP	BA	_	12	aux:ba	_	AlignedAdposition=None	_	BA	把	p.Theme	p.Theme	_	_	_	O-BA-p.Theme
+3	锤子	锤子	NOUN	NN	_	9	conj	_	_	_	N	锤子	_	_	_	_	_	O-N
+4	、	、	PUNCT	PU	_	9	punct	_	_	_	PUNCT	、	_	_	_	_	_	O-PUNCT
+5	螺钉	螺钉	NOUN	NN	_	9	conj	_	_	_	N	螺钉	_	_	_	_	_	O-N
+6	、	、	PUNCT	PU	_	9	punct	_	_	_	PUNCT	、	_	_	_	_	_	O-PUNCT
+7	饥渴	饥渴	NOUN	NN	_	9	conj	_	_	_	N	饥渴	_	_	_	_	_	O-N
+8	、	、	PUNCT	PU	_	9	punct	_	_	_	PUNCT	、	_	_	_	_	_	O-PUNCT
+9	死亡	死亡	NOUN	NN	_	12	dep	_	_	_	N	死亡	_	_	_	_	_	O-N
+10	，	，	PUNCT	PU	_	12	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+11	全都	全都	ADV	AD	_	12	advmod	_	_	_	ADV	全都	_	_	_	_	_	O-ADV
+12	抛	抛	VERB	VV	_	0	root	_	_	_	V	抛	_	_	_	_	_	O-V
+13	在	在	ADP	P	_	14	case	_	AlignedAdposition=None	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+14	脑后	脑后	NOUN	NN	_	12	obl:prep	_	_	_	N	脑后	_	_	_	_	_	O-N
+15	。	。	PUNCT	PU	_	12	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-357
+# chapter = 7
+# text = 在一颗星球上，在一颗行星上，在我的行星上，在地球上有一个小王子需要安慰！
+# en_sent_id = lpp_1943.357
+# en_text = On one star , one planet , my planet , the Earth , there was a little prince to be comforted .
+1	在	在	ADP	P	_	4	case	_	AlignedTokId=1|AlignedAdposition=On	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+2	一	一	NUM	CD	_	4	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+3	颗	颗	NOUN	M	_	2	mark:clf	_	_	_	N	颗	_	_	_	_	_	O-N
+4	星球	星球	NOUN	NN	_	22	obl:prep	_	_	_	N	星球	_	_	_	_	_	O-N
+5	上	上	ADP	LC	_	4	case	_	AlignedTokId=1|AlignedAdposition=On	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+6	，	，	PUNCT	PU	_	22	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+7	在	在	ADP	P	_	10	case	_	AlignedTokId=1|AlignedAdposition=On	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+8	一	一	NUM	CD	_	10	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+9	颗	颗	NOUN	M	_	8	mark:clf	_	_	_	N	颗	_	_	_	_	_	O-N
+10	行星	行星	NOUN	NN	_	22	obl:prep	_	_	_	N	行星	_	_	_	_	_	O-N
+11	上	上	ADP	LC	_	10	case	_	AlignedTokId=1|AlignedAdposition=On	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+12	，	，	PUNCT	PU	_	22	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+13	在	在	ADP	P	_	16	case	_	AlignedTokId=1|AlignedAdposition=On	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+14	我	我	PRON	PN	_	16	nmod:assmod	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+15	的	的	PART	DEG	_	14	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+16	行星	行星	NOUN	NN	_	22	obl:prep	_	_	_	N	行星	_	_	_	_	_	O-N
+17	上	上	ADP	LC	_	16	case	_	AlignedTokId=1|AlignedAdposition=On	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+18	，	，	PUNCT	PU	_	22	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+19	在	在	ADP	P	_	20	case	_	AlignedTokId=1|AlignedAdposition=On	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+20	地球	地球	NOUN	NN	_	22	obl:prep	_	_	_	N	地球	_	_	_	_	_	O-N
+21	上	上	ADP	LC	_	20	case	_	AlignedTokId=1|AlignedAdposition=On	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+22	有	有	VERB	VE	_	0	root	_	_	_	V	有	_	_	_	_	_	O-V
+23	一	一	NUM	CD	_	25	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+24	个	个	NOUN	M	_	23	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+25	小王子	小王子	NOUN	NN	_	26	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+26	需要	需要	VERB	VV	_	22	ccomp	_	_	_	V	需要	_	_	_	_	_	O-V
+27	安慰	安慰	NOUN	NN	_	26	obj	_	_	_	N	安慰	_	_	_	_	_	O-N
+28	！	！	PUNCT	PU	_	22	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-358
+# chapter = 7
+# text = 我把他抱在怀里，摇着他。
+# en_sent_id = lpp_1943.358
+# en_text = I took him in my arms , and rocked him .
+1	我	我	PRON	PN	_	4	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	把	把	ADP	BA	_	4	aux:ba	_	AlignedAdposition=None	_	BA	把	p.Theme	p.Theme	_	_	_	O-BA-p.Theme
+3	他	他	PRON	PN	_	4	dep	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+4	抱	抱	VERB	VV	_	0	root	_	_	_	V	抱	_	_	_	_	_	O-V
+5	在	在	ADP	P	_	6	case	_	AlignedTokId=4|AlignedAdposition=in	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+6	怀	怀	NOUN	NN	_	4	obl:prep	_	_	_	N	怀	_	_	_	_	_	O-N
+7	里	里	ADP	LC	_	6	case	_	AlignedTokId=4|AlignedAdposition=in	_	LC	里	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+8	，	，	PUNCT	PU	_	4	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+9	摇	摇	VERB	VV	_	4	conj	_	_	_	V	摇	_	_	_	_	_	O-V
+10	着	着	AUX	AS	_	9	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+11	他	他	PRON	PN	_	9	obj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+12	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-359
+# chapter = 7
+# text = 对他说：“你爱的那朵花没有危险…
+# en_sent_id = lpp_1943.359
+# en_text = I said to him : " The flower that you love is not in danger .
+1	对	对	ADP	P	_	2	case	_	AlignedTokId=3|AlignedAdposition=to	_	P	对	p.Recipient	p.Direction	_	_	_	O-P-p.Recipient|p.Direction
+2	他	他	PRON	PN	_	3	obl:prep	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+3	说	说	VERB	VV	_	0	root	_	_	_	V	说	_	_	_	_	_	O-V
+4	：	：	PUNCT	PU	_	3	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+5	“	“	PUNCT	PU	_	12	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+6	你	你	PRON	PN	_	7	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+7	爱	爱	VERB	VV	_	11	acl	_	_	_	V	爱	_	_	_	_	_	O-V
+8	的	的	PART	DEC	_	7	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+9	那	那	DET	DT	_	11	det	_	_	_	DET	那	_	_	_	_	_	O-DET
+10	朵	朵	NOUN	M	_	9	mark:clf	_	_	_	N	朵	_	_	_	_	_	O-N
+11	花	花	NOUN	NN	_	12	dep	_	_	_	N	花	_	_	_	_	_	O-N
+12	没有	没有	VERB	VE	_	3	ccomp	_	_	_	V	没有	_	_	_	_	_	O-V
+13	危险	危险	NOUN	NN	_	12	obj	_	_	_	N	危险	_	_	_	_	_	O-N
+14	…	…	PUNCT	PU	_	3	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-360
+# chapter = 7
+# text = 我给你的小羊画一个罩子…
+# en_sent_id = lpp_1943.360
+# en_text = I will draw you a muzzle for your sheep .
+1	我	我	PRON	PN	_	7	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	给	给	ADP	P	_	6	case	_	AlignedTokId=7|AlignedAdposition=for	_	P	给	p.Recipient	p.Recipient	_	_	_	O-P-p.Recipient
+3	你	你	PRON	PN	_	6	nmod:assmod	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+4	的	的	PART	DEC	_	3	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+5	小	小	ADJ	JJ	_	6	amod	_	_	_	ADJ	小	_	_	_	_	_	O-ADJ
+6	羊	羊	NOUN	NN	_	7	obl:prep	_	_	_	N	羊	_	_	_	_	_	O-N
+7	画	画	VERB	VV	_	0	root	_	_	_	V	画	_	_	_	_	_	O-V
+8	一	一	NUM	CD	_	10	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+9	个	个	NOUN	M	_	8	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+10	罩子	罩子	NOUN	NN	_	7	obj	_	_	_	N	罩子	_	_	_	_	_	O-N
+11	…	…	PUNCT	PU	_	7	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-361
+# chapter = 7
+# text = 我给你的花画一副盔甲…
+# en_sent_id = lpp_1943.361
+# en_text = I will draw you a railing to put around your flower .
+1	我	我	PRON	PN	_	6	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	给	给	ADP	P	_	5	case	_	AlignedAdposition=None	_	P	给	p.Recipient	p.Recipient	_	_	_	O-P-p.Recipient
+3	你	你	PRON	PN	_	5	nmod:assmod	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+4	的	的	PART	DEG	_	3	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+5	花	花	NOUN	NN	_	6	obl:prep	_	_	_	N	花	_	_	_	_	_	O-N
+6	画	画	VERB	VV	_	0	root	_	_	_	V	画	_	_	_	_	_	O-V
+7	一	一	NUM	CD	_	9	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+8	副	副	NOUN	M	_	7	mark:clf	_	_	_	N	副	_	_	_	_	_	O-N
+9	盔甲	盔甲	NOUN	NN	_	6	obj	_	_	_	N	盔甲	_	_	_	_	_	O-N
+10	…	…	PUNCT	PU	_	6	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-362
+# chapter = 7
+# text = 我…”
+# en_sent_id = lpp_1943.362
+# en_text = I will - - "
+1	我	我	PRON	PN	_	0	root	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	…	…	PUNCT	PU	_	1	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+3	”	”	PUNCT	PU	_	1	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-363
+# chapter = 7
+# text = 我也不太知道该说些什么。
+# en_sent_id = lpp_1943.363
+# en_text = I did not know what to say to him .
+1	我	我	PRON	PN	_	5	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	也	也	ADV	AD	_	5	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+3	不	不	ADV	AD	Polarity=Neg	5	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+4	太	太	ADV	AD	_	5	advmod	_	_	_	ADV	太	_	_	_	_	_	O-ADV
+5	知道	知道	VERB	VV	_	0	root	_	_	_	V	知道	_	_	_	_	_	O-V
+6	该	该	VERB	VV	_	7	xcomp	_	_	_	V	该	_	_	_	_	_	O-V
+7	说	说	VERB	VV	_	5	ccomp	_	_	_	V	说	_	_	_	_	_	O-V
+8	些	些	NOUN	M	_	9	nummod	_	_	_	N	些	_	_	_	_	_	O-N
+9	什么	什么	PRON	PN	_	7	obj	_	_	_	PRON	什么	_	_	_	_	_	O-PRON
+10	。	。	PUNCT	PU	_	5	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-364
+# chapter = 7
+# text = 我觉得自己太笨拙。
+# en_sent_id = lpp_1943.364
+# en_text = I felt awkward and blundering .
+1	我	我	PRON	PN	_	2	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	觉得	觉得	VERB	VV	_	0	root	_	_	_	V	觉得	_	_	_	_	_	O-V
+3	自己	自己	PRON	PN	_	5	nsubj	_	_	_	PRON	自己	_	_	_	_	_	O-PRON
+4	太	太	ADV	AD	_	5	advmod	_	_	_	ADV	太	_	_	_	_	_	O-ADV
+5	笨拙	笨拙	VERB	VA	_	2	ccomp	_	_	_	V	笨拙	_	_	_	_	_	O-V
+6	。	。	PUNCT	PU	_	2	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-365
+# chapter = 7
+# text = 我不知道怎样才能达到他的境界，怎样才能再进入他的境界…唉，
+# en_sent_id = lpp_1943.365
+# en_text = I did not know how I could reach him , where I could overtake him and go on hand in hand with him once more .
+1	我	我	PRON	PN	_	3	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	不	不	ADV	AD	Polarity=Neg	3	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+3	知道	知道	VERB	VV	_	0	root	_	_	_	V	知道	_	_	_	_	_	O-V
+4	怎样	怎样	ADV	AD	_	7	advmod	_	_	_	ADV	怎样	_	_	_	_	_	O-ADV
+5	才	才	ADV	AD	_	7	advmod	_	_	_	ADV	才	_	_	_	_	_	O-ADV
+6	能	能	VERB	VV	_	7	aux:modal	_	_	_	V	能	_	_	_	_	_	O-V
+7	达到	达到	VERB	VV	_	3	ccomp	_	_	_	V	达到	_	_	_	_	_	O-V
+8	他	他	PRON	PN	_	10	nmod:assmod	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+9	的	的	PART	DEG	_	8	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+10	境界	境界	NOUN	NN	_	7	obj	_	_	_	N	境界	_	_	_	_	_	O-N
+11	，	，	PUNCT	PU	_	7	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+12	怎样	怎样	ADV	AD	_	16	advmod	_	_	_	ADV	怎样	_	_	_	_	_	O-ADV
+13	才	才	ADV	AD	_	16	advmod	_	_	_	ADV	才	_	_	_	_	_	O-ADV
+14	能	能	VERB	VV	_	16	aux:modal	_	_	_	V	能	_	_	_	_	_	O-V
+15	再	再	ADV	AD	_	16	advmod	_	_	_	ADV	再	_	_	_	_	_	O-ADV
+16	进入	进入	VERB	VV	_	3	conj	_	_	_	V	进入	_	_	_	_	_	O-V
+17	他	他	PRON	PN	_	19	nmod:assmod	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+18	的	的	PART	DEG	_	17	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+19	境界	境界	NOUN	NN	_	16	obj	_	_	_	N	境界	_	_	_	_	_	O-N
+20	…	…	PUNCT	PU	_	3	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+21	唉	唉	PART	SP	_	16	discourse	_	_	_	PART	唉	_	_	_	_	_	O-PART
+22	，	，	PUNCT	PU	_	3	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-366
+# chapter = 7
+# text = 泪水的世界是多么神秘啊！
+# en_sent_id = lpp_1943.366
+# en_text = It is such a secret place , the land of tears .
+1	泪水	泪水	NOUN	NN	_	3	nmod:assmod	_	_	_	N	泪水	_	_	_	_	_	O-N
+2	的	的	PART	DEG	_	1	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+3	世界	世界	NOUN	NN	_	6	nsubj	_	_	_	N	世界	_	_	_	_	_	O-N
+4	是	是	AUX	VC	_	6	cop	_	_	_	V	是	_	_	_	_	_	O-V
+5	多么	多么	ADV	AD	_	6	advmod	_	_	_	ADV	多么	_	_	_	_	_	O-ADV
+6	神秘	神秘	VERB	VA	_	8	dep	_	_	_	V	神秘	_	_	_	_	_	O-V
+7	啊	啊	PART	SP	_	8	discourse	_	_	_	PART	啊	_	_	_	_	_	O-PART
+8	！	！	PUNCT	PU	_	0	root	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# newdoc_id = lpp_1943_zh_ch-17
+# sent_id = lpp_1943_zh-931
+# chapter = 17
+# text = XVII。
+# en_sent_id = lpp_1943.931
+# en_text = Chapter 17 .
+1	XVII	XVII	PROPN	NR	_	0	root	_	_	_	N	XVII	_	_	_	_	_	O-N
+2	。	。	PUNCT	PU	_	1	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-932
+# chapter = 17
+# text = 当人们想要说得俏皮些的时候，说话就可能会不大实在。
+# en_sent_id = lpp_1943.932
+# en_text = When one wishes to play the wit , he sometimes wanders a little from the truth .
+1	当	当	ADP	P	_	9	case	_	AlignedAdposition=None	_	P	当	p.Time	p.Time	_	_	_	O-P-p.Time
+2	人们	人	NOUN	NN	_	3	nsubj	_	_	_	N	人	_	_	_	_	_	O-N
+3	想要	想要	VERB	VV	_	9	acl	_	_	_	V	想要	_	_	_	_	_	O-V
+4	说	说	VERB	VV	_	6	dep	_	_	_	V	说	_	_	_	_	_	O-V
+5	得	得	PART	DER	_	6	dep	_	_	_	DE	得	_	_	_	_	_	O-DE
+6	俏皮	俏皮	VERB	VA	_	9	amod	_	_	_	V	俏皮	_	_	_	_	_	O-V
+7	些	些	ADV	AD	_	6	advmod	_	_	_	ADV	些	_	_	_	_	_	O-ADV
+8	的	的	PART	DEC	_	6	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+9	时候	时候	NOUN	NN	_	16	obl:prep	_	_	_	N	时候	_	_	_	_	_	O-N
+10	，	，	PUNCT	PU	_	16	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+11	说话	说话	VERB	VV	_	16	dep	_	_	_	V	说话	_	_	_	_	_	O-V
+12	就	就	ADV	AD	_	16	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+13	可能	可能	ADV	AD	_	16	advmod	_	_	_	ADV	可能	_	_	_	_	_	O-ADV
+14	会	会	VERB	VV	_	16	aux:modal	_	_	_	V	会	_	_	_	_	_	O-V
+15	不	不	ADV	AD	Polarity=Neg	16	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+16	大	大	VERB	VA	_	0	root	_	_	_	V	大	_	_	_	_	_	O-V
+17	实在	实在	VERB	VA	_	16	dep	_	_	_	V	实在	_	_	_	_	_	O-V
+18	。	。	PUNCT	PU	_	16	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-933
+# chapter = 17
+# text = 在给你们讲点灯人的时候，我就不那么忠实，
+# en_sent_id = lpp_1943.933
+# en_text = I have not been altogether honest in what I have told you about the lamplighters .
+1	在	在	ADP	P	_	7	case	_	AlignedAdposition=None	_	P	在	p.Time	p.Time	_	_	_	O-P-p.Time
+2	给	给	ADP	P	_	3	case	_	AlignedAdposition=None	_	P	给	p.Recipient	p.Recipient	_	_	_	O-P-p.Recipient
+3	你们	你们	PRON	PN	_	4	obl:prep	_	_	_	PRON	你们	_	_	_	_	_	O-PRON
+4	讲	讲	VERB	VV	_	7	acl	_	_	_	V	讲	_	_	_	_	_	O-V
+5	点灯人	点灯人	NOUN	NN	_	4	obj	_	_	_	N	点灯人	_	_	_	_	_	O-N
+6	的	的	PART	DEC	_	4	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+7	时候	时候	NOUN	NN	_	13	obl:prep	_	_	_	N	时候	_	_	_	_	_	O-N
+8	，	，	PUNCT	PU	_	13	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+9	我	我	PRON	PN	_	13	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+10	就	就	ADV	AD	_	13	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+11	不	不	ADV	AD	Polarity=Neg	13	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+12	那么	那么	ADV	AD	_	13	advmod	_	_	_	ADV	那么	_	_	_	_	_	O-ADV
+13	忠实	忠实	VERB	VA	_	0	root	_	_	_	V	忠实	_	_	_	_	_	O-V
+14	，	，	PUNCT	PU	_	13	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-934
+# chapter = 17
+# text = 很可能给不了解我们这个星球的人们造成一个错误的概念。
+# en_sent_id = lpp_1943.934
+# en_text = And I realize that I run the risk of giving a false idea of our planet to those who do not know it .
+1	很	很	ADV	AD	_	5	advmod	_	_	_	ADV	很	_	_	_	_	_	O-ADV
+2	可能	可能	VERB	VV	_	5	advmod	_	_	_	V	可能	_	_	_	_	_	O-V
+3	给	给	VERB	VV	_	5	xcomp	_	AlignedTokId=17|AlignedAdposition=to	_	V	给	p.Recipient	p.Recipient	_	_	_	O-V-p.Recipient
+4	不	不	ADV	AD	Polarity=Neg	5	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+5	了解	了解	VERB	VV	_	11	dep	_	_	_	V	了解	_	_	_	_	_	O-V
+6	我们	我	PRON	PN	_	8	compound:nn	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+7	这个	这个	DET	DT	_	8	det	_	_	_	DET	这个	_	_	_	_	_	O-DET
+8	星球	星球	NOUN	NN	_	10	nmod:assmod	_	_	_	N	星球	_	_	_	_	_	O-N
+9	的	的	PART	DEG	_	8	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+10	人们	人	NOUN	NN	_	11	nsubj	_	_	_	N	人	_	_	_	_	_	O-N
+11	造成	造成	VERB	VV	_	0	root	_	_	_	V	造成	_	_	_	_	_	O-V
+12	一	一	NUM	CD	_	16	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+13	个	个	NOUN	M	_	12	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+14	错误	错误	ADJ	JJ	_	16	amod	_	_	_	ADJ	错误	_	_	_	_	_	O-ADJ
+15	的	的	PART	DEG	_	14	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+16	概念	概念	NOUN	NN	_	11	obj	_	_	_	N	概念	_	_	_	_	_	O-N
+17	。	。	PUNCT	PU	_	11	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-935
+# chapter = 17
+# text = 在地球上，人们所占的位置非常小。
+# en_sent_id = lpp_1943.935
+# en_text = Men occupy a very small place upon the Earth .
+1	在	在	ADP	P	_	2	case	_	AlignedTokId=7|AlignedAdposition=upon	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+2	地球	地球	NOUN	NN	_	11	obl:prep	_	_	_	N	地球	_	_	_	_	_	O-N
+3	上	上	ADP	LC	_	2	case	_	AlignedTokId=7|AlignedAdposition=upon	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+4	，	，	PUNCT	PU	_	11	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+5	人们	人	NOUN	NN	_	7	nsubj	_	_	_	N	人	_	_	_	_	_	O-N
+6	所	所	PART	MSP	_	7	aux:prtmod	_	_	_	PART	所	_	_	_	_	_	O-PART
+7	占	占	VERB	VV	_	9	acl	_	_	_	V	占	_	_	_	_	_	O-V
+8	的	的	PART	DEC	_	7	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+9	位置	位置	NOUN	NN	_	11	nsubj	_	_	_	N	位置	_	_	_	_	_	O-N
+10	非常	非常	ADV	AD	_	11	advmod	_	_	_	ADV	非常	_	_	_	_	_	O-ADV
+11	小	小	VERB	VA	_	0	root	_	_	_	V	小	_	_	_	_	_	O-V
+12	。	。	PUNCT	PU	_	11	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-936
+# chapter = 17
+# text = 如果住在地球上的二十亿居民全站着，并且象开大会一样靠得紧些，那么就可以从容地站在一个二十海里见方的广场上。
+# en_sent_id = lpp_1943.936
+# en_text = If the two billion inhabitants who people its surface were all to stand upright and somewhat crowded together , as they do for some big public assembly , they could easily be put into one public square twenty miles long and twenty miles wide .
+1	如果	如果	SCONJ	CS	_	10	advmod	_	_	_	SCONJ	如果	_	_	_	_	_	O-SCONJ
+2	住	住	VERB	VV	_	8	acl	_	_	_	V	住	_	_	_	_	_	O-V
+3	在	在	ADP	P	_	4	case	_	AlignedAdposition=None	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+4	地球	地球	NOUN	NN	_	2	obl:prep	_	_	_	N	地球	_	_	_	_	_	O-N
+5	上	上	ADP	LC	_	4	case	_	AlignedAdposition=None	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+6	的	的	PART	DEC	_	2	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+7	二十亿	二十亿	NUM	CD	_	8	dep	_	_	_	NUM	二十亿	_	_	_	_	_	O-NUM
+8	居民	居民	NOUN	NN	_	10	nsubj	_	_	_	N	居民	_	_	_	_	_	O-N
+9	全	全	ADV	AD	_	10	advmod	_	_	_	ADV	全	_	_	_	_	_	O-ADV
+10	站	站	VERB	VV	_	28	dep	_	_	_	V	站	_	_	_	_	_	O-V
+11	着	着	AUX	AS	_	10	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+12	，	，	PUNCT	PU	_	10	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+13	并且	并且	ADV	AD	_	18	advmod	_	_	_	ADV	并且	_	_	_	_	_	O-ADV
+14	象	象	ADP	P	_	15	case	_	AlignedTokId=20|AlignedAdposition=as	_	P	象	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
+15	开	开	VERB	VV	_	18	obl:prep	_	_	_	V	开	_	_	_	_	_	O-V
+16	大会	大会	NOUN	NN	_	15	obj	_	_	_	N	大会	_	_	_	_	_	O-N
+17	一样	一样	VERB	VA	_	18	advmod	_	_	_	V	一样	_	_	_	_	_	O-V
+18	靠	靠	VERB	VV	_	28	dep	_	_	_	V	靠	_	_	_	_	_	O-V
+19	得	得	PART	DER	_	18	dep	_	_	_	DE	得	_	_	_	_	_	O-DE
+20	紧	紧	VERB	VA	_	18	dep	_	_	_	V	紧	_	_	_	_	_	O-V
+21	些	些	ADV	AD	_	20	advmod	_	_	_	ADV	些	_	_	_	_	_	O-ADV
+22	，	，	PUNCT	PU	_	28	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+23	那么	那么	ADV	AD	_	28	advmod	_	_	_	ADV	那么	_	_	_	_	_	O-ADV
+24	就	就	ADV	AD	_	28	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+25	可以	可以	VERB	VV	_	28	aux:modal	_	_	_	V	可以	_	_	_	_	_	O-V
+26	从容	从容	VERB	VA	_	28	advmod:dvp	_	_	_	V	从容	_	_	_	_	_	O-V
+27	地	地	PART	DEV	_	26	mark	_	_	_	DE	地	_	_	_	_	_	O-DE
+28	站	站	VERB	VV	_	0	root	_	_	_	V	站	_	_	_	_	_	O-V
+29	在	在	ADP	P	_	36	case	_	AlignedAdposition=None	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+30	一	一	NUM	CD	_	34	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+31	个	个	NOUN	M	_	30	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+32	二十	二十	NUM	CD	_	33	dep	_	_	_	NUM	二十	_	_	_	_	_	O-NUM
+33	海里	海里	NOUN	NN	_	34	compound:nn	_	_	_	N	海里	_	_	_	_	_	O-N
+34	见方	见方	NOUN	NN	_	36	nmod:assmod	_	_	_	N	见方	_	_	_	_	_	O-N
+35	的	的	PART	DEG	_	34	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+36	广场	广场	NOUN	NN	_	28	obl:prep	_	_	_	N	广场	_	_	_	_	_	O-N
+37	上	上	ADP	LC	_	36	case	_	AlignedAdposition=None	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+38	。	。	PUNCT	PU	_	28	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-937
+# chapter = 17
+# text = 也就是说可以把整个人类集中在太平洋中一个最小的岛屿上。
+# en_sent_id = lpp_1943.937
+# en_text = All humanity could be piled up on a small Pacific islet .
+1	也就是说	也就是说	ADV	AD	_	6	advmod	_	_	_	ADV	也就是说	_	_	_	_	_	O-ADV
+2	可以	可以	VERB	VV	_	6	aux:modal	_	_	_	V	可以	_	_	_	_	_	O-V
+3	把	把	ADP	BA	_	6	aux:ba	_	AlignedAdposition=None	_	BA	把	p.Theme	p.Theme	_	_	_	O-BA-p.Theme
+4	整个	整个	DET	DT	_	5	det	_	_	_	DET	整个	_	_	_	_	_	O-DET
+5	人类	人类	NOUN	NN	_	6	dep	_	_	_	N	人类	_	_	_	_	_	O-N
+6	集中	集中	VERB	VV	_	0	root	_	_	_	V	集中	_	_	_	_	_	O-V
+7	在	在	ADP	P	_	15	case	_	AlignedAdposition=None	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+8	太平洋	太平洋	PROPN	NR	_	15	nmod	_	_	_	N	太平洋	_	_	_	_	_	O-N
+9	中	中	ADP	LC	_	8	case	_	AlignedAdposition=None	_	LC	中	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+10	一	一	NUM	CD	_	15	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+11	个	个	NOUN	M	_	10	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+12	最	最	ADV	AD	_	13	advmod	_	_	_	ADV	最	_	_	_	_	_	O-ADV
+13	小	小	ADJ	JJ	_	15	amod	_	_	_	ADJ	小	_	_	_	_	_	O-ADJ
+14	的	的	PART	DEG	_	13	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+15	岛屿	岛屿	NOUN	NN	_	6	obl:prep	_	_	_	N	岛屿	_	_	_	_	_	O-N
+16	上	上	ADP	LC	_	15	case	_	AlignedTokId=7|AlignedAdposition=on	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+17	。	。	PUNCT	PU	_	6	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-938
+# chapter = 17
+# text = 当然，大人们是不会相信你们的。
+# en_sent_id = lpp_1943.938
+# en_text = The grown - ups , to be sure , will not believe you when you tell them that .
+1	当然	当然	ADV	AD	_	7	advmod	_	_	_	ADV	当然	_	_	_	_	_	O-ADV
+2	，	，	PUNCT	PU	_	7	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+3	大人们	大人	NOUN	NN	_	7	nsubj	_	_	_	N	大人	_	_	_	_	_	O-N
+4	是	是	VERB	VC	_	7	dep	_	_	_	V	是	_	_	_	_	_	O-V
+5	不	不	ADV	AD	Polarity=Neg	7	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+6	会	会	VERB	VV	_	7	aux:modal	_	_	_	V	会	_	_	_	_	_	O-V
+7	相信	相信	VERB	VV	_	0	root	_	_	_	V	相信	_	_	_	_	_	O-V
+8	你们	你们	PRON	PN	_	7	obj	_	_	_	PRON	你们	_	_	_	_	_	O-PRON
+9	的	的	PART	DEG	_	8	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+10	。	。	PUNCT	PU	_	7	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-939
+# chapter = 17
+# text = 他们自以为要占很大地方，
+# en_sent_id = lpp_1943.939
+# en_text = They imagine that they fill a great deal of space .
+1	他们	他	PRON	PN	_	4	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	自以为	自以为	ADV	AD	_	4	advmod	_	_	_	ADV	自以为	_	_	_	_	_	O-ADV
+3	要	要	VERB	VV	_	4	xcomp	_	_	_	V	要	_	_	_	_	_	O-V
+4	占	占	VERB	VV	_	0	root	_	_	_	V	占	_	_	_	_	_	O-V
+5	很	很	ADV	AD	_	6	advmod	_	_	_	ADV	很	_	_	_	_	_	O-ADV
+6	大	大	ADJ	JJ	_	7	amod	_	_	_	ADJ	大	_	_	_	_	_	O-ADJ
+7	地方	地方	NOUN	NN	_	4	obj	_	_	_	N	地方	_	_	_	_	_	O-N
+8	，	，	PUNCT	PU	_	4	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-940
+# chapter = 17
+# text = 他们把自己看得象猴面包树那样大得了不起。
+# en_sent_id = lpp_1943.940
+# en_text = They fancy themselves as important as the baobabs .
+1	他们	他	PRON	PN	_	4	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	把	把	ADP	BA	_	4	aux:ba	_	AlignedAdposition=None	_	BA	把	p.Theme	p.Theme	_	_	_	O-BA-p.Theme
+3	自己	自己	PRON	PN	_	4	dep	_	_	_	PRON	自己	_	_	_	_	_	O-PRON
+4	看得	看得	VERB	VV	_	0	root	_	_	_	V	看得	_	_	_	_	_	O-V
+5	象	象	ADP	P	_	6	case	_	AlignedTokId=6|AlignedAdposition=as	_	P	象	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
+6	猴面包树	猴面包树	NOUN	NN	_	10	obl:prep	_	_	_	N	猴面包树	_	_	_	_	_	O-N
+7	那样	那样	ADV	AD	_	10	advmod	_	_	_	ADV	那样	_	_	_	_	_	O-ADV
+8	大	大	VERB	VA	_	10	dep	_	_	_	V	大	_	_	_	_	_	O-V
+9	得	得	PART	DER	_	10	dep	_	_	_	DE	得	_	_	_	_	_	O-DE
+10	了不起	了不起	VERB	VA	_	4	ccomp	_	_	_	V	了不起	_	_	_	_	_	O-V
+11	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-941
+# chapter = 17
+# text = 你们可以建议他们计算一下。
+# en_sent_id = lpp_1943.941
+# en_text = You should advise them , then , to make their own calculations .
+1	你们	你们	PRON	PN	_	3	nsubj	_	_	_	PRON	你们	_	_	_	_	_	O-PRON
+2	可以	可以	VERB	VV	_	3	aux:modal	_	_	_	V	可以	_	_	_	_	_	O-V
+3	建议	建议	VERB	VV	_	0	root	_	_	_	V	建议	_	_	_	_	_	O-V
+4	他们	他	PRON	PN	_	3	obj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+5	计算	计算	VERB	VV	_	3	ccomp	_	_	_	V	计算	_	_	_	_	_	O-V
+6	一下	一下	ADV	AD	_	5	advmod	_	_	_	ADV	一下	_	_	_	_	_	O-ADV
+7	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-942
+# chapter = 17
+# text = 这样会使他们很高兴，因为他们非常喜欢数目字。
+# en_sent_id = lpp_1943.942
+# en_text = They adore figures , and that will please them .
+1	这样	这样	ADV	AD	_	3	advmod	_	_	_	ADV	这样	_	_	_	_	_	O-ADV
+2	会	会	VERB	VV	_	3	aux:modal	_	_	_	V	会	_	_	_	_	_	O-V
+3	使	使	VERB	VV	_	0	root	_	_	_	V	使	_	_	_	_	_	O-V
+4	他们	他	PRON	PN	_	3	obj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+5	很	很	ADV	AD	_	6	advmod	_	_	_	ADV	很	_	_	_	_	_	O-ADV
+6	高兴	高兴	VERB	VA	_	3	ccomp	_	_	_	V	高兴	_	_	_	_	_	O-V
+7	，	，	PUNCT	PU	_	3	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+8	因为	因为	ADP	P	_	11	case	_	AlignedAdposition=None	_	P	因为	p.Explanation	p.Explanation	_	_	_	O-P-p.Explanation
+9	他们	他	PRON	PN	_	11	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+10	非常	非常	ADV	AD	_	11	advmod	_	_	_	ADV	非常	_	_	_	_	_	O-ADV
+11	喜欢	喜欢	VERB	VV	_	3	obl:prep	_	_	_	V	喜欢	_	_	_	_	_	O-V
+12	数目字	数目字	NOUN	NN	_	11	obj	_	_	_	N	数目字	_	_	_	_	_	O-N
+13	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-943
+# chapter = 17
+# text = 可是你们无须浪费时间去做这种乏味的连篇累牍的演算。
+# en_sent_id = lpp_1943.943
+# en_text = But do not waste your time on this extra task .
+1	可是	可是	ADV	AD	_	4	advmod	_	_	_	ADV	可是	_	_	_	_	_	O-ADV
+2	你们	你们	PRON	PN	_	4	nsubj	_	_	_	PRON	你们	_	_	_	_	_	O-PRON
+3	无须	无须	ADV	AD	_	4	advmod	_	_	_	ADV	无须	_	_	_	_	_	O-ADV
+4	浪费	浪费	VERB	VV	_	0	root	_	_	_	V	浪费	_	_	_	_	_	O-V
+5	时间	时间	NOUN	NN	_	4	obj	_	_	_	N	时间	_	_	_	_	_	O-N
+6	去	去	PART	MSP	_	7	aux:prtmod	_	_	_	PART	去	_	_	_	_	_	O-PART
+7	做	做	VERB	VV	_	4	conj	_	_	_	V	做	_	_	_	_	_	O-V
+8	这	这	DET	DT	_	14	det	_	_	_	DET	这	_	_	_	_	_	O-DET
+9	种	种	NOUN	M	_	8	mark:clf	_	_	_	N	种	_	_	_	_	_	O-N
+10	乏味	乏味	ADJ	JJ	_	14	amod	_	_	_	ADJ	乏味	_	_	_	_	_	O-ADJ
+11	的	的	PART	DEG	_	10	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+12	连篇累牍	连篇累牍	VERB	VV	_	14	acl	_	_	_	V	连篇累牍	_	_	_	_	_	O-V
+13	的	的	PART	DEC	_	12	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+14	演算	演算	NOUN	NN	_	7	obj	_	_	_	N	演算	_	_	_	_	_	O-N
+15	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-944
+# chapter = 17
+# text = 这没有必要。
+# en_sent_id = lpp_1943.944
+# en_text = It is unnecessary .
+1	这	这	PRON	PN	_	2	dep	_	_	_	PRON	这	_	_	_	_	_	O-PRON
+2	没有	没有	VERB	VE	_	0	root	_	_	_	V	没有	_	_	_	_	_	O-V
+3	必要	必要	NOUN	NN	_	2	obj	_	_	_	N	必要	_	_	_	_	_	O-N
+4	。	。	PUNCT	PU	_	2	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-945
+# chapter = 17
+# text = 你们可以完全相信我。
+# en_sent_id = lpp_1943.945
+# en_text = You have , I know , confidence in me .
+1	你们	你们	PRON	PN	_	4	nsubj	_	_	_	PRON	你们	_	_	_	_	_	O-PRON
+2	可以	可以	VERB	VV	_	4	aux:modal	_	_	_	V	可以	_	_	_	_	_	O-V
+3	完全	完全	ADV	AD	_	4	advmod	_	_	_	ADV	完全	_	_	_	_	_	O-ADV
+4	相信	相信	VERB	VV	_	0	root	_	_	_	V	相信	_	_	_	_	_	O-V
+5	我	我	PRON	PN	_	4	obj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+6	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-946
+# chapter = 17
+# text = 小王子到了地球上感到非常奇怪，他一个人也没有看到，
+# en_sent_id = lpp_1943.946
+# en_text = When the little prince arrived on the Earth , he was very much surprised not to see any people .
+1	小王子	小王子	PROPN	NR	_	2	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+2	到	到	VERB	VV	_	0	root	_	_	_	V	到	_	_	_	_	_	O-V
+3	了	了	AUX	AS	_	2	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+4	地球	地球	NOUN	NN	_	2	advmod:loc	_	_	_	N	地球	_	_	_	_	_	O-N
+5	上	上	ADP	LC	_	4	case	_	AlignedTokId=6|AlignedAdposition=on	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+6	感到	感到	VERB	VV	_	2	conj	_	_	_	V	感到	_	_	_	_	_	O-V
+7	非常	非常	ADV	AD	_	8	advmod	_	_	_	ADV	非常	_	_	_	_	_	O-ADV
+8	奇怪	奇怪	VERB	VA	_	6	ccomp	_	_	_	V	奇怪	_	_	_	_	_	O-V
+9	，	，	PUNCT	PU	_	2	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+10	他	他	PRON	PN	_	13	compound:nn	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+11	一	一	NUM	CD	_	13	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+12	个	个	NOUN	M	_	11	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+13	人	人	NOUN	NN	_	16	nsubj	_	_	_	N	人	_	_	_	_	_	O-N
+14	也	也	ADV	AD	_	16	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+15	没有	没有	ADV	AD	Polarity=Neg	16	advmod	_	_	_	ADV	没有	_	_	_	_	_	O-ADV
+16	看到	看到	VERB	VV	_	2	conj	_	_	_	V	看到	_	_	_	_	_	O-V
+17	，	，	PUNCT	PU	_	2	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-947
+# chapter = 17
+# text = 他正担心自己跑错了星球。这时，在沙地上有一个月光色的圆环在蠕动。
+# en_sent_id = lpp_1943.947
+# en_text = He was beginning to be afraid he had come to the wrong planet , when a coil of gold , the color of the moonlight , flashed across the sand .
+1	他	他	PRON	PN	_	3	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	正	正	ADV	AD	_	3	advmod	_	_	_	ADV	正	_	_	_	_	_	O-ADV
+3	担心	担心	VERB	VV	_	0	root	_	_	_	V	担心	_	_	_	_	_	O-V
+4	自己	自己	PRON	PN	_	5	nsubj	_	_	_	PRON	自己	_	_	_	_	_	O-PRON
+5	跑错	跑错	VERB	VV	_	3	ccomp	_	_	_	V	跑错	_	_	_	_	_	O-V
+6	了	了	AUX	AS	_	5	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+7	星球	星球	NOUN	NN	_	5	obj	_	_	_	N	星球	_	_	_	_	_	O-N
+8	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+9	这时	这时	ADV	AD	_	14	advmod	_	_	_	ADV	这时	_	_	_	_	_	O-ADV
+10	，	，	PUNCT	PU	_	14	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+11	在	在	ADP	P	_	12	case	_	AlignedAdposition=None	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+12	沙地	沙地	NOUN	NN	_	14	obl:prep	_	_	_	N	沙地	_	_	_	_	_	O-N
+13	上	上	ADP	LC	_	12	case	_	AlignedAdposition=None	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+14	有	有	VERB	VE	_	3	conj	_	_	_	V	有	_	_	_	_	_	O-V
+15	一	一	NUM	CD	_	19	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+16	个	个	NOUN	M	_	15	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+17	月光色	月光色	ADJ	JJ	_	19	amod	_	_	_	ADJ	月光色	_	_	_	_	_	O-ADJ
+18	的	的	PART	DEG	_	17	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+19	圆环	圆环	NOUN	NN	_	21	nsubj	_	_	_	N	圆环	_	_	_	_	_	O-N
+20	在	在	ADV	AD	_	21	advmod	_	_	_	ADV	在	_	_	_	_	_	O-ADV
+21	蠕动	蠕动	VERB	VV	_	14	ccomp	_	_	_	V	蠕动	_	_	_	_	_	O-V
+22	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-948
+# chapter = 17
+# text = 小王子毫无把握地随便说了声：“晚安。”
+# en_sent_id = lpp_1943.948
+# en_text = " Good evening , " said the little prince courteously .
+1	小王子	小王子	PROPN	NR	_	7	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+2	毫	毫	ADV	AD	_	3	advmod	_	_	_	ADV	毫	_	_	_	_	_	O-ADV
+3	无	无	VERB	VE	_	7	advmod:dvp	_	_	_	V	无	_	_	_	_	_	O-V
+4	把握	把握	NOUN	NN	_	3	obj	_	_	_	N	把握	_	_	_	_	_	O-N
+5	地	地	PART	DEV	_	3	mark	_	_	_	DE	地	_	_	_	_	_	O-DE
+6	随便	随便	ADV	AD	_	7	advmod	_	_	_	ADV	随便	_	_	_	_	_	O-ADV
+7	说	说	VERB	VV	_	0	root	_	_	_	V	说	_	_	_	_	_	O-V
+8	了	了	AUX	AS	_	7	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+9	声	声	NOUN	NN	_	7	obj	_	_	_	N	声	_	_	_	_	_	O-N
+10	：	：	PUNCT	PU	_	7	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+11	“	“	PUNCT	PU	_	12	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+12	晚安	晚安	NOUN	NN	_	7	obj	_	_	_	N	晚安	_	_	_	_	_	O-N
+13	。	。	PUNCT	PU	_	7	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+14	”	”	PUNCT	PU	_	7	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-949
+# chapter = 17
+# text = “晚安。”蛇说道。
+# en_sent_id = lpp_1943.949
+# en_text = " Good evening , " said the snake .
+1	“	“	PUNCT	PU	_	2	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	晚安	晚安	VERB	VV	_	6	dep	_	_	_	V	晚安	_	_	_	_	_	O-V
+3	。	。	PUNCT	PU	_	2	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+4	”	”	PUNCT	PU	_	2	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+5	蛇	蛇	NOUN	NN	_	6	nsubj	_	_	_	N	蛇	_	_	_	_	_	O-N
+6	说道	说道	VERB	VV	_	0	root	_	_	_	V	说道	_	_	_	_	_	O-V
+7	。	。	PUNCT	PU	_	6	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-950
+# chapter = 17
+# text = “我落在什么行星上？”小王子问道。
+# en_sent_id = lpp_1943.950
+# en_text = " What planet is this on which I have come down ? " asked the little prince .
+1	“	“	PUNCT	PU	_	3	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	我	我	PRON	PN	_	3	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+3	落	落	VERB	VV	_	11	dep	_	_	_	V	落	_	_	_	_	_	O-V
+4	在	在	ADP	P	_	6	case	_	AlignedTokId=6|AlignedAdposition=on	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+5	什么	什么	DET	DT	_	6	det	_	_	_	DET	什么	_	_	_	_	_	O-DET
+6	行星	行星	NOUN	NN	_	3	obl:prep	_	_	_	N	行星	_	_	_	_	_	O-N
+7	上	上	ADP	LC	_	6	case	_	AlignedTokId=6|AlignedAdposition=on	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+8	？	？	PUNCT	PU	_	11	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+9	”	”	PUNCT	PU	_	11	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+10	小王子	小王子	PROPN	NR	_	11	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+11	问道	问道	VERB	VV	_	0	root	_	_	_	V	问道	_	_	_	_	_	O-V
+12	。	。	PUNCT	PU	_	11	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-951
+# chapter = 17
+# text = “在地球上，在非洲。”蛇回答道。
+# en_sent_id = lpp_1943.951
+# en_text = " This is the Earth ; this is Africa , " the snake answered .
+1	“	“	PUNCT	PU	_	11	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	在	在	ADP	P	_	3	case	_	AlignedAdposition=None	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+3	地球	地球	NOUN	NN	_	11	obl:prep	_	_	_	N	地球	_	_	_	_	_	O-N
+4	上	上	ADP	LC	_	3	case	_	AlignedAdposition=None	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+5	，	，	PUNCT	PU	_	11	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+6	在	在	ADP	P	_	7	case	_	AlignedAdposition=None	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+7	非洲	非洲	PROPN	NR	_	11	obl:prep	_	_	_	N	非洲	_	_	_	_	_	O-N
+8	。	。	PUNCT	PU	_	11	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+9	”	”	PUNCT	PU	_	10	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+10	蛇	蛇	NOUN	NN	_	11	nsubj	_	_	_	N	蛇	_	_	_	_	_	O-N
+11	回答	回答	VERB	VV	_	0	root	_	_	_	V	回答	_	_	_	_	_	O-V
+12	道	道	NOUN	NN	_	11	obj	_	_	_	N	道	_	_	_	_	_	O-N
+13	。	。	PUNCT	PU	_	11	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-952
+# chapter = 17
+# text = “啊！
+# en_sent_id = lpp_1943.952
+# en_text = " Ah !
+1	“	“	PUNCT	PU	_	2	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	啊	啊	INTJ	IJ	_	0	root	_	_	_	INTJ	啊	_	_	_	_	_	O-INTJ
+3	！	！	PUNCT	PU	_	2	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-953
+# chapter = 17
+# text = …怎么，难道说地球上没有人吗？”
+# en_sent_id = lpp_1943.953
+# en_text = Then there are no people on the Earth ? "
+1	…	…	PUNCT	PU	_	5	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+2	怎么	怎么	ADV	AD	_	5	advmod	_	_	_	ADV	怎么	_	_	_	_	_	O-ADV
+3	，	，	PUNCT	PU	_	5	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+4	难道	难道	ADV	AD	_	5	advmod	_	_	_	ADV	难道	_	_	_	_	_	O-ADV
+5	说	说	VERB	VV	_	12	dep	_	_	_	V	说	_	_	_	_	_	O-V
+6	地球	地球	NOUN	NN	_	8	advmod:loc	_	_	_	N	地球	_	_	_	_	_	O-N
+7	上	上	ADP	LC	_	6	case	_	AlignedTokId=6|AlignedAdposition=on	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+8	没有	没有	VERB	VE	_	5	ccomp	_	_	_	V	没有	_	_	_	_	_	O-V
+9	人	人	NOUN	NN	_	8	obj	_	_	_	N	人	_	_	_	_	_	O-N
+10	吗	吗	PART	SP	_	12	discourse	_	_	_	PART	吗	_	_	_	_	_	O-PART
+11	？	？	PUNCT	PU	_	12	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+12	”	”	PUNCT	PU	_	0	root	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-954
+# chapter = 17
+# text = “这里是沙漠，
+# en_sent_id = lpp_1943.954
+# en_text = " This is the desert .
+1	“	“	PUNCT	PU	_	4	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	这里	这里	PRON	PN	_	4	nsubj	_	_	_	PRON	这里	_	_	_	_	_	O-PRON
+3	是	是	AUX	VC	_	4	cop	_	_	_	V	是	_	_	_	_	_	O-V
+4	沙漠	沙漠	NOUN	NN	_	0	root	_	_	_	N	沙漠	_	_	_	_	_	O-N
+5	，	，	PUNCT	PU	_	4	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-955
+# chapter = 17
+# text = 沙漠中没有人。
+# en_sent_id = lpp_1943.955
+# en_text = There are no people in the desert .
+1	沙漠	沙漠	NOUN	NN	_	3	advmod:loc	_	_	_	N	沙漠	_	_	_	_	_	O-N
+2	中	中	ADP	LC	_	1	case	_	AlignedTokId=5|AlignedAdposition=in	_	LC	中	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+3	没有	没有	VERB	VE	_	0	root	_	_	_	V	没有	_	_	_	_	_	O-V
+4	人	人	NOUN	NN	_	3	obj	_	_	_	N	人	_	_	_	_	_	O-N
+5	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-956
+# chapter = 17
+# text = 地球是很大的。”蛇说。
+# en_sent_id = lpp_1943.956
+# en_text = The Earth is large , " said the snake .
+1	地球	地球	NOUN	NN	_	4	nsubj	_	_	_	N	地球	_	_	_	_	_	O-N
+2	是	是	AUX	VC	_	4	cop	_	_	_	V	是	_	_	_	_	_	O-V
+3	很	很	ADV	AD	_	4	advmod	_	_	_	ADV	很	_	_	_	_	_	O-ADV
+4	大	大	VERB	VA	_	9	dep	_	_	_	V	大	_	_	_	_	_	O-V
+5	的	的	PART	SP	_	4	discourse	_	_	_	PART	的	_	_	_	_	_	O-PART
+6	。	。	PUNCT	PU	_	9	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+7	”	”	PUNCT	PU	_	9	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+8	蛇	蛇	NOUN	NN	_	9	nsubj	_	_	_	N	蛇	_	_	_	_	_	O-N
+9	说	说	VERB	VV	_	0	root	_	_	_	V	说	_	_	_	_	_	O-V
+10	。	。	PUNCT	PU	_	9	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-957
+# chapter = 17
+# text = 小王子坐在一块石头上，抬眼望着天空，
+# en_sent_id = lpp_1943.957
+# en_text = The little prince sat down on a stone , and raised his eyes toward the sky .
+1	小王子	小王子	PROPN	NR	_	2	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+2	坐	坐	VERB	VV	_	0	root	_	_	_	V	坐	_	_	_	_	_	O-V
+3	在	在	ADP	P	_	6	case	_	AlignedTokId=6|AlignedAdposition=on	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+4	一	一	NUM	CD	_	6	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+5	块	块	NOUN	M	_	4	mark:clf	_	_	_	N	块	_	_	_	_	_	O-N
+6	石头	石头	NOUN	NN	_	2	obl:prep	_	_	_	N	石头	_	_	_	_	_	O-N
+7	上	上	ADP	LC	_	6	case	_	AlignedTokId=6|AlignedAdposition=on	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+8	，	，	PUNCT	PU	_	2	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+9	抬眼	抬眼	VERB	VV	_	10	advmod	_	_	_	V	抬眼	_	_	_	_	_	O-V
+10	望	望	VERB	VV	_	2	conj	_	_	_	V	望	_	_	_	_	_	O-V
+11	着	着	AUX	AS	_	10	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+12	天空	天空	NOUN	NN	_	10	obj	_	_	_	N	天空	_	_	_	_	_	O-N
+13	，	，	PUNCT	PU	_	2	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-958
+# chapter = 17
+# text = 说道：“我捉摸这些星星闪闪发亮是否为了让每个人将来有一天都能重新找到自己的星球。
+# en_sent_id = lpp_1943.958
+# en_text = " I wonder , " he said , " whether the stars are set alight in heaven so that one day each one of us may find his own again ...
+1	说道	说道	VERB	VV	_	0	root	_	_	_	V	说道	_	_	_	_	_	O-V
+2	：	：	PUNCT	PU	_	1	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+3	“	“	PUNCT	PU	_	5	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+4	我	我	PRON	PN	_	5	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+5	捉摸	捉摸	VERB	VV	_	1	ccomp	_	_	_	V	捉摸	_	_	_	_	_	O-V
+6	这些	这些	DET	DT	_	7	det	_	_	_	DET	这些	_	_	_	_	_	O-DET
+7	星星	星星	NOUN	NN	_	5	obj	_	_	_	N	星星	_	_	_	_	_	O-N
+8	闪闪	闪闪	ADV	AD	_	9	advmod	_	_	_	ADV	闪闪	_	_	_	_	_	O-ADV
+9	发亮	发亮	VERB	VA	_	5	ccomp	_	_	_	V	发亮	_	_	_	_	_	O-V
+10	是否	是否	VERB	VV	_	17	xcomp	_	_	_	V	是否	_	_	_	_	_	O-V
+11	为了	为了	ADP	P	_	12	case	_	AlignedAdposition=None	_	P	为了	p.Purpose	p.Purpose	_	_	_	O-P-p.Purpose
+12	让	让	VERB	VV	_	9	obl:prep	_	_	_	V	让	_	_	_	_	_	O-V
+13	每	每	DET	DT	_	15	det	_	_	_	DET	每	_	_	_	_	_	O-DET
+14	个	个	NOUN	M	_	13	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+15	人	人	NOUN	NN	_	12	obj	_	_	_	N	人	_	_	_	_	_	O-N
+16	将来	将来	NOUN	NT	_	17	obl:tmod	_	_	_	N	将来	_	_	_	_	_	O-N
+17	有	有	VERB	VE	_	12	ccomp	_	_	_	V	有	_	_	_	_	_	O-V
+18	一	一	NUM	CD	_	17	dep	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+19	天	天	NOUN	M	_	18	mark:clf	_	_	_	N	天	_	_	_	_	_	O-N
+20	都	都	ADV	AD	_	23	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+21	能	能	VERB	VV	_	23	aux:modal	_	_	_	V	能	_	_	_	_	_	O-V
+22	重新	重新	ADV	AD	_	23	advmod	_	_	_	ADV	重新	_	_	_	_	_	O-ADV
+23	找到	找到	VERB	VV	_	17	ccomp	_	_	_	V	找到	_	_	_	_	_	O-V
+24	自己	自己	PRON	PN	_	26	nmod:assmod	_	_	_	PRON	自己	_	_	_	_	_	O-PRON
+25	的	的	PART	DEG	_	24	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+26	星球	星球	NOUN	NN	_	23	obj	_	_	_	N	星球	_	_	_	_	_	O-N
+27	。	。	PUNCT	PU	_	1	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-959
+# chapter = 17
+# text = 看，我那颗行星。
+# en_sent_id = lpp_1943.959
+# en_text = Look at my planet .
+1	看	看	VERB	VV	_	0	root	_	_	_	V	看	_	_	_	_	_	O-V
+2	，	，	PUNCT	PU	_	1	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+3	我	我	PRON	PN	_	6	compound:nn	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+4	那	那	DET	DT	_	6	det	_	_	_	DET	那	_	_	_	_	_	O-DET
+5	颗	颗	NOUN	M	_	4	mark:clf	_	_	_	N	颗	_	_	_	_	_	O-N
+6	行星	行星	NOUN	NN	_	1	dep	_	_	_	N	行星	_	_	_	_	_	O-N
+7	。	。	PUNCT	PU	_	1	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-960
+# chapter = 17
+# text = 它恰好在我们头顶上…
+# en_sent_id = lpp_1943.960
+# en_text = It is right there above us .
+1	它	它	PRON	PN	_	3	nsubj	_	_	_	PRON	它	_	_	_	_	_	O-PRON
+2	恰好	恰好	ADV	AD	_	3	advmod	_	_	_	ADV	恰好	_	_	_	_	_	O-ADV
+3	在	在	VERB	VV	_	0	root	_	_	_	V	在	_	_	_	_	_	O-V
+4	我们	我	PRON	PN	_	5	nmod:poss	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+5	头顶	头顶	NOUN	NN	_	3	advmod:loc	_	_	_	N	头顶	_	_	_	_	_	O-N
+6	上	上	ADP	LC	_	5	case	_	AlignedTokId=5|AlignedAdposition=above	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+7	…	…	PUNCT	PU	_	3	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-961
+# chapter = 17
+# text = 可是，它离我们好远哟！”
+# en_sent_id = lpp_1943.961
+# en_text = But how far away it is ! "
+1	可是	可是	ADV	AD	_	7	advmod	_	_	_	ADV	可是	_	_	_	_	_	O-ADV
+2	，	，	PUNCT	PU	_	7	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+3	它	它	PRON	PN	_	7	nsubj	_	_	_	PRON	它	_	_	_	_	_	O-PRON
+4	离	离	ADP	P	_	5	case	_	AlignedAdposition=None	_	P	离	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+5	我们	我	PRON	PN	_	7	obl:prep	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+6	好	好	ADV	AD	_	7	advmod	_	_	_	ADV	好	_	_	_	_	_	O-ADV
+7	远	远	VERB	VA	_	10	dep	_	_	_	V	远	_	_	_	_	_	O-V
+8	哟	哟	PART	SP	_	10	discourse	_	_	_	PART	哟	_	_	_	_	_	O-PART
+9	！	！	PUNCT	PU	_	10	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+10	”	”	PUNCT	PU	_	0	root	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-962
+# chapter = 17
+# text = “它很美。”蛇说，
+# en_sent_id = lpp_1943.962
+# en_text = " It is beautiful , " the snake said .
+1	“	“	PUNCT	PU	_	4	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	它	它	PRON	PN	_	4	nsubj	_	_	_	PRON	它	_	_	_	_	_	O-PRON
+3	很	很	ADV	AD	_	4	advmod	_	_	_	ADV	很	_	_	_	_	_	O-ADV
+4	美	美	VERB	VA	_	8	dep	_	_	_	V	美	_	_	_	_	_	O-V
+5	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+6	”	”	PUNCT	PU	_	8	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+7	蛇	蛇	NOUN	NN	_	8	nsubj	_	_	_	N	蛇	_	_	_	_	_	O-N
+8	说	说	VERB	VV	_	0	root	_	_	_	V	说	_	_	_	_	_	O-V
+9	，	，	PUNCT	PU	_	4	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-963
+# chapter = 17
+# text = “你到这里来干什么呢？”
+# en_sent_id = lpp_1943.963
+# en_text = " What has brought you here ? "
+1	“	“	PUNCT	PU	_	3	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	你	你	PRON	PN	_	3	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+3	到	到	VERB	VV	_	10	dep	_	_	_	V	到	_	_	_	_	_	O-V
+4	这里	这里	PRON	PN	_	3	obj	_	_	_	PRON	这里	_	_	_	_	_	O-PRON
+5	来	来	VERB	VV	_	6	xcomp	_	_	_	V	来	_	_	_	_	_	O-V
+6	干	干	VERB	VV	_	3	conj	_	_	_	V	干	_	_	_	_	_	O-V
+7	什么	什么	PRON	PN	_	6	obj	_	_	_	PRON	什么	_	_	_	_	_	O-PRON
+8	呢	呢	PART	SP	_	10	discourse	_	_	_	PART	呢	_	_	_	_	_	O-PART
+9	？	？	PUNCT	PU	_	10	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+10	”	”	PUNCT	PU	_	0	root	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-964
+# chapter = 17
+# text = “我和一朵花闹了别扭。”小王子说。
+# en_sent_id = lpp_1943.964
+# en_text = " I have been having some trouble with a flower , " said the little prince .
+1	“	“	PUNCT	PU	_	7	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	我	我	PRON	PN	_	7	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+3	和	和	ADP	P	_	6	case	_	AlignedTokId=8|AlignedAdposition=with	_	P	和	p.Agent	p.Agent	_	_	_	O-P-p.Agent
+4	一	一	NUM	CD	_	6	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+5	朵	朵	NOUN	M	_	4	mark:clf	_	_	_	N	朵	_	_	_	_	_	O-N
+6	花	花	NOUN	NN	_	7	obl:prep	_	_	_	N	花	_	_	_	_	_	O-N
+7	闹	闹	VERB	VV	_	13	dep	_	_	_	V	闹	_	_	_	_	_	O-V
+8	了	了	AUX	AS	_	7	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+9	别扭	别扭	NOUN	NN	_	7	obj	_	_	_	N	别扭	_	_	_	_	_	O-N
+10	。	。	PUNCT	PU	_	13	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+11	”	”	PUNCT	PU	_	13	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+12	小王子	小王子	PROPN	NR	_	13	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+13	说	说	VERB	VV	_	0	root	_	_	_	V	说	_	_	_	_	_	O-V
+14	。	。	PUNCT	PU	_	13	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-965
+# chapter = 17
+# text = “啊！”蛇说道。
+# en_sent_id = lpp_1943.965
+# en_text = " Ah ! " said the snake .
+1	“	“	PUNCT	PU	_	6	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	啊	啊	INTJ	IJ	_	6	dep	_	_	_	INTJ	啊	_	_	_	_	_	O-INTJ
+3	！	！	PUNCT	PU	_	6	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+4	”	”	PUNCT	PU	_	6	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+5	蛇	蛇	NOUN	NN	_	6	nsubj	_	_	_	N	蛇	_	_	_	_	_	O-N
+6	说道	说道	VERB	VV	_	0	root	_	_	_	V	说道	_	_	_	_	_	O-V
+7	。	。	PUNCT	PU	_	6	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-966
+# chapter = 17
+# text = 于是他们都沉默下来。
+# en_sent_id = lpp_1943.966
+# en_text = And they were both silent .
+1	于是	于是	ADV	AD	_	4	advmod	_	_	_	ADV	于是	_	_	_	_	_	O-ADV
+2	他们	他	PRON	PN	_	4	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+3	都	都	ADV	AD	_	4	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+4	沉默	沉默	VERB	VV	_	0	root	_	_	_	V	沉默	_	_	_	_	_	O-V
+5	下来	下来	VERB	VV	_	4	advmod:rcomp	_	_	_	V	下来	_	_	_	_	_	O-V
+6	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-967
+# chapter = 17
+# text = “人在什么地方？”小王子终于又开了腔。
+# en_sent_id = lpp_1943.967
+# en_text = " Where are the men ? " the little prince at last took up the conversation again .
+1	“	“	PUNCT	PU	_	3	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	人	人	NOUN	NN	_	3	nsubj	_	_	_	N	人	_	_	_	_	_	O-N
+3	在	在	VERB	VV	_	11	dep	_	_	_	V	在	_	_	_	_	_	O-V
+4	什么	什么	DET	DT	_	5	det	_	_	_	DET	什么	_	_	_	_	_	O-DET
+5	地方	地方	NOUN	NN	_	3	obj	_	_	_	N	地方	_	_	_	_	_	O-N
+6	？	？	PUNCT	PU	_	11	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+7	”	”	PUNCT	PU	_	11	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+8	小王子	小王子	PROPN	NR	_	11	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+9	终于	终于	ADV	AD	_	11	advmod	_	_	_	ADV	终于	_	_	_	_	_	O-ADV
+10	又	又	ADV	AD	_	11	advmod	_	_	_	ADV	又	_	_	_	_	_	O-ADV
+11	开	开	VERB	VV	_	0	root	_	_	_	V	开	_	_	_	_	_	O-V
+12	了	了	AUX	AS	_	11	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+13	腔	腔	NOUN	NN	_	11	obj	_	_	_	N	腔	_	_	_	_	_	O-N
+14	。	。	PUNCT	PU	_	11	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-968
+# chapter = 17
+# text = “在沙漠上，真有点孤独…”
+# en_sent_id = lpp_1943.968
+# en_text = " It is a little lonely in the desert ... "
+1	“	“	PUNCT	PU	_	8	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	在	在	ADP	P	_	3	case	_	AlignedTokId=7|AlignedAdposition=in	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+3	沙漠	沙漠	NOUN	NN	_	8	obl:prep	_	_	_	N	沙漠	_	_	_	_	_	O-N
+4	上	上	ADP	LC	_	3	case	_	AlignedTokId=7|AlignedAdposition=in	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+5	，	，	PUNCT	PU	_	8	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+6	真	真	ADV	AD	_	8	advmod	_	_	_	ADV	真	_	_	_	_	_	O-ADV
+7	有点	有点	ADV	AD	_	8	advmod	_	_	_	ADV	有点	_	_	_	_	_	O-ADV
+8	孤独	孤独	VERB	VA	_	0	root	_	_	_	V	孤独	_	_	_	_	_	O-V
+9	…	…	PUNCT	PU	_	8	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+10	”	”	PUNCT	PU	_	8	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-969
+# chapter = 17
+# text = “到了有人的地方，也一样孤独。”蛇说。
+# en_sent_id = lpp_1943.969
+# en_text = " It is also lonely among men , " the snake said .
+1	“	“	PUNCT	PU	_	11	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	到	到	VERB	VV	_	11	dep	_	_	_	V	到	_	_	_	_	_	O-V
+3	了	了	AUX	AS	_	2	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+4	有	有	VERB	VE	_	7	dep	_	_	_	V	有	_	_	_	_	_	O-V
+5	人	人	NOUN	NN	_	4	obj	_	_	_	N	人	_	_	_	_	_	O-N
+6	的	的	PART	DEC	_	4	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+7	地方	地方	NOUN	NN	_	2	obj	_	_	_	N	地方	_	_	_	_	_	O-N
+8	，	，	PUNCT	PU	_	11	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+9	也	也	ADV	AD	_	11	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+10	一样	一样	VERB	VA	_	11	advmod	_	_	_	V	一样	_	_	_	_	_	O-V
+11	孤独	孤独	VERB	VA	_	15	dep	_	_	_	V	孤独	_	_	_	_	_	O-V
+12	。	。	PUNCT	PU	_	15	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+13	”	”	PUNCT	PU	_	15	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+14	蛇	蛇	NOUN	NN	_	15	nsubj	_	_	_	N	蛇	_	_	_	_	_	O-N
+15	说	说	VERB	VV	_	0	root	_	_	_	V	说	_	_	_	_	_	O-V
+16	。	。	PUNCT	PU	_	15	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-970
+# chapter = 17
+# text = 小王子长时间地看着蛇。
+# en_sent_id = lpp_1943.970
+# en_text = The little prince gazed at him for a long time .
+1	小王子	小王子	PROPN	NR	_	5	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+2	长	长	ADJ	JJ	_	3	amod	_	_	_	ADJ	长	_	_	_	_	_	O-ADJ
+3	时间	时间	NOUN	NN	_	5	advmod:dvp	_	_	_	N	时间	_	_	_	_	_	O-N
+4	地	地	PART	DEV	_	3	mark	_	_	_	DE	地	_	_	_	_	_	O-DE
+5	看	看	VERB	VV	_	0	root	_	_	_	V	看	_	_	_	_	_	O-V
+6	着	着	AUX	AS	_	5	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+7	蛇	蛇	NOUN	NN	_	5	obj	_	_	_	N	蛇	_	_	_	_	_	O-N
+8	。	。	PUNCT	PU	_	5	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-971
+# chapter = 17
+# text = “你是个奇怪的动物，小王子终于说道。
+# en_sent_id = lpp_1943.971
+# en_text = " You are a funny animal , " he said at last .
+1	“	“	PUNCT	PU	_	7	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	你	你	PRON	PN	_	7	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+3	是	是	AUX	VC	_	7	cop	_	_	_	V	是	_	_	_	_	_	O-V
+4	个	个	NOUN	M	_	7	nummod	_	_	_	N	个	_	_	_	_	_	O-N
+5	奇怪	奇怪	ADJ	JJ	_	7	amod	_	_	_	ADJ	奇怪	_	_	_	_	_	O-ADJ
+6	的	的	PART	DEG	_	5	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+7	动物	动物	NOUN	NN	_	0	root	_	_	_	N	动物	_	_	_	_	_	O-N
+8	，	，	PUNCT	PU	_	7	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+9	小王子	小王子	PROPN	NR	_	11	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+10	终于	终于	ADV	AD	_	11	advmod	_	_	_	ADV	终于	_	_	_	_	_	O-ADV
+11	说道	说道	VERB	VV	_	7	conj	_	_	_	V	说道	_	_	_	_	_	O-V
+12	。	。	PUNCT	PU	_	7	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-972
+# chapter = 17
+# text = 细得象个手指头…。”
+# en_sent_id = lpp_1943.972
+# en_text = " You are no thicker than a finger ... "
+1	细	细	VERB	VA	_	0	root	_	_	_	V	细	_	_	_	_	_	O-V
+2	得	得	PART	DER	_	3	dep	_	_	_	DE	得	_	_	_	_	_	O-DE
+3	象	象	VERB	VV	_	5	nummod	_	AlignedTokId=6|AlignedAdposition=than	_	V	象	p.ComparisonRef	p.ComparisonRef	_	_	_	O-V-p.ComparisonRef
+4	个	个	NOUN	M	_	5	nummod	_	_	_	N	个	_	_	_	_	_	O-N
+5	手指头	手指头	NOUN	NN	_	1	obj	_	_	_	N	手指头	_	_	_	_	_	O-N
+6	…	…	PUNCT	PU	_	1	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+7	。	。	PUNCT	PU	_	1	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+8	”	”	PUNCT	PU	_	1	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-973
+# chapter = 17
+# text = “但我比一个国王的手指更有威力。”蛇说道。
+# en_sent_id = lpp_1943.973
+# en_text = " But I am more powerful than the finger of a king , " said the snake .
+1	“	“	PUNCT	PU	_	11	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	但	但	ADV	AD	_	11	advmod	_	_	_	ADV	但	_	_	_	_	_	O-ADV
+3	我	我	PRON	PN	_	11	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+4	比	比	ADP	P	_	9	case	_	AlignedTokId=7|AlignedAdposition=than	_	P	比	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
+5	一	一	NUM	CD	_	7	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+6	个	个	NOUN	M	_	5	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+7	国王	国王	NOUN	NN	_	9	nmod:assmod	_	_	_	N	国王	_	_	_	_	_	O-N
+8	的	的	PART	DEG	_	7	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+9	手指	手指	NOUN	NN	_	11	obl:prep	_	_	_	N	手指	_	_	_	_	_	O-N
+10	更	更	ADV	AD	_	11	advmod	_	_	_	ADV	更	_	_	_	_	_	O-ADV
+11	有	有	VERB	VE	_	16	dep	_	_	_	V	有	_	_	_	_	_	O-V
+12	威力	威力	NOUN	NN	_	11	obj	_	_	_	N	威力	_	_	_	_	_	O-N
+13	。	。	PUNCT	PU	_	11	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+14	”	”	PUNCT	PU	_	16	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+15	蛇	蛇	NOUN	NN	_	16	nsubj	_	_	_	N	蛇	_	_	_	_	_	O-N
+16	说道	说道	VERB	VV	_	0	root	_	_	_	V	说道	_	_	_	_	_	O-V
+17	。	。	PUNCT	PU	_	16	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-974
+# chapter = 17
+# text = 小王子微笑着说：
+# en_sent_id = lpp_1943.974
+# en_text = The little prince smiled .
+1	小王子	小王子	PROPN	NR	_	2	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+2	微笑	微笑	VERB	VV	_	0	root	_	_	_	V	微笑	_	_	_	_	_	O-V
+3	着	着	AUX	AS	_	2	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+4	说	说	VERB	VV	_	2	conj	_	_	_	V	说	_	_	_	_	_	O-V
+5	：	：	PUNCT	PU	_	4	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-975
+# chapter = 17
+# text = “你并不那么有威力……
+# en_sent_id = lpp_1943.975
+# en_text = " You are not very powerful .
+1	“	“	PUNCT	PU	_	6	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	你	你	PRON	PN	_	6	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+3	并	并	ADV	AD	_	6	advmod	_	_	_	ADV	并	_	_	_	_	_	O-ADV
+4	不	不	ADV	AD	Polarity=Neg	6	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+5	那么	那么	ADV	AD	_	6	advmod	_	_	_	ADV	那么	_	_	_	_	_	O-ADV
+6	有	有	VERB	VE	_	0	root	_	_	_	V	有	_	_	_	_	_	O-V
+7	威力	威力	NOUN	NN	_	6	obj	_	_	_	N	威力	_	_	_	_	_	O-N
+8	…	…	PUNCT	PU	_	6	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+9	…	…	PUNCT	PU	_	6	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-976
+# chapter = 17
+# text = 你连脚都没有……
+# en_sent_id = lpp_1943.976
+# en_text = You have n't even any feet .
+1	你	你	PRON	PN	_	5	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+2	连	连	ADV	AD	_	3	advmod	_	_	_	ADV	连	_	_	_	_	_	O-ADV
+3	脚	脚	NOUN	NN	_	5	nsubj	_	_	_	N	脚	_	_	_	_	_	O-N
+4	都	都	ADV	AD	_	5	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+5	没有	没有	VERB	VE	_	0	root	_	_	_	V	没有	_	_	_	_	_	O-V
+6	…	…	PUNCT	PU	_	5	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+7	…	…	PUNCT	PU	_	5	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-977
+# chapter = 17
+# text = 你甚至都不能旅行…”
+# en_sent_id = lpp_1943.977
+# en_text = You can not even travel ... "
+1	你	你	PRON	PN	_	6	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+2	甚至	甚至	ADV	AD	_	6	advmod	_	_	_	ADV	甚至	_	_	_	_	_	O-ADV
+3	都	都	ADV	AD	_	6	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+4	不	不	ADV	AD	Polarity=Neg	6	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+5	能	能	VERB	VV	_	6	aux:modal	_	_	_	V	能	_	_	_	_	_	O-V
+6	旅行	旅行	VERB	VV	_	0	root	_	_	_	V	旅行	_	_	_	_	_	O-V
+7	…	…	PUNCT	PU	_	6	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+8	”	”	PUNCT	PU	_	6	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-978
+# chapter = 17
+# text = “我可以把你带到很远的地方去，比一只船能去的地方还要远。”蛇说道。
+# en_sent_id = lpp_1943.978
+# en_text = " I can carry you farther than any ship could take you , " said the snake .
+1	“	“	PUNCT	PU	_	6	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	我	我	PRON	PN	_	6	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+3	可以	可以	VERB	VV	_	6	aux:modal	_	_	_	V	可以	_	_	_	_	_	O-V
+4	把	把	ADP	BA	_	6	aux:ba	_	AlignedAdposition=None	_	BA	把	p.Theme	p.Theme	_	_	_	O-BA-p.Theme
+5	你	你	PRON	PN	_	6	dep	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+6	带到	带到	VERB	VV	_	27	dep	_	_	_	V	带到	_	_	_	_	_	O-V
+7	很	很	ADV	AD	_	8	advmod	_	_	_	ADV	很	_	_	_	_	_	O-ADV
+8	远	远	VERB	VA	_	10	amod	_	_	_	V	远	_	_	_	_	_	O-V
+9	的	的	PART	DEG	_	8	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+10	地方	地方	NOUN	NN	_	6	obj	_	_	_	N	地方	_	_	_	_	_	O-N
+11	去	去	VERB	VV	_	6	conj	_	_	_	V	去	_	_	_	_	_	O-V
+12	，	，	PUNCT	PU	_	6	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+13	比	比	ADP	P	_	20	case	_	AlignedTokId=7|AlignedAdposition=than	_	P	比	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
+14	一	一	NUM	CD	_	16	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+15	只	只	NOUN	M	_	14	mark:clf	_	_	_	N	只	_	_	_	_	_	O-N
+16	船	船	NOUN	NN	_	18	nsubj	_	_	_	N	船	_	_	_	_	_	O-N
+17	能	能	VERB	VV	_	18	aux:modal	_	_	_	V	能	_	_	_	_	_	O-V
+18	去	去	VERB	VV	_	20	acl	_	_	_	V	去	_	_	_	_	_	O-V
+19	的	的	PART	DEC	_	18	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+20	地方	地方	NOUN	NN	_	23	obl:prep	_	_	_	N	地方	_	_	_	_	_	O-N
+21	还	还	ADV	AD	_	23	advmod	_	_	_	ADV	还	_	_	_	_	_	O-ADV
+22	要	要	VERB	VV	_	23	xcomp	_	_	_	V	要	_	_	_	_	_	O-V
+23	远	远	VERB	VA	_	6	conj	_	_	_	V	远	_	_	_	_	_	O-V
+24	。	。	PUNCT	PU	_	27	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+25	”	”	PUNCT	PU	_	27	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+26	蛇	蛇	NOUN	NN	_	27	nsubj	_	_	_	N	蛇	_	_	_	_	_	O-N
+27	说道	说道	VERB	VV	_	0	root	_	_	_	V	说道	_	_	_	_	_	O-V
+28	。	。	PUNCT	PU	_	27	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-979
+# chapter = 17
+# text = 蛇就盘结在小王子的脚腕子上，象一只金镯子。
+# en_sent_id = lpp_1943.979
+# en_text = He twined himself around the little prince 's ankle , like a golden bracelet .
+1	蛇	蛇	NOUN	NN	_	3	nsubj	_	_	_	N	蛇	_	_	_	_	_	O-N
+2	就	就	ADV	AD	_	3	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+3	盘结	盘结	VERB	VV	_	0	root	_	_	_	V	盘结	_	_	_	_	_	O-V
+4	在	在	ADP	P	_	7	case	_	AlignedAdposition=None	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+5	小王子	小王子	PROPN	NR	_	7	nmod:assmod	_	_	_	N	小王子	_	_	_	_	_	O-N
+6	的	的	PART	DEG	_	5	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+7	脚腕子	脚腕子	NOUN	NN	_	3	obl:prep	_	_	_	N	脚腕子	_	_	_	_	_	O-N
+8	上	上	ADP	LC	_	7	case	_	AlignedAdposition=None	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+9	，	，	PUNCT	PU	_	3	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+10	象	象	VERB	VV	_	3	conj	_	AlignedTokId=11|AlignedAdposition=like	_	V	象	p.ComparisonRef	p.ComparisonRef	_	_	_	O-V-p.ComparisonRef
+11	一	一	NUM	CD	_	14	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+12	只	只	NOUN	M	_	11	mark:clf	_	_	_	N	只	_	_	_	_	_	O-N
+13	金	金	ADJ	JJ	_	14	amod	_	_	_	ADJ	金	_	_	_	_	_	O-ADJ
+14	镯子	镯子	NOUN	NN	_	10	obj	_	_	_	N	镯子	_	_	_	_	_	O-N
+15	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-980
+# chapter = 17
+# text = “被我碰触的人，我就把他送回老家去。”
+# en_sent_id = lpp_1943.980
+# en_text = " Whomever I touch , I send back to the earth from whence he came , " the snake spoke again .
+1	“	“	PUNCT	PU	_	12	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	被	被	ADP	LB	_	4	aux:pass	_	AlignedAdposition=None	_	LB	被	p.Agent	p.Agent	_	_	_	O-LB-p.Agent
+3	我	我	PRON	PN	_	4	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+4	碰触	碰触	VERB	VV	_	6	acl	_	_	_	V	碰触	_	_	_	_	_	O-V
+5	的	的	PART	DEC	_	4	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+6	人	人	NOUN	NN	_	12	obl:topic	_	_	_	N	人	_	_	_	_	_	O-N
+7	，	，	PUNCT	PU	_	12	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+8	我	我	PRON	PN	_	12	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+9	就	就	ADV	AD	_	12	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+10	把	把	ADP	BA	_	12	aux:ba	_	AlignedAdposition=None	_	BA	把	p.Theme	p.Theme	_	_	_	O-BA-p.Theme
+11	他	他	PRON	PN	_	12	dep	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+12	送回	送回	VERB	VV	_	0	root	_	_	_	V	送回	_	_	_	_	_	O-V
+13	老家	老家	NOUN	NN	_	12	obj	_	_	_	N	老家	_	_	_	_	_	O-N
+14	去	去	VERB	VV	_	12	conj	_	_	_	V	去	_	_	_	_	_	O-V
+15	。	。	PUNCT	PU	_	12	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+16	”	”	PUNCT	PU	_	12	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-981
+# chapter = 17
+# text = 蛇还说，“可是你是纯洁的，而且是从另一个星球上来的…”
+# en_sent_id = lpp_1943.981
+# en_text = " But you are innocent and true , and you come from a star ... "
+1	蛇	蛇	NOUN	NN	_	3	nsubj	_	_	_	N	蛇	_	_	_	_	_	O-N
+2	还	还	ADV	AD	_	3	advmod	_	_	_	ADV	还	_	_	_	_	_	O-ADV
+3	说	说	VERB	VV	_	0	root	_	_	_	V	说	_	_	_	_	_	O-V
+4	，	，	PUNCT	PU	_	3	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+5	“	“	PUNCT	PU	_	9	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+6	可是	可是	ADV	AD	_	9	advmod	_	_	_	ADV	可是	_	_	_	_	_	O-ADV
+7	你	你	PRON	PN	_	9	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+8	是	是	AUX	VC	_	9	cop	_	_	_	V	是	_	_	_	_	_	O-V
+9	纯洁	纯洁	VERB	VA	_	3	ccomp	_	_	_	V	纯洁	_	_	_	_	_	O-V
+10	的	的	PART	SP	_	9	discourse	_	_	_	PART	的	_	_	_	_	_	O-PART
+11	，	，	PUNCT	PU	_	9	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+12	而且	而且	ADV	AD	_	20	advmod	_	_	_	ADV	而且	_	_	_	_	_	O-ADV
+13	是	是	AUX	VC	_	20	cop	_	_	_	V	是	_	_	_	_	_	O-V
+14	从	从	ADP	P	_	18	case	_	AlignedTokId=12|AlignedAdposition=from	_	P	从	p.Source	p.Source	_	_	_	O-P-p.Source
+15	另	另	DET	DT	_	18	det	_	_	_	DET	另	_	_	_	_	_	O-DET
+16	一	一	NUM	CD	_	15	dep	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+17	个	个	NOUN	M	_	16	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+18	星球	星球	NOUN	NN	_	20	obl:prep	_	_	_	N	星球	_	_	_	_	_	O-N
+19	上	上	ADP	LC	_	18	case	_	AlignedAdposition=None	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+20	来	来	VERB	VV	_	9	conj	_	_	_	V	来	_	_	_	_	_	O-V
+21	的	的	PART	SP	_	20	discourse	_	_	_	PART	的	_	_	_	_	_	O-PART
+22	…	…	PUNCT	PU	_	3	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+23	”	”	PUNCT	PU	_	3	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-982
+# chapter = 17
+# text = 小王子什么也没有回答。
+# en_sent_id = lpp_1943.982
+# en_text = The little prince made no reply .
+1	小王子	小王子	PROPN	NR	_	2	nmod:assmod	_	_	_	N	小王子	_	_	_	_	_	O-N
+2	什么	什么	PRON	PN	_	5	nsubj	_	_	_	PRON	什么	_	_	_	_	_	O-PRON
+3	也	也	ADV	AD	_	5	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+4	没有	没有	ADV	AD	Polarity=Neg	5	advmod	_	_	_	ADV	没有	_	_	_	_	_	O-ADV
+5	回答	回答	VERB	VV	_	0	root	_	_	_	V	回答	_	_	_	_	_	O-V
+6	。	。	PUNCT	PU	_	5	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-983
+# chapter = 17
+# text = “在这个花岗石的地球上，你这么弱小，我很可怜你。
+# en_sent_id = lpp_1943.983
+# en_text = " You move me to pity - - you are so weak on this Earth made of granite , " the snake said .
+1	“	“	PUNCT	PU	_	11	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	在	在	ADP	P	_	6	case	_	AlignedTokId=13|AlignedAdposition=on	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+3	这个	这个	DET	DT	_	4	det	_	_	_	DET	这个	_	_	_	_	_	O-DET
+4	花岗石	花岗石	NOUN	NN	_	6	nmod:assmod	_	_	_	N	花岗石	_	_	_	_	_	O-N
+5	的	的	PART	DEG	_	4	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+6	地球	地球	NOUN	NN	_	11	obl:prep	_	_	_	N	地球	_	_	_	_	_	O-N
+7	上	上	ADP	LC	_	6	case	_	AlignedTokId=13|AlignedAdposition=on	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+8	，	，	PUNCT	PU	_	11	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+9	你	你	PRON	PN	_	11	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+10	这么	这么	ADV	AD	_	11	advmod	_	_	_	ADV	这么	_	_	_	_	_	O-ADV
+11	弱小	弱小	VERB	VA	_	0	root	_	_	_	V	弱小	_	_	_	_	_	O-V
+12	，	，	PUNCT	PU	_	11	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+13	我	我	PRON	PN	_	15	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+14	很	很	ADV	AD	_	15	advmod	_	_	_	ADV	很	_	_	_	_	_	O-ADV
+15	可怜	可怜	VERB	VA	_	11	conj	_	_	_	V	可怜	_	_	_	_	_	O-V
+16	你	你	PRON	PN	_	15	obj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+17	。	。	PUNCT	PU	_	11	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-984
+# chapter = 17
+# text = 如果你非常怀念你的星球，那时我可以帮助你。
+# en_sent_id = lpp_1943.984
+# en_text = " I can help you , some day , if you grow too homesick for your own planet .
+1	如果	如果	SCONJ	CS	_	4	advmod	_	_	_	SCONJ	如果	_	_	_	_	_	O-SCONJ
+2	你	你	PRON	PN	_	4	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+3	非常	非常	ADV	AD	_	4	advmod	_	_	_	ADV	非常	_	_	_	_	_	O-ADV
+4	怀念	怀念	VERB	VV	_	12	dep	_	_	_	V	怀念	_	_	_	_	_	O-V
+5	你	你	PRON	PN	_	7	nmod:assmod	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+6	的	的	PART	DEG	_	5	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+7	星球	星球	NOUN	NN	_	4	obj	_	_	_	N	星球	_	_	_	_	_	O-N
+8	，	，	PUNCT	PU	_	12	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+9	那时	那时	NOUN	NT	_	12	obl:tmod	_	_	_	N	那时	_	_	_	_	_	O-N
+10	我	我	PRON	PN	_	12	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+11	可以	可以	VERB	VV	_	12	aux:modal	_	_	_	V	可以	_	_	_	_	_	O-V
+12	帮助	帮助	VERB	VV	_	0	root	_	_	_	V	帮助	_	_	_	_	_	O-V
+13	你	你	PRON	PN	_	12	obj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+14	。	。	PUNCT	PU	_	12	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-985
+# chapter = 17
+# text = 我可以…”
+# en_sent_id = lpp_1943.985
+# en_text = I can - - "
+1	我	我	PRON	PN	_	2	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	可以	可以	VERB	VV	_	0	root	_	_	_	V	可以	_	_	_	_	_	O-V
+3	…	…	PUNCT	PU	_	2	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+4	”	”	PUNCT	PU	_	2	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-986
+# chapter = 17
+# text = “啊！
+# en_sent_id = lpp_1943.986
+# en_text = " Oh !
+1	“	“	PUNCT	PU	_	2	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	啊	啊	INTJ	IJ	_	0	root	_	_	_	INTJ	啊	_	_	_	_	_	O-INTJ
+3	！	！	PUNCT	PU	_	2	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-987
+# chapter = 17
+# text = 我很明白你的意思。”小王子说，
+# en_sent_id = lpp_1943.987
+# en_text = I understand you very well , " said the little prince .
+1	我	我	PRON	PN	_	3	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	很	很	ADV	AD	_	3	advmod	_	_	_	ADV	很	_	_	_	_	_	O-ADV
+3	明白	明白	VERB	VV	_	10	dep	_	_	_	V	明白	_	_	_	_	_	O-V
+4	你	你	PRON	PN	_	6	nmod:assmod	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+5	的	的	PART	DEG	_	4	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+6	意思	意思	NOUN	NN	_	3	obj	_	_	_	N	意思	_	_	_	_	_	O-N
+7	。	。	PUNCT	PU	_	10	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+8	”	”	PUNCT	PU	_	10	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+9	小王子	小王子	PROPN	NR	_	10	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+10	说	说	VERB	VV	_	0	root	_	_	_	V	说	_	_	_	_	_	O-V
+11	，	，	PUNCT	PU	_	10	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-988
+# chapter = 17
+# text = “但是你为什么说话总是象让人猜谜语似的？”
+# en_sent_id = lpp_1943.988
+# en_text = " But why do you always speak in riddles ? "
+1	“	“	PUNCT	PU	_	8	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	但是	但是	ADV	AD	_	8	advmod	_	_	_	ADV	但是	_	_	_	_	_	O-ADV
+3	你	你	PRON	PN	_	8	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+4	为什么	为什么	ADV	AD	_	8	advmod	_	_	_	ADV	为什么	_	_	_	_	_	O-ADV
+5	说话	说话	VERB	VV	_	8	dep	_	_	_	V	说话	_	_	_	_	_	O-V
+6	总是	总是	ADV	AD	_	8	advmod	_	_	_	ADV	总是	_	_	_	_	_	O-ADV
+7	象	象	VERB	VV	_	8	xcomp	_	AlignedAdposition=None	_	V	象	p.ComparisonRef	p.ComparisonRef	_	_	_	O-V-p.ComparisonRef
+8	让	让	VERB	VV	_	15	dep	_	_	_	V	让	_	_	_	_	_	O-V
+9	人	人	NOUN	NN	_	8	obj	_	_	_	N	人	_	_	_	_	_	O-N
+10	猜	猜	VERB	VV	_	8	ccomp	_	_	_	V	猜	_	_	_	_	_	O-V
+11	谜语	谜语	NOUN	NN	_	10	obj	_	_	_	N	谜语	_	_	_	_	_	O-N
+12	似	似	VERB	VA	_	10	ccomp	_	_	_	V	似	_	_	_	_	_	O-V
+13	的	的	PART	SP	_	12	discourse	_	_	_	PART	的	_	_	_	_	_	O-PART
+14	？	？	PUNCT	PU	_	15	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+15	”	”	PUNCT	PU	_	0	root	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-989
+# chapter = 17
+# text = “这些谜语我都能解开的。”蛇说。
+# en_sent_id = lpp_1943.989
+# en_text = " I solve them all , " said the snake .
+1	“	“	PUNCT	PU	_	7	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+2	这些	这些	DET	DT	_	3	det	_	_	_	DET	这些	_	_	_	_	_	O-DET
+3	谜语	谜语	NOUN	NN	_	7	obl:topic	_	_	_	N	谜语	_	_	_	_	_	O-N
+4	我	我	PRON	PN	_	7	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+5	都	都	ADV	AD	_	7	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+6	能	能	VERB	VV	_	7	aux:modal	_	_	_	V	能	_	_	_	_	_	O-V
+7	解开	解开	VERB	VV	_	12	dep	_	_	_	V	解开	_	_	_	_	_	O-V
+8	的	的	PART	SP	_	7	discourse	_	_	_	PART	的	_	_	_	_	_	O-PART
+9	。	。	PUNCT	PU	_	12	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+10	”	”	PUNCT	PU	_	12	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+11	蛇	蛇	NOUN	NN	_	12	nsubj	_	_	_	N	蛇	_	_	_	_	_	O-N
+12	说	说	VERB	VV	_	0	root	_	_	_	V	说	_	_	_	_	_	O-V
+13	。	。	PUNCT	PU	_	12	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-990
+# chapter = 17
+# text = 于是他们又都沉默起来。
+# en_sent_id = lpp_1943.990
+# en_text = And they were both silent .
+1	于是	于是	ADV	AD	_	5	advmod	_	_	_	ADV	于是	_	_	_	_	_	O-ADV
+2	他们	他	PRON	PN	_	5	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+3	又	又	ADV	AD	_	5	advmod	_	_	_	ADV	又	_	_	_	_	_	O-ADV
+4	都	都	ADV	AD	_	5	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+5	沉默	沉默	VERB	VV	_	0	root	_	_	_	V	沉默	_	_	_	_	_	O-V
+6	起来	起来	VERB	VV	_	5	advmod:rcomp	_	_	_	V	起来	_	_	_	_	_	O-V
+7	。	。	PUNCT	PU	_	5	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# newdoc_id = lpp_1943_zh_ch-27
+# sent_id = lpp_1943_zh-1526
+# chapter = 27
+# text = XXVII。
+# en_sent_id = lpp_1943.1526
+# en_text = Chapter 27 .
+1	XXVII	XXVII	PROPN	NR	_	0	root	_	_	_	N	XXVII	_	_	_	_	_	O-N
+2	。	。	PUNCT	PU	_	1	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1527
+# chapter = 27
+# text = 到现在，一点不错，已经有六年了…
+# en_sent_id = lpp_1943.1527
+# en_text = And now six years have already gone by ...
+1	到	到	ADP	P	_	2	case	_	AlignedAdposition=None	_	P	到	p.EndTime	p.EndTime	_	_	_	O-P-p.EndTime
+2	现在	现在	NOUN	NT	_	5	obl:prep	_	_	_	N	现在	_	_	_	_	_	O-N
+3	，	，	PUNCT	PU	_	5	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+4	一点	一点	ADV	AD	_	5	advmod	_	_	_	ADV	一点	_	_	_	_	_	O-ADV
+5	不错	不错	VERB	VA	_	8	dep	_	_	_	V	不错	_	_	_	_	_	O-V
+6	，	，	PUNCT	PU	_	8	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+7	已经	已经	ADV	AD	_	8	advmod	_	_	_	ADV	已经	_	_	_	_	_	O-ADV
+8	有	有	VERB	VE	_	12	dep	_	_	_	V	有	_	_	_	_	_	O-V
+9	六	六	NUM	CD	_	8	dep	_	_	_	NUM	六	_	_	_	_	_	O-NUM
+10	年	年	NOUN	M	_	9	mark:clf	_	_	_	N	年	_	_	_	_	_	O-N
+11	了	了	PART	SP	_	12	discourse	_	_	_	PART	了	_	_	_	_	_	O-PART
+12	…	…	PUNCT	PU	_	0	root	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1528
+# chapter = 27
+# text = 我还从未讲过这个故事。
+# en_sent_id = lpp_1943.1528
+# en_text = I have never yet told this story .
+1	我	我	PRON	PN	_	4	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	还	还	ADV	AD	_	4	advmod	_	_	_	ADV	还	_	_	_	_	_	O-ADV
+3	从未	从未	ADV	AD	_	4	advmod	_	_	_	ADV	从未	_	_	_	_	_	O-ADV
+4	讲过	讲过	VERB	VV	_	0	root	_	_	_	V	讲过	_	_	_	_	_	O-V
+5	这个	这个	DET	DT	_	6	det	_	_	_	DET	这个	_	_	_	_	_	O-DET
+6	故事	故事	NOUN	NN	_	4	obj	_	_	_	N	故事	_	_	_	_	_	O-N
+7	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1529
+# chapter = 27
+# text = 同伴们重新见到了我，都为能看见我活着回来而高兴。
+# en_sent_id = lpp_1943.1529
+# en_text = The companions who met me on my return were well content to see me alive .
+1	同伴们	同伴们	NOUN	NN	_	3	nsubj	_	_	_	N	同伴们	_	_	_	_	_	O-N
+2	重新	重新	ADV	AD	_	3	advmod	_	_	_	ADV	重新	_	_	_	_	_	O-ADV
+3	见到	见到	VERB	VV	_	0	root	_	_	_	V	见到	_	_	_	_	_	O-V
+4	了	了	AUX	AS	_	3	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+5	我	我	PRON	PN	_	3	obj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+6	，	，	PUNCT	PU	_	3	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+7	都	都	ADV	AD	_	16	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+8	为	为	ADP	P	_	10	case	_	AlignedAdposition=None	_	P	为	p.Topic	p.Topic	_	_	_	O-P-p.Topic
+9	能	能	VERB	VV	_	10	aux:modal	_	_	_	V	能	_	_	_	_	_	O-V
+10	看见	看见	VERB	VV	_	3	conj	_	_	_	V	看见	_	_	_	_	_	O-V
+11	我	我	PRON	PN	_	12	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+12	活	活	VERB	VV	_	10	ccomp	_	_	_	V	活	_	_	_	_	_	O-V
+13	着	着	AUX	AS	_	12	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+14	回来	回来	VERB	VV	_	12	conj	_	_	_	V	回来	_	_	_	_	_	O-V
+15	而	而	PART	MSP	_	16	aux:prtmod	_	_	_	PART	而	_	_	_	_	_	O-PART
+16	高兴	高兴	VERB	VA	_	3	conj	_	_	_	V	高兴	_	_	_	_	_	O-V
+17	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1530
+# chapter = 27
+# text = 我却很悲伤。我告诉他们：“这是因为疲劳的缘故…”
+# en_sent_id = lpp_1943.1530
+# en_text = I was sad , but I told them : " I am tired . "
+1	我	我	PRON	PN	_	4	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	却	却	ADV	AD	_	4	advmod	_	_	_	ADV	却	_	_	_	_	_	O-ADV
+3	很	很	ADV	AD	_	4	advmod	_	_	_	ADV	很	_	_	_	_	_	O-ADV
+4	悲伤	悲伤	VERB	VA	_	0	root	_	_	_	V	悲伤	_	_	_	_	_	O-V
+5	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+6	我	我	PRON	PN	_	7	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+7	告诉	告诉	VERB	VV	_	4	conj	_	_	_	V	告诉	_	_	_	_	_	O-V
+8	他们	他	PRON	PN	_	7	obj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+9	：	：	PUNCT	PU	_	7	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+10	“	“	PUNCT	PU	_	12	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+11	这	这	PRON	PN	_	12	nsubj	_	_	_	PRON	这	_	_	_	_	_	O-PRON
+12	是	是	VERB	VC	_	7	ccomp	_	_	_	V	是	_	_	_	_	_	O-V
+13	因为	因为	ADP	P	_	16	case	_	AlignedAdposition=None	_	P	因为	p.Explanation	p.Explanation	_	_	_	O-P-p.Explanation
+14	疲劳	疲劳	VERB	VA	_	16	amod	_	_	_	V	疲劳	_	_	_	_	_	O-V
+15	的	的	PART	DEG	_	14	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+16	缘故	缘故	NOUN	NN	_	12	obl:prep	_	_	_	N	缘故	_	_	_	_	_	O-N
+17	…	…	PUNCT	PU	_	4	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+18	”	”	PUNCT	PU	_	4	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1531
+# chapter = 27
+# text = 现在，我稍微得到了些安慰。
+# en_sent_id = lpp_1943.1531
+# en_text = Now my sorrow is comforted a little .
+1	现在	现在	NOUN	NT	_	5	obl:tmod	_	_	_	N	现在	_	_	_	_	_	O-N
+2	，	，	PUNCT	PU	_	5	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+3	我	我	PRON	PN	_	5	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+4	稍微	稍微	ADV	AD	_	5	advmod	_	_	_	ADV	稍微	_	_	_	_	_	O-ADV
+5	得到	得到	VERB	VV	_	0	root	_	_	_	V	得到	_	_	_	_	_	O-V
+6	了	了	AUX	AS	_	5	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+7	些	些	NOUN	M	_	8	nummod	_	_	_	N	些	_	_	_	_	_	O-N
+8	安慰	安慰	NOUN	NN	_	5	obj	_	_	_	N	安慰	_	_	_	_	_	O-N
+9	。	。	PUNCT	PU	_	5	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1532
+# chapter = 27
+# text = 就是说…还没有完全平静下来。
+# en_sent_id = lpp_1943.1532
+# en_text = That is to say - - not entirely .
+1	就是说	就是说	ADV	AD	_	6	advmod	_	_	_	ADV	就是说	_	_	_	_	_	O-ADV
+2	…	…	PUNCT	PU	_	6	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+3	还	还	ADV	AD	_	6	advmod	_	_	_	ADV	还	_	_	_	_	_	O-ADV
+4	没有	没有	ADV	AD	Polarity=Neg	6	advmod	_	_	_	ADV	没有	_	_	_	_	_	O-ADV
+5	完全	完全	ADV	AD	_	6	advmod	_	_	_	ADV	完全	_	_	_	_	_	O-ADV
+6	平静	平静	VERB	VA	_	0	root	_	_	_	V	平静	_	_	_	_	_	O-V
+7	下来	下来	VERB	VV	_	6	advmod:rcomp	_	_	_	V	下来	_	_	_	_	_	O-V
+8	。	。	PUNCT	PU	_	6	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1533
+# chapter = 27
+# text = 可我知道他已经回到了他的星球上。因为那天黎明，我没有再见到他的身躯。
+# en_sent_id = lpp_1943.1533
+# en_text = But I know that he did go back to his planet , because I did not find his body at daybreak .
+1	可	可	ADV	AD	_	3	advmod	_	_	_	ADV	可	_	_	_	_	_	O-ADV
+2	我	我	PRON	PN	_	3	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+3	知道	知道	VERB	VV	_	0	root	_	_	_	V	知道	_	_	_	_	_	O-V
+4	他	他	PRON	PN	_	6	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+5	已经	已经	ADV	AD	_	6	advmod	_	_	_	ADV	已经	_	_	_	_	_	O-ADV
+6	回到	回到	VERB	VV	_	3	ccomp	_	_	_	V	回到	_	_	_	_	_	O-V
+7	了	了	AUX	AS	_	6	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+8	他	他	PRON	PN	_	10	nmod:assmod	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+9	的	的	PART	DEG	_	8	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+10	星球	星球	NOUN	NN	_	6	advmod:loc	_	_	_	N	星球	_	_	_	_	_	O-N
+11	上	上	ADP	LC	_	10	case	_	AlignedTokId=9|AlignedAdposition=to	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+12	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+13	因为	因为	ADP	P	_	21	case	_	AlignedAdposition=None	_	P	因为	p.Explanation	p.Explanation	_	_	_	O-P-p.Explanation
+14	那	那	DET	DT	_	16	det	_	_	_	DET	那	_	_	_	_	_	O-DET
+15	天	天	NOUN	M	_	14	mark:clf	_	_	_	N	天	_	_	_	_	_	O-N
+16	黎明	黎明	NOUN	NN	_	21	obl:prep	_	_	_	N	黎明	_	_	_	_	_	O-N
+17	，	，	PUNCT	PU	_	21	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+18	我	我	PRON	PN	_	21	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+19	没有	没有	ADV	AD	Polarity=Neg	21	advmod	_	_	_	ADV	没有	_	_	_	_	_	O-ADV
+20	再	再	ADV	AD	_	21	advmod	_	_	_	ADV	再	_	_	_	_	_	O-ADV
+21	见到	见到	VERB	VV	_	6	conj	_	_	_	V	见到	_	_	_	_	_	O-V
+22	他	他	PRON	PN	_	24	nmod:assmod	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+23	的	的	PART	DEG	_	22	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+24	身躯	身躯	NOUN	NN	_	21	obj	_	_	_	N	身躯	_	_	_	_	_	O-N
+25	。	。	PUNCT	PU	_	3	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1534
+# chapter = 27
+# text = 他的身躯并不那么重…从此，我就喜欢在夜间倾听着星星，
+# en_sent_id = lpp_1943.1534
+# en_text = It was not such a heavy body ... and at night I love to listen to the stars .
+1	他	他	PRON	PN	_	3	nmod:assmod	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	的	的	PART	DEG	_	1	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+3	身躯	身躯	NOUN	NN	_	7	nsubj	_	_	_	N	身躯	_	_	_	_	_	O-N
+4	并	并	ADV	AD	_	7	advmod	_	_	_	ADV	并	_	_	_	_	_	O-ADV
+5	不	不	ADV	AD	Polarity=Neg	7	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+6	那么	那么	ADV	AD	_	7	advmod	_	_	_	ADV	那么	_	_	_	_	_	O-ADV
+7	重	重	VERB	VA	_	0	root	_	_	_	V	重	_	_	_	_	_	O-V
+8	…	…	PUNCT	PU	_	7	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+9	从此	从此	ADV	AD	_	13	advmod	_	_	_	ADV	从此	_	_	_	_	_	O-ADV
+10	，	，	PUNCT	PU	_	13	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+11	我	我	PRON	PN	_	13	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+12	就	就	ADV	AD	_	13	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+13	喜欢	喜欢	VERB	VV	_	7	conj	_	_	_	V	喜欢	_	_	_	_	_	O-V
+14	在	在	ADP	P	_	15	case	_	AlignedTokId=10|AlignedAdposition=at	_	P	在	p.Time	p.Time	_	_	_	O-P-p.Time
+15	夜	夜	NOUN	NN	_	17	obl:prep	_	_	_	N	夜	_	_	_	_	_	O-N
+16	间	间	ADP	LC	_	15	case	_	AlignedTokId=10|AlignedAdposition=at	_	LC	间	p.Duration	p.Duration	_	_	_	O-LC-p.Duration
+17	倾听	倾听	VERB	VV	_	13	ccomp	_	_	_	V	倾听	_	_	_	_	_	O-V
+18	着	着	AUX	AS	_	17	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+19	星星	星星	NOUN	NN	_	17	obj	_	_	_	N	星星	_	_	_	_	_	O-N
+20	，	，	PUNCT	PU	_	7	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1535
+# chapter = 27
+# text = 好象是倾听着五亿个铃铛…
+# en_sent_id = lpp_1943.1535
+# en_text = It is like five hundred million little bells ...
+1	好象	好象	ADV	AD	_	3	advmod	_	_	_	ADV	好象	_	_	_	_	_	O-ADV
+2	是	是	VERB	VC	_	3	conj	_	_	_	V	是	_	_	_	_	_	O-V
+3	倾听	倾听	VERB	VV	_	0	root	_	_	_	V	倾听	_	_	_	_	_	O-V
+4	着	着	AUX	AS	_	3	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+5	五亿	五亿	NUM	CD	_	7	nummod	_	_	_	NUM	五亿	_	_	_	_	_	O-NUM
+6	个	个	NOUN	M	_	5	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+7	铃铛	铃铛	NOUN	NN	_	3	obj	_	_	_	N	铃铛	_	_	_	_	_	O-N
+8	…	…	PUNCT	PU	_	3	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1536
+# chapter = 27
+# text = 可是，现在却又发生了不寻常的事。我给小王子画的羊嘴套上，忘了画皮带！
+# en_sent_id = lpp_1943.1536
+# en_text = But there is one extraordinary thing ... when I drew the muzzle for the little prince , I forgot to add the leather strap to it .
+1	可是	可是	ADV	AD	_	6	advmod	_	_	_	ADV	可是	_	_	_	_	_	O-ADV
+2	，	，	PUNCT	PU	_	6	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+3	现在	现在	NOUN	NT	_	6	obl:tmod	_	_	_	N	现在	_	_	_	_	_	O-N
+4	却	却	ADV	AD	_	6	advmod	_	_	_	ADV	却	_	_	_	_	_	O-ADV
+5	又	又	ADV	AD	_	6	advmod	_	_	_	ADV	又	_	_	_	_	_	O-ADV
+6	发生	发生	VERB	VV	_	0	root	_	_	_	V	发生	_	_	_	_	_	O-V
+7	了	了	AUX	AS	_	6	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+8	不	不	ADV	AD	Polarity=Neg	9	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+9	寻常	寻常	ADJ	JJ	_	11	amod	_	_	_	ADJ	寻常	_	_	_	_	_	O-ADJ
+10	的	的	PART	DEC	_	9	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+11	事	事	NOUN	NN	_	6	obj	_	_	_	N	事	_	_	_	_	_	O-N
+12	。	。	PUNCT	PU	_	6	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+13	我	我	PRON	PN	_	21	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+14	给	给	ADP	P	_	18	case	_	AlignedTokId=13|AlignedAdposition=for	_	P	给	p.Beneficiary	p.Beneficiary	_	_	_	O-P-p.Beneficiary
+15	小王子	小王子	PROPN	NR	_	16	obl:prep	_	_	_	N	小王子	_	_	_	_	_	O-N
+16	画	画	VERB	VV	_	18	acl	_	_	_	V	画	_	_	_	_	_	O-V
+17	的	的	PART	DEC	_	16	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+18	羊嘴套	羊嘴套	NOUN	NN	_	21	obl:prep	_	_	_	N	羊嘴套	_	_	_	_	_	O-N
+19	上	上	ADP	LC	_	18	case	_	AlignedAdposition=None	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+20	，	，	PUNCT	PU	_	21	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+21	忘	忘	VERB	VV	_	6	conj	_	_	_	V	忘	_	_	_	_	_	O-V
+22	了	了	AUX	AS	_	21	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+23	画	画	VERB	VV	_	21	dep	_	_	_	V	画	_	_	_	_	_	O-V
+24	皮带	皮带	NOUN	NN	_	23	obj	_	_	_	N	皮带	_	_	_	_	_	O-N
+25	！	！	PUNCT	PU	_	6	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1537
+# chapter = 27
+# text = 他再也不可能把它套在羊嘴上。
+# en_sent_id = lpp_1943.1537
+# en_text = He will never have been able to fasten it on his sheep .
+1	他	他	PRON	PN	_	8	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+2	再	再	ADV	AD	_	8	advmod	_	_	_	ADV	再	_	_	_	_	_	O-ADV
+3	也	也	ADV	AD	_	8	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+4	不	不	ADV	AD	Polarity=Neg	8	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+5	可能	可能	VERB	VV	_	8	aux:modal	_	_	_	V	可能	_	_	_	_	_	O-V
+6	把	把	ADP	BA	_	8	aux:ba	_	AlignedAdposition=None	_	BA	把	p.Theme	p.Theme	_	_	_	O-BA-p.Theme
+7	它	它	PRON	PN	_	8	dep	_	_	_	PRON	它	_	_	_	_	_	O-PRON
+8	套	套	VERB	VV	_	0	root	_	_	_	V	套	_	_	_	_	_	O-V
+9	在	在	ADP	P	_	10	case	_	AlignedTokId=10|AlignedAdposition=on	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+10	羊嘴	羊嘴	NOUN	NN	_	8	obl:prep	_	_	_	N	羊嘴	_	_	_	_	_	O-N
+11	上	上	ADP	LC	_	10	case	_	AlignedTokId=10|AlignedAdposition=on	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+12	。	。	PUNCT	PU	_	8	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1538
+# chapter = 27
+# text = 于是，我思忖着：“他的星球上发生了什么事呢？
+# en_sent_id = lpp_1943.1538
+# en_text = So now I keep wondering : what is happening on his planet ?
+1	于是	于是	ADV	AD	_	4	advmod	_	_	_	ADV	于是	_	_	_	_	_	O-ADV
+2	，	，	PUNCT	PU	_	4	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+3	我	我	PRON	PN	_	4	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+4	思忖	思忖	VERB	VV	_	0	root	_	_	_	V	思忖	_	_	_	_	_	O-V
+5	着	着	AUX	AS	_	4	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+6	：	：	PUNCT	PU	_	4	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+7	“	“	PUNCT	PU	_	12	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+8	他	他	PRON	PN	_	10	nmod:assmod	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+9	的	的	PART	DEG	_	8	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+10	星球	星球	NOUN	NN	_	12	advmod:loc	_	_	_	N	星球	_	_	_	_	_	O-N
+11	上	上	ADP	LC	_	10	case	_	AlignedTokId=10|AlignedAdposition=on	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+12	发生	发生	VERB	VV	_	4	ccomp	_	_	_	V	发生	_	_	_	_	_	O-V
+13	了	了	AUX	AS	_	12	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+14	什么	什么	DET	DT	_	15	det	_	_	_	DET	什么	_	_	_	_	_	O-DET
+15	事	事	NOUN	NN	_	12	obj	_	_	_	N	事	_	_	_	_	_	O-N
+16	呢	呢	PART	SP	_	17	discourse	_	_	_	PART	呢	_	_	_	_	_	O-PART
+17	？	？	PUNCT	PU	_	4	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1539
+# chapter = 27
+# text = 大概小羊把花吃掉了吧…”
+# en_sent_id = lpp_1943.1539
+# en_text = Perhaps the sheep has eaten the flower ...
+1	大概	大概	ADV	AD	_	4	advmod	_	_	_	ADV	大概	_	_	_	_	_	O-ADV
+2	小羊	小羊	NOUN	NN	_	4	nsubj	_	_	_	N	小羊	_	_	_	_	_	O-N
+3	把	把	ADP	BA	_	4	aux:ba	_	AlignedAdposition=None	_	BA	把	p.Theme	p.Theme	_	_	_	O-BA-p.Theme
+4	花	花	VERB	VV	_	9	dep	_	_	_	V	花	_	_	_	_	_	O-V
+5	吃掉	吃掉	VERB	VV	_	4	advmod:rcomp	_	_	_	V	吃掉	_	_	_	_	_	O-V
+6	了	了	AUX	AS	_	5	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+7	吧	吧	PART	SP	_	9	discourse	_	_	_	PART	吧	_	_	_	_	_	O-PART
+8	…	…	PUNCT	PU	_	9	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+9	”	”	PUNCT	PU	_	0	root	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1540
+# chapter = 27
+# text = 有时我又对自己说，“绝对不会的！
+# en_sent_id = lpp_1943.1540
+# en_text = At one time I say to myself : " Surely not !
+1	有时	有时	ADV	AD	_	6	advmod	_	_	_	ADV	有时	_	_	_	_	_	O-ADV
+2	我	我	PRON	PN	_	6	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+3	又	又	ADV	AD	_	6	advmod	_	_	_	ADV	又	_	_	_	_	_	O-ADV
+4	对	对	ADP	P	_	5	case	_	AlignedTokId=6|AlignedAdposition=to	_	P	对	p.Recipient	p.Direction	_	_	_	O-P-p.Recipient|p.Direction
+5	自己	自己	PRON	PN	_	6	obl:prep	_	_	_	PRON	自己	_	_	_	_	_	O-PRON
+6	说	说	VERB	VV	_	0	root	_	_	_	V	说	_	_	_	_	_	O-V
+7	，	，	PUNCT	PU	_	6	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+8	“	“	PUNCT	PU	_	11	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+9	绝对	绝对	ADV	AD	_	11	advmod	_	_	_	ADV	绝对	_	_	_	_	_	O-ADV
+10	不	不	ADV	AD	Polarity=Neg	11	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+11	会	会	VERB	VV	_	6	ccomp	_	_	_	V	会	_	_	_	_	_	O-V
+12	的	的	PART	SP	_	11	discourse	_	_	_	PART	的	_	_	_	_	_	O-PART
+13	！	！	PUNCT	PU	_	6	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1541
+# chapter = 27
+# text = 小王子每天夜里都用玻璃罩子罩住他的花，而且他会把羊看管好的…”
+# en_sent_id = lpp_1943.1541
+# en_text = The little prince shuts his flower under her glass globe every night , and he watches over his sheep very carefully ... "
+1	小王子	小王子	PROPN	NR	_	10	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+2	每	每	DET	DT	_	4	det	_	_	_	DET	每	_	_	_	_	_	O-DET
+3	天	天	NOUN	M	_	2	mark:clf	_	_	_	N	天	_	_	_	_	_	O-N
+4	夜	夜	NOUN	NN	_	10	advmod:loc	_	_	_	N	夜	_	_	_	_	_	O-N
+5	里	里	ADP	LC	_	4	case	_	AlignedAdposition=None	_	LC	里	p.Duration	p.Duration	_	_	_	O-LC-p.Duration
+6	都	都	ADV	AD	_	10	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+7	用	用	ADP	P	_	9	case	_	AlignedTokId=7|AlignedAdposition=under	_	P	用	p.Instrument	p.Instrument	_	_	_	O-P-p.Instrument
+8	玻璃	玻璃	NOUN	NN	_	9	compound:nn	_	_	_	N	玻璃	_	_	_	_	_	O-N
+9	罩子	罩子	NOUN	NN	_	10	obl:prep	_	_	_	N	罩子	_	_	_	_	_	O-N
+10	罩住	罩住	VERB	VV	_	0	root	_	_	_	V	罩住	_	_	_	_	_	O-V
+11	他	他	PRON	PN	_	13	nmod:assmod	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+12	的	的	PART	DEG	_	11	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+13	花	花	NOUN	NN	_	10	obj	_	_	_	N	花	_	_	_	_	_	O-N
+14	，	，	PUNCT	PU	_	10	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+15	而且	而且	ADV	AD	_	20	advmod	_	_	_	ADV	而且	_	_	_	_	_	O-ADV
+16	他	他	PRON	PN	_	20	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+17	会	会	VERB	VV	_	20	aux:modal	_	_	_	V	会	_	_	_	_	_	O-V
+18	把	把	ADP	BA	_	20	aux:ba	_	AlignedAdposition=None	_	BA	把	p.Theme	p.Theme	_	_	_	O-BA-p.Theme
+19	羊	羊	NOUN	NN	_	20	dep	_	_	_	N	羊	_	_	_	_	_	O-N
+20	看管	看管	VERB	VV	_	10	conj	_	_	_	V	看管	_	_	_	_	_	O-V
+21	好的	好的	VERB	VA	_	20	advmod:rcomp	_	_	_	V	好的	_	_	_	_	_	O-V
+22	…	…	PUNCT	PU	_	10	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+23	”	”	PUNCT	PU	_	10	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1542
+# chapter = 27
+# text = 我就非常高兴。
+# en_sent_id = lpp_1943.1542
+# en_text = Then I am happy .
+1	我	我	PRON	PN	_	4	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+2	就	就	ADV	AD	_	4	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+3	非常	非常	ADV	AD	_	4	advmod	_	_	_	ADV	非常	_	_	_	_	_	O-ADV
+4	高兴	高兴	VERB	VA	_	0	root	_	_	_	V	高兴	_	_	_	_	_	O-V
+5	。	。	PUNCT	PU	_	4	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1543
+# chapter = 27
+# text = 这时，所有的星星都在柔情地轻声笑着。
+# en_sent_id = lpp_1943.1543
+# en_text = And there is sweetness in the laughter of all the stars .
+1	这时	这时	ADV	AD	_	11	advmod	_	_	_	ADV	这时	_	_	_	_	_	O-ADV
+2	，	，	PUNCT	PU	_	11	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+3	所有	所有	DET	DT	_	5	dep	_	_	_	DET	所有	_	_	_	_	_	O-DET
+4	的	的	PART	DEG	_	3	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+5	星星	星星	NOUN	NN	_	11	nsubj	_	_	_	N	星星	_	_	_	_	_	O-N
+6	都	都	ADV	AD	_	11	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+7	在	在	ADV	AD	_	11	advmod	_	_	_	ADV	在	_	_	_	_	_	O-ADV
+8	柔情	柔情	VERB	VA	_	11	advmod:dvp	_	_	_	V	柔情	_	_	_	_	_	O-V
+9	地	地	PART	DEV	_	8	mark	_	_	_	DE	地	_	_	_	_	_	O-DE
+10	轻声	轻声	ADV	AD	_	11	advmod	_	_	_	ADV	轻声	_	_	_	_	_	O-ADV
+11	笑	笑	VERB	VV	_	0	root	_	_	_	V	笑	_	_	_	_	_	O-V
+12	着	着	AUX	AS	_	11	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+13	。	。	PUNCT	PU	_	11	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1544
+# chapter = 27
+# text = 忽而我又对自己说：“人们有时总免不了会疏忽的，那就够戗！
+# en_sent_id = lpp_1943.1544
+# en_text = But at another time I say to myself : " At some moment or other one is absent - minded , and that is enough !
+1	忽而	忽而	ADV	AD	_	6	advmod	_	_	_	ADV	忽而	_	_	_	_	_	O-ADV
+2	我	我	PRON	PN	_	6	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+3	又	又	ADV	AD	_	6	advmod	_	_	_	ADV	又	_	_	_	_	_	O-ADV
+4	对	对	ADP	P	_	5	case	_	AlignedTokId=7|AlignedAdposition=to	_	P	对	p.Recipient	p.Direction	_	_	_	O-P-p.Recipient|p.Direction
+5	自己	自己	PRON	PN	_	6	obl:prep	_	_	_	PRON	自己	_	_	_	_	_	O-PRON
+6	说	说	VERB	VV	_	0	root	_	_	_	V	说	_	_	_	_	_	O-V
+7	：	：	PUNCT	PU	_	6	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+8	“	“	PUNCT	PU	_	14	punct	_	_	_	PUNCT	“	_	_	_	_	_	O-PUNCT
+9	人们	人	NOUN	NN	_	14	nsubj	_	_	_	N	人	_	_	_	_	_	O-N
+10	有时	有时	ADV	AD	_	14	advmod	_	_	_	ADV	有时	_	_	_	_	_	O-ADV
+11	总	总	ADV	AD	_	14	advmod	_	_	_	ADV	总	_	_	_	_	_	O-ADV
+12	免不了	免不了	ADV	AD	_	14	advmod	_	_	_	ADV	免不了	_	_	_	_	_	O-ADV
+13	会	会	VERB	VV	_	14	aux:modal	_	_	_	V	会	_	_	_	_	_	O-V
+14	疏忽	疏忽	VERB	VA	_	6	ccomp	_	_	_	V	疏忽	_	_	_	_	_	O-V
+15	的	的	PART	SP	_	14	discourse	_	_	_	PART	的	_	_	_	_	_	O-PART
+16	，	，	PUNCT	PU	_	14	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+17	那	那	ADV	AD	_	19	advmod	_	_	_	ADV	那	_	_	_	_	_	O-ADV
+18	就	就	ADV	AD	_	19	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+19	够戗	够戗	VERB	VV	_	6	ccomp	_	_	_	V	够戗	_	_	_	_	_	O-V
+20	！	！	PUNCT	PU	_	6	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1545
+# chapter = 27
+# text = 某一天晚上他忘了玻璃罩子，或者小羊夜里不声不响地跑出来…”
+# en_sent_id = lpp_1943.1545
+# en_text = On some one evening he forgot the glass globe , or the sheep got out , without making any noise , in the night ... "
+1	某	某	DET	DT	_	4	det	_	_	_	DET	某	_	_	_	_	_	O-DET
+2	一	一	NUM	CD	_	1	dep	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+3	天	天	NOUN	M	_	2	mark:clf	_	_	_	N	天	_	_	_	_	_	O-N
+4	晚上	晚上	NOUN	NT	_	6	obl:topic	_	_	_	N	晚上	_	_	_	_	_	O-N
+5	他	他	PRON	PN	_	6	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+6	忘	忘	VERB	VV	_	0	root	_	_	_	V	忘	_	_	_	_	_	O-V
+7	了	了	AUX	AS	_	6	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+8	玻璃	玻璃	NOUN	NN	_	9	compound:nn	_	_	_	N	玻璃	_	_	_	_	_	O-N
+9	罩子	罩子	NOUN	NN	_	13	dep	_	_	_	N	罩子	_	_	_	_	_	O-N
+10	，	，	PUNCT	PU	_	13	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+11	或者	或者	CCONJ	CC	_	13	cc	_	_	_	CCONJ	或者	_	_	_	_	_	O-CCONJ
+12	小羊	小羊	NOUN	NN	_	13	compound:nn	_	_	_	N	小羊	_	_	_	_	_	O-N
+13	夜	夜	NOUN	NN	_	17	advmod:loc	_	_	_	N	夜	_	_	_	_	_	O-N
+14	里	里	ADP	LC	_	13	case	_	AlignedTokId=22|AlignedAdposition=in	_	LC	里	p.Time	p.Duration	_	_	_	O-LC-p.Time|p.Duration
+15	不声不响	不声不响	VERB	VV	_	17	advmod:dvp	_	_	_	V	不声不响	_	_	_	_	_	O-V
+16	地	地	PART	DEV	_	15	mark	_	_	_	DE	地	_	_	_	_	_	O-DE
+17	跑	跑	VERB	VV	_	6	conj	_	_	_	V	跑	_	_	_	_	_	O-V
+18	出来	出来	VERB	VV	_	17	advmod:rcomp	_	_	_	V	出来	_	_	_	_	_	O-V
+19	…	…	PUNCT	PU	_	6	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+20	”	”	PUNCT	PU	_	6	punct	_	_	_	PUNCT	”	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1546
+# chapter = 27
+# text = 想到这里，小铃铛都变成泪珠了！
+# en_sent_id = lpp_1943.1546
+# en_text = And then the little bells are changed to tears ...
+1	想到	想到	VERB	VV	_	0	root	_	_	_	V	想到	_	_	_	_	_	O-V
+2	这里	这里	PRON	PN	_	7	dep	_	_	_	PRON	这里	_	_	_	_	_	O-PRON
+3	，	，	PUNCT	PU	_	7	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+4	小	小	ADJ	JJ	_	5	amod	_	_	_	ADJ	小	_	_	_	_	_	O-ADJ
+5	铃铛	铃铛	NOUN	NN	_	7	nsubj	_	_	_	N	铃铛	_	_	_	_	_	O-N
+6	都	都	ADV	AD	_	7	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+7	变成	变成	VERB	VV	_	1	ccomp	_	_	_	V	变成	_	_	_	_	_	O-V
+8	泪珠	泪珠	NOUN	NN	_	7	obj	_	_	_	N	泪珠	_	_	_	_	_	O-N
+9	了	了	PART	SP	_	10	discourse	_	_	_	PART	了	_	_	_	_	_	O-PART
+10	！	！	PUNCT	PU	_	1	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1547
+# chapter = 27
+# text = 这真是一个很大的奥秘。
+# en_sent_id = lpp_1943.1547
+# en_text = Here , then , is a great mystery .
+1	这	这	PRON	PN	_	9	nsubj	_	_	_	PRON	这	_	_	_	_	_	O-PRON
+2	真	真	ADV	AD	_	9	advmod	_	_	_	ADV	真	_	_	_	_	_	O-ADV
+3	是	是	AUX	VC	_	9	cop	_	_	_	V	是	_	_	_	_	_	O-V
+4	一	一	NUM	CD	_	9	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+5	个	个	NOUN	M	_	4	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+6	很	很	ADV	AD	_	7	advmod	_	_	_	ADV	很	_	_	_	_	_	O-ADV
+7	大	大	ADJ	JJ	_	9	amod	_	_	_	ADJ	大	_	_	_	_	_	O-ADJ
+8	的	的	PART	DEG	_	7	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+9	奥秘	奥秘	NOUN	NN	_	0	root	_	_	_	N	奥秘	_	_	_	_	_	O-N
+10	。	。	PUNCT	PU	_	9	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1548
+# chapter = 27
+# text = 对你们这些喜欢小王子的人来说，就象对于我来说一样，无论什么地方，凡是某处，如果一只羊（尽管我们并不认识它），吃了一朵玫瑰花，或是没有吃掉一朵玫瑰花，那么宇宙的面貌就全然不同。
+# en_sent_id = lpp_1943.1548
+# en_text = For you who also love the little prince , and for me , nothing in the universe can be the same if somewhere , we do not know where , a sheep that we never saw has - - yes or no ? -- eaten a rose ...
+1	对	对	ADP	P	_	7	case	_	AlignedTokId=1|AlignedAdposition=For	_	P	对	p.Experiencer	p.Experiencer	_	_	_	O-P-p.Experiencer
+2	你们	你们	PRON	PN	_	7	compound:nn	_	_	_	PRON	你们	_	_	_	_	_	O-PRON
+3	这些	这些	DET	DT	_	7	det	_	_	_	DET	这些	_	_	_	_	_	O-DET
+4	喜欢	喜欢	VERB	VV	_	7	acl	_	_	_	V	喜欢	_	_	_	_	_	O-V
+5	小王子	小王子	PROPN	NR	_	4	obj	_	_	_	N	小王子	_	_	_	_	_	O-N
+6	的	的	PART	DEC	_	4	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+7	人	人	NOUN	NN	_	15	obl:prep	_	_	_	N	人	_	_	_	_	_	O-N
+8	来说	来说	ADP	LC	_	7	case	_	AlignedTokId=1|AlignedAdposition=For	_	LC	来说	p.Experiencer	p.Experiencer	_	_	_	O-LC-p.Experiencer
+9	，	，	PUNCT	PU	_	56	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+10	就	就	ADV	AD	_	15	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+11	象	象	ADP	P	_	15	case	_	AlignedAdposition=None	_	P	象	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
+12	对于	对于	ADP	P	_	13	case	_	AlignedTokId=11|AlignedAdposition=for	_	P	对于	p.Experiencer	p.Experiencer	_	_	_	O-P-p.Experiencer
+13	我	我	PRON	PN	_	15	obl:prep	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+14	来说	来说	ADP	LC	_	13	case	_	AlignedTokId=11|AlignedAdposition=for	_	LC	来说	p.Experiencer	p.Experiencer	_	_	_	O-LC-p.Experiencer
+15	一样	一样	VERB	VA	_	56	dep	_	_	_	V	一样	_	_	_	_	_	O-V
+16	，	，	PUNCT	PU	_	56	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+17	无论	无论	ADV	AD	_	19	advmod	_	_	_	ADV	无论	_	_	_	_	_	O-ADV
+18	什么	什么	DET	DT	_	19	det	_	_	_	DET	什么	_	_	_	_	_	O-DET
+19	地方	地方	NOUN	NN	_	56	dep	_	_	_	N	地方	_	_	_	_	_	O-N
+20	，	，	PUNCT	PU	_	56	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+21	凡是	凡是	ADV	AD	_	22	advmod	_	_	_	ADV	凡是	_	_	_	_	_	O-ADV
+22	某处	某处	PRON	PN	_	56	dep	_	_	_	PRON	某处	_	_	_	_	_	O-PRON
+23	，	，	PUNCT	PU	_	56	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+24	如果	如果	SCONJ	CS	_	33	advmod	_	_	_	SCONJ	如果	_	_	_	_	_	O-SCONJ
+25	一	一	NUM	CD	_	27	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+26	只	只	NOUN	M	_	25	mark:clf	_	_	_	N	只	_	_	_	_	_	O-N
+27	羊	羊	NOUN	NN	_	33	nsubj	_	_	_	N	羊	_	_	_	_	_	O-N
+28	（	（	PUNCT	PU	_	33	punct	_	_	_	PUNCT	（	_	_	_	_	_	O-PUNCT
+29	尽管	尽管	SCONJ	CS	_	33	advmod	_	_	_	SCONJ	尽管	_	_	_	_	_	O-SCONJ
+30	我们	我	PRON	PN	_	33	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+31	并	并	ADV	AD	_	33	advmod	_	_	_	ADV	并	_	_	_	_	_	O-ADV
+32	不	不	ADV	AD	Polarity=Neg	33	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+33	认识	认识	VERB	VV	_	56	dep	_	_	_	V	认识	_	_	_	_	_	O-V
+34	它	它	PRON	PN	_	33	obj	_	_	_	PRON	它	_	_	_	_	_	O-PRON
+35	）	）	PUNCT	PU	_	33	punct	_	_	_	PUNCT	）	_	_	_	_	_	O-PUNCT
+36	，	，	PUNCT	PU	_	33	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+37	吃	吃	VERB	VV	_	33	conj	_	_	_	V	吃	_	_	_	_	_	O-V
+38	了	了	AUX	AS	_	37	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+39	一	一	NUM	CD	_	41	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+40	朵	朵	NOUN	M	_	39	mark:clf	_	_	_	N	朵	_	_	_	_	_	O-N
+41	玫瑰花	玫瑰花	NOUN	NN	_	37	obj	_	_	_	N	玫瑰花	_	_	_	_	_	O-N
+42	，	，	PUNCT	PU	_	37	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+43	或是	或是	CCONJ	CC	_	45	cc	_	_	_	CCONJ	或是	_	_	_	_	_	O-CCONJ
+44	没有	没有	ADV	AD	Polarity=Neg	45	advmod	_	_	_	ADV	没有	_	_	_	_	_	O-ADV
+45	吃掉	吃掉	VERB	VV	_	37	conj	_	_	_	V	吃掉	_	_	_	_	_	O-V
+46	一	一	NUM	CD	_	48	nummod	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+47	朵	朵	NOUN	M	_	46	mark:clf	_	_	_	N	朵	_	_	_	_	_	O-N
+48	玫瑰花	玫瑰花	NOUN	NN	_	45	obj	_	_	_	N	玫瑰花	_	_	_	_	_	O-N
+49	，	，	PUNCT	PU	_	56	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+50	那么	那么	ADV	AD	_	56	advmod	_	_	_	ADV	那么	_	_	_	_	_	O-ADV
+51	宇宙	宇宙	NOUN	NN	_	53	nmod:assmod	_	_	_	N	宇宙	_	_	_	_	_	O-N
+52	的	的	PART	DEG	_	51	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+53	面貌	面貌	NOUN	NN	_	56	nsubj	_	_	_	N	面貌	_	_	_	_	_	O-N
+54	就	就	ADV	AD	_	56	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+55	全然	全然	ADV	AD	_	56	advmod	_	_	_	ADV	全然	_	_	_	_	_	O-ADV
+56	不同	不同	VERB	VA	_	0	root	_	_	_	V	不同	_	_	_	_	_	O-V
+57	。	。	PUNCT	PU	_	56	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1549
+# chapter = 27
+# text = 望着天空。
+# en_sent_id = lpp_1943.1549
+# en_text = Look up at the sky .
+1	望	望	VERB	VV	_	0	root	_	_	_	V	望	_	_	_	_	_	O-V
+2	着	着	AUX	AS	_	1	aux:asp	_	_	_	AUX	着	_	_	_	_	_	O-AUX
+3	天空	天空	NOUN	NN	_	1	obj	_	_	_	N	天空	_	_	_	_	_	O-N
+4	。	。	PUNCT	PU	_	1	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1550
+# chapter = 27
+# text = 你们想一想：是还是不是？
+# en_sent_id = lpp_1943.1550
+# en_text = Ask yourselves : is it yes or no ?
+1	你们	你们	PRON	PN	_	2	nsubj	_	_	_	PRON	你们	_	_	_	_	_	O-PRON
+2	想	想	VERB	VV	_	0	root	_	_	_	V	想	_	_	_	_	_	O-V
+3	一	一	ADV	AD	_	4	advmod	_	_	_	ADV	一	_	_	_	_	_	O-ADV
+4	想	想	VERB	VV	_	2	dep	_	_	_	V	想	_	_	_	_	_	O-V
+5	：	：	PUNCT	PU	_	2	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+6	是	是	VERB	VC	_	2	dep	_	_	_	V	是	_	_	_	_	_	O-V
+7	还是	还是	ADV	AD	_	9	advmod	_	_	_	ADV	还是	_	_	_	_	_	O-ADV
+8	不	不	ADV	AD	Polarity=Neg	9	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+9	是	是	VERB	VC	_	6	conj	_	_	_	V	是	_	_	_	_	_	O-V
+10	？	？	PUNCT	PU	_	2	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1551
+# chapter = 27
+# text = 羊究竟是吃了还是没有吃掉花？
+# en_sent_id = lpp_1943.1551
+# en_text = Has the sheep eaten the flower ?
+1	羊	羊	NOUN	NN	_	4	nsubj	_	_	_	N	羊	_	_	_	_	_	O-N
+2	究竟	究竟	ADV	AD	_	4	advmod	_	_	_	ADV	究竟	_	_	_	_	_	O-ADV
+3	是	是	AUX	VC	_	4	cop	_	_	_	V	是	_	_	_	_	_	O-V
+4	吃	吃	VERB	VV	_	0	root	_	_	_	V	吃	_	_	_	_	_	O-V
+5	了	了	AUX	AS	_	4	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+6	还是	还是	ADV	AD	_	8	advmod	_	_	_	ADV	还是	_	_	_	_	_	O-ADV
+7	没有	没有	ADV	AD	Polarity=Neg	8	advmod	_	_	_	ADV	没有	_	_	_	_	_	O-ADV
+8	吃掉	吃掉	VERB	VV	_	4	conj	_	_	_	V	吃掉	_	_	_	_	_	O-V
+9	花	花	NOUN	NN	_	8	obj	_	_	_	N	花	_	_	_	_	_	O-N
+10	？	？	PUNCT	PU	_	4	punct	_	_	_	PUNCT	？	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1552
+# chapter = 27
+# text = 那么你们就会看到一切都变了样…
+# en_sent_id = lpp_1943.1552
+# en_text = And you will see how everything changes ...
+1	那么	那么	ADV	AD	_	5	advmod	_	_	_	ADV	那么	_	_	_	_	_	O-ADV
+2	你们	你们	PRON	PN	_	5	nsubj	_	_	_	PRON	你们	_	_	_	_	_	O-PRON
+3	就	就	ADV	AD	_	5	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+4	会	会	VERB	VV	_	5	aux:modal	_	_	_	V	会	_	_	_	_	_	O-V
+5	看到	看到	VERB	VV	_	0	root	_	_	_	V	看到	_	_	_	_	_	O-V
+6	一切	一切	PRON	PN	_	8	nsubj	_	_	_	PRON	一切	_	_	_	_	_	O-PRON
+7	都	都	ADV	AD	_	8	advmod	_	_	_	ADV	都	_	_	_	_	_	O-ADV
+8	变	变	VERB	VV	_	5	ccomp	_	_	_	V	变	_	_	_	_	_	O-V
+9	了	了	AUX	AS	_	8	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+10	样	样	NOUN	NN	_	8	obj	_	_	_	N	样	_	_	_	_	_	O-N
+11	…	…	PUNCT	PU	_	5	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1553
+# chapter = 27
+# text = 任何一个大人将永远不会明白这个问题竟如此重要！
+# en_sent_id = lpp_1943.1553
+# en_text = And no grown - up will ever understand that this is a matter of so much importance !
+1	任何	任何	DET	DT	_	4	det	_	_	_	DET	任何	_	_	_	_	_	O-DET
+2	一	一	NUM	CD	_	1	dep	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+3	个	个	NOUN	M	_	2	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+4	大人	大人	NOUN	NN	_	9	nsubj	_	_	_	N	大人	_	_	_	_	_	O-N
+5	将	将	ADV	AD	_	9	advmod	_	_	_	ADV	将	_	_	_	_	_	O-ADV
+6	永远	永远	ADV	AD	_	9	advmod	_	_	_	ADV	永远	_	_	_	_	_	O-ADV
+7	不	不	ADV	AD	Polarity=Neg	9	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+8	会	会	VERB	VV	_	9	aux:modal	_	_	_	V	会	_	_	_	_	_	O-V
+9	明白	明白	VERB	VV	_	0	root	_	_	_	V	明白	_	_	_	_	_	O-V
+10	这个	这个	DET	DT	_	11	det	_	_	_	DET	这个	_	_	_	_	_	O-DET
+11	问题	问题	NOUN	NN	_	14	nsubj	_	_	_	N	问题	_	_	_	_	_	O-N
+12	竟	竟	ADV	AD	_	14	advmod	_	_	_	ADV	竟	_	_	_	_	_	O-ADV
+13	如此	如此	ADV	AD	_	14	advmod	_	_	_	ADV	如此	_	_	_	_	_	O-ADV
+14	重要	重要	VERB	VA	_	9	ccomp	_	_	_	V	重要	_	_	_	_	_	O-V
+15	！	！	PUNCT	PU	_	9	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1554
+# chapter = 27
+# text = 对我来说，这是世界上最美也是最凄凉的地方。
+# en_sent_id = lpp_1943.1554
+# en_text = This is , to me , the loveliest and saddest landscape in the world .
+1	对	对	ADP	P	_	2	case	_	AlignedTokId=4|AlignedAdposition=to	_	P	对	p.Experiencer	p.Experiencer	_	_	_	O-P-p.Experiencer
+2	我	我	PRON	PN	_	16	nmod:prep	_	ToDo=nmod	_	PRON	我	_	_	_	_	_	O-PRON
+3	来说	来说	ADP	LC	_	2	case	_	AlignedTokId=4|AlignedAdposition=to	_	LC	来说	p.Experiencer	p.Experiencer	_	_	_	O-LC-p.Experiencer
+4	，	，	PUNCT	PU	_	16	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+5	这	这	PRON	PN	_	16	nsubj	_	_	_	PRON	这	_	_	_	_	_	O-PRON
+6	是	是	AUX	VC	_	16	cop	_	_	_	V	是	_	_	_	_	_	O-V
+7	世界	世界	NOUN	NN	_	10	advmod:loc	_	_	_	N	世界	_	_	_	_	_	O-N
+8	上	上	ADP	LC	_	7	case	_	AlignedTokId=12|AlignedAdposition=in	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+9	最	最	ADV	AD	_	10	advmod	_	_	_	ADV	最	_	_	_	_	_	O-ADV
+10	美	美	VERB	VA	_	16	dep	_	_	_	V	美	_	_	_	_	_	O-V
+11	也	也	ADV	AD	_	16	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+12	是	是	AUX	VC	_	16	cop	_	_	_	V	是	_	_	_	_	_	O-V
+13	最	最	ADV	AD	_	14	advmod	_	_	_	ADV	最	_	_	_	_	_	O-ADV
+14	凄凉	凄凉	VERB	VA	_	16	amod	_	_	_	V	凄凉	_	_	_	_	_	O-V
+15	的	的	PART	DEC	_	14	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+16	地方	地方	NOUN	NN	_	0	root	_	_	_	N	地方	_	_	_	_	_	O-N
+17	。	。	PUNCT	PU	_	16	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1555
+# chapter = 27
+# text = 它与前一页画的是同一个地方。我再一次将它画出来，为的是好让你们看清楚。
+# en_sent_id = lpp_1943.1555
+# en_text = It is the same as that on the preceding page , but I have drawn it again to impress it on your memory .
+1	它	它	PRON	PN	_	12	nsubj	_	_	_	PRON	它	_	_	_	_	_	O-PRON
+2	与	与	ADP	P	_	3	case	_	AlignedTokId=5|AlignedAdposition=as	_	P	与	p.ComparisonRef	p.ComparisonRef	_	_	_	O-P-p.ComparisonRef
+3	前	前	DET	DT	_	6	obl:prep	_	_	_	DET	前	_	_	_	_	_	O-DET
+4	一	一	NUM	CD	_	3	dep	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+5	页	页	NOUN	M	_	4	mark:clf	_	_	_	N	页	_	_	_	_	_	O-N
+6	画	画	VERB	VV	_	12	nsubj	_	_	_	V	画	_	_	_	_	_	O-V
+7	的	的	PART	DEC	_	6	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+8	是	是	AUX	VC	_	12	cop	_	_	_	V	是	_	_	_	_	_	O-V
+9	同	同	DET	DT	_	12	det	_	_	_	DET	同	_	_	_	_	_	O-DET
+10	一	一	NUM	CD	_	9	dep	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+11	个	个	NOUN	M	_	10	mark:clf	_	_	_	N	个	_	_	_	_	_	O-N
+12	地方	地方	NOUN	NN	_	0	root	_	_	_	N	地方	_	_	_	_	_	O-N
+13	。	。	PUNCT	PU	_	12	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+14	我	我	PRON	PN	_	20	nsubj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+15	再	再	ADV	AD	_	20	advmod	_	_	_	ADV	再	_	_	_	_	_	O-ADV
+16	一	一	NUM	CD	_	20	dep	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+17	次	次	NOUN	M	_	16	mark:clf	_	_	_	N	次	_	_	_	_	_	O-N
+18	将	将	ADP	BA	_	20	aux:ba	_	AlignedAdposition=None	_	BA	将	p.Theme	p.Theme	_	_	_	O-BA-p.Theme
+19	它	它	PRON	PN	_	20	dep	_	_	_	PRON	它	_	_	_	_	_	O-PRON
+20	画	画	VERB	VV	_	12	conj	_	_	_	V	画	_	_	_	_	_	O-V
+21	出来	出来	VERB	VV	_	20	advmod:rcomp	_	_	_	V	出来	_	_	_	_	_	O-V
+22	，	，	PUNCT	PU	_	20	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+23	为的是	为的是	ADV	AD	_	25	advmod	_	_	_	ADV	为的是	_	_	_	_	_	O-ADV
+24	好	好	ADV	AD	_	25	advmod	_	_	_	ADV	好	_	_	_	_	_	O-ADV
+25	让	让	VERB	VV	_	20	conj	_	_	_	V	让	_	_	_	_	_	O-V
+26	你们	你们	PRON	PN	_	25	obj	_	_	_	PRON	你们	_	_	_	_	_	O-PRON
+27	看	看	VERB	VV	_	25	ccomp	_	_	_	V	看	_	_	_	_	_	O-V
+28	清楚	清楚	VERB	VA	_	27	advmod:rcomp	_	_	_	V	清楚	_	_	_	_	_	O-V
+29	。	。	PUNCT	PU	_	12	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1556
+# chapter = 27
+# text = 就是在这里，小王子出现在地球上，后来，也正是在这里消失了的。
+# en_sent_id = lpp_1943.1556
+# en_text = It is here that the little prince appeared on Earth , and disappeared .
+1	就是	就是	ADV	AD	_	6	advmod	_	_	_	ADV	就是	_	_	_	_	_	O-ADV
+2	在	在	ADP	P	_	3	case	_	AlignedAdposition=None	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+3	这里	这里	PRON	PN	_	6	obl:prep	_	_	_	PRON	这里	_	_	_	_	_	O-PRON
+4	，	，	PUNCT	PU	_	6	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+5	小王子	小王子	PROPN	NR	_	6	nsubj	_	_	_	N	小王子	_	_	_	_	_	O-N
+6	出现	出现	VERB	VV	_	0	root	_	_	_	V	出现	_	_	_	_	_	O-V
+7	在	在	ADP	P	_	8	case	_	AlignedTokId=9|AlignedAdposition=on	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+8	地球	地球	NOUN	NN	_	6	obl:prep	_	_	_	N	地球	_	_	_	_	_	O-N
+9	上	上	ADP	LC	_	8	case	_	AlignedTokId=9|AlignedAdposition=on	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+10	，	，	PUNCT	PU	_	6	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+11	后来	后来	ADV	AD	_	18	advmod	_	_	_	ADV	后来	_	_	_	_	_	O-ADV
+12	，	，	PUNCT	PU	_	18	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+13	也	也	ADV	AD	_	18	advmod	_	_	_	ADV	也	_	_	_	_	_	O-ADV
+14	正	正	ADV	AD	_	18	advmod	_	_	_	ADV	正	_	_	_	_	_	O-ADV
+15	是	是	AUX	VC	_	18	cop	_	_	_	V	是	_	_	_	_	_	O-V
+16	在	在	ADP	P	_	17	case	_	AlignedAdposition=None	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+17	这里	这里	PRON	PN	_	18	obl:prep	_	_	_	PRON	这里	_	_	_	_	_	O-PRON
+18	消失	消失	VERB	VV	_	6	conj	_	_	_	V	消失	_	_	_	_	_	O-V
+19	了	了	AUX	AS	_	18	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+20	的	的	PART	SP	_	18	discourse	_	_	_	PART	的	_	_	_	_	_	O-PART
+21	。	。	PUNCT	PU	_	6	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1557
+# chapter = 27
+# text = 请你们仔细看看这个地方，以便你们有一天去非洲沙漠上旅行的时候，能够准确地辨认出这个地方。
+# en_sent_id = lpp_1943.1557
+# en_text = Look at it carefully so that you will be sure to recognise it in case you travel some day to the African desert .
+1	请	请	VERB	VV	_	0	root	_	_	_	V	请	_	_	_	_	_	O-V
+2	你们	你们	PRON	PN	_	1	obj	_	_	_	PRON	你们	_	_	_	_	_	O-PRON
+3	仔细	仔细	ADV	AD	_	4	advmod	_	_	_	ADV	仔细	_	_	_	_	_	O-ADV
+4	看看	看看	VERB	VV	_	1	ccomp	_	_	_	V	看看	_	_	_	_	_	O-V
+5	这个	这个	DET	DT	_	6	det	_	_	_	DET	这个	_	_	_	_	_	O-DET
+6	地方	地方	NOUN	NN	_	4	obj	_	_	_	N	地方	_	_	_	_	_	O-N
+7	，	，	PUNCT	PU	_	1	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+8	以便	以便	ADV	AD	_	24	advmod	_	_	_	ADV	以便	_	_	_	_	_	O-ADV
+9	你们	你们	PRON	PN	_	10	nsubj	_	_	_	PRON	你们	_	_	_	_	_	O-PRON
+10	有	有	VERB	VE	_	24	dep	_	_	_	V	有	_	_	_	_	_	O-V
+11	一	一	NUM	CD	_	13	nsubj	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+12	天	天	NOUN	M	_	11	mark:clf	_	_	_	N	天	_	_	_	_	_	O-N
+13	去	去	VERB	VV	_	19	acl	_	_	_	V	去	_	_	_	_	_	O-V
+14	非洲	非洲	PROPN	NR	_	15	nmod:assmod	_	_	_	N	非洲	_	_	_	_	_	O-N
+15	沙漠	沙漠	NOUN	NN	_	17	advmod:loc	_	_	_	N	沙漠	_	_	_	_	_	O-N
+16	上	上	ADP	LC	_	15	case	_	AlignedTokId=20|AlignedAdposition=to	_	LC	上	p.Locus	p.Locus	_	_	_	O-LC-p.Locus
+17	旅行	旅行	VERB	VV	_	13	conj	_	_	_	V	旅行	_	_	_	_	_	O-V
+18	的	的	PART	DEC	_	13	mark	_	_	_	DE	的	_	_	_	_	_	O-DE
+19	时候	时候	NOUN	NN	_	24	obl:prep	_	_	_	N	时候	_	_	_	_	_	O-N
+20	，	，	PUNCT	PU	_	24	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+21	能够	能够	VERB	VV	_	24	aux:modal	_	_	_	V	能够	_	_	_	_	_	O-V
+22	准确	准确	VERB	VA	_	24	advmod:dvp	_	_	_	V	准确	_	_	_	_	_	O-V
+23	地	地	PART	DEV	_	22	mark	_	_	_	DE	地	_	_	_	_	_	O-DE
+24	辨认	辨认	VERB	VV	_	1	dep	_	_	_	V	辨认	_	_	_	_	_	O-V
+25	出	出	VERB	VV	_	24	advmod:rcomp	_	_	_	V	出	_	_	_	_	_	O-V
+26	这个	这个	DET	DT	_	27	det	_	_	_	DET	这个	_	_	_	_	_	O-DET
+27	地方	地方	NOUN	NN	_	24	obj	_	_	_	N	地方	_	_	_	_	_	O-N
+28	。	。	PUNCT	PU	_	1	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1558
+# chapter = 27
+# text = 如果，你们有机会经过这个地方，请不要匆匆而过，
+# en_sent_id = lpp_1943.1558
+# en_text = And , if you should come upon this spot , please do not hurry on .
+1	如果	如果	SCONJ	CS	_	4	advmod	_	_	_	SCONJ	如果	_	_	_	_	_	O-SCONJ
+2	，	，	PUNCT	PU	_	4	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+3	你们	你们	PRON	PN	_	4	nsubj	_	_	_	PRON	你们	_	_	_	_	_	O-PRON
+4	有	有	VERB	VE	_	12	dep	_	_	_	V	有	_	_	_	_	_	O-V
+5	机会	机会	NOUN	NN	_	4	obj	_	_	_	N	机会	_	_	_	_	_	O-N
+6	经过	经过	VERB	VV	_	4	conj	_	_	_	V	经过	_	_	_	_	_	O-V
+7	这个	这个	DET	DT	_	8	det	_	_	_	DET	这个	_	_	_	_	_	O-DET
+8	地方	地方	NOUN	NN	_	6	obj	_	_	_	N	地方	_	_	_	_	_	O-N
+9	，	，	PUNCT	PU	_	12	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+10	请	请	VERB	VV	_	12	xcomp	_	_	_	V	请	_	_	_	_	_	O-V
+11	不要	不要	ADV	AD	_	12	advmod	_	_	_	ADV	不要	_	_	_	_	_	O-ADV
+12	匆匆	匆匆	VERB	VA	_	0	root	_	_	_	V	匆匆	_	_	_	_	_	O-V
+13	而	而	PART	MSP	_	14	aux:prtmod	_	_	_	PART	而	_	_	_	_	_	O-PART
+14	过	过	VERB	VV	_	12	conj	_	_	_	V	过	_	_	_	_	_	O-V
+15	，	，	PUNCT	PU	_	12	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1559
+# chapter = 27
+# text = 请你们就在那颗星星底下等一等！
+# en_sent_id = lpp_1943.1559
+# en_text = Wait for a time , exactly under the star .
+1	请	请	VERB	VV	_	0	root	_	_	_	V	请	_	_	_	_	_	O-V
+2	你们	你们	PRON	PN	_	1	obj	_	_	_	PRON	你们	_	_	_	_	_	O-PRON
+3	就	就	ADV	AD	_	4	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+4	在	在	ADP	P	_	7	case	_	AlignedTokId=7|AlignedAdposition=under	_	P	在	p.Locus	p.Locus	_	_	_	O-P-p.Locus
+5	那	那	DET	DT	_	7	det	_	_	_	DET	那	_	_	_	_	_	O-DET
+6	颗	颗	NOUN	M	_	5	mark:clf	_	_	_	N	颗	_	_	_	_	_	O-N
+7	星星	星星	NOUN	NN	_	10	nmod:prep	_	_	_	N	星星	_	_	_	_	_	O-N
+8	底下	底下	NOUN	NN	_	7	case	_	_	_	N	底下	_	_	_	_	_	O-N
+9	等	等	NOUN	ETC	_	7	dep	_	_	_	N	等	_	_	_	_	_	O-N
+10	一	一	NUM	CD	_	1	dep	_	_	_	NUM	一	_	_	_	_	_	O-NUM
+11	等	等	NOUN	M	_	10	mark:clf	_	_	_	N	等	_	_	_	_	_	O-N
+12	！	！	PUNCT	PU	_	1	punct	_	_	_	PUNCT	！	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1560
+# chapter = 27
+# text = 如果这时，有个小孩子向你走来，如果他笑着，他有金黄色的头发，如果当你问他问题时他不回答，你一定会猜得出他是谁。
+# en_sent_id = lpp_1943.1560
+# en_text = Then , if a little man appears who laughs , who has golden hair and who refuses to answer questions , you will know who he is .
+1	如果	如果	SCONJ	CS	_	4	advmod	_	_	_	SCONJ	如果	_	_	_	_	_	O-SCONJ
+2	这时	这时	ADV	AD	_	4	advmod	_	_	_	ADV	这时	_	_	_	_	_	O-ADV
+3	，	，	PUNCT	PU	_	4	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+4	有	有	VERB	VE	_	35	dep	_	_	_	V	有	_	_	_	_	_	O-V
+5	个	个	NOUN	M	_	6	nummod	_	_	_	N	个	_	_	_	_	_	O-N
+6	小孩子	小孩子	NOUN	NN	_	9	nsubj	_	_	_	N	小孩子	_	_	_	_	_	O-N
+7	向	向	ADP	P	_	8	case	_	AlignedAdposition=None	_	P	向	p.Direction	p.Direction	_	_	_	O-P-p.Direction
+8	你	你	PRON	PN	_	9	obl:prep	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+9	走来	走来	VERB	VV	_	4	ccomp	_	_	_	V	走来	_	_	_	_	_	O-V
+10	，	，	PUNCT	PU	_	16	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+11	如果	如果	SCONJ	CS	_	13	advmod	_	_	_	SCONJ	如果	_	_	_	_	_	O-SCONJ
+12	他	他	PRON	PN	_	13	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+13	笑着	笑着	VERB	VV	_	16	dep	_	_	_	V	笑着	_	_	_	_	_	O-V
+14	，	，	PUNCT	PU	_	16	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+15	他	他	PRON	PN	_	16	dep	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+16	有	有	VERB	VE	_	35	dep	_	_	_	V	有	_	_	_	_	_	O-V
+17	金黄色	金黄色	ADJ	JJ	_	19	amod	_	_	_	ADJ	金黄色	_	_	_	_	_	O-ADJ
+18	的	的	PART	DEG	_	17	case	_	_	_	DE	的	_	_	_	_	_	O-DE
+19	头发	头发	NOUN	NN	_	16	obj	_	_	_	N	头发	_	_	_	_	_	O-N
+20	，	，	PUNCT	PU	_	35	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+21	如果	如果	SCONJ	CS	_	30	advmod	_	_	_	SCONJ	如果	_	_	_	_	_	O-SCONJ
+22	当	当	ADP	P	_	24	case	_	AlignedAdposition=None	_	P	当	p.Time	p.Time	_	_	_	O-P-p.Time
+23	你	你	PRON	PN	_	24	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+24	问	问	VERB	VV	_	30	obl:prep	_	_	_	V	问	_	_	_	_	_	O-V
+25	他	他	PRON	PN	_	26	nmod:poss	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+26	问题	问题	NOUN	NN	_	24	obj	_	_	_	N	问题	_	_	_	_	_	O-N
+27	时	时	ADP	LC	_	24	case	_	AlignedAdposition=None	_	LC	时	p.Time	p.Time	_	_	_	O-LC-p.Time
+28	他	他	PRON	PN	_	30	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+29	不	不	ADV	AD	Polarity=Neg	30	advmod	_	_	_	ADV	不	_	_	_	_	_	O-ADV
+30	回答	回答	VERB	VV	_	35	dep	_	_	_	V	回答	_	_	_	_	_	O-V
+31	，	，	PUNCT	PU	_	35	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+32	你	你	PRON	PN	_	35	nsubj	_	_	_	PRON	你	_	_	_	_	_	O-PRON
+33	一定	一定	ADV	AD	_	35	advmod	_	_	_	ADV	一定	_	_	_	_	_	O-ADV
+34	会	会	VERB	VV	_	35	aux:modal	_	_	_	V	会	_	_	_	_	_	O-V
+35	猜	猜	VERB	VV	_	0	root	_	_	_	V	猜	_	_	_	_	_	O-V
+36	得	得	PART	DER	_	35	dep	_	_	_	DE	得	_	_	_	_	_	O-DE
+37	出	出	VERB	VV	_	35	dep	_	_	_	V	出	_	_	_	_	_	O-V
+38	他	他	PRON	PN	_	40	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+39	是	是	AUX	VC	_	40	cop	_	_	_	V	是	_	_	_	_	_	O-V
+40	谁	谁	PRON	PN	_	35	ccomp	_	_	_	PRON	谁	_	_	_	_	_	O-PRON
+41	。	。	PUNCT	PU	_	35	punct	_	_	_	PUNCT	。	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1561
+# chapter = 27
+# text = 那就请你们帮个忙，不要让我这么忧伤：
+# en_sent_id = lpp_1943.1561
+# en_text = If this should happen , please comfort me .
+1	那	那	ADV	AD	_	3	advmod	_	_	_	ADV	那	_	_	_	_	_	O-ADV
+2	就	就	ADV	AD	_	3	advmod	_	_	_	ADV	就	_	_	_	_	_	O-ADV
+3	请	请	VERB	VV	_	0	root	_	_	_	V	请	_	_	_	_	_	O-V
+4	你们	你们	PRON	PN	_	3	obj	_	_	_	PRON	你们	_	_	_	_	_	O-PRON
+5	帮	帮	VERB	VV	_	3	ccomp	_	_	_	V	帮	_	_	_	_	_	O-V
+6	个	个	NOUN	M	_	7	nummod	_	_	_	N	个	_	_	_	_	_	O-N
+7	忙	忙	NOUN	NN	_	5	obj	_	_	_	N	忙	_	_	_	_	_	O-N
+8	，	，	PUNCT	PU	_	3	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+9	不要	不要	ADV	AD	_	10	advmod	_	_	_	ADV	不要	_	_	_	_	_	O-ADV
+10	让	让	VERB	VV	_	3	conj	_	_	_	V	让	_	_	_	_	_	O-V
+11	我	我	PRON	PN	_	10	obj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+12	这么	这么	ADV	AD	_	13	advmod	_	_	_	ADV	这么	_	_	_	_	_	O-ADV
+13	忧伤	忧伤	VERB	VA	_	10	ccomp	_	_	_	V	忧伤	_	_	_	_	_	O-V
+14	：	：	PUNCT	PU	_	3	punct	_	_	_	PUNCT	：	_	_	_	_	_	O-PUNCT
+
+
+# sent_id = lpp_1943_zh-1562
+# chapter = 27
+# text = 赶快写信告诉我，他又回来了…
+# en_sent_id = lpp_1943.1562
+# en_text = Send me word that he has come back .
+1	赶快	赶快	ADV	AD	_	2	advmod	_	_	_	ADV	赶快	_	_	_	_	_	O-ADV
+2	写	写	VERB	VV	_	0	root	_	_	_	V	写	_	_	_	_	_	O-V
+3	信	信	NOUN	NN	_	2	obj	_	_	_	N	信	_	_	_	_	_	O-N
+4	告诉	告诉	VERB	VV	_	2	conj	_	_	_	V	告诉	_	_	_	_	_	O-V
+5	我	我	PRON	PN	_	4	obj	_	_	_	PRON	我	_	_	_	_	_	O-PRON
+6	，	，	PUNCT	PU	_	2	punct	_	_	_	PUNCT	，	_	_	_	_	_	O-PUNCT
+7	他	他	PRON	PN	_	9	nsubj	_	_	_	PRON	他	_	_	_	_	_	O-PRON
+8	又	又	ADV	AD	_	9	advmod	_	_	_	ADV	又	_	_	_	_	_	O-ADV
+9	回来	回来	VERB	VV	_	2	conj	_	_	_	V	回来	_	_	_	_	_	O-V
+10	了	了	AUX	AS	_	9	aux:asp	_	_	_	AUX	了	_	_	_	_	_	O-AUX
+11	…	…	PUNCT	PU	_	2	punct	_	_	_	PUNCT	…	_	_	_	_	_	O-PUNCT
+
+
