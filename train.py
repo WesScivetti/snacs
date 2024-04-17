@@ -31,6 +31,8 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 seqeval = evaluate.load("seqeval")
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
+
+
 def load_data(file: str, tokenizer: AutoTokenizer, id_to_label = None, label_to_id = None, freqs=None):
     """Load data from file and tokenize it."""
     res = tokenize_and_align(file, tokenizer)
@@ -504,7 +506,7 @@ def hyper_sweep(args):
                 'max': 1e-3
             },
             'batch_size': {
-                'values': [4, 8, 16, 32, 64]
+                'values': [4, 8, 16, 24]
             },
             'weight_decay': {
                 'values': [0.0, 0.01, 0.1]
