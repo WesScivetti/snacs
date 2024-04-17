@@ -373,11 +373,11 @@ def train2(config=None):
         extra_data, label_to_id, id_to_label, freqs = load_data(f"data/{config.extra_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #use the existing id_to_label and just add to them
 
     if config.dev_file:
-        dev_data, _, _, _ = load_data(f"data/splits/{config.dev_file}", tokenizer) #don't need label to id for this
+        dev_data, _, _, _ = load_data(f"data/splits/{config.dev_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #don't need label to id for this
 
 
     if config.test_file:
-        test_data, _, _, _ = load_data(f"data/splits/{config.test_file}", tokenizer) #don't need label to id for this
+        test_data, _, _, _ = load_data(f"data/splits/{config.test_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #don't need label to id for this
 
 
     # load model
