@@ -95,7 +95,7 @@ def load_data(file: str, tokenizer: AutoTokenizer, id_to_label = None, label_to_
     # shuffle
     #will probably need to change to a train/test split
 
-    # random.seed(1000)
+    random.seed(1000)
     random.shuffle(res2)
 
     return res2, label_to_id, id_to_label, freqs
