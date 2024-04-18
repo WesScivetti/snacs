@@ -1,0 +1,1597 @@
+# sent_id = lpp_jp.7.1
+# chapter = 7
+# text = ５ 日 め 、 また ヒツジ の おかげ で 、 この 王子 くん に まつわる なぞ が 、 ひと つ あきらか に なっ た 。
+# newdoc id = lpp_jp-7
+1	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+2	けど	kedo	けど	_	_	_	_	_	_	_	_	kedo	_	_	_	_	_	O-X
+3	この	kono	この	_	_	_	_	_	_	_	_	kono	_	_	_	_	_	O-X
+4	王子	oji	王子	_	_	_	_	_	_	_	_	oji	_	_	_	_	_	O-X
+5	くん	kun	君	_	_	_	_	_	_	_	_	kun	_	_	_	_	_	O-X
+6	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Originator	p.Topical	_	_	_	O-P-p.Originator|p.Topical
+7	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+8	へんじ	henji	返事	_	_	_	_	_	_	_	_	henji	_	_	_	_	_	O-X
+9	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+10	なさら	nasara	なさら	_	_	_	_	_	_	_	_	nasara	_	_	_	_	_	O-X
+11	なかっ	nakatsu	なかっ	_	_	_	_	_	_	_	_	nakatsu	_	_	_	_	_	O-X
+12	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+13	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+1	５	5	５	_	_	_	_	_	_	_	_	5	_	_	_	_	_	O-X
+2	日	nichi	日	_	_	_	_	_	_	_	_	nichi	_	_	_	_	_	O-X
+3	め	me	め	_	_	_	_	_	_	_	_	me	_	_	_	_	_	O-X
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	また	mata	又	_	_	_	_	_	_	_	_	mata	_	_	_	_	_	O-X
+6	ヒツジ	hitsuji	羊	_	_	_	_	_	_	_	_	hitsuji	_	_	_	_	_	O-X
+7	の	no	の	_	_	_	_	_	_	_	_	no	p.Explanation	p.Gestalt	_	_	_	O-P-p.Explanation|p.Gestalt
+8	おかげ	okage	おかげ	_	_	_	_	_	_	_	_	okage	_	_	_	_	_	O-X
+9	で	de	で	_	_	_	_	_	_	_	_	de	p.Explanation	p.Circumstance	_	_	_	O-P-p.Explanation|p.Circumstance
+10	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+11	この	kono	この	_	_	_	_	_	_	_	_	kono	_	_	_	_	_	O-X
+12	王子	oji	王子	_	_	_	_	_	_	_	_	oji	_	_	_	_	_	O-X
+13	くん	kun	君	_	_	_	_	_	_	_	_	kun	_	_	_	_	_	O-X
+14	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Topic	p.Locus	_	_	_	O-P-p.Topic|p.Locus
+15	まつわる	matsuwaru	まつわる	_	_	_	_	_	_	_	_	matsuwaru	_	_	_	_	_	O-X
+16	なぞ	nazo	謎	_	_	_	_	_	_	_	_	nazo	_	_	_	_	_	O-X
+17	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+18	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+19	ひと	hito	ひと	_	_	_	_	_	_	_	_	hito	_	_	_	_	_	O-X
+20	つ	tsu	つ	_	_	_	_	_	_	_	_	tsu	_	_	_	_	_	O-X
+21	あきらか	akiraka	明らか	_	_	_	_	_	_	_	_	akiraka	_	_	_	_	_	O-X
+22	に	ni	に	_	_	_	_	_	_	_	_	ni	_	_	_	_	_	O-X
+23	なっ	natsu	なっ	_	_	_	_	_	_	_	_	natsu	_	_	_	_	_	O-X
+24	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+25	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.2
+# chapter = 7
+# text = その 子 は 、 なん の まえおき も なく 、 いきなり きい て き た ん だ 。
+1	その	sono	その	_	_	_	_	_	_	_	_	sono	_	_	_	_	_	O-X
+2	子	ko	子	_	_	_	_	_	_	_	_	ko	_	_	_	_	_	O-X
+3	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Originator	p.Topical	_	_	_	O-P-p.Originator|p.Topical
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	なん	nan	何	_	_	_	_	_	_	_	_	nan	_	_	_	_	_	O-X
+6	の	no	の	_	_	_	_	_	_	_	_	no	p.Topic	p.Topic	_	_	_	O-P-p.Topic|p.Topic
+7	まえおき	maeoki	前置き	_	_	_	_	_	_	_	_	maeoki	_	_	_	_	_	O-X
+8	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Theme	p.Focus	_	_	_	O-P-p.Theme|p.Focus
+9	なく	naku	なく	_	_	_	_	_	_	_	_	naku	_	_	_	_	_	O-X
+10	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+11	いきなり	ikinari	いきなり	_	_	_	_	_	_	_	_	ikinari	_	_	_	_	_	O-X
+12	きい	kii	聞い	_	_	_	_	_	_	_	_	kii	_	_	_	_	_	O-X
+13	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+14	き	ki	き	_	_	_	_	_	_	_	_	ki	_	_	_	_	_	O-X
+15	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+16	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+17	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+18	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.3
+# chapter = 7
+# text = ずっと ひとり で 、 うーん と なやん で い た こと が 、 とけ た みたい に 。
+1	ずっと	zutto	ずっと	_	_	_	_	_	_	_	_	zutto	_	_	_	_	_	O-X
+2	ひとり	hitori	一人	_	_	_	_	_	_	_	_	hitori	_	_	_	_	_	O-X
+3	で	de	で	_	_	_	_	_	_	_	_	de	p.Manner	p.Manner	_	_	_	O-P-p.Manner|p.Manner
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	うーん	uun	うーん	_	_	_	_	_	_	_	_	uun	_	_	_	_	_	O-X
+6	と	to	と	_	_	_	_	_	_	_	_	to	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+7	なやん	nayan	悩ん	_	_	_	_	_	_	_	_	nayan	_	_	_	_	_	O-X
+8	で	de	で	_	_	_	_	_	_	_	_	de	_	_	_	_	_	O-X
+9	い	i	い	_	_	_	_	_	_	_	_	i	_	_	_	_	_	O-X
+10	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+11	こと	koto	こと	_	_	_	_	_	_	_	_	koto	_	_	_	_	_	O-X
+12	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+13	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+14	とけ	toke	解け	_	_	_	_	_	_	_	_	toke	_	_	_	_	_	O-X
+15	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+16	みたい	mitai	みたい	_	_	_	_	_	_	_	_	mitai	_	_	_	_	_	O-X
+17	に	ni	に	_	_	_	_	_	_	_	_	ni	_	_	_	_	_	O-X
+18	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.4
+# chapter = 7
+# text = 「 ヒツジ が ちいさな 木 を 食べる ん なら 、 花 も 食べる の か な ？ 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	ヒツジ	hitsuji	羊	_	_	_	_	_	_	_	_	hitsuji	_	_	_	_	_	O-X
+3	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Agent	p.Agent	_	_	_	O-P-p.Agent|p.Agent
+4	ちいさな	chiisana	小さな	_	_	_	_	_	_	_	_	chiisana	_	_	_	_	_	O-X
+5	木	ki	木	_	_	_	_	_	_	_	_	ki	_	_	_	_	_	O-X
+6	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+7	食べる	taberu	食べる	_	_	_	_	_	_	_	_	taberu	_	_	_	_	_	O-X
+8	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+9	なら	nara	なら	_	_	_	_	_	_	_	_	nara	_	_	_	_	_	O-X
+10	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+11	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+12	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Theme	p.Focus	_	_	_	O-P-p.Theme|p.Focus
+13	食べる	taberu	食べる	_	_	_	_	_	_	_	_	taberu	_	_	_	_	_	O-X
+14	の	no	の	_	_	_	_	_	_	_	_	no	_	_	_	_	_	O-X
+15	か	ka	か	_	_	_	_	_	_	_	_	ka	_	_	_	_	_	O-X
+16	な	na	な	_	_	_	_	_	_	_	_	na	_	_	_	_	_	O-X
+17	？	？	？	_	_	_	_	_	_	_	_	？	_	_	_	_	_	O-X
+18	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.5
+# chapter = 7
+# text = 「 ヒツジ は 目 に 入っ た もの みんな 食べる よ 。 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	ヒツジ	hitsuji	羊	_	_	_	_	_	_	_	_	hitsuji	_	_	_	_	_	O-X
+3	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Agent	p.Topical	_	_	_	O-P-p.Agent|p.Topical
+4	目	me	目	_	_	_	_	_	_	_	_	me	_	_	_	_	_	O-X
+5	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Goal	p.Goal	_	_	_	O-P-p.Goal|p.Goal
+6	入っ	itsutsu	入っ	_	_	_	_	_	_	_	_	itsutsu	_	_	_	_	_	O-X
+7	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+8	もの	mono	物	_	_	_	_	_	_	_	_	mono	_	_	_	_	_	O-X
+9	みんな	minna	皆	_	_	_	_	_	_	_	_	minna	_	_	_	_	_	O-X
+10	食べる	taberu	食べる	_	_	_	_	_	_	_	_	taberu	_	_	_	_	_	O-X
+11	よ	yo	よ	_	_	_	_	_	_	_	_	yo	_	_	_	_	_	O-X
+12	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+13	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.6
+# chapter = 7
+# text = 「 花 に トゲ が あっ て も ？ 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+3	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Whole	p.Locus	_	_	_	O-P-p.Whole|p.Locus
+4	トゲ	toge	トゲ	_	_	_	_	_	_	_	_	toge	_	_	_	_	_	O-X
+5	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+6	あっ	atsu	あっ	_	_	_	_	_	_	_	_	atsu	_	_	_	_	_	O-X
+7	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+8	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+9	？	？	？	_	_	_	_	_	_	_	_	？	_	_	_	_	_	O-X
+10	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.7
+# chapter = 7
+# text = 「 ああ 。 花 に トゲ が あっ て も 。 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	ああ	aa	ああ	_	_	_	_	_	_	_	_	aa	_	_	_	_	_	O-X
+3	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+4	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+5	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Whole	p.Locus	_	_	_	O-P-p.Whole|p.Locus
+6	トゲ	toge	トゲ	_	_	_	_	_	_	_	_	toge	_	_	_	_	_	O-X
+7	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+8	あっ	atsu	あっ	_	_	_	_	_	_	_	_	atsu	_	_	_	_	_	O-X
+9	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+10	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+11	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+12	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.8
+# chapter = 7
+# text = 「 じゃあ 、 トゲ は なん の ため に ある の ？ 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	じゃあ	jaa	じゃあ	_	_	_	_	_	_	_	_	jaa	_	_	_	_	_	O-X
+3	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+4	トゲ	toge	トゲ	_	_	_	_	_	_	_	_	toge	_	_	_	_	_	O-X
+5	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Theme	p.Topical	_	_	_	O-P-p.Theme|p.Topical
+6	なん	nan	何	_	_	_	_	_	_	_	_	nan	_	_	_	_	_	O-X
+7	の	no	の	_	_	_	_	_	_	_	_	no	p.Purpose	p.Gestalt	_	_	_	O-P-p.Purpose|p.Gestalt
+8	ため	tame	ため	_	_	_	_	_	_	_	_	tame	_	_	_	_	_	O-X
+9	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Purpose	p.Purpose	_	_	_	O-P-p.Purpose|p.Purpose
+10	ある	aru	ある	_	_	_	_	_	_	_	_	aru	_	_	_	_	_	O-X
+11	の	no	の	_	_	_	_	_	_	_	_	no	_	_	_	_	_	O-X
+12	？	？	？	_	_	_	_	_	_	_	_	？	_	_	_	_	_	O-X
+13	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.9
+# chapter = 7
+# text = わから なかっ た 。
+1	わから	wakara	分から	_	_	_	_	_	_	_	_	wakara	_	_	_	_	_	O-X
+2	なかっ	nakatsu	なかっ	_	_	_	_	_	_	_	_	nakatsu	_	_	_	_	_	O-X
+3	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+4	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.10
+# chapter = 7
+# text = その とき ぼく は 、 エンジン の かたく しまっ た ネジ を 外そう と 、 もう 手いっぱい だっ た 。
+1	その	sono	その	_	_	_	_	_	_	_	_	sono	_	_	_	_	_	O-X
+2	とき	toki	時	_	_	_	_	_	_	_	_	toki	_	_	_	_	_	O-X
+3	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+4	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Theme	p.Topical	_	_	_	O-P-p.Theme|p.Topical
+5	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+6	エンジン	enjin	エンジン	_	_	_	_	_	_	_	_	enjin	_	_	_	_	_	O-X
+7	の	no	の	_	_	_	_	_	_	_	_	no	p.Whole	p.Whole	_	_	_	O-P-p.Whole|p.Whole
+8	かたく	kataku	固く	_	_	_	_	_	_	_	_	kataku	_	_	_	_	_	O-X
+9	しまっ	shimatsu	締まっ	_	_	_	_	_	_	_	_	shimatsu	_	_	_	_	_	O-X
+10	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+11	ネジ	neji	ネジ	_	_	_	_	_	_	_	_	neji	_	_	_	_	_	O-X
+12	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+13	外そう	hazusou	外そう	_	_	_	_	_	_	_	_	hazusou	_	_	_	_	_	O-X
+14	と	to	と	_	_	_	_	_	_	_	_	to	p.Purpose	p.Quote	_	_	_	O-P-p.Purpose|p.Quote
+15	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+16	もう	mou	もう	_	_	_	_	_	_	_	_	mou	_	_	_	_	_	O-X
+17	手いっぱい	teippai	手一杯	_	_	_	_	_	_	_	_	teippai	_	_	_	_	_	O-X
+18	だっ	datsu	だっ	_	_	_	_	_	_	_	_	datsu	_	_	_	_	_	O-X
+19	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+20	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.11
+# chapter = 7
+# text = しかも 気 が 気 で なかっ た 。
+1	しかも	shikamo	しかも	_	_	_	_	_	_	_	_	shikamo	_	_	_	_	_	O-X
+2	気	ki	気	_	_	_	_	_	_	_	_	ki	_	_	_	_	_	O-X
+3	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+4	気	ki	気	_	_	_	_	_	_	_	_	ki	_	_	_	_	_	O-X
+5	で	de	で	_	_	_	_	_	_	_	_	de	_	_	_	_	_	O-X
+6	なかっ	nakatsu	なかっ	_	_	_	_	_	_	_	_	nakatsu	_	_	_	_	_	O-X
+7	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+8	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.12
+# chapter = 7
+# text = どう も 、 てひどく やら れ た らしい と いう こと が わかっ て き た し 、 さいあく 、 のみ水 が なくなる こと も ある って 、 ほんと に おもえ て き た から だ 。
+1	どう	dou	どう	_	_	_	_	_	_	_	_	dou	_	_	_	_	_	O-X
+2	も	mo	も	_	_	_	_	_	_	_	_	mo	_	_	_	_	_	O-X
+3	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+4	てひどく	tehidoku	手ひどく	_	_	_	_	_	_	_	_	tehidoku	_	_	_	_	_	O-X
+5	やら	yara	やら	_	_	_	_	_	_	_	_	yara	_	_	_	_	_	O-X
+6	れ	re	れ	_	_	_	_	_	_	_	_	re	_	_	_	_	_	O-X
+7	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+8	らしい	rashii	らしい	_	_	_	_	_	_	_	_	rashii	_	_	_	_	_	O-X
+9	と	to	と	_	_	_	_	_	_	_	_	to	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+10	いう	iu	いう	_	_	_	_	_	_	_	_	iu	_	_	_	_	_	O-X
+11	こと	koto	こと	_	_	_	_	_	_	_	_	koto	_	_	_	_	_	O-X
+12	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Topic	p.Theme	_	_	_	O-P-p.Topic|p.Theme
+13	わかっ	wakatsu	わかっ	_	_	_	_	_	_	_	_	wakatsu	_	_	_	_	_	O-X
+14	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+15	き	ki	き	_	_	_	_	_	_	_	_	ki	_	_	_	_	_	O-X
+16	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+17	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+18	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+19	さいあく	saiaku	最悪	_	_	_	_	_	_	_	_	saiaku	_	_	_	_	_	O-X
+20	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+21	のみ水	nomimizu	飲み水	_	_	_	_	_	_	_	_	nomimizu	_	_	_	_	_	O-X
+22	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+23	なくなる	nakunaru	なくなる	_	_	_	_	_	_	_	_	nakunaru	_	_	_	_	_	O-X
+24	こと	koto	こと	_	_	_	_	_	_	_	_	koto	_	_	_	_	_	O-X
+25	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Theme	p.Focus	_	_	_	O-P-p.Theme|p.Focus
+26	ある	aru	ある	_	_	_	_	_	_	_	_	aru	_	_	_	_	_	O-X
+27	って	tte	って	_	_	_	_	_	_	_	_	tte	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+28	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+29	ほんと	honto	本当	_	_	_	_	_	_	_	_	honto	_	_	_	_	_	O-X
+30	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Manner	p.Manner	_	_	_	O-P-p.Manner|p.Manner
+31	おもえ	omoe	思え	_	_	_	_	_	_	_	_	omoe	_	_	_	_	_	O-X
+32	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+33	き	ki	き	_	_	_	_	_	_	_	_	ki	_	_	_	_	_	O-X
+34	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+35	から	kara	から	_	_	_	_	_	_	_	_	kara	_	_	_	_	_	O-X
+36	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+37	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.13
+# chapter = 7
+# text = 「 トゲ は なん の ため に ある の ？ 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	トゲ	toge	トゲ	_	_	_	_	_	_	_	_	toge	_	_	_	_	_	O-X
+3	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Theme	p.Topical	_	_	_	O-P-p.Theme|p.Topical
+4	なん	nan	何	_	_	_	_	_	_	_	_	nan	_	_	_	_	_	O-X
+5	の	no	の	_	_	_	_	_	_	_	_	no	p.Purpose	p.Gestalt	_	_	_	O-P-p.Purpose|p.Gestalt
+6	ため	tame	ため	_	_	_	_	_	_	_	_	tame	_	_	_	_	_	O-X
+7	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Purpose	p.Purpose	_	_	_	O-P-p.Purpose|p.Purpose
+8	ある	aru	ある	_	_	_	_	_	_	_	_	aru	_	_	_	_	_	O-X
+9	の	no	の	_	_	_	_	_	_	_	_	no	_	_	_	_	_	O-X
+10	？	？	？	_	_	_	_	_	_	_	_	？	_	_	_	_	_	O-X
+11	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.14
+# chapter = 7
+# text = この 王子 くん 、 しつもん を いち ど はじめ たら 、 ぜったい お やめ に なら ない 。
+1	この	kono	この	_	_	_	_	_	_	_	_	kono	_	_	_	_	_	O-X
+2	王子	oji	王子	_	_	_	_	_	_	_	_	oji	_	_	_	_	_	O-X
+3	くん	kun	君	_	_	_	_	_	_	_	_	kun	_	_	_	_	_	O-X
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	しつもん	shitsumon	質問	_	_	_	_	_	_	_	_	shitsumon	_	_	_	_	_	O-X
+6	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+7	いち	ichi	一	_	_	_	_	_	_	_	_	ichi	_	_	_	_	_	O-X
+8	ど	do	度	_	_	_	_	_	_	_	_	do	_	_	_	_	_	O-X
+9	はじめ	hajime	始め	_	_	_	_	_	_	_	_	hajime	_	_	_	_	_	O-X
+10	たら	tara	たら	_	_	_	_	_	_	_	_	tara	_	_	_	_	_	O-X
+11	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+12	ぜったい	zettai	絶対	_	_	_	_	_	_	_	_	zettai	_	_	_	_	_	O-X
+13	お	o	お	_	_	_	_	_	_	_	_	o	_	_	_	_	_	O-X
+14	やめ	yame	やめ	_	_	_	_	_	_	_	_	yame	_	_	_	_	_	O-X
+15	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Goal	p.Goal	_	_	_	O-P-p.Goal|p.Goal
+16	なら	nara	なら	_	_	_	_	_	_	_	_	nara	_	_	_	_	_	O-X
+17	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+18	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.15
+# chapter = 7
+# text = ぼく は 、 ネジ で いらいら し て い た から 、 いい かげん に へんじ を し た 。
+1	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+2	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Experiencer	p.Topical	_	_	_	O-P-p.Experiencer|p.Topical
+3	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+4	ネジ	neji	ネジ	_	_	_	_	_	_	_	_	neji	_	_	_	_	_	O-X
+5	で	de	で	_	_	_	_	_	_	_	_	de	p.Explanation	p.Circumstance	_	_	_	O-P-p.Explanation|p.Circumstance
+6	いらいら	iraira	いらいら	_	_	_	_	_	_	_	_	iraira	_	_	_	_	_	O-X
+7	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+8	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+9	い	i	い	_	_	_	_	_	_	_	_	i	_	_	_	_	_	O-X
+10	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+11	から	kara	から	_	_	_	_	_	_	_	_	kara	_	_	_	_	_	O-X
+12	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+13	いい	ii	良い	_	_	_	_	_	_	_	_	ii	_	_	_	_	_	O-X
+14	かげん	kagen	加減	_	_	_	_	_	_	_	_	kagen	_	_	_	_	_	O-X
+15	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Manner	p.Manner	_	_	_	O-P-p.Manner|p.Manner
+16	へんじ	henji	返事	_	_	_	_	_	_	_	_	henji	_	_	_	_	_	O-X
+17	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+18	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+19	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+20	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.16
+# chapter = 7
+# text = 「 トゲ なんて 、 なん の やく に も 立た ない よ 、 たんに 花 が いじわる し たい ん だろ ！ 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	トゲ	toge	トゲ	_	_	_	_	_	_	_	_	toge	_	_	_	_	_	O-X
+3	なんて	nante	なんて	_	_	_	_	_	_	_	_	nante	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	なん	nan	何	_	_	_	_	_	_	_	_	nan	_	_	_	_	_	O-X
+6	の	no	の	_	_	_	_	_	_	_	_	no	p.Purpose	p.Gestalt	_	_	_	O-P-p.Purpose|p.Gestalt
+7	やく	yaku	役	_	_	_	_	_	_	_	_	yaku	_	_	_	_	_	O-X
+8	に	ni	に	_	_	_	_	_	_	_	_	ni	_	_	_	_	_	O-X
+9	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+10	立た	tata	立た	_	_	_	_	_	_	_	_	tata	_	_	_	_	_	O-X
+11	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+12	よ	yo	よ	_	_	_	_	_	_	_	_	yo	_	_	_	_	_	O-X
+13	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+14	たんに	tanni	単に	_	_	_	_	_	_	_	_	tanni	_	_	_	_	_	O-X
+15	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+16	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Agent	p.Agent	_	_	_	O-P-p.Agent|p.Agent
+17	いじわる	ijiwaru	意地悪	_	_	_	_	_	_	_	_	ijiwaru	_	_	_	_	_	O-X
+18	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+19	たい	tai	たい	_	_	_	_	_	_	_	_	tai	_	_	_	_	_	O-X
+20	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+21	だろ	daro	だろ	_	_	_	_	_	_	_	_	daro	_	_	_	_	_	O-X
+22	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+23	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.17
+# chapter = 7
+# text = 「 えっ ！ 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	えっ	etsu	えっ	_	_	_	_	_	_	_	_	etsu	_	_	_	_	_	O-X
+3	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+4	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.18
+# chapter = 7
+# text = する と 、 だんまり し て から 、 その 子 は うらめし そう に つっかかっ て き た 。
+1	する	suru	する	_	_	_	_	_	_	_	_	suru	_	_	_	_	_	O-X
+2	と	to	と	_	_	_	_	_	_	_	_	to	_	_	_	_	_	O-X
+3	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+4	だんまり	dammari	だんまり	_	_	_	_	_	_	_	_	dammari	_	_	_	_	_	O-X
+5	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+6	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+7	から	kara	から	_	_	_	_	_	_	_	_	kara	p.Time	p.Time	_	_	_	O-P-p.Time|p.Time
+8	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+9	その	sono	その	_	_	_	_	_	_	_	_	sono	_	_	_	_	_	O-X
+10	子	ko	子	_	_	_	_	_	_	_	_	ko	_	_	_	_	_	O-X
+11	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Agent	p.Topical	_	_	_	O-P-p.Agent|p.Topical
+12	うらめし	urameshi	うらめし	_	_	_	_	_	_	_	_	urameshi	_	_	_	_	_	O-X
+13	そう	so	そう	_	_	_	_	_	_	_	_	so	_	_	_	_	_	O-X
+14	に	ni	に	_	_	_	_	_	_	_	_	ni	_	_	_	_	_	O-X
+15	つっかかっ	tsukkakatsu	つっかかっ	_	_	_	_	_	_	_	_	tsukkakatsu	_	_	_	_	_	O-X
+16	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+17	き	ki	き	_	_	_	_	_	_	_	_	ki	_	_	_	_	_	O-X
+18	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+19	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.19
+# chapter = 7
+# text = 「 ウソ だ ！
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	ウソ	uso	ウソ	_	_	_	_	_	_	_	_	uso	_	_	_	_	_	O-X
+3	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+4	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.20
+# chapter = 7
+# text = 花 は かよわく て 、 むじゃき な ん だ ！
+1	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+2	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Gestalt	p.Topical	_	_	_	O-P-p.Gestalt|p.Topical
+3	かよわく	kayowaku	かよわく	_	_	_	_	_	_	_	_	kayowaku	_	_	_	_	_	O-X
+4	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+5	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+6	むじゃき	mujaki	無邪気	_	_	_	_	_	_	_	_	mujaki	_	_	_	_	_	O-X
+7	な	na	な	_	_	_	_	_	_	_	_	na	_	_	_	_	_	O-X
+8	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+9	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+10	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.21
+# chapter = 7
+# text = どう に か し て 、 ほっ と し たい だけ な ん だ ！
+1	どう	dou	どう	_	_	_	_	_	_	_	_	dou	_	_	_	_	_	O-X
+2	に	ni	に	_	_	_	_	_	_	_	_	ni	_	_	_	_	_	O-X
+3	か	ka	か	_	_	_	_	_	_	_	_	ka	_	_	_	_	_	O-X
+4	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+5	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+6	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+7	ほっ	hotsu	ほっ	_	_	_	_	_	_	_	_	hotsu	_	_	_	_	_	O-X
+8	と	to	と	_	_	_	_	_	_	_	_	to	p.Manner	p.Quote	_	_	_	O-P-p.Manner|p.Quote
+9	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+10	たい	tai	たい	_	_	_	_	_	_	_	_	tai	_	_	_	_	_	O-X
+11	だけ	dake	だけ	_	_	_	_	_	_	_	_	dake	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+12	な	na	な	_	_	_	_	_	_	_	_	na	_	_	_	_	_	O-X
+13	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+14	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+15	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.22
+# chapter = 7
+# text = トゲ が ある から 、 あぶない ん だ ぞ って 、 おもい たい だけ な ん だ … … 」
+1	トゲ	toge	トゲ	_	_	_	_	_	_	_	_	toge	_	_	_	_	_	O-X
+2	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+3	ある	aru	ある	_	_	_	_	_	_	_	_	aru	_	_	_	_	_	O-X
+4	から	kara	から	_	_	_	_	_	_	_	_	kara	_	_	_	_	_	O-X
+5	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+6	あぶない	abunai	危ない	_	_	_	_	_	_	_	_	abunai	_	_	_	_	_	O-X
+7	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+8	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+9	ぞ	zo	ぞ	_	_	_	_	_	_	_	_	zo	_	_	_	_	_	O-X
+10	って	tte	って	_	_	_	_	_	_	_	_	tte	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+11	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+12	おもい	omoi	おもい	_	_	_	_	_	_	_	_	omoi	_	_	_	_	_	O-X
+13	たい	tai	たい	_	_	_	_	_	_	_	_	tai	_	_	_	_	_	O-X
+14	だけ	dake	だけ	_	_	_	_	_	_	_	_	dake	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+15	な	na	な	_	_	_	_	_	_	_	_	na	_	_	_	_	_	O-X
+16	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+17	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+18	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+19	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+20	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.23
+# chapter = 7
+# text = ぼく は 、 なに も いわ なかっ た 。
+1	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+2	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Originator	p.Topical	_	_	_	O-P-p.Originator|p.Topical
+3	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+4	なに	nani	何	_	_	_	_	_	_	_	_	nani	_	_	_	_	_	O-X
+5	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Topic	p.Focus	_	_	_	O-P-p.Topic|p.Focus
+6	いわ	iwa	言わ	_	_	_	_	_	_	_	_	iwa	_	_	_	_	_	O-X
+7	なかっ	nakatsu	なかっ	_	_	_	_	_	_	_	_	nakatsu	_	_	_	_	_	O-X
+8	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+9	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.24
+# chapter = 7
+# text = かたわら で 、 こう かんがえ て い た 。
+1	かたわら	katawara	傍ら	_	_	_	_	_	_	_	_	katawara	_	_	_	_	_	O-X
+2	で	de	で	_	_	_	_	_	_	_	_	de	p.Circumstance	p.Circumstance	_	_	_	O-P-p.Circumstance|p.Circumstance
+3	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+4	こう	ko	こう	_	_	_	_	_	_	_	_	ko	_	_	_	_	_	O-X
+5	かんがえ	kangae	考え	_	_	_	_	_	_	_	_	kangae	_	_	_	_	_	O-X
+6	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+7	い	i	い	_	_	_	_	_	_	_	_	i	_	_	_	_	_	O-X
+8	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+9	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.25
+# chapter = 7
+# text = 「 この ネジ が てこ で も うごか ない ん なら 、 いっそ 、 かなづち で ふっとばし て やる 。 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	この	kono	この	_	_	_	_	_	_	_	_	kono	_	_	_	_	_	O-X
+3	ネジ	neji	ネジ	_	_	_	_	_	_	_	_	neji	_	_	_	_	_	O-X
+4	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+5	てこ	teko	てこ	_	_	_	_	_	_	_	_	teko	_	_	_	_	_	O-X
+6	で	de	で	_	_	_	_	_	_	_	_	de	p.Means	p.Means	_	_	_	O-P-p.Means|p.Means
+7	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+8	うごか	ugoka	動か	_	_	_	_	_	_	_	_	ugoka	_	_	_	_	_	O-X
+9	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+10	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+11	なら	nara	なら	_	_	_	_	_	_	_	_	nara	_	_	_	_	_	O-X
+12	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+13	いっそ	isso	いっそ	_	_	_	_	_	_	_	_	isso	_	_	_	_	_	O-X
+14	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+15	かなづち	kanazuchi	かなづち	_	_	_	_	_	_	_	_	kanazuchi	_	_	_	_	_	O-X
+16	で	de	で	_	_	_	_	_	_	_	_	de	p.Instrument	p.Instrument	_	_	_	O-P-p.Instrument|p.Instrument
+17	ふっとばし	futtobashi	ふっとばし	_	_	_	_	_	_	_	_	futtobashi	_	_	_	_	_	O-X
+18	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+19	やる	yaru	やる	_	_	_	_	_	_	_	_	yaru	_	_	_	_	_	O-X
+20	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+21	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.26
+# chapter = 7
+# text = で も 、 この 王子 くん は 、 また ぼく の かんがえ を じゃま なさっ た 。
+1	で	de	で	_	_	_	_	_	_	_	_	de	_	_	_	_	_	O-X
+2	も	mo	も	_	_	_	_	_	_	_	_	mo	_	_	_	_	_	O-X
+3	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+4	この	kono	この	_	_	_	_	_	_	_	_	kono	_	_	_	_	_	O-X
+5	王子	oji	王子	_	_	_	_	_	_	_	_	oji	_	_	_	_	_	O-X
+6	くん	kun	君	_	_	_	_	_	_	_	_	kun	_	_	_	_	_	O-X
+7	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Agent	p.Topical	_	_	_	O-P-p.Agent|p.Topical
+8	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+9	また	mata	また	_	_	_	_	_	_	_	_	mata	_	_	_	_	_	O-X
+10	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+11	の	no	の	_	_	_	_	_	_	_	_	no	p.Experiencer	p.Possessor	_	_	_	O-P-p.Experiencer|p.Possessor
+12	かんがえ	kangae	考え	_	_	_	_	_	_	_	_	kangae	_	_	_	_	_	O-X
+13	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+14	じゃま	jama	邪魔	_	_	_	_	_	_	_	_	jama	_	_	_	_	_	O-X
+15	なさっ	nasatsu	なさっ	_	_	_	_	_	_	_	_	nasatsu	_	_	_	_	_	O-X
+16	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+17	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.27
+# chapter = 7
+# text = 「 きみ は 、 ほんと に きみ は 花 が … … 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	きみ	kimi	きみ	_	_	_	_	_	_	_	_	kimi	_	_	_	_	_	O-X
+3	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Topical	p.Topical	_	_	_	O-P-p.Topical|p.Topical
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	ほんと	honto	本当	_	_	_	_	_	_	_	_	honto	_	_	_	_	_	O-X
+6	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Manner	p.Manner	_	_	_	O-P-p.Manner|p.Manner
+7	きみ	kimi	きみ	_	_	_	_	_	_	_	_	kimi	_	_	_	_	_	O-X
+8	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Topical	p.Topical	_	_	_	O-P-p.Topical|p.Topical
+9	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+10	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+11	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+12	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+13	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.28
+# chapter = 7
+# text = 「 やめろ ！
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	やめろ	yamero	やめろ	_	_	_	_	_	_	_	_	yamero	_	_	_	_	_	O-X
+3	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.29
+# chapter = 7
+# text = やめ て くれ ！
+1	やめ	yame	やめ	_	_	_	_	_	_	_	_	yame	_	_	_	_	_	O-X
+2	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+3	くれ	kure	くれ	_	_	_	_	_	_	_	_	kure	_	_	_	_	_	O-X
+4	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.30
+# chapter = 7
+# text = 知る もん か ！
+1	知る	shiru	知る	_	_	_	_	_	_	_	_	shiru	_	_	_	_	_	O-X
+2	もん	mon	もん	_	_	_	_	_	_	_	_	mon	_	_	_	_	_	O-X
+3	か	ka	か	_	_	_	_	_	_	_	_	ka	_	_	_	_	_	O-X
+4	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.31
+# chapter = 7
+# text = いい かげん に いっ た だけ だ 。
+1	いい	ii	良い	_	_	_	_	_	_	_	_	ii	_	_	_	_	_	O-X
+2	かげん	kagen	加減	_	_	_	_	_	_	_	_	kagen	_	_	_	_	_	O-X
+3	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Manner	p.Manner	_	_	_	O-P-p.Manner|p.Manner
+4	いっ	itsu	言っ	_	_	_	_	_	_	_	_	itsu	_	_	_	_	_	O-X
+5	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+6	だけ	dake	だけ	_	_	_	_	_	_	_	_	dake	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+7	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+8	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.32
+# chapter = 7
+# text = ぼく に は 、 ちゃんと やら なきゃ いけ ない こと が ある ん だ よ ！ 」
+1	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+2	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Beneficiary	p.Goal	_	_	_	O-P-p.Beneficiary|p.Goal
+3	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Topical	p.Topical	_	_	_	O-P-p.Topical|p.Topical
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	ちゃんと	chanto	ちゃんと	_	_	_	_	_	_	_	_	chanto	_	_	_	_	_	O-X
+6	やら	yara	やら	_	_	_	_	_	_	_	_	yara	_	_	_	_	_	O-X
+7	なきゃ	nakya	なきゃ	_	_	_	_	_	_	_	_	nakya	_	_	_	_	_	O-X
+8	いけ	ike	いけ	_	_	_	_	_	_	_	_	ike	_	_	_	_	_	O-X
+9	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+10	こと	koto	こと	_	_	_	_	_	_	_	_	koto	_	_	_	_	_	O-X
+11	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+12	ある	aru	ある	_	_	_	_	_	_	_	_	aru	_	_	_	_	_	O-X
+13	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+14	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+15	よ	yo	よ	_	_	_	_	_	_	_	_	yo	_	_	_	_	_	O-X
+16	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+17	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.33
+# chapter = 7
+# text = その 子 は 、 ぼく を ぽかん と 見 た 。
+1	その	sono	その	_	_	_	_	_	_	_	_	sono	_	_	_	_	_	O-X
+2	子	ko	子	_	_	_	_	_	_	_	_	ko	_	_	_	_	_	O-X
+3	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Experiencer	p.Topical	_	_	_	O-P-p.Experiencer|p.Topical
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+6	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Stimulus	p.Theme	_	_	_	O-P-p.Stimulus|p.Theme
+7	ぽかん	pokan	ぽかん	_	_	_	_	_	_	_	_	pokan	_	_	_	_	_	O-X
+8	と	to	と	_	_	_	_	_	_	_	_	to	p.Manner	p.Quote	_	_	_	O-P-p.Manner|p.Quote
+9	見	ken	見	_	_	_	_	_	_	_	_	ken	_	_	_	_	_	O-X
+10	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+11	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.34
+# chapter = 7
+# text = 「 ちゃんと やら なきゃ 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	ちゃんと	chanto	ちゃんと	_	_	_	_	_	_	_	_	chanto	_	_	_	_	_	O-X
+3	やら	yara	やら	_	_	_	_	_	_	_	_	yara	_	_	_	_	_	O-X
+4	なきゃ	nakya	なきゃ	_	_	_	_	_	_	_	_	nakya	_	_	_	_	_	O-X
+5	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.35
+# chapter = 7
+# text = その 子 は ぼく を 見つめ た 。
+1	その	sono	その	_	_	_	_	_	_	_	_	sono	_	_	_	_	_	O-X
+2	子	ko	子	_	_	_	_	_	_	_	_	ko	_	_	_	_	_	O-X
+3	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Experiencer	p.Topical	_	_	_	O-P-p.Experiencer|p.Topical
+4	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+5	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Stimulus	p.Theme	_	_	_	O-P-p.Stimulus|p.Theme
+6	見つめ	mitsume	見つめ	_	_	_	_	_	_	_	_	mitsume	_	_	_	_	_	O-X
+7	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+8	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.36
+# chapter = 7
+# text = エンジン に 手 を かけ 、 指 は ふるい グリス で 黒く よごれ て 、 ぶ かっこう な お きもの の 上 に かがん で いる 、 そんな ぼく の こと を 。
+1	エンジン	enjin	エンジン	_	_	_	_	_	_	_	_	enjin	_	_	_	_	_	O-X
+2	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Locus	p.Locus	_	_	_	O-P-p.Locus|p.Locus
+3	手	te	手	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+4	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+5	かけ	kake	かけ	_	_	_	_	_	_	_	_	kake	_	_	_	_	_	O-X
+6	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+7	指	yubi	指	_	_	_	_	_	_	_	_	yubi	_	_	_	_	_	O-X
+8	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Theme	p.Topical	_	_	_	O-P-p.Theme|p.Topical
+9	ふるい	furui	古い	_	_	_	_	_	_	_	_	furui	_	_	_	_	_	O-X
+10	グリス	gurisu	グリス	_	_	_	_	_	_	_	_	gurisu	_	_	_	_	_	O-X
+11	で	de	で	_	_	_	_	_	_	_	_	de	p.Instrument	p.Instrument	_	_	_	O-P-p.Instrument|p.Instrument
+12	黒く	kuroku	黒く	_	_	_	_	_	_	_	_	kuroku	_	_	_	_	_	O-X
+13	よごれ	yogore	よごれ	_	_	_	_	_	_	_	_	yogore	_	_	_	_	_	O-X
+14	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+15	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+16	ぶ	bu	ぶ	_	_	_	_	_	_	_	_	bu	_	_	_	_	_	O-X
+17	かっこう	kakkou	格好	_	_	_	_	_	_	_	_	kakkou	_	_	_	_	_	O-X
+18	な	na	な	_	_	_	_	_	_	_	_	na	_	_	_	_	_	O-X
+19	お	o	お	_	_	_	_	_	_	_	_	o	_	_	_	_	_	O-X
+20	きもの	kimono	着物	_	_	_	_	_	_	_	_	kimono	_	_	_	_	_	O-X
+21	の	no	の	_	_	_	_	_	_	_	_	no	p.Locus	p.Gestalt	_	_	_	O-P-p.Locus|p.Gestalt
+22	上	ue	上	_	_	_	_	_	_	_	_	ue	_	_	_	_	_	O-X
+23	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Locus	p.Locus	_	_	_	O-P-p.Locus|p.Locus
+24	かがん	kagan	かがん	_	_	_	_	_	_	_	_	kagan	_	_	_	_	_	O-X
+25	で	de	で	_	_	_	_	_	_	_	_	de	_	_	_	_	_	O-X
+26	いる	iru	いる	_	_	_	_	_	_	_	_	iru	_	_	_	_	_	O-X
+27	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+28	そんな	sonna	そんな	_	_	_	_	_	_	_	_	sonna	_	_	_	_	_	O-X
+29	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+30	の	no	の	_	_	_	_	_	_	_	_	no	p.Identity	p.Identity	_	_	_	O-P-p.Identity|p.Identity
+31	こと	koto	こと	_	_	_	_	_	_	_	_	koto	_	_	_	_	_	O-X
+32	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Stimulus	p.Theme	_	_	_	O-P-p.Stimulus|p.Theme
+33	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.37
+# chapter = 7
+# text = 「 おとな の ひと みたい な 、 しゃべり かた ！ 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	おとな	otona	大人	_	_	_	_	_	_	_	_	otona	_	_	_	_	_	O-X
+3	の	no	の	_	_	_	_	_	_	_	_	no	p.Characteristic	p.Identity	_	_	_	O-P-p.Characteristic|p.Identity
+4	ひと	hito	人	_	_	_	_	_	_	_	_	hito	_	_	_	_	_	O-X
+5	みたい	mitai	みたい	_	_	_	_	_	_	_	_	mitai	_	_	_	_	_	O-X
+6	な	na	な	_	_	_	_	_	_	_	_	na	_	_	_	_	_	O-X
+7	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+8	しゃべり	shaberi	しゃべり	_	_	_	_	_	_	_	_	shaberi	_	_	_	_	_	O-X
+9	かた	kata	方	_	_	_	_	_	_	_	_	kata	_	_	_	_	_	O-X
+10	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+11	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.38
+# chapter = 7
+# text = ぼく は ちょっと はずかしく なっ た 。
+1	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+2	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Experiencer	p.Topical	_	_	_	O-P-p.Experiencer|p.Topical
+3	ちょっと	chotto	ちょっと	_	_	_	_	_	_	_	_	chotto	_	_	_	_	_	O-X
+4	はずかしく	hazukashiku	恥ずかしく	_	_	_	_	_	_	_	_	hazukashiku	_	_	_	_	_	O-X
+5	なっ	natsu	なっ	_	_	_	_	_	_	_	_	natsu	_	_	_	_	_	O-X
+6	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+7	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.39
+# chapter = 7
+# text = で も 、 ようしゃ なく ことば が つづく 。
+1	で	de	で	_	_	_	_	_	_	_	_	de	_	_	_	_	_	O-X
+2	も	mo	も	_	_	_	_	_	_	_	_	mo	_	_	_	_	_	O-X
+3	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+4	ようしゃ	yousha	容赦	_	_	_	_	_	_	_	_	yousha	_	_	_	_	_	O-X
+5	なく	naku	なく	_	_	_	_	_	_	_	_	naku	_	_	_	_	_	O-X
+6	ことば	kotoba	言葉	_	_	_	_	_	_	_	_	kotoba	_	_	_	_	_	O-X
+7	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+8	つづく	tsuzuku	続く	_	_	_	_	_	_	_	_	tsuzuku	_	_	_	_	_	O-X
+9	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.40
+# chapter = 7
+# text = 「 きみ は とりちがえ てる … … みんな いっしょくた に し てる ！ 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	きみ	kimi	きみ	_	_	_	_	_	_	_	_	kimi	_	_	_	_	_	O-X
+3	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Experiencer	p.Topical	_	_	_	O-P-p.Experiencer|p.Topical
+4	とりちがえ	torichigae	とりちがえ	_	_	_	_	_	_	_	_	torichigae	_	_	_	_	_	O-X
+5	てる	teru	てる	_	_	_	_	_	_	_	_	teru	_	_	_	_	_	O-X
+6	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+7	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+8	みんな	minna	皆	_	_	_	_	_	_	_	_	minna	_	_	_	_	_	O-X
+9	いっしょくた	isshokuta	一緒くた	_	_	_	_	_	_	_	_	isshokuta	_	_	_	_	_	O-X
+10	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Topic	p.Goal	_	_	_	O-P-p.Topic|p.Goal
+11	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+12	てる	teru	てる	_	_	_	_	_	_	_	_	teru	_	_	_	_	_	O-X
+13	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+14	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.41
+# chapter = 7
+# text = その 子 は 、 ほんき で おこっ て い た 。
+1	その	sono	その	_	_	_	_	_	_	_	_	sono	_	_	_	_	_	O-X
+2	子	ko	子	_	_	_	_	_	_	_	_	ko	_	_	_	_	_	O-X
+3	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Experiencer	p.Topical	_	_	_	O-P-p.Experiencer|p.Topical
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	ほんき	honki	本気	_	_	_	_	_	_	_	_	honki	_	_	_	_	_	O-X
+6	で	de	で	_	_	_	_	_	_	_	_	de	p.Manner	p.Manner	_	_	_	O-P-p.Manner|p.Manner
+7	おこっ	okotsu	怒っ	_	_	_	_	_	_	_	_	okotsu	_	_	_	_	_	O-X
+8	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+9	い	i	い	_	_	_	_	_	_	_	_	i	_	_	_	_	_	O-X
+10	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+11	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.42
+# chapter = 7
+# text = こがね 色 の かみ の 毛 が 、 風 に なびい て い た 。
+1	こがね	kogane	黄金	_	_	_	_	_	_	_	_	kogane	_	_	_	_	_	O-X
+2	色	shoku	色	_	_	_	_	_	_	_	_	shoku	_	_	_	_	_	O-X
+3	の	no	の	_	_	_	_	_	_	_	_	no	p.Characteristic	p.Identity	_	_	_	O-P-p.Characteristic|p.Identity
+4	かみ	kami	かみ	_	_	_	_	_	_	_	_	kami	_	_	_	_	_	O-X
+5	の	no	の	_	_	_	_	_	_	_	_	no	p.Whole	p.Whole	_	_	_	O-P-p.Whole|p.Whole
+6	毛	ke	毛	_	_	_	_	_	_	_	_	ke	_	_	_	_	_	O-X
+7	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+8	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+9	風	kaze	風	_	_	_	_	_	_	_	_	kaze	_	_	_	_	_	O-X
+10	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Force	p.Force	_	_	_	O-P-p.Force|p.Force
+11	なびい	nabii	なびい	_	_	_	_	_	_	_	_	nabii	_	_	_	_	_	O-X
+12	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+13	い	i	い	_	_	_	_	_	_	_	_	i	_	_	_	_	_	O-X
+14	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+15	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.43
+# chapter = 7
+# text = 「 まっ赤 な おじ さん の いる 星 が あっ た ん だ けど 、 その ひと は 花 の におい も かが ない し 、 星 も ながめ ない 。
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	まっ赤	matsuaka	まっ赤	_	_	_	_	_	_	_	_	matsuaka	_	_	_	_	_	O-X
+3	な	na	な	_	_	_	_	_	_	_	_	na	_	_	_	_	_	O-X
+4	おじ	oji	おじ	_	_	_	_	_	_	_	_	oji	_	_	_	_	_	O-X
+5	さん	san	さん	_	_	_	_	_	_	_	_	san	_	_	_	_	_	O-X
+6	の	no	の	_	_	_	_	_	_	_	_	no	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+7	いる	iru	いる	_	_	_	_	_	_	_	_	iru	_	_	_	_	_	O-X
+8	星	hoshi	星	_	_	_	_	_	_	_	_	hoshi	_	_	_	_	_	O-X
+9	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+10	あっ	atsu	あっ	_	_	_	_	_	_	_	_	atsu	_	_	_	_	_	O-X
+11	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+12	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+13	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+14	けど	kedo	けれど	_	_	_	_	_	_	_	_	kedo	_	_	_	_	_	O-X
+15	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+16	その	sono	その	_	_	_	_	_	_	_	_	sono	_	_	_	_	_	O-X
+17	ひと	hito	人	_	_	_	_	_	_	_	_	hito	_	_	_	_	_	O-X
+18	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Experiencer	p.Topical	_	_	_	O-P-p.Experiencer|p.Topical
+19	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+20	の	no	の	_	_	_	_	_	_	_	_	no	p.Gestalt	p.Gestalt	_	_	_	O-P-p.Gestalt|p.Gestalt
+21	におい	nioi	匂い	_	_	_	_	_	_	_	_	nioi	_	_	_	_	_	O-X
+22	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Stimulus	p.Focus	_	_	_	O-P-p.Stimulus|p.Focus
+23	かが	kaga	かが	_	_	_	_	_	_	_	_	kaga	_	_	_	_	_	O-X
+24	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+25	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+26	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+27	星	hoshi	星	_	_	_	_	_	_	_	_	hoshi	_	_	_	_	_	O-X
+28	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Stimulus	p.Focus	_	_	_	O-P-p.Stimulus|p.Focus
+29	ながめ	nagame	ながめ	_	_	_	_	_	_	_	_	nagame	_	_	_	_	_	O-X
+30	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+31	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.44
+# chapter = 7
+# text = ひと を すき に なっ た こと も なく て 、 たし算 の ほか は なんに も し た こと が ない ん だ 。
+1	ひと	hito	人	_	_	_	_	_	_	_	_	hito	_	_	_	_	_	O-X
+2	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Stimulus	p.Theme	_	_	_	O-P-p.Stimulus|p.Theme
+3	すき	suki	好き	_	_	_	_	_	_	_	_	suki	_	_	_	_	_	O-X
+4	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Goal	p.Goal	_	_	_	O-P-p.Goal|p.Goal
+5	なっ	natsu	なっ	_	_	_	_	_	_	_	_	natsu	_	_	_	_	_	O-X
+6	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+7	こと	koto	こと	_	_	_	_	_	_	_	_	koto	_	_	_	_	_	O-X
+8	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Theme	p.Focus	_	_	_	O-P-p.Theme|p.Focus
+9	なく	naku	なく	_	_	_	_	_	_	_	_	naku	_	_	_	_	_	O-X
+10	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+11	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+12	たし算	tashisan	足し算	_	_	_	_	_	_	_	_	tashisan	_	_	_	_	_	O-X
+13	の	no	の	_	_	_	_	_	_	_	_	no	p.PartPortion	p.Gestalt	_	_	_	O-P-p.PartPortion|p.Gestalt
+14	ほか	hoka	他	_	_	_	_	_	_	_	_	hoka	_	_	_	_	_	O-X
+15	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Topical	p.Topical	_	_	_	O-P-p.Topical|p.Topical
+16	なんに	nanni	何	_	_	_	_	_	_	_	_	nanni	_	_	_	_	_	O-X
+17	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Theme	p.Focus	_	_	_	O-P-p.Theme|p.Focus
+18	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+19	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+20	こと	koto	こと	_	_	_	_	_	_	_	_	koto	_	_	_	_	_	O-X
+21	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+22	ない	nai	無い	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+23	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+24	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+25	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.45
+# chapter = 7
+# text = １ にち じゅう 、 きみ みたい に 、 くりかえす ん だ 。
+1	１	1	１	_	_	_	_	_	_	_	_	1	_	_	_	_	_	O-X
+2	にち	nichi	日	_	_	_	_	_	_	_	_	nichi	_	_	_	_	_	O-X
+3	じゅう	juu	中	_	_	_	_	_	_	_	_	juu	_	_	_	_	_	O-X
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	きみ	kimi	きみ	_	_	_	_	_	_	_	_	kimi	_	_	_	_	_	O-X
+6	みたい	mitai	みたい	_	_	_	_	_	_	_	_	mitai	_	_	_	_	_	O-X
+7	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Manner	p.Manner	_	_	_	O-P-p.Manner|p.Manner
+8	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+9	くりかえす	kurikaesu	繰り返す	_	_	_	_	_	_	_	_	kurikaesu	_	_	_	_	_	O-X
+10	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+11	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+12	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.46
+# chapter = 7
+# text = 『 わたし は 、 ちゃんと し た にんげん だ ！ ちゃんと し た にんげん な ん だ ！ 』
+1	『	(	『	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	わたし	watashi	私	_	_	_	_	_	_	_	_	watashi	_	_	_	_	_	O-X
+3	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Identity	p.Topical	_	_	_	O-P-p.Identity|p.Topical
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	ちゃんと	chanto	ちゃんと	_	_	_	_	_	_	_	_	chanto	_	_	_	_	_	O-X
+6	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+7	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+8	にんげん	ningen	人間	_	_	_	_	_	_	_	_	ningen	_	_	_	_	_	O-X
+9	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+10	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+11	ちゃんと	chanto	ちゃんと	_	_	_	_	_	_	_	_	chanto	_	_	_	_	_	O-X
+12	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+13	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+14	にんげん	ningen	人間	_	_	_	_	_	_	_	_	ningen	_	_	_	_	_	O-X
+15	な	na	な	_	_	_	_	_	_	_	_	na	_	_	_	_	_	O-X
+16	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+17	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+18	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+19	』	)	』	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.47
+# chapter = 7
+# text = それ で 、 はな を たかく する 。
+1	それ	sore	それ	_	_	_	_	_	_	_	_	sore	_	_	_	_	_	O-X
+2	で	de	で	_	_	_	_	_	_	_	_	de	_	_	_	_	_	O-X
+3	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+4	はな	hana	鼻	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+5	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+6	たかく	takaku	高く	_	_	_	_	_	_	_	_	takaku	_	_	_	_	_	O-X
+7	する	suru	する	_	_	_	_	_	_	_	_	suru	_	_	_	_	_	O-X
+8	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.48
+# chapter = 7
+# text = でも そんな の 、 にんげん じゃ ない 、 そんな の 、 キノコ だ ！ 」
+1	でも	demo	でも	_	_	_	_	_	_	_	_	demo	_	_	_	_	_	O-X
+2	そんな	sonna	そんな	_	_	_	_	_	_	_	_	sonna	_	_	_	_	_	O-X
+3	の	no	の	_	_	_	_	_	_	_	_	no	_	_	_	_	_	O-X
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	にんげん	ningen	人間	_	_	_	_	_	_	_	_	ningen	_	_	_	_	_	O-X
+6	じゃ	ja	じゃ	_	_	_	_	_	_	_	_	ja	_	_	_	_	_	O-X
+7	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+8	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+9	そんな	sonna	そんな	_	_	_	_	_	_	_	_	sonna	_	_	_	_	_	O-X
+10	の	no	の	_	_	_	_	_	_	_	_	no	_	_	_	_	_	O-X
+11	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+12	キノコ	kinoko	キノコ	_	_	_	_	_	_	_	_	kinoko	_	_	_	_	_	O-X
+13	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+14	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+15	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.49
+# chapter = 7
+# text = 「 な 、 なに ？ 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	な	na	な	_	_	_	_	_	_	_	_	na	_	_	_	_	_	O-X
+3	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+4	なに	nani	何	_	_	_	_	_	_	_	_	nani	_	_	_	_	_	O-X
+5	？	？	？	_	_	_	_	_	_	_	_	？	_	_	_	_	_	O-X
+6	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.50
+# chapter = 7
+# text = 「 キノコ ！ 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	キノコ	kinoko	キノコ	_	_	_	_	_	_	_	_	kinoko	_	_	_	_	_	O-X
+3	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+4	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.51
+# chapter = 7
+# text = この 王子 くん 、 すっかり ご りっぷく だ 。
+1	この	kono	この	_	_	_	_	_	_	_	_	kono	_	_	_	_	_	O-X
+2	王子	oji	王子	_	_	_	_	_	_	_	_	oji	_	_	_	_	_	O-X
+3	くん	kun	君	_	_	_	_	_	_	_	_	kun	_	_	_	_	_	O-X
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	すっかり	sukkari	すっかり	_	_	_	_	_	_	_	_	sukkari	_	_	_	_	_	O-X
+6	ご	go	ご	_	_	_	_	_	_	_	_	go	_	_	_	_	_	O-X
+7	りっぷく	rippuku	立腹	_	_	_	_	_	_	_	_	rippuku	_	_	_	_	_	O-X
+8	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+9	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.52
+# chapter = 7
+# text = 「 100 まん 年 まえ から 、 花 は トゲ を もっ てる 。
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	100	100	100	_	_	_	_	_	_	_	_	100	_	_	_	_	_	O-X
+3	まん	man	まん	_	_	_	_	_	_	_	_	man	_	_	_	_	_	O-X
+4	年	nen	年	_	_	_	_	_	_	_	_	nen	_	_	_	_	_	O-X
+5	まえ	mae	前	_	_	_	_	_	_	_	_	mae	_	_	_	_	_	O-X
+6	から	kara	から	_	_	_	_	_	_	_	_	kara	p.StartTime	p.StartTime	_	_	_	O-P-p.StartTime|p.StartTime
+7	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+8	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+9	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Theme	p.Topical	_	_	_	O-P-p.Theme|p.Topical
+10	トゲ	toge	トゲ	_	_	_	_	_	_	_	_	toge	_	_	_	_	_	O-X
+11	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+12	もっ	motsu	もっ	_	_	_	_	_	_	_	_	motsu	_	_	_	_	_	O-X
+13	てる	teru	てる	_	_	_	_	_	_	_	_	teru	_	_	_	_	_	O-X
+14	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.53
+# chapter = 7
+# text = 100 まん 年 まえ から 、 ヒツジ は そんな 花 でも 食べ て しまう 。
+1	100	100	100	_	_	_	_	_	_	_	_	100	_	_	_	_	_	O-X
+2	まん	man	まん	_	_	_	_	_	_	_	_	man	_	_	_	_	_	O-X
+3	年	nen	年	_	_	_	_	_	_	_	_	nen	_	_	_	_	_	O-X
+4	まえ	mae	前	_	_	_	_	_	_	_	_	mae	_	_	_	_	_	O-X
+5	から	kara	から	_	_	_	_	_	_	_	_	kara	p.StartTime	p.StartTime	_	_	_	O-P-p.StartTime|p.StartTime
+6	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+7	ヒツジ	hitsuji	羊	_	_	_	_	_	_	_	_	hitsuji	_	_	_	_	_	O-X
+8	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Agent	p.Topical	_	_	_	O-P-p.Agent|p.Topical
+9	そんな	sonna	そんな	_	_	_	_	_	_	_	_	sonna	_	_	_	_	_	O-X
+10	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+11	でも	demo	でも	_	_	_	_	_	_	_	_	demo	p.Theme	p.Focus	_	_	_	O-P-p.Theme|p.Focus
+12	食べ	tabe	食べ	_	_	_	_	_	_	_	_	tabe	_	_	_	_	_	O-X
+13	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+14	しまう	shimau	しまう	_	_	_	_	_	_	_	_	shimau	_	_	_	_	_	O-X
+15	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.54
+# chapter = 7
+# text = だっ たら どう し て 、 それ を ちゃんと わかろう と し ちゃ いけ ない わけ ？
+1	だっ	datsu	だっ	_	_	_	_	_	_	_	_	datsu	_	_	_	_	_	O-X
+2	たら	tara	たら	_	_	_	_	_	_	_	_	tara	_	_	_	_	_	O-X
+3	どう	dou	どう	_	_	_	_	_	_	_	_	dou	_	_	_	_	_	O-X
+4	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+5	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+6	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+7	それ	sore	それ	_	_	_	_	_	_	_	_	sore	_	_	_	_	_	O-X
+8	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Topic	p.Theme	_	_	_	O-P-p.Topic|p.Theme
+9	ちゃんと	chanto	ちゃんと	_	_	_	_	_	_	_	_	chanto	_	_	_	_	_	O-X
+10	わかろう	wakarou	分かろう	_	_	_	_	_	_	_	_	wakarou	_	_	_	_	_	O-X
+11	と	to	と	_	_	_	_	_	_	_	_	to	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+12	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+13	ちゃ	cha	ちゃ	_	_	_	_	_	_	_	_	cha	_	_	_	_	_	O-X
+14	いけ	ike	いけ	_	_	_	_	_	_	_	_	ike	_	_	_	_	_	O-X
+15	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+16	わけ	wake	訳	_	_	_	_	_	_	_	_	wake	_	_	_	_	_	O-X
+17	？	？	？	_	_	_	_	_	_	_	_	？	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.55
+# chapter = 7
+# text = なん で 、 ものすごく がんばっ て まで 、 その なん の やく に も 立た ない トゲ を 、 じぶん の もの に し た の か って 。
+1	なん	nan	何	_	_	_	_	_	_	_	_	nan	_	_	_	_	_	O-X
+2	で	de	で	_	_	_	_	_	_	_	_	de	p.Explanation	p.Circumstance	_	_	_	O-P-p.Explanation|p.Circumstance
+3	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+4	ものすごく	monosugoku	ものすごく	_	_	_	_	_	_	_	_	monosugoku	_	_	_	_	_	O-X
+5	がんばっ	gambatsu	がんばっ	_	_	_	_	_	_	_	_	gambatsu	_	_	_	_	_	O-X
+6	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+7	まで	made	まで	_	_	_	_	_	_	_	_	made	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+8	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+9	その	sono	その	_	_	_	_	_	_	_	_	sono	_	_	_	_	_	O-X
+10	なん	nan	何	_	_	_	_	_	_	_	_	nan	_	_	_	_	_	O-X
+11	の	no	の	_	_	_	_	_	_	_	_	no	p.Purpose	p.Gestalt	_	_	_	O-P-p.Purpose|p.Gestalt
+12	やく	yaku	役	_	_	_	_	_	_	_	_	yaku	_	_	_	_	_	O-X
+13	に	ni	に	_	_	_	_	_	_	_	_	ni	_	_	_	_	_	O-X
+14	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+15	立た	tata	立た	_	_	_	_	_	_	_	_	tata	_	_	_	_	_	O-X
+16	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+17	トゲ	toge	トゲ	_	_	_	_	_	_	_	_	toge	_	_	_	_	_	O-X
+18	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+19	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+20	じぶん	jibun	自分	_	_	_	_	_	_	_	_	jibun	_	_	_	_	_	O-X
+21	の	no	の	_	_	_	_	_	_	_	_	no	p.Possessor	p.Possessor	_	_	_	O-P-p.Possessor|p.Possessor
+22	もの	mono	物	_	_	_	_	_	_	_	_	mono	_	_	_	_	_	O-X
+23	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Topic	p.Goal	_	_	_	O-P-p.Topic|p.Goal
+24	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+25	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+26	の	no	の	_	_	_	_	_	_	_	_	no	_	_	_	_	_	O-X
+27	か	ka	か	_	_	_	_	_	_	_	_	ka	_	_	_	_	_	O-X
+28	って	tte	って	_	_	_	_	_	_	_	_	tte	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+29	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.56
+# chapter = 7
+# text = ヒツジ と 花 の けんか は 、 だいじ じゃ ない の ？
+1	ヒツジ	hitsuji	羊	_	_	_	_	_	_	_	_	hitsuji	_	_	_	_	_	O-X
+2	と	to	と	_	_	_	_	_	_	_	_	to	p.Ancillary	p.Ancillary	_	_	_	O-P-p.Ancillary|p.Ancillary
+3	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+4	の	no	の	_	_	_	_	_	_	_	_	no	p.Agent	p.Gestalt	_	_	_	O-P-p.Agent|p.Gestalt
+5	けんか	kenka	けんか	_	_	_	_	_	_	_	_	kenka	_	_	_	_	_	O-X
+6	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Gestalt	p.Topical	_	_	_	O-P-p.Gestalt|p.Topical
+7	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+8	だいじ	daiji	大事	_	_	_	_	_	_	_	_	daiji	_	_	_	_	_	O-X
+9	じゃ	ja	じゃ	_	_	_	_	_	_	_	_	ja	_	_	_	_	_	O-X
+10	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+11	の	no	の	_	_	_	_	_	_	_	_	no	_	_	_	_	_	O-X
+12	？	？	？	_	_	_	_	_	_	_	_	？	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.57
+# chapter = 7
+# text = ふとっ た 赤い おじ さん の たし算 の ほう が ちゃんと し て て 、 だいじ だ って いう の ？
+1	ふとっ	futotsu	太っ	_	_	_	_	_	_	_	_	futotsu	_	_	_	_	_	O-X
+2	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+3	赤い	akai	赤い	_	_	_	_	_	_	_	_	akai	_	_	_	_	_	O-X
+4	おじ	oji	おじ	_	_	_	_	_	_	_	_	oji	_	_	_	_	_	O-X
+5	さん	san	さん	_	_	_	_	_	_	_	_	san	_	_	_	_	_	O-X
+6	の	no	の	_	_	_	_	_	_	_	_	no	p.Gestalt	p.Gestalt	_	_	_	O-P-p.Gestalt|p.Gestalt
+7	たし算	tashisan	足し算	_	_	_	_	_	_	_	_	tashisan	_	_	_	_	_	O-X
+8	の	no	の	_	_	_	_	_	_	_	_	no	p.Identity	p.Identity	_	_	_	O-P-p.Identity|p.Identity
+9	ほう	hou	方	_	_	_	_	_	_	_	_	hou	_	_	_	_	_	O-X
+10	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Gestalt	p.Theme	_	_	_	O-P-p.Gestalt|p.Theme
+11	ちゃんと	chanto	ちゃんと	_	_	_	_	_	_	_	_	chanto	_	_	_	_	_	O-X
+12	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+13	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+14	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+15	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+16	だいじ	daiji	大事	_	_	_	_	_	_	_	_	daiji	_	_	_	_	_	O-X
+17	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+18	って	tte	って	_	_	_	_	_	_	_	_	tte	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+19	いう	iu	言う	_	_	_	_	_	_	_	_	iu	_	_	_	_	_	O-X
+20	の	no	の	_	_	_	_	_	_	_	_	no	_	_	_	_	_	O-X
+21	？	？	？	_	_	_	_	_	_	_	_	？	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.58
+# chapter = 7
+# text = たった ひと つ しか ない 花 、 ぼく の 星 の ほか に は どこ に も ない 、 ぼく だけ の 花 が 、 ぼく に は あっ て 、 それ に 、 ちいさな ヒツジ が １ ぴき いる だけ で 、 花 を 食べ つくし ちゃう こと も ある って 、 しかも 、 じぶん の し てる こと も わから ず に 、 あさ 、 ふっ と やっ ちゃう こと が ある って わかっ て た と し て も 、 それ で も それ が 、 だいじ じゃ ない って いう の ？ 」
+1	たった	tatta	たった	_	_	_	_	_	_	_	_	tatta	_	_	_	_	_	O-X
+2	ひと	hito	ひと	_	_	_	_	_	_	_	_	hito	_	_	_	_	_	O-X
+3	つ	tsu	つ	_	_	_	_	_	_	_	_	tsu	_	_	_	_	_	O-X
+4	しか	shika	しか	_	_	_	_	_	_	_	_	shika	p.QuantityValue	p.Focus	_	_	_	O-P-p.QuantityValue|p.Focus
+5	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+6	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+7	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+8	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+9	の	no	の	_	_	_	_	_	_	_	_	no	p.OrgMember	p.Gestalt	_	_	_	O-P-p.OrgMember|p.Gestalt
+10	星	hoshi	星	_	_	_	_	_	_	_	_	hoshi	_	_	_	_	_	O-X
+11	の	no	の	_	_	_	_	_	_	_	_	no	p.PartPortion	p.Gestalt	_	_	_	O-P-p.PartPortion|p.Gestalt
+12	ほか	hoka	他	_	_	_	_	_	_	_	_	hoka	_	_	_	_	_	O-X
+13	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Locus	p.Locus	_	_	_	O-P-p.Locus|p.Locus
+14	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Topical	p.Topical	_	_	_	O-P-p.Topical|p.Topical
+15	どこ	doko	どこ	_	_	_	_	_	_	_	_	doko	_	_	_	_	_	O-X
+16	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Locus	p.Locus	_	_	_	O-P-p.Locus|p.Locus
+17	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+18	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+19	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+20	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+21	だけ	dake	だけ	_	_	_	_	_	_	_	_	dake	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+22	の	no	の	_	_	_	_	_	_	_	_	no	p.Possessor	p.Possessor	_	_	_	O-P-p.Possessor|p.Possessor
+23	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+24	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+25	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+26	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+27	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Beneficiary	p.Goal	_	_	_	O-P-p.Beneficiary|p.Goal
+28	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Topical	p.Topical	_	_	_	O-P-p.Topical|p.Topical
+29	あっ	atsu	あっ	_	_	_	_	_	_	_	_	atsu	_	_	_	_	_	O-X
+30	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+31	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+32	それ	sore	それ	_	_	_	_	_	_	_	_	sore	_	_	_	_	_	O-X
+33	に	ni	に	_	_	_	_	_	_	_	_	ni	_	_	_	_	_	O-X
+34	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+35	ちいさな	chiisana	小さな	_	_	_	_	_	_	_	_	chiisana	_	_	_	_	_	O-X
+36	ヒツジ	hitsuji	羊	_	_	_	_	_	_	_	_	hitsuji	_	_	_	_	_	O-X
+37	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+38	１	1	１	_	_	_	_	_	_	_	_	1	_	_	_	_	_	O-X
+39	ぴき	piki	匹	_	_	_	_	_	_	_	_	piki	_	_	_	_	_	O-X
+40	いる	iru	いる	_	_	_	_	_	_	_	_	iru	_	_	_	_	_	O-X
+41	だけ	dake	だけ	_	_	_	_	_	_	_	_	dake	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+42	で	de	で	_	_	_	_	_	_	_	_	de	p.Explanation	p.Circumstance	_	_	_	O-P-p.Explanation|p.Circumstance
+43	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+44	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+45	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+46	食べ	tabe	食べ	_	_	_	_	_	_	_	_	tabe	_	_	_	_	_	O-X
+47	つくし	tsukushi	つくし	_	_	_	_	_	_	_	_	tsukushi	_	_	_	_	_	O-X
+48	ちゃう	chau	ちゃう	_	_	_	_	_	_	_	_	chau	_	_	_	_	_	O-X
+49	こと	koto	こと	_	_	_	_	_	_	_	_	koto	_	_	_	_	_	O-X
+50	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Theme	p.Focus	_	_	_	O-P-p.Theme|p.Focus
+51	ある	aru	ある	_	_	_	_	_	_	_	_	aru	_	_	_	_	_	O-X
+52	って	tte	って	_	_	_	_	_	_	_	_	tte	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+53	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+54	しかも	shikamo	しかも	_	_	_	_	_	_	_	_	shikamo	_	_	_	_	_	O-X
+55	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+56	じぶん	jibun	自分	_	_	_	_	_	_	_	_	jibun	_	_	_	_	_	O-X
+57	の	no	の	_	_	_	_	_	_	_	_	no	p.Agent	p.Agent	_	_	_	O-P-p.Agent|p.Agent
+58	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+59	てる	teru	てる	_	_	_	_	_	_	_	_	teru	_	_	_	_	_	O-X
+60	こと	koto	こと	_	_	_	_	_	_	_	_	koto	_	_	_	_	_	O-X
+61	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Topic	p.Focus	_	_	_	O-P-p.Topic|p.Focus
+62	わから	wakara	分から	_	_	_	_	_	_	_	_	wakara	_	_	_	_	_	O-X
+63	ず	zu	ず	_	_	_	_	_	_	_	_	zu	_	_	_	_	_	O-X
+64	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Manner	p.Manner	_	_	_	O-P-p.Manner|p.Manner
+65	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+66	あさ	asa	あさ	_	_	_	_	_	_	_	_	asa	_	_	_	_	_	O-X
+67	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+68	ふっ	futsu	ふっ	_	_	_	_	_	_	_	_	futsu	_	_	_	_	_	O-X
+69	と	to	と	_	_	_	_	_	_	_	_	to	p.Manner	p.Quote	_	_	_	O-P-p.Manner|p.Quote
+70	やっ	yatsu	やっ	_	_	_	_	_	_	_	_	yatsu	_	_	_	_	_	O-X
+71	ちゃう	chau	ちゃう	_	_	_	_	_	_	_	_	chau	_	_	_	_	_	O-X
+72	こと	koto	こと	_	_	_	_	_	_	_	_	koto	_	_	_	_	_	O-X
+73	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+74	ある	aru	ある	_	_	_	_	_	_	_	_	aru	_	_	_	_	_	O-X
+75	って	tte	って	_	_	_	_	_	_	_	_	tte	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+76	わかっ	wakatsu	分かっ	_	_	_	_	_	_	_	_	wakatsu	_	_	_	_	_	O-X
+77	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+78	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+79	と	to	と	_	_	_	_	_	_	_	_	to	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+80	し	shi	し	_	_	_	_	_	_	_	_	shi	_	_	_	_	_	O-X
+81	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+82	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+83	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+84	それ	sore	それ	_	_	_	_	_	_	_	_	sore	_	_	_	_	_	O-X
+85	で	de	で	_	_	_	_	_	_	_	_	de	p.Explanation	p.Circumstance	_	_	_	O-P-p.Explanation|p.Circumstance
+86	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+87	それ	sore	それ	_	_	_	_	_	_	_	_	sore	_	_	_	_	_	O-X
+88	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Gestalt	p.Theme	_	_	_	O-P-p.Gestalt|p.Theme
+89	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+90	だいじ	daiji	大事	_	_	_	_	_	_	_	_	daiji	_	_	_	_	_	O-X
+91	じゃ	ja	じゃ	_	_	_	_	_	_	_	_	ja	_	_	_	_	_	O-X
+92	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+93	って	tte	って	_	_	_	_	_	_	_	_	tte	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+94	いう	iu	言う	_	_	_	_	_	_	_	_	iu	_	_	_	_	_	O-X
+95	の	no	の	_	_	_	_	_	_	_	_	no	_	_	_	_	_	O-X
+96	？	？	？	_	_	_	_	_	_	_	_	？	_	_	_	_	_	O-X
+97	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.59
+# chapter = 7
+# text = その 子 は まっ赤 に なっ て 、 しゃべり つづける 。
+1	その	sono	その	_	_	_	_	_	_	_	_	sono	_	_	_	_	_	O-X
+2	子	ko	子	_	_	_	_	_	_	_	_	ko	_	_	_	_	_	O-X
+3	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Theme	p.Topical	_	_	_	O-P-p.Theme|p.Topical
+4	まっ赤	matsuaka	まっ赤	_	_	_	_	_	_	_	_	matsuaka	_	_	_	_	_	O-X
+5	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Goal	p.Goal	_	_	_	O-P-p.Goal|p.Goal
+6	なっ	natsu	なっ	_	_	_	_	_	_	_	_	natsu	_	_	_	_	_	O-X
+7	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+8	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+9	しゃべり	shaberi	しゃべり	_	_	_	_	_	_	_	_	shaberi	_	_	_	_	_	O-X
+10	つづける	tsuzukeru	続ける	_	_	_	_	_	_	_	_	tsuzukeru	_	_	_	_	_	O-X
+11	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.60
+# chapter = 7
+# text = 「 だれ か が 、 200 まん の 星 の なか に も ふた つ と ない 、 どれ か いち りん の 花 を すき に なっ た ん なら 、 その ひと は きっと 、 星空 を ながめる だけ で しあわせ に なれる 。
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	だれ	dare	誰	_	_	_	_	_	_	_	_	dare	_	_	_	_	_	O-X
+3	か	ka	か	_	_	_	_	_	_	_	_	ka	_	_	_	_	_	O-X
+4	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Experiencer	p.Agent	_	_	_	O-P-p.Experiencer|p.Agent
+5	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+6	200	200	200	_	_	_	_	_	_	_	_	200	_	_	_	_	_	O-X
+7	まん	man	万	_	_	_	_	_	_	_	_	man	_	_	_	_	_	O-X
+8	の	no	の	_	_	_	_	_	_	_	_	no	p.QuantityValue	p.QuantityValue	_	_	_	O-P-p.QuantityValue|p.QuantityValue
+9	星	hoshi	星	_	_	_	_	_	_	_	_	hoshi	_	_	_	_	_	O-X
+10	の	no	の	_	_	_	_	_	_	_	_	no	p.Whole	p.Whole	_	_	_	O-P-p.Whole|p.Whole
+11	なか	naka	中	_	_	_	_	_	_	_	_	naka	_	_	_	_	_	O-X
+12	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Locus	p.Locus	_	_	_	O-P-p.Locus|p.Locus
+13	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+14	ふた	futa	ふた	_	_	_	_	_	_	_	_	futa	_	_	_	_	_	O-X
+15	つ	tsu	つ	_	_	_	_	_	_	_	_	tsu	_	_	_	_	_	O-X
+16	と	to	と	_	_	_	_	_	_	_	_	to	p.Focus	p.Quote	_	_	_	O-P-p.Focus|p.Quote
+17	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+18	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+19	どれ	dore	どれ	_	_	_	_	_	_	_	_	dore	_	_	_	_	_	O-X
+20	か	ka	か	_	_	_	_	_	_	_	_	ka	_	_	_	_	_	O-X
+21	いち	ichi	一	_	_	_	_	_	_	_	_	ichi	_	_	_	_	_	O-X
+22	りん	rin	輪	_	_	_	_	_	_	_	_	rin	_	_	_	_	_	O-X
+23	の	no	の	_	_	_	_	_	_	_	_	no	p.QuantityValue	p.QuantityValue	_	_	_	O-P-p.QuantityValue|p.QuantityValue
+24	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+25	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Stimulus	p.Theme	_	_	_	O-P-p.Stimulus|p.Theme
+26	すき	suki	好き	_	_	_	_	_	_	_	_	suki	_	_	_	_	_	O-X
+27	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Goal	p.Goal	_	_	_	O-P-p.Goal|p.Goal
+28	なっ	natsu	なっ	_	_	_	_	_	_	_	_	natsu	_	_	_	_	_	O-X
+29	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+30	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+31	なら	nara	なら	_	_	_	_	_	_	_	_	nara	_	_	_	_	_	O-X
+32	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+33	その	sono	その	_	_	_	_	_	_	_	_	sono	_	_	_	_	_	O-X
+34	ひと	hito	人	_	_	_	_	_	_	_	_	hito	_	_	_	_	_	O-X
+35	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Experiencer	p.Topical	_	_	_	O-P-p.Experiencer|p.Topical
+36	きっと	kitto	きっと	_	_	_	_	_	_	_	_	kitto	_	_	_	_	_	O-X
+37	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+38	星空	hoshizora	星空	_	_	_	_	_	_	_	_	hoshizora	_	_	_	_	_	O-X
+39	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Stimulus	p.Theme	_	_	_	O-P-p.Stimulus|p.Theme
+40	ながめる	nagameru	眺める	_	_	_	_	_	_	_	_	nagameru	_	_	_	_	_	O-X
+41	だけ	dake	だけ	_	_	_	_	_	_	_	_	dake	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+42	で	de	で	_	_	_	_	_	_	_	_	de	p.Means	p.Means	_	_	_	O-P-p.Means|p.Means
+43	しあわせ	shiawase	幸せ	_	_	_	_	_	_	_	_	shiawase	_	_	_	_	_	O-X
+44	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Characteristic	p.Goal	_	_	_	O-P-p.Characteristic|p.Goal
+45	なれる	nareru	なれる	_	_	_	_	_	_	_	_	nareru	_	_	_	_	_	O-X
+46	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.61
+# chapter = 7
+# text = 『 あの どこ か に 、 ぼく の 花 が ある … … 』 って おもえる から 。
+1	『	(	『	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	あの	ano	あの	_	_	_	_	_	_	_	_	ano	_	_	_	_	_	O-X
+3	どこ	doko	どこ	_	_	_	_	_	_	_	_	doko	_	_	_	_	_	O-X
+4	か	ka	か	_	_	_	_	_	_	_	_	ka	_	_	_	_	_	O-X
+5	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Locus	p.Locus	_	_	_	O-P-p.Locus|p.Locus
+6	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+7	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+8	の	no	の	_	_	_	_	_	_	_	_	no	p.Possessor	p.Possessor	_	_	_	O-P-p.Possessor|p.Possessor
+9	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+10	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+11	ある	aru	有る	_	_	_	_	_	_	_	_	aru	_	_	_	_	_	O-X
+12	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+13	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+14	』	)	』	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+15	って	tte	って	_	_	_	_	_	_	_	_	tte	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+16	おもえる	omoeru	思える	_	_	_	_	_	_	_	_	omoeru	_	_	_	_	_	O-X
+17	から	kara	から	_	_	_	_	_	_	_	_	kara	_	_	_	_	_	O-X
+18	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.62
+# chapter = 7
+# text = で も 、 もし この ヒツジ が 、 あの 花 を 食べ たら 、 その ひと に とっ て は 、 まるで 、 星 ぜんぶ が 、 いきなり なくなっ た みたい な ん だ ！
+1	で	de	で	_	_	_	_	_	_	_	_	de	_	_	_	_	_	O-X
+2	も	mo	も	_	_	_	_	_	_	_	_	mo	_	_	_	_	_	O-X
+3	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+4	もし	moshi	若し	_	_	_	_	_	_	_	_	moshi	_	_	_	_	_	O-X
+5	この	kono	この	_	_	_	_	_	_	_	_	kono	_	_	_	_	_	O-X
+6	ヒツジ	hitsuji	羊	_	_	_	_	_	_	_	_	hitsuji	_	_	_	_	_	O-X
+7	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Agent	p.Agent	_	_	_	O-P-p.Agent|p.Agent
+8	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+9	あの	ano	あの	_	_	_	_	_	_	_	_	ano	_	_	_	_	_	O-X
+10	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+11	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+12	食べ	tabe	食べ	_	_	_	_	_	_	_	_	tabe	_	_	_	_	_	O-X
+13	たら	tara	たら	_	_	_	_	_	_	_	_	tara	_	_	_	_	_	O-X
+14	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+15	その	sono	その	_	_	_	_	_	_	_	_	sono	_	_	_	_	_	O-X
+16	ひと	hito	人	_	_	_	_	_	_	_	_	hito	_	_	_	_	_	O-X
+17	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Beneficiary	p.Goal	_	_	_	B-P-p.Beneficiary|p.Goal
+18	とっ	totsu	とっ	_	_	_	_	_	_	_	_	totsu	_	_	_	_	_	I_
+19	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	I_
+20	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Topical	p.Topical	_	_	_	O-P-p.Topical|p.Topical
+21	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+22	まるで	marude	まるで	_	_	_	_	_	_	_	_	marude	_	_	_	_	_	O-X
+23	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+24	星	hoshi	星	_	_	_	_	_	_	_	_	hoshi	_	_	_	_	_	O-X
+25	ぜんぶ	zembu	全部	_	_	_	_	_	_	_	_	zembu	_	_	_	_	_	O-X
+26	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+27	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+28	いきなり	ikinari	いきなり	_	_	_	_	_	_	_	_	ikinari	_	_	_	_	_	O-X
+29	なくなっ	nakunatsu	なくなっ	_	_	_	_	_	_	_	_	nakunatsu	_	_	_	_	_	O-X
+30	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+31	みたい	mitai	みたい	_	_	_	_	_	_	_	_	mitai	_	_	_	_	_	O-X
+32	な	na	な	_	_	_	_	_	_	_	_	na	_	_	_	_	_	O-X
+33	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+34	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+35	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.63
+# chapter = 7
+# text = だ から 、 それ は だいじ じゃ ない って いう の 、 ねえ ！ 」
+1	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+2	から	kara	から	_	_	_	_	_	_	_	_	kara	_	_	_	_	_	O-X
+3	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+4	それ	sore	それ	_	_	_	_	_	_	_	_	sore	_	_	_	_	_	O-X
+5	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Gestalt	p.Topical	_	_	_	O-P-p.Gestalt|p.Topical
+6	だいじ	daiji	大事	_	_	_	_	_	_	_	_	daiji	_	_	_	_	_	O-X
+7	じゃ	ja	じゃ	_	_	_	_	_	_	_	_	ja	_	_	_	_	_	O-X
+8	ない	nai	ない	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+9	って	tte	って	_	_	_	_	_	_	_	_	tte	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+10	いう	iu	言う	_	_	_	_	_	_	_	_	iu	_	_	_	_	_	O-X
+11	の	no	の	_	_	_	_	_	_	_	_	no	_	_	_	_	_	O-X
+12	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+13	ねえ	nee	ねえ	_	_	_	_	_	_	_	_	nee	_	_	_	_	_	O-X
+14	！	!	！	_	_	_	_	_	_	_	_	!	_	_	_	_	_	O-X
+15	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.64
+# chapter = 7
+# text = その 子 は 、 もう なに も いえ なかっ た 。
+1	その	sono	その	_	_	_	_	_	_	_	_	sono	_	_	_	_	_	O-X
+2	子	ko	子	_	_	_	_	_	_	_	_	ko	_	_	_	_	_	O-X
+3	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Originator	p.Topical	_	_	_	O-P-p.Originator|p.Topical
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	もう	mou	もう	_	_	_	_	_	_	_	_	mou	_	_	_	_	_	O-X
+6	なに	nani	何	_	_	_	_	_	_	_	_	nani	_	_	_	_	_	O-X
+7	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Topic	p.Focus	_	_	_	O-P-p.Topic|p.Focus
+8	いえ	ie	言え	_	_	_	_	_	_	_	_	ie	_	_	_	_	_	O-X
+9	なかっ	nakatsu	なかっ	_	_	_	_	_	_	_	_	nakatsu	_	_	_	_	_	O-X
+10	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+11	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.65
+# chapter = 7
+# text = いきなり 、 わあっ と なき だし た 。
+1	いきなり	ikinari	いきなり	_	_	_	_	_	_	_	_	ikinari	_	_	_	_	_	O-X
+2	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+3	わあっ	waatsu	わあっ	_	_	_	_	_	_	_	_	waatsu	_	_	_	_	_	O-X
+4	と	to	と	_	_	_	_	_	_	_	_	to	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+5	なき	naki	泣き	_	_	_	_	_	_	_	_	naki	_	_	_	_	_	O-X
+6	だし	dashi	出し	_	_	_	_	_	_	_	_	dashi	_	_	_	_	_	O-X
+7	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+8	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.66
+# chapter = 7
+# text = 夜 が おち て 、 ぼく は どうぐ を 手ばなし た 。
+1	夜	yoru	夜	_	_	_	_	_	_	_	_	yoru	_	_	_	_	_	O-X
+2	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+3	おち	ochi	おち	_	_	_	_	_	_	_	_	ochi	_	_	_	_	_	O-X
+4	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+5	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+6	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+7	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Agent	p.Topical	_	_	_	O-P-p.Agent|p.Topical
+8	どうぐ	dougu	道具	_	_	_	_	_	_	_	_	dougu	_	_	_	_	_	O-X
+9	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+10	手ばなし	tebanashi	手ばなし	_	_	_	_	_	_	_	_	tebanashi	_	_	_	_	_	O-X
+11	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+12	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.67
+# chapter = 7
+# text = なん だ か 、 どう で も よく なっ た 。
+1	なん	nan	何	_	_	_	_	_	_	_	_	nan	_	_	_	_	_	O-X
+2	だ	da	だ	_	_	_	_	_	_	_	_	da	_	_	_	_	_	O-X
+3	か	ka	か	_	_	_	_	_	_	_	_	ka	_	_	_	_	_	O-X
+4	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+5	どう	dou	どう	_	_	_	_	_	_	_	_	dou	_	_	_	_	_	O-X
+6	で	de	で	_	_	_	_	_	_	_	_	de	_	_	_	_	_	O-X
+7	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+8	よく	yoku	よく	_	_	_	_	_	_	_	_	yoku	_	_	_	_	_	O-X
+9	なっ	natsu	なっ	_	_	_	_	_	_	_	_	natsu	_	_	_	_	_	O-X
+10	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+11	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.68
+# chapter = 7
+# text = エンジン の こと も 、 ネジ の こと も 、 のど の かわき も 、 死ぬ こと さえ も 。
+1	エンジン	enjin	エンジン	_	_	_	_	_	_	_	_	enjin	_	_	_	_	_	O-X
+2	の	no	の	_	_	_	_	_	_	_	_	no	p.Topic	p.Topic	_	_	_	O-P-p.Topic|p.Topic
+3	こと	koto	こと	_	_	_	_	_	_	_	_	koto	_	_	_	_	_	O-X
+4	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+5	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+6	ネジ	neji	ネジ	_	_	_	_	_	_	_	_	neji	_	_	_	_	_	O-X
+7	の	no	の	_	_	_	_	_	_	_	_	no	p.Topic	p.Topic	_	_	_	O-P-p.Topic|p.Topic
+8	こと	koto	こと	_	_	_	_	_	_	_	_	koto	_	_	_	_	_	O-X
+9	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+10	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+11	のど	nodo	喉	_	_	_	_	_	_	_	_	nodo	_	_	_	_	_	O-X
+12	の	no	の	_	_	_	_	_	_	_	_	no	p.Theme	p.Gestalt	_	_	_	O-P-p.Theme|p.Gestalt
+13	かわき	kawaki	かわき	_	_	_	_	_	_	_	_	kawaki	_	_	_	_	_	O-X
+14	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+15	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+16	死ぬ	shinu	死ぬ	_	_	_	_	_	_	_	_	shinu	_	_	_	_	_	O-X
+17	こと	koto	こと	_	_	_	_	_	_	_	_	koto	_	_	_	_	_	O-X
+18	さえ	sae	さえ	_	_	_	_	_	_	_	_	sae	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+19	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+20	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.69
+# chapter = 7
+# text = ひと つ の 星 、 ひと つ の わくせい 、 ぼく の いばしょ ― ― この ちきゅう の 上 に 、 ひとり の 気まま な 王子 くん が 、 いじらしく 立っ て いる 。
+1	ひと	hito	ひと	_	_	_	_	_	_	_	_	hito	_	_	_	_	_	O-X
+2	つ	tsu	つ	_	_	_	_	_	_	_	_	tsu	_	_	_	_	_	O-X
+3	の	no	の	_	_	_	_	_	_	_	_	no	p.QuantityValue	p.QuantityValue	_	_	_	O-P-p.QuantityValue|p.QuantityValue
+4	星	hoshi	星	_	_	_	_	_	_	_	_	hoshi	_	_	_	_	_	O-X
+5	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+6	ひと	hito	ひと	_	_	_	_	_	_	_	_	hito	_	_	_	_	_	O-X
+7	つ	tsu	つ	_	_	_	_	_	_	_	_	tsu	_	_	_	_	_	O-X
+8	の	no	の	_	_	_	_	_	_	_	_	no	p.QuantityValue	p.QuantityValue	_	_	_	O-P-p.QuantityValue|p.QuantityValue
+9	わくせい	wakusei	惑星	_	_	_	_	_	_	_	_	wakusei	_	_	_	_	_	O-X
+10	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+11	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+12	の	no	の	_	_	_	_	_	_	_	_	no	p.Gestalt	p.Gestalt	_	_	_	O-P-p.Gestalt|p.Gestalt
+13	いばしょ	ibasho	居場所	_	_	_	_	_	_	_	_	ibasho	_	_	_	_	_	O-X
+14	―	-	―	_	_	_	_	_	_	_	_	-	_	_	_	_	_	O-X
+15	―	-	―	_	_	_	_	_	_	_	_	-	_	_	_	_	_	O-X
+16	この	kono	この	_	_	_	_	_	_	_	_	kono	_	_	_	_	_	O-X
+17	ちきゅう	chikyuu	地球	_	_	_	_	_	_	_	_	chikyuu	_	_	_	_	_	O-X
+18	の	no	の	_	_	_	_	_	_	_	_	no	p.Locus	p.Gestalt	_	_	_	O-P-p.Locus|p.Gestalt
+19	上	ue	上	_	_	_	_	_	_	_	_	ue	_	_	_	_	_	O-X
+20	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Locus	p.Locus	_	_	_	O-P-p.Locus|p.Locus
+21	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+22	ひとり	hitori	一人	_	_	_	_	_	_	_	_	hitori	_	_	_	_	_	O-X
+23	の	no	の	_	_	_	_	_	_	_	_	no	p.QuantityValue	p.QuantityValue	_	_	_	O-P-p.QuantityValue|p.QuantityValue
+24	気まま	kimama	気まま	_	_	_	_	_	_	_	_	kimama	_	_	_	_	_	O-X
+25	な	na	な	_	_	_	_	_	_	_	_	na	_	_	_	_	_	O-X
+26	王子	oji	王子	_	_	_	_	_	_	_	_	oji	_	_	_	_	_	O-X
+27	くん	kun	君	_	_	_	_	_	_	_	_	kun	_	_	_	_	_	O-X
+28	が	ga	が	_	_	_	_	_	_	_	_	ga	p.Agent	p.Agent	_	_	_	O-P-p.Agent|p.Agent
+29	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+30	いじらしく	ijirashiku	いじらしく	_	_	_	_	_	_	_	_	ijirashiku	_	_	_	_	_	O-X
+31	立っ	tatsu	立っ	_	_	_	_	_	_	_	_	tatsu	_	_	_	_	_	O-X
+32	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+33	いる	iru	いる	_	_	_	_	_	_	_	_	iru	_	_	_	_	_	O-X
+34	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.70
+# chapter = 7
+# text = ぼく は その 子 を だきしめ 、 ゆっくり と あやし た 。
+1	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+2	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Agent	p.Topical	_	_	_	O-P-p.Agent|p.Topical
+3	その	sono	その	_	_	_	_	_	_	_	_	sono	_	_	_	_	_	O-X
+4	子	ko	子	_	_	_	_	_	_	_	_	ko	_	_	_	_	_	O-X
+5	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+6	だきしめ	dakishime	だきしめ	_	_	_	_	_	_	_	_	dakishime	_	_	_	_	_	O-X
+7	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+8	ゆっくり	yukkuri	ゆっくり	_	_	_	_	_	_	_	_	yukkuri	_	_	_	_	_	O-X
+9	と	to	と	_	_	_	_	_	_	_	_	to	p.Manner	p.Manner	_	_	_	O-P-p.Manner|p.Manner
+10	あやし	ayashi	あやし	_	_	_	_	_	_	_	_	ayashi	_	_	_	_	_	O-X
+11	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+12	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.71
+# chapter = 7
+# text = その 子 に いっ た 。
+1	その	sono	その	_	_	_	_	_	_	_	_	sono	_	_	_	_	_	O-X
+2	子	ko	子	_	_	_	_	_	_	_	_	ko	_	_	_	_	_	O-X
+3	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Recipient	p.Goal	_	_	_	O-P-p.Recipient|p.Goal
+4	いっ	itsu	言っ	_	_	_	_	_	_	_	_	itsu	_	_	_	_	_	O-X
+5	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+6	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.72
+# chapter = 7
+# text = 「 きみ の すき な 花 は 、 なに も あぶなく なんか ない … … ヒツジ に くちわ を かい て あげる 、 きみ の ヒツジ に … … 花 を まもる もの も かい て あげる … … あと … … 」
+1	「	(	「	_	_	_	_	_	_	_	_	(	_	_	_	_	_	O-X
+2	きみ	kimi	きみ	_	_	_	_	_	_	_	_	kimi	_	_	_	_	_	O-X
+3	の	no	の	_	_	_	_	_	_	_	_	no	p.Experiencer	p.Gestalt	_	_	_	O-P-p.Experiencer|p.Gestalt
+4	すき	suki	好き	_	_	_	_	_	_	_	_	suki	_	_	_	_	_	O-X
+5	な	na	な	_	_	_	_	_	_	_	_	na	_	_	_	_	_	O-X
+6	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+7	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Gestalt	p.Topical	_	_	_	O-P-p.Gestalt|p.Topical
+8	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+9	なに	nani	何	_	_	_	_	_	_	_	_	nani	_	_	_	_	_	O-X
+10	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+11	あぶなく	abunaku	あぶなく	_	_	_	_	_	_	_	_	abunaku	_	_	_	_	_	O-X
+12	なんか	nanka	なんか	_	_	_	_	_	_	_	_	nanka	p.Focus	p.Focus	_	_	_	O-P-p.Focus|p.Focus
+13	ない	nai	無い	_	_	_	_	_	_	_	_	nai	_	_	_	_	_	O-X
+14	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+15	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+16	ヒツジ	hitsuji	羊	_	_	_	_	_	_	_	_	hitsuji	_	_	_	_	_	O-X
+17	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Beneficiary	p.Goal	_	_	_	O-P-p.Beneficiary|p.Goal
+18	くちわ	kuchiwa	口輪	_	_	_	_	_	_	_	_	kuchiwa	_	_	_	_	_	O-X
+19	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Topic	p.Theme	_	_	_	O-P-p.Topic|p.Theme
+20	かい	kai	かい	_	_	_	_	_	_	_	_	kai	_	_	_	_	_	O-X
+21	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+22	あげる	ageru	あげる	_	_	_	_	_	_	_	_	ageru	_	_	_	_	_	O-X
+23	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+24	きみ	kimi	きみ	_	_	_	_	_	_	_	_	kimi	_	_	_	_	_	O-X
+25	の	no	の	_	_	_	_	_	_	_	_	no	p.Possessor	p.Possessor	_	_	_	O-P-p.Possessor|p.Possessor
+26	ヒツジ	hitsuji	羊	_	_	_	_	_	_	_	_	hitsuji	_	_	_	_	_	O-X
+27	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Beneficiary	p.Goal	_	_	_	O-P-p.Beneficiary|p.Goal
+28	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+29	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+30	花	hana	花	_	_	_	_	_	_	_	_	hana	_	_	_	_	_	O-X
+31	を	wo	を	_	_	_	_	_	_	_	_	wo	p.Theme	p.Theme	_	_	_	O-P-p.Theme|p.Theme
+32	まもる	mamoru	守る	_	_	_	_	_	_	_	_	mamoru	_	_	_	_	_	O-X
+33	もの	mono	物	_	_	_	_	_	_	_	_	mono	_	_	_	_	_	O-X
+34	も	mo	も	_	_	_	_	_	_	_	_	mo	p.Topic	p.Focus	_	_	_	O-P-p.Topic|p.Focus
+35	かい	kai	かい	_	_	_	_	_	_	_	_	kai	_	_	_	_	_	O-X
+36	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+37	あげる	ageru	上げる	_	_	_	_	_	_	_	_	ageru	_	_	_	_	_	O-X
+38	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+39	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+40	あと	ato	あと	_	_	_	_	_	_	_	_	ato	_	_	_	_	_	O-X
+41	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+42	…	…	…	_	_	_	_	_	_	_	_	…	_	_	_	_	_	O-X
+43	」	)	」	_	_	_	_	_	_	_	_	)	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.73
+# chapter = 7
+# text = どう いっ て いい の か 、 ぼく に は よく わから なかっ た 。
+1	どう	dou	どう	_	_	_	_	_	_	_	_	dou	_	_	_	_	_	O-X
+2	いっ	itsu	いっ	_	_	_	_	_	_	_	_	itsu	_	_	_	_	_	O-X
+3	て	te	て	_	_	_	_	_	_	_	_	te	_	_	_	_	_	O-X
+4	いい	ii	良い	_	_	_	_	_	_	_	_	ii	_	_	_	_	_	O-X
+5	の	no	の	_	_	_	_	_	_	_	_	no	_	_	_	_	_	O-X
+6	か	ka	か	_	_	_	_	_	_	_	_	ka	_	_	_	_	_	O-X
+7	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+8	ぼく	boku	僕	_	_	_	_	_	_	_	_	boku	_	_	_	_	_	O-X
+9	に	ni	に	_	_	_	_	_	_	_	_	ni	p.Beneficiary	p.Goal	_	_	_	O-P-p.Beneficiary|p.Goal
+10	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Topical	p.Topical	_	_	_	O-P-p.Topical|p.Topical
+11	よく	yoku	良く	_	_	_	_	_	_	_	_	yoku	_	_	_	_	_	O-X
+12	わから	wakara	わから	_	_	_	_	_	_	_	_	wakara	_	_	_	_	_	O-X
+13	なかっ	nakatsu	なかっ	_	_	_	_	_	_	_	_	nakatsu	_	_	_	_	_	O-X
+14	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+15	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
+# sent_id = lpp_jp.7.74
+# chapter = 7
+# text = じぶん は 、 なんて ぶ きよう な ん だろう と おもっ た 。
+1	じぶん	jibun	自分	_	_	_	_	_	_	_	_	jibun	_	_	_	_	_	O-X
+2	は	ha	は	_	_	_	_	_	_	_	_	ha	p.Gestalt	p.Topical	_	_	_	O-P-p.Gestalt|p.Topical
+3	、	,	、	_	_	_	_	_	_	_	_	,	_	_	_	_	_	O-X
+4	なんて	nante	なんて	_	_	_	_	_	_	_	_	nante	_	_	_	_	_	O-X
+5	ぶ	bu	不	_	_	_	_	_	_	_	_	bu	_	_	_	_	_	O-X
+6	きよう	kiyou	器用	_	_	_	_	_	_	_	_	kiyou	_	_	_	_	_	O-X
+7	な	na	な	_	_	_	_	_	_	_	_	na	_	_	_	_	_	O-X
+8	ん	n	ん	_	_	_	_	_	_	_	_	n	_	_	_	_	_	O-X
+9	だろう	darou	だろう	_	_	_	_	_	_	_	_	darou	_	_	_	_	_	O-X
+10	と	to	と	_	_	_	_	_	_	_	_	to	p.Content	p.Quote	_	_	_	O-P-p.Content|p.Quote
+11	おもっ	omotsu	思っ	_	_	_	_	_	_	_	_	omotsu	_	_	_	_	_	O-X
+12	た	ta	た	_	_	_	_	_	_	_	_	ta	_	_	_	_	_	O-X
+13	。	.	。	_	_	_	_	_	_	_	_	.	_	_	_	_	_	O-X
+
+
