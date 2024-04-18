@@ -18,6 +18,7 @@ from collections import defaultdict
 import wandb
 import json
 import glob
+import shutil
 
 # random seed
 random.seed(42)
@@ -123,33 +124,98 @@ def compute_metrics(p, id_to_label, eval_dataset):
         for prediction, label in zip(predictions, labels)
     ]
 
+    ## NEEDDS FIXING FOR TEST FILES
     # log predictions to file (same id as wandb run)
-    with open(f"logs/{wandb.run.id}.json", "a") as f:
+    # with open(f"logs/{wandb.run.id}.json", "a") as f:
+    #
+    #     # log id_to_label mapping
+    #     if os.path.getsize(f"logs/{wandb.run.id}.json") > 0:
+    #         f.write("\n")
+    #
+    #     # collect predictions
+    #
+    #     sents = []
+    #     for i in range(len(predictions)):
+    #         sents.append({
+    #             'input_ids': eval_dataset[i]['input_ids'],
+    #             'prediction': true_predictions[i],
+    #             'label': true_labels[i],
+    #             'lexlemma': eval_dataset[i]['lexlemma'],
+    #         })
+    #
+    #     # dump to file
+    #     json.dump(sents, f)
 
-        # log id_to_label mapping
-        if os.path.getsize(f"logs/{wandb.run.id}.json") > 0:
-            f.write("\n")
-        
-        # collect predictions
-        sents = []
-        for i in range(len(predictions)):
-            sents.append({
-                'input_ids': eval_dataset[i]['input_ids'],
-                'prediction': true_predictions[i],
-                'label': true_labels[i],
-                'lexlemma': eval_dataset[i]['lexlemma'],
-            })
-        
-        # dump to file
-        json.dump(sents, f)
+    # print("LABELS", true_labels, file=sys.stderr)
+    true_scenes = []
+    true_functions = []
+    for batch in true_labels:
+        batch_s = []
+        batch_f = []
+        for lab in batch:
+            if "-" not in lab:
+                batch_s.append(lab)
+                batch_f.append(lab)
+            else:
+                bio = lab.split("-")[0]
+                scene = lab.split("-")[1]
+                func = lab.split("-")[2]
+                true_scene = bio + "-" + scene
+                true_func = bio + "-" + func
+                batch_s.append(true_scene)
+                batch_f.append(true_func)
+        true_scenes.append(batch_s)
+        true_functions.append(batch_f)
+
+    pred_scenes = []
+    pred_functions = []
+
+    for batch in true_predictions:
+        batch_s = []
+        batch_f = []
+        for lab in batch:
+            if "-" not in lab:
+                batch_s.append(lab)
+                batch_f.append(lab)
+            else:
+                bio = lab.split("-")[0]
+                scene = lab.split("-")[1]
+                func = lab.split("-")[2]
+                pred_scene = bio + "-" + scene
+                pred_func = bio + "-" + func
+                batch_s.append(pred_scene)
+                batch_f.append(pred_func)
+                
+        pred_scenes.append(batch_s)
+        pred_functions.append(batch_f)
+
+
+
+    # print("TRUE SCENES", true_scenes, file=sys.stderr)
+    # print("TRUE FUNCTIONS", true_functions, file=sys.stderr)
 
     # compute metrics
     results = seqeval.compute(predictions=true_predictions, references=true_labels, scheme="IOB2")
+
+    #compute scene results
+    scene_results = seqeval.compute(predictions=pred_scenes, references=true_scenes, scheme="IOB2")
+
+    #compute function results
+    func_results = seqeval.compute(predictions=pred_functions, references=true_functions, scheme="IOB2")
+
     ret = {
         "precision": results["overall_precision"],
         "recall": results["overall_recall"],
         "f1": results["overall_f1"],
         "accuracy": results["overall_accuracy"],
+        "scene_precision": scene_results["overall_precision"],
+        "scene_recall": scene_results["overall_recall"],
+        "scene_f1": scene_results["overall_f1"],
+        "scene_accuracy": scene_results["overall_accuracy"],
+        "funct_precision": func_results["overall_precision"],
+        "funct_recall": func_results["overall_recall"],
+        "funct_f1": func_results["overall_f1"],
+        "funct_accuracy": func_results["overall_accuracy"],
     }
 
     #log the metrics
@@ -164,20 +230,21 @@ def compute_metrics(p, id_to_label, eval_dataset):
     for key in results:
         if isinstance(results[key], dict) and results[key]["number"] != 0:
             ret[key] = results[key]
-
+            
+    ##  NEEDS FIXING FOR TEST DATASET
     # acc for each lexlemma type
-    lexlemma = defaultdict(lambda: {"correct": 0, "total": 0})
-    for i in range(len(predictions)):
-        for j in range(len(predictions[i])):
-            if labels[i][j] == -100 or labels[i][j] == 1:
-                continue
-            lexlemma[eval_dataset[i]['lexlemma'][j]]["total"] += 1
-            if predictions[i][j] == labels[i][j]:
-                lexlemma[eval_dataset[i]['lexlemma'][j]]["correct"] += 1
-
-    # calculate acc and put in ret
-    for key in lexlemma:
-        ret[f"{key}.acc"] = lexlemma[key]["correct"] / lexlemma[key]["total"]
+    # lexlemma = defaultdict(lambda: {"correct": 0, "total": 0})
+    # for i in range(len(predictions)):
+    #     for j in range(len(predictions[i])):
+    #         if labels[i][j] == -100 or labels[i][j] == 1:
+    #             continue
+    #         lexlemma[eval_dataset[i]['lexlemma'][j]]["total"] += 1
+    #         if predictions[i][j] == labels[i][j]:
+    #             lexlemma[eval_dataset[i]['lexlemma'][j]]["correct"] += 1
+    #
+    # # calculate acc and put in ret
+    # for key in lexlemma:
+    #     ret[f"{key}.acc"] = lexlemma[key]["correct"] / lexlemma[key]["total"]
 
     return ret
 
@@ -356,14 +423,22 @@ def train(
 def train2(config=None):
     """Train model -- set up for wandb hyperparam sweep"""
 
+
+
     wandb.init()
     config = wandb.config
 
-    # try:
-    #     with open("/best_model/metric/f1.txt", "r") as f:
-    #         best_metric = float(f.read().strip())
-    # except FileNotFoundError:
-    #     best_metric = None
+    filename = config.file
+
+    lang = filename.split("-")[0]
+
+    print("LANGUAGE", lang, file=sys.stderr)
+
+    try:
+        with open("/best_model/" + lang + "/metric/f1.txt", "r") as f:
+            best_metric = float(f.read().strip())
+    except FileNotFoundError:
+        best_metric = None
 
     # load data
     tokenizer = AutoTokenizer.from_pretrained(config.model_name)
@@ -412,7 +487,7 @@ def train2(config=None):
         evaluation_strategy="epoch",
         save_strategy="epoch",
         save_total_limit=1,
-        load_best_model_at_end=False, #change to True
+        load_best_model_at_end=True, #change to True
         push_to_hub=False
     )
 
@@ -470,24 +545,32 @@ def train2(config=None):
 
     wandb.log({"evaluation_loss": trainer.evaluate()['eval_loss']})
 
-    #best_f1 = trainer.evaluate()['eval_f1']
+    best_f1 = trainer.evaluate()['eval_f1']
 
-    # if best_metric is None or best_f1 > best_metric:
-    #     with open("./best_model/metric/f1.txt", "w") as f:
-    #         f.write(str(best_f1))
-    #
-    #     model_files = glob.glob("./best_model/model/.*")
-    #     for f in model_files:
-    #         os.remove(f)
-    #
-    #     model_path = "./best_model/model/"
-    #     trainer.model.save_pretrained(model_path)
-    #     trainer.tokenizer.save_pretrained(model_path)
+    test_results = trainer.predict(test_dataset)
+
+    wandb.log(test_results.metrics)
+
+    if best_metric is None or best_f1 > best_metric:
+        with open("./best_model/" + lang + "/metric/f1.txt", "w") as f:
+            f.write(str(best_f1))
+
+        # shutil.rmtree("./best_model/" + lang + "/model/")
+
+        for f in glob.glob("./best_model/" + lang + "/model/.*"):
+            os.remove(f)
+        
+        model_path = "./best_model/" + lang + "/model/"
+        trainer.save_model(model_path)
+
 
 
 
 
     wandb.finish()
+
+    #remove model checkpoints, already saved the best one
+    shutil.rmtree("./models/")
 
 
 
