@@ -551,17 +551,18 @@ def train2(config=None):
 
     wandb.log(test_results.metrics)
 
-    if best_metric is None or best_f1 > best_metric:
-        with open("./best_model/" + lang + "/metric/f1.txt", "w") as f:
-            f.write(str(best_f1))
-
-        # shutil.rmtree("./best_model/" + lang + "/model/")
-
-        for f in glob.glob("./best_model/" + lang + "/model/.*"):
-            os.remove(f)
-        
-        model_path = "./best_model/" + lang + "/model/"
-        trainer.save_model(model_path)
+    #NOT RELEVANT FOR COLAB
+    # if best_metric is None or best_f1 > best_metric:
+    #     with open("./best_model/" + lang + "/metric/f1.txt", "w") as f:
+    #         f.write(str(best_f1))
+    #
+    #     # shutil.rmtree("./best_model/" + lang + "/model/")
+    #
+    #     for f in glob.glob("./best_model/" + lang + "/model/.*"):
+    #         os.remove(f)
+    #
+    #     model_path = "./best_model/" + lang + "/model/"
+    #     trainer.save_model(model_path)
 
 
 
