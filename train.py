@@ -635,7 +635,7 @@ def hyper_sweep(args):
 
     sweep_id = wandb.sweep(sweep_config, project="huggingface")
 
-    wandb.agent(sweep_id, train2, count=100)
+    wandb.agent(sweep_id, train2, count=75)
 
 
 def main():
