@@ -522,9 +522,12 @@ def train2(config=None):
         eval_dataset = dev_data
         test_dataset = test_data
 
-        train_dataset.shuffle(seed=42)
-        eval_dataset.shuffle(seed=42)
-        test_dataset.shuffle(seed=42)
+        random.seed(42)
+        random.shuffle(train_dataset)
+        random.seed(42)
+        random.shuffle(eval_dataset)
+        random.seed(42)
+        random.shuffle(test_dataset)
 
 
 
