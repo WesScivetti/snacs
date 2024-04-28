@@ -516,7 +516,7 @@ def train2(config=None):
     else:
         #if you supply extra data, add that into training too
         if config.extra_file:
-            data = data + extra_data
+            data = data * 5 + extra_data #upsample gold data to account for disparity in sizes
 
         train_dataset = data
         eval_dataset = dev_data
@@ -595,7 +595,7 @@ def hyper_sweep(args):
         },
         'parameters': {
             'learning_rate': {
-                'min': 1e-6,
+                'min': 1e-7,
                 'max': 1e-3
             },
             'batch_size': {
