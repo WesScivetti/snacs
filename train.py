@@ -326,7 +326,7 @@ def train(
     # could alter this to take a list of extra files so that it could be as many as you want.
     if extra_file:
         #for ex_file in extra_file: do this iteratively, add each extra file onto eachother, take the new label_to_id etc
-        extra_data, label_to_id, id_to_label, freqs = load_data(f"data/{extra_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #use the existing id_to_label and just add to them
+        extra_data, label_to_id, id_to_label, freqs = load_data(f"{extra_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #use the existing id_to_label and just add to them
 
 
     if test_file:
@@ -449,6 +449,8 @@ def train2(config=None):
         #for ex_file in extra_file: do this iteratively, add each extra file onto eachother, take the new label_to_id etc
         extra_data, label_to_id, id_to_label, freqs = load_data(f"{config.extra_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label) #use the existing id_to_label and just add to them
 
+
+
     if config.dev_file:
         dev_data, _, _, _ = load_data(f"data/splits/{config.dev_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #don't need label to id for this
 
@@ -519,6 +521,10 @@ def train2(config=None):
         train_dataset = data
         eval_dataset = dev_data
         test_dataset = test_data
+
+        train_dataset.shuffle(seed=42)
+        eval_dataset.shuffle(seed=42)
+        test_dataset.shuffle(seed=42)
 
 
 
@@ -655,7 +661,7 @@ def main():
     
     args = parser.parse_args()
 
-    # train(**vars(args))
+    #train(**vars(args))
     hyper_sweep(args)
 
 
