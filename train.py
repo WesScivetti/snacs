@@ -516,18 +516,18 @@ def train2(config=None):
     else:
         #if you supply extra data, add that into training too
         if config.extra_file:
-            data = data * 5 + extra_data #upsample gold data to account for disparity in sizes
+            data = extra_data + data #upsample gold data to account for disparity in sizes
 
         train_dataset = data
         eval_dataset = dev_data
         test_dataset = test_data
 
-        random.seed(42)
-        random.shuffle(train_dataset)
-        random.seed(42)
-        random.shuffle(eval_dataset)
-        random.seed(42)
-        random.shuffle(test_dataset)
+        # random.seed(42)
+        # random.shuffle(train_dataset)
+        # random.seed(42)
+        # random.shuffle(eval_dataset)
+        # random.seed(42)
+        # random.shuffle(test_dataset)
 
 
 
