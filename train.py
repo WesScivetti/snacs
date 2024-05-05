@@ -458,6 +458,13 @@ def train2(config=None):
     if config.test_file:
         test_data, _, _, _ = load_data(f"data/splits/{config.test_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #don't need label to id for this
 
+    if config.extra_dev_file:
+        extra_dev_data, _, _, _ = load_data(f"data/splits/{config.extra_dev_file}", tokenizer, label_to_id=label_to_id,
+                                      id_to_label=id_to_label, freqs=freqs)  # don't need label to id for this
+    
+    if config.extra_test_file:
+        extra_test_data, _, _, _ = load_data(f"data/splits/{config.extra_test_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #don't need label to id for this
+
 
     # load model
     model = AutoModelForTokenClassification.from_pretrained(
@@ -576,6 +583,7 @@ def train2(config=None):
                 # random.shuffle(test_dataset)
 
 
+
             else:
                 # this is most simple case: 1 file, split it into train + eval
                 train_dataset = data[len(data) // 5:]
@@ -586,6 +594,14 @@ def train2(config=None):
         #if you supply extra data, add that into training too
         if config.extra_file:
             data = extra_data + data #upsample gold data to account for disparity in sizes
+
+        if config.extra_dev_file:
+            orig_dev_data = dev_data
+            dev_data = extra_dev_data + dev_data
+
+        if config.extra_test_file:
+            orig_test_data = test_data
+            test_data = extra_test_file + test_data
 
         train_dataset = data
         eval_dataset = dev_data
@@ -642,6 +658,19 @@ def train2(config=None):
         jp_results = trainer.predict(jp_test)
         jp_metrics = {"jp_" + k: v for (k, v) in jp_results.metrics.items()}
         wandb.log(jp_metrics)
+
+    if config.extra_test_file:
+        #if two test files, compute metrics on each one of them
+        lang1 = config.test_file.split("-")[0]
+        lang2 = config.extra_test_file.split("-")[0]
+
+        l1_results = trainer.predict(orig_test_data)
+        l1_metrics = {lang1 + "_" + k: v for (k, v) in l1_results.metrics.items()}
+        wandb.log(l1_metrics)
+
+        l2_results = trainer.predict(extra_test_data)
+        l2_metrics = {lang2 + "_" + k: v for (k, v) in l2_results.metrics.items()}
+        wandb.log(l2_metrics)
 
 
     #NOT RELEVANT FOR COLAB
@@ -709,6 +738,12 @@ def hyper_sweep(args):
             'dev_file': {
                 "value": args.dev_file
             },
+            'extra_dev_file': {
+                "value": args.extra_dev_file
+            },
+            'extra_test_file': {
+                "value": args.extra_test_file
+            },
             'multilingual': {
                 "value": args.multilingual
             },
@@ -744,6 +779,8 @@ def main():
     parser.add_argument("--test_file", type=str, default=None, help="Need to put file for test split")
     parser.add_argument("--dev_file", type=str, default=None, help="Need to put file for dev split")
     parser.add_argument("--extra_file", type=str, default=None, help="If you want to add an extra file to add more data during the fine-tuning stage. Evaluation is still only perfomed on the original file test split.")
+    parser.add_argument("--extra_dev_file", type=str, default=None, help="Add in an extra dev file (another lang for data sharing)")
+    parser.add_argument("--extra_test_file", type=str, default=None, help="Add in an extra test file (another lang for data sharing)")
     parser.add_argument("--multilingual", action="store_true", help="If supplying an extra lang file, put true to include that language in eval. Otherwise it will only test on original lang")
     
     args = parser.parse_args()
