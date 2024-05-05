@@ -507,10 +507,79 @@ def train2(config=None):
                 train_dataset = data[len(data) // 5:] + extra_data #combine extra only with training
                 eval_dataset = data[:len(data) // 5]
 
-        #this is most simple case: 1 file, split it into train + eval
+
         else:
-            train_dataset = data[len(data) // 5:]
-            eval_dataset = data[:len(data) // 5]
+            if config.multilingual:
+                #this is the setting where we train and test on everything at once!!
+                #set all existing variables to none
+                data, label_to_id, id_to_label, freqs = None, None, None, None
+                model = None
+
+                # read in ALLLLL the files
+                gu_train, label_to_id, id_to_label, freqs = load_data(f"data/splits/gu-lp_c_train.conllulex", tokenizer)
+                en_train, label_to_id, id_to_label, freqs = load_data(f"data/splits/en-lp_c_train.conllulex", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label)
+                en_train2, label_to_id, id_to_label, freqs = load_data(f"data/splits/en-streusle_train.conllulex", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label)
+                zh_train, label_to_id, id_to_label, freqs = load_data(f"data/splits/zh-lp_c_train.conllulex", tokenizer,
+                                                                      label_to_id=label_to_id, id_to_label=id_to_label)
+                jp_train, label_to_id, id_to_label, freqs = load_data(f"data/splits/jp-lp_c_train.conllulex", tokenizer,
+                                                                      label_to_id=label_to_id, id_to_label=id_to_label)
+
+                hi_train, label_to_id, id_to_label, freqs = load_data(f"data/splits/hi-lp_c_train.conllulex", tokenizer,
+                                                                      label_to_id=label_to_id, id_to_label=id_to_label)
+
+                zh_dev, _, _, _ = load_data(f"data/splits/zh-lp_c_dev.conllulex", tokenizer, label_to_id=label_to_id,
+                                            id_to_label=id_to_label)
+                zh_test, _, _, _ = load_data(f"data/splits/zh-lp_c_test.conllulex", tokenizer, label_to_id=label_to_id,
+                                             id_to_label=id_to_label)
+
+                en_dev, _, _, _ = load_data(f"data/splits/en-lp_c_dev.conllulex", tokenizer, label_to_id=label_to_id,
+                                            id_to_label=id_to_label)
+                en_test, _, _, _ = load_data(f"data/splits/en-lp_c_test.conllulex", tokenizer, label_to_id=label_to_id,
+                                             id_to_label=id_to_label)
+
+                en_dev2, _, _, _ = load_data(f"data/splits/en-streusle_dev.conllulex", tokenizer,
+                                             label_to_id=label_to_id, id_to_label=id_to_label)
+                en_test2, _, _, _ = load_data(f"data/splits/en-streusle_test.conllulex", tokenizer,
+                                              label_to_id=label_to_id, id_to_label=id_to_label)
+
+                jp_dev, _, _, _ = load_data(f"data/splits/jp-lp_c_dev.conllulex", tokenizer, label_to_id=label_to_id,
+                                            id_to_label=id_to_label)
+                jp_test, _, _, _ = load_data(f"data/splits/jp-lp_c_test.conllulex", tokenizer, label_to_id=label_to_id,
+                                             id_to_label=id_to_label)
+
+                hi_dev, _, _, _ = load_data(f"data/splits/hi-lp_c_dev.conllulex", tokenizer, label_to_id=label_to_id,
+                                            id_to_label=id_to_label)
+                hi_test, _, _, _ = load_data(f"data/splits/hi-lp_c_test.conllulex", tokenizer, label_to_id=label_to_id,
+                                             id_to_label=id_to_label)
+
+                gu_dev, _, _, _ = load_data(f"data/splits/gu-lp_c_dev.conllulex", tokenizer, label_to_id=label_to_id,
+                                            id_to_label=id_to_label)
+                gu_test, _, _, _ = load_data(f"data/splits/gu-lp_c_test.conllulex", tokenizer, label_to_id=label_to_id,
+                                             id_to_label=id_to_label)
+
+                train_dataset = gu_train + en_train + en_train2 + zh_train + jp_train + hi_train
+                eval_dataset = gu_dev + en_dev + en_dev2 + zh_dev + jp_dev + hi_dev
+                test_dataset = gu_test + en_test + en_test2 + zh_test + jp_test + hi_test
+
+                model = AutoModelForTokenClassification.from_pretrained(
+                    config.model_name,
+                    num_labels=len(label_to_id),
+                    id2label=id_to_label,
+                    label2id=label_to_id,
+                )
+
+                # random.seed(42)
+                # random.shuffle(train_dataset)
+                # random.seed(42)
+                # random.shuffle(eval_dataset)
+                # random.seed(42)
+                # random.shuffle(test_dataset)
+
+
+            else:
+                # this is most simple case: 1 file, split it into train + eval
+                train_dataset = data[len(data) // 5:]
+                eval_dataset = data[:len(data) // 5]
 
     #if you supply a test file separately, you will test on that, and train on training data
     else:
@@ -521,13 +590,6 @@ def train2(config=None):
         train_dataset = data
         eval_dataset = dev_data
         test_dataset = test_data
-
-        # random.seed(42)
-        # random.shuffle(train_dataset)
-        # random.seed(42)
-        # random.shuffle(eval_dataset)
-        # random.seed(42)
-        # random.shuffle(test_dataset)
 
 
 
@@ -559,6 +621,28 @@ def train2(config=None):
     test_results = trainer.predict(test_dataset)
 
     wandb.log(test_results.metrics)
+
+    if config.multilingual:
+        gu_results = trainer.predict(gu_test)
+        gu_metrics = {"gu_" + k: v for (k, v) in gu_results.metrics.items()}
+        wandb.log(gu_metrics)
+
+        en_results = trainer.predict(en_test2)
+        en_metrics = {"en_" + k: v for (k, v) in en_results.metrics.items()}
+        wandb.log(en_metrics)
+
+        zh_results = trainer.predict(zh_test)
+        zh_metrics = {"zh_" + k: v for (k, v) in zh_results.metrics.items()}
+        wandb.log(zh_metrics)
+
+        hi_results = trainer.predict(hi_test)
+        hi_metrics = {"hi_" + k: v for (k, v) in hi_results.metrics.items()}
+        wandb.log(hi_metrics)
+        
+        jp_results = trainer.predict(jp_test)
+        jp_metrics = {"jp_" + k: v for (k, v) in jp_results.metrics.items()}
+        wandb.log(jp_metrics)
+
 
     #NOT RELEVANT FOR COLAB
     # if best_metric is None or best_f1 > best_metric:
@@ -626,7 +710,7 @@ def hyper_sweep(args):
                 "value": args.dev_file
             },
             'multilingual': {
-                "value": False
+                "value": args.multilingual
             },
             'epochs': {
                 "value": 10
