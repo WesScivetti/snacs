@@ -601,7 +601,7 @@ def train2(config=None):
 
         if config.extra_test_file:
             orig_test_data = test_data
-            test_data = extra_test_file + test_data
+            test_data = extra_test_data + test_data
 
         train_dataset = data
         eval_dataset = dev_data
