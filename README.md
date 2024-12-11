@@ -4,7 +4,7 @@ Models for parsing SNACS datasets. See [Schneider et al. (2018)](https://aclanth
 
 ## Results
 
-See model finetuning runs on [Weights & Biases](https://wandb.ai/aryamanarora/huggingface).
+See model finetuning runs on [Weights & Biases](https://wandb.ai/nert/huggingface?nw=nwuserwss37).
 
 
 **English**
