@@ -28,6 +28,11 @@ See model finetuning runs on [Weights & Biases](https://wandb.ai/nert/huggingfac
 ### Single Model (Optimal Hyperparameters)
 We report scores for the best performing models. To fine-tune a model with the hyperparameters we found to be optimal, run the following code:
 
+```
+python train.py --model_name [MODEL NAME] --file [GOLD TRAIN FILE] --dev_file [DEV FILE] --test_file [TEST FILE] --extra_dev_file [EXTRA DEV FILE] --extra_test_file [EXTRA TEST FILE] --extra_file [EXTRA TRAIN FILE] --do_sweep
+```
+
+
 Each of these fine-tuning runs should take well under an hour on a GPU.
 
 ### Hyperparameter Sweep
@@ -35,6 +40,9 @@ In order to achieve the results above, we tuned hyperparameters across 50-100 ru
 ```
 python train.py --model_name [MODEL NAME] --file [GOLD TRAIN FILE] --dev_file [DEV FILE] --test_file [TEST FILE] --extra_dev_file [EXTRA DEV FILE] --extra_test_file [EXTRA TEST FILE] --extra_file [EXTRA TRAIN FILE] --do_sweep
 ```
+
+The main thing to note is that you need to add the --do_sweep flag, otherwise all the arguments are the same as with a single run.
+
 Example usage:
 
 
