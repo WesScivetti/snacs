@@ -32,7 +32,9 @@ Each of these fine-tuning runs should take well under an hour on a GPU.
 
 ### Hyperparameter Sweep
 In order to achieve the results above, we tuned hyperparameters across 50-100 runs in each classification setting. To run a hyperparameter tuning sweep yourself, run the following command:
-
+```
+python train.py --model_name "xlm-roberta-large" --file hi-lp_c_train.conllulex --dev_file hi-lp_c_dev.conllulex --test_file hi-lp_c_test.conllulex --extra_dev_file gu-lp_c_dev.conllulex --extra_test_file gu-lp_c_test.conllulex --extra_file "data/splits/gu-lp_c_train.conllulex" --do_sweep
+```
 Example usage:
 
 
