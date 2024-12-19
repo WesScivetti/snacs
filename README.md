@@ -38,7 +38,7 @@ Example usage:
 
 ## File Description
 
-silver_conllulex directory - Work in progress, not relevant to the paper. 
+descriptive_stats.py: Used for printing some basic descriptive stats for the SNACS datasets.
 
 
 
