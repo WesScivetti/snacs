@@ -39,6 +39,7 @@ Example usage:
 ## File Description
 
 descriptive_stats.py: Used for printing some basic descriptive stats for the SNACS datasets.
+add_chapter_metadata.py: Added chapter information to the metadata for the conllulex files, coming from sentence IDs. Don't need to run again as the versions with the chapter metadata are in the data folder already.
 
 
 
