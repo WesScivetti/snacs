@@ -34,8 +34,10 @@ Example usage:
 
 ## File Description
 
-descriptive_stats.py: Used for printing some basic descriptive stats for the SNACS datasets.
-add_chapter_metadata.py: Added chapter information to the metadata for the conllulex files, coming from sentence IDs. Don't need to run again as the versions with the chapter metadata are in the data folder already.
+- descriptive_stats.py: Used for printing some basic descriptive stats for the SNACS datasets.
+- add_chapter_metadata.py: Added chapter information to the metadata for the conllulex files, coming from sentence IDs. Don't need to run again as the versions with the chapter metadata are in the data folder already.
+- load_data.py: The script for loading the conllulex data into dataloaders for input into the classifiers. Does not need to be run separately as it is called by train.py
+- train.py: The main script for running all experiments (see above).
 
 
 
