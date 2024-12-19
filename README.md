@@ -33,7 +33,8 @@ python train.py --model_name [MODEL NAME] --file [GOLD TRAIN FILE] --dev_file [D
 ```
 
 
-Each of these fine-tuning runs should take well under an hour on a GPU.
+Each of these fine-tuning runs should take well under an hour on a GPU. There are a bunch of optional arguments:
+
 
 ### Hyperparameter Sweep
 In order to achieve the results above, we tuned hyperparameters across 50-100 runs in each classification setting. To run a hyperparameter tuning sweep yourself, run the following command:
