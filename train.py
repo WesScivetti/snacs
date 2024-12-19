@@ -248,56 +248,6 @@ def compute_metrics(p, id_to_label, eval_dataset):
 
     return ret
 
-# custom trainer which is used for custom weighted loss function
-# class MyTrainer(Trainer):
-#     def add_freqs(self, freqs):
-#         self.freqs = freqs
-#         self.inv_freqs = inversify_freqs(self.freqs)
-#
-#     def compute_loss(self, model, inputs, return_outputs=False):
-#         """
-#         custom loss function which overwrites the standard compute_loss function. We use this to implement the weighted CE loss
-#         """
-#
-#         labels = inputs.pop("labels")
-#         outputs = model(**inputs)
-#         logits = outputs.logits
-#         logits = logits.view(
-#             -1, logits.shape[-1]
-#         )  # have to reshape to (batch_size * sequence_length, # labels)
-#
-#         num_labels = logits.size(1)
-#
-#         #TO DO: compute weights based on frequency of relative labels in input
-#         #below is just some random experiments with changing the weights to see if there was significant effect
-#
-#         weights = [1] * num_labels
-#
-#         weights2 = [.0001] +list(self.inv_freqs["lt"].values())
-#         weights[1] = 0.1 #downweighting label "O" which seems to be label 1 almost always
-#         weights[0] = 0.0001 #downweighting label "-100" ... not sure if would ever matter
-#
-#         # print(len(weights), len(weights2), file=sys.stderr)
-#         assert len(weights2) == len(weights)
-#
-#         weights = [float(w) for w  in weights]
-#
-#         weights2 = [float(w) for w in weights2]
-#
-#         weights = torch.tensor(weights).to(DEVICE)
-#         weights2 = torch.tensor(weights2).to(DEVICE)
-#
-#
-#         labels = labels.view(-1) #batch_size * sequence length
-#
-#         loss_fn = CrossEntropyLoss(weight=weights2)
-#         loss = loss_fn(logits, labels)
-#
-#         if return_outputs:
-#             return loss, outputs
-#         else:
-#             return loss
-
 
 # model training
 def train(
@@ -312,12 +262,12 @@ def train(
     extra_file: str, #need
     multilingual: bool, #need
     loss_fn: str #need - added
+    do_sweep = False
 ):
     """Train model."""
 
     # update summary for wandb
     command_line_args = locals()
-    # print(locals())
 
     # load data
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -673,12 +623,11 @@ def train2(config=None):
         wandb.log(l2_metrics)
 
 
-    #NOT RELEVANT FOR COLAB
+    #use this if you want to save model weights
+
     # if best_metric is None or best_f1 > best_metric:
     #     with open("./best_model/" + lang + "/metric/f1.txt", "w") as f:
     #         f.write(str(best_f1))
-    #
-    #     # shutil.rmtree("./best_model/" + lang + "/model/")
     #
     #     for f in glob.glob("./best_model/" + lang + "/model/.*"):
     #         os.remove(f)
@@ -699,6 +648,7 @@ def train2(config=None):
 
 
 def hyper_sweep(args):
+    """defines bounds for hyperparameter sweep. Overwrites some arguments."""
 
     sweep_config = {
         'method': 'bayes',
@@ -782,11 +732,15 @@ def main():
     parser.add_argument("--extra_dev_file", type=str, default=None, help="Add in an extra dev file (another lang for data sharing)")
     parser.add_argument("--extra_test_file", type=str, default=None, help="Add in an extra test file (another lang for data sharing)")
     parser.add_argument("--multilingual", action="store_true", help="If supplying an extra lang file, put true to include that language in eval. Otherwise it will only test on original lang")
+    parser.add_argument("--do_sweep", action="store_true")  #this flag makes the sweep happen versus an individual training run
     
     args = parser.parse_args()
 
-    #train(**vars(args))
-    hyper_sweep(args)
+    if args.do_sweep:
+        hyper_sweep(args)
+
+    else:
+        train(args)
 
 
 if __name__ == "__main__":
