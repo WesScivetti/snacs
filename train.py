@@ -15,13 +15,13 @@ from torch.nn import CrossEntropyLoss
 import torch
 import sys
 from collections import defaultdict
-import wandb
+# import wandb
 import json
 import glob
 import shutil
 
 # random seed
-random.seed(42)
+# random.seed(42)
 
 # make logs dir
 if not os.path.exists("logs"):
@@ -34,7 +34,28 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 
 
-def load_data(file: str, tokenizer: AutoTokenizer, id_to_label = None, label_to_id = None, freqs=None):
+
+def write_back_to_file(test_file, test_data, predictions):
+    """
+    function for writing the predictions back to a file given the predictions on a dataset
+    """
+
+    conllulex = ['id', 'form', 'lemma', 'upos', 'xpos', 'feats', 'head', 'deprel', 'deps',
+                 'misc', 'smwe', 'lexcat', 'lexlemma', 'ss', 'ss2', 'wmwe', 'wcat', 'wlemma', 'lextag']
+
+    new_file_name = test_file.split(".") + "_predictions.conllulex"
+
+    assert len(test_data) == len(predictions) #need to have same number of rows
+
+    with open(test_file, 'r') as fin:
+        sent_num = 0
+        for sent in tqdm(conllu.parse_incr(fin, fields=conllulex)):
+            text = sent.metadata['text']
+            gold_mask = test_data[sent_num][""]
+
+
+
+def load_data(file: str, tokenizer: AutoTokenizer, id_to_label = None, label_to_id = None, freqs=None, shuffle=True):
     """Load data from file and tokenize it."""
     res = tokenize_and_align(file, tokenizer)
 
@@ -54,7 +75,14 @@ def load_data(file: str, tokenizer: AutoTokenizer, id_to_label = None, label_to_
             all_tags = list(set(list(old_freqs[tag_type].keys()) + list(new_freqs[tag_type].keys())))
 
             for tag in all_tags:
-                comb = old_freqs[tag_type][tag] + new_freqs[tag_type][tag]
+                # print(new_freqs[tag_type][tag])
+
+                comb = 0
+
+                if tag in old_freqs[tag_type]:
+                    comb = old_freqs[tag_type][tag] + new_freqs[tag_type][tag]
+
+
 
                 #idk why this would happen but it did >:( now I'm making sure on zero counts get in there
                 if comb > 0:
@@ -67,6 +95,7 @@ def load_data(file: str, tokenizer: AutoTokenizer, id_to_label = None, label_to_
         label_to_id["None"] = -100
         id_to_label = defaultdict(lambda: 'O')
         id_to_label[-100] = "None"
+
 
     # convert labels to ids
     for sent, mask, label, lexlemma in res: #removed split
@@ -98,8 +127,9 @@ def load_data(file: str, tokenizer: AutoTokenizer, id_to_label = None, label_to_
     # shuffle
     #will probably need to change to a train/test split
 
-    random.seed(1000)
-    random.shuffle(res2)
+    if shuffle:
+        random.seed(1000)
+        random.shuffle(res2)
 
     return res2, label_to_id, id_to_label, freqs
 
@@ -249,6 +279,107 @@ def compute_metrics(p, id_to_label, eval_dataset):
     return ret
 
 
+def load_trained_model(
+        lang:str,
+        train_file:str,
+        dev_file:str,
+        test_file:str,
+        do_eval=False):
+    """
+    Used for loading a saved model and running it for evaluations or predictions on a new dataset. Best models can be found in the best_models/
+    subdirectory of this repo. If you just want to load a model and get some snacs predictions, I recommend using one of these.
+    lang: the language that you want to load the best model for
+    test_file: the file that will be evaluated, predicted on
+    do_eval: if you want to eval against existing labels, or just predict. If using a dataset with no snacs annotations, set to False
+    """
+
+    print(train_file)
+
+    lang_path = "./best_models/" + lang + "/"
+    model_path = lang_path + "model/"
+
+    training_arg_path = model_path + "training_args.bin"
+
+    training_args = torch.load(training_arg_path)
+
+    model = AutoModelForTokenClassification.from_pretrained(model_path)
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
+
+    data_collator = DataCollatorForTokenClassification(tokenizer=tokenizer)
+
+    # l2id_path = lang_path + 'label2id.json'
+    # with open(l2id_path, 'r') as file:
+    #     label_to_id = json.load(file)
+    #
+    # id2l_path = lang_path + 'id2label.json'
+    # with open(id2l_path, 'r') as file:
+    #     id_to_label = json.load(file)
+    #     id_to_label = {int(k): v for k,v in id_to_label.items()}
+    #
+    # freq_path = lang_path + 'freqs.json'
+    # with open(freq_path, 'r') as file:
+    #     freqs = json.load(file)
+
+
+    data, label_to_id, id_to_label, freqs = load_data(f"data/splits/{train_file}", tokenizer)
+
+    print("NUM labels just train", len(label_to_id), file=sys.stderr)
+
+    if dev_file:
+        dev_data, _, _, _ = load_data(f"data/splits/{dev_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #don't need label to id for this
+
+    print("NUM labels after dev", len(label_to_id), file=sys.stderr)
+
+    if test_file:
+        test_data, _, _, _ = load_data(f"data/splits/{test_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #don't need label to id for this
+
+    print("NUM labels after test", len(label_to_id), file=sys.stderr)
+
+    model = AutoModelForTokenClassification.from_pretrained(
+        model_path,
+        num_labels=len(label_to_id),
+        id2label=id_to_label,
+        label2id=label_to_id,
+    )
+
+
+    print(test_data[0])
+
+    trainer_args = {
+        "model": model,
+        "args": training_args,
+        "eval_dataset": test_data,
+        "tokenizer": tokenizer,
+        "data_collator": data_collator,
+        "compute_metrics": lambda x: compute_metrics(x, id_to_label, test_data),
+    }
+    
+    trainer = Trainer(**trainer_args)
+
+
+
+    if do_eval:
+        res = trainer.predict(test_data)
+        print(res.metrics)
+    else:
+        res = trainer.predict(test_data)
+
+
+    predicted_labels = np.argmax(res.predictions, axis=2)
+
+    # print(test_data[0].shape, file=sys.stderr)
+    # print(predicted_labels.shape, file=sys.stderr)
+    print(predicted_labels[3], file=sys.stderr)
+    print(len(test_data))
+    print(test_data[3]["input_ids"], file=sys.stderr)
+    print(tokenizer.convert_ids_to_tokens(test_data[3]["input_ids"]))
+    print(test_data[3]["labels"], file=sys.stderr)
+    print(test_data[3]["mask"], file=sys.stderr)
+    # print(predicted_labels[0].shape, file=sys.stderr)
+    # print(predicted_labels[0][0], file=sys.stderr)
+    # print(predicted_labels[0][0].shape, file=sys.stderr)
+
+
 # model training
 def train(
     model_name: str, #need - added
@@ -259,29 +390,38 @@ def train(
     weight_decay: float, #don't need
     freeze: bool, #need - added
     test_file: str, #need
+    dev_file: str,
     extra_file: str, #need
-    multilingual: bool, #need
-    loss_fn: str #need - added
-    do_sweep = False
+    warmup_steps = 100,
+    lr_scheduler = "cosine",
+    multilingual = False, #need
+    loss_fn = None, #need - added
+    do_sweep = False,
+    number = 0
 ):
     """Train model."""
 
-    # update summary for wandb
-    command_line_args = locals()
+    # # update summary for wandb
+    # command_line_args = locals()
 
     # load data
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     data, label_to_id, id_to_label, freqs = load_data(f"data/splits/{file}", tokenizer)
+    print("NUM labels just train", len(label_to_id), file=sys.stderr)
 
     # could alter this to take a list of extra files so that it could be as many as you want.
     if extra_file:
         #for ex_file in extra_file: do this iteratively, add each extra file onto eachother, take the new label_to_id etc
-        extra_data, label_to_id, id_to_label, freqs = load_data(f"{extra_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #use the existing id_to_label and just add to them
+        extra_data, label_to_id, id_to_label, freqs = load_data(f"data/splits/{extra_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #use the existing id_to_label and just add to them
 
+    if dev_file:
+        dev_data, _, _, _ = load_data(f"data/splits/{dev_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #don't need label to id for this
+
+    print("NUM labels after dev", len(label_to_id), file=sys.stderr)
 
     if test_file:
-        test_data, _, _, _ = load_data(f"data/{test_file}", tokenizer) #don't need label to id for this
-
+        test_data, _, _, _ = load_data(f"data/splits/{test_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #don't need label to id for this
+    print("NUM labels after test", len(label_to_id), file=sys.stderr)
 
     # load model
     model = AutoModelForTokenClassification.from_pretrained(
@@ -292,7 +432,7 @@ def train(
     )
 
     print("NUM labels", len(label_to_id), file=sys.stderr)
-
+    print("NUM labels", id_to_label, file=sys.stderr)
     # freeze layers
     if freeze:
         for name, param in model.named_parameters():
@@ -310,6 +450,8 @@ def train(
         weight_decay=weight_decay,
         evaluation_strategy="epoch",
         save_strategy="epoch",
+        lr_scheduler_type=lr_scheduler,  # dynamic scheduler type
+        warmup_steps=warmup_steps,
         load_best_model_at_end=False,
         push_to_hub=False,
     )
@@ -342,7 +484,8 @@ def train(
             data = data + extra_data
 
         train_dataset = data
-        eval_dataset = test_data
+        eval_dataset = dev_data
+        test_dataset = test_data
 
     # set up trainer
     trainer_args = {
@@ -362,12 +505,35 @@ def train(
         #adding in manually supplied stuff
         trainer = Trainer(**trainer_args)
 
-    # update
-    run = wandb.init(project="huggingface")
-    run.summary.update(command_line_args)
+    # # update
+    # run = wandb.init(project="huggingface")
+    # run.summary.update(command_line_args)
 
     # train
     trainer.train()
+
+    res = trainer.evaluate(eval_dataset=test_dataset)
+
+    model_path = f"./models/final/{number}/"
+
+
+    if not os.path.exists(model_path):
+        os.makedirs(model_path)
+
+
+    with open(model_path + "id2label.json", "w") as file:
+        json.dump(id_to_label, file)
+
+    with open(model_path + "label2id.json", "w") as file:
+        json.dump(label_to_id, file)
+
+    with open(model_path + "freqs.json", "w") as file:
+        json.dump(freqs, file)
+
+
+
+    trainer.save_model(model_path)
+    trainer.save_metrics(f"final/{number}/", res)
 
 
 def train2(config=None):
@@ -625,15 +791,15 @@ def train2(config=None):
 
     #use this if you want to save model weights
 
-    # if best_metric is None or best_f1 > best_metric:
-    #     with open("./best_model/" + lang + "/metric/f1.txt", "w") as f:
-    #         f.write(str(best_f1))
-    #
-    #     for f in glob.glob("./best_model/" + lang + "/model/.*"):
-    #         os.remove(f)
-    #
-    #     model_path = "./best_model/" + lang + "/model/"
-    #     trainer.save_model(model_path)
+    if best_metric is None or best_f1 > best_metric:
+        with open(".models/best_model/" + lang + "/metric/f1.txt", "w") as f:
+            f.write(str(best_f1))
+
+        for f in glob.glob(".models/best_model/" + lang + "/model/.*"):
+            os.remove(f)
+
+        model_path = ".models/best_model/" + lang + "/model/"
+        trainer.save_model(model_path)
 
 
 
@@ -641,8 +807,8 @@ def train2(config=None):
 
     wandb.finish()
 
-    #remove model checkpoints, already saved the best one
-    shutil.rmtree("./models/")
+    # #remove model checkpoints, already saved the best one
+    # shutil.rmtree("./models/")
 
 
 
@@ -718,29 +884,59 @@ def hyper_sweep(args):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model_name", type=str, default="bert-base-uncased")
+    parser.add_argument("--model_name", type=str, default="roberta-large")
     parser.add_argument("--loss_fn", type=str, default=None) #overwritten by wandb sweep
-    parser.add_argument("--file", type=str, default="en-test.conllulex")
-    parser.add_argument("--learning_rate", type=float, default=2e-5) #overwritten by wandb sweep
+    parser.add_argument("--file", type=str, default="en-streusle_train.conllulex")
+    parser.add_argument("--learning_rate", type=float, default=4.9e-5) #overwritten by wandb sweep
     parser.add_argument("--batch_size", type=int, default=16) #overwritten by wandb sweep
     parser.add_argument("--epochs", type=int, default=10) #overwritten by wandb sweep
-    parser.add_argument("--weight_decay", type=float, default=0.01) #overwritten by wandb sweep
+    parser.add_argument("--weight_decay", type=float, default=0.1) #overwritten by wandb sweep
     parser.add_argument("--freeze", action="store_true") #overwritten by wandb sweep
-    parser.add_argument("--test_file", type=str, default=None, help="Need to put file for test split")
-    parser.add_argument("--dev_file", type=str, default=None, help="Need to put file for dev split")
+    parser.add_argument("--warmup_steps", type=int, default=390)
+    parser.add_argument("--lr_scheduler", type=str, default="cosine")
+    parser.add_argument("--test_file", type=str, default="en-streusle_test.conllulex", help="Need to put file for test split")
+    parser.add_argument("--dev_file", type=str, default="en-streusle_dev.conllulex", help="Need to put file for dev split")
     parser.add_argument("--extra_file", type=str, default=None, help="If you want to add an extra file to add more data during the fine-tuning stage. Evaluation is still only perfomed on the original file test split.")
     parser.add_argument("--extra_dev_file", type=str, default=None, help="Add in an extra dev file (another lang for data sharing)")
     parser.add_argument("--extra_test_file", type=str, default=None, help="Add in an extra test file (another lang for data sharing)")
+    parser.add_argument("--lang", type=str, default="en", help="Specify the language that you want to load the trained model for")
     parser.add_argument("--multilingual", action="store_true", help="If supplying an extra lang file, put true to include that language in eval. Otherwise it will only test on original lang")
     parser.add_argument("--do_sweep", action="store_true")  #this flag makes the sweep happen versus an individual training run
-    
+    parser.add_argument("--eval_only", action="store_true")  # this flag makes the sweep happen versus an individual training run
+    parser.add_argument("--predict_only", action="store_true")  # this flag makes the sweep happen versus an individual training run
+
+
     args = parser.parse_args()
 
     if args.do_sweep:
         hyper_sweep(args)
 
     else:
-        train(args)
+
+        if args.eval_only:
+            load_trained_model(args.lang, args.file, args.dev_file, args.test_file, do_eval=True)
+
+        elif args.predict_only:
+            load_trained_model(args.lang, args.file, args.dev_file, args.test_file, do_eval=False)
+
+        else:
+
+            for number in range(20,200):
+                train(args.model_name, args.file, args.learning_rate, args.batch_size, args.epochs,
+                      args.weight_decay, args.freeze, args.test_file, args.dev_file, args.extra_file, warmup_steps=args.warmup_steps, lr_scheduler=args.lr_scheduler, number=number)
+
+        # model_name: str,  # need - added
+        # file: str,  # need - added
+        # learning_rate: float,  # don't need
+        # batch_size: int,  # don't need
+        # epochs: int,  # don't need
+        # weight_decay: float,  # don't need
+        # freeze: bool,  # need - added
+        # test_file: str,  # need
+        # extra_file: str,  # need
+        # multilingual = False,  # need
+        # loss_fn = None,  # need - added
+        # do_sweep = False
 
 
 if __name__ == "__main__":
