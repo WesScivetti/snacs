@@ -1,0 +1,565 @@
+{
+    "epoch": 10.0,
+    "eval_accuracy": 0.9793718639658057,
+    "eval_f1": 0.8260427263479145,
+    "eval_funct_accuracy": 0.9873629436907638,
+    "eval_funct_f1": 0.9033570701932859,
+    "eval_funct_precision": 0.896969696969697,
+    "eval_funct_recall": 0.9098360655737705,
+    "eval_loss": 0.10929352790117264,
+    "eval_p.Agent-p.Agent": {
+        "f1": 0.6666666666666666,
+        "number": 3,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666
+    },
+    "eval_p.Agent-p.Ancillary": {
+        "f1": 0.0,
+        "number": 2,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Agent-p.Gestalt": {
+        "f1": 0.7368421052631579,
+        "number": 7,
+        "precision": 0.5833333333333334,
+        "recall": 1.0
+    },
+    "eval_p.Approximator-p.Approximator": {
+        "f1": 1.0,
+        "number": 4,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Approximator-p.Extent": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Beneficiary-p.Beneficiary": {
+        "f1": 0.4,
+        "number": 2,
+        "precision": 0.3333333333333333,
+        "recall": 0.5
+    },
+    "eval_p.Beneficiary-p.Goal": {
+        "f1": 1.0,
+        "number": 2,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Beneficiary-p.Possessor": {
+        "f1": 0.0,
+        "number": 2,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Beneficiary-p.Theme": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Characteristic-p.Characteristic": {
+        "f1": 0.7272727272727272,
+        "number": 6,
+        "precision": 0.8,
+        "recall": 0.6666666666666666
+    },
+    "eval_p.Characteristic-p.Identity": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Characteristic-p.Locus": {
+        "f1": 0.6666666666666666,
+        "number": 9,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666
+    },
+    "eval_p.Circumstance-p.Circumstance": {
+        "f1": 0.5714285714285714,
+        "number": 5,
+        "precision": 0.4444444444444444,
+        "recall": 0.8
+    },
+    "eval_p.ComparisonRef-p.Beneficiary": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.ComparisonRef-p.ComparisonRef": {
+        "f1": 0.8125,
+        "number": 17,
+        "precision": 0.8666666666666667,
+        "recall": 0.7647058823529411
+    },
+    "eval_p.ComparisonRef-p.Goal": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.ComparisonRef-p.Locus": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Cost-p.Cost": {
+        "f1": 1.0,
+        "number": 2,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Cost-p.Locus": {
+        "f1": 1.0,
+        "number": 3,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Direction-p.Direction": {
+        "f1": 0.6666666666666665,
+        "number": 8,
+        "precision": 0.6,
+        "recall": 0.75
+    },
+    "eval_p.Duration-p.Duration": {
+        "f1": 0.8421052631578948,
+        "number": 9,
+        "precision": 0.8,
+        "recall": 0.8888888888888888
+    },
+    "eval_p.EndTime-p.EndTime": {
+        "f1": 1.0,
+        "number": 3,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Experiencer-p.Agent": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Experiencer-p.Beneficiary": {
+        "f1": 0.0,
+        "number": 2,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Experiencer-p.Gestalt": {
+        "f1": 0.7142857142857143,
+        "number": 7,
+        "precision": 0.7142857142857143,
+        "recall": 0.7142857142857143
+    },
+    "eval_p.Explanation-p.Explanation": {
+        "f1": 1.0,
+        "number": 9,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Extent-p.Extent": {
+        "f1": 0.8571428571428571,
+        "number": 4,
+        "precision": 1.0,
+        "recall": 0.75
+    },
+    "eval_p.Extent-p.Identity": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Gestalt-p.Gestalt": {
+        "f1": 0.7826086956521738,
+        "number": 12,
+        "precision": 0.8181818181818182,
+        "recall": 0.75
+    },
+    "eval_p.Gestalt-p.Topic": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Goal-p.Goal": {
+        "f1": 0.9142857142857143,
+        "number": 16,
+        "precision": 0.8421052631578947,
+        "recall": 1.0
+    },
+    "eval_p.Goal-p.Locus": {
+        "f1": 0.6666666666666666,
+        "number": 2,
+        "precision": 0.5,
+        "recall": 1.0
+    },
+    "eval_p.Identity-p.Identity": {
+        "f1": 0.6666666666666666,
+        "number": 2,
+        "precision": 0.5,
+        "recall": 1.0
+    },
+    "eval_p.Instrument-p.Instrument": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Locus-p.Goal": {
+        "f1": 1.0,
+        "number": 2,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Locus-p.Locus": {
+        "f1": 0.8920863309352518,
+        "number": 73,
+        "precision": 0.9393939393939394,
+        "recall": 0.8493150684931506
+    },
+    "eval_p.Locus-p.Path": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Locus-p.Source": {
+        "f1": 0.6666666666666666,
+        "number": 2,
+        "precision": 1.0,
+        "recall": 0.5
+    },
+    "eval_p.Manner-p.ComparisonRef": {
+        "f1": 0.8571428571428571,
+        "number": 3,
+        "precision": 0.75,
+        "recall": 1.0
+    },
+    "eval_p.Manner-p.Locus": {
+        "f1": 0.5714285714285715,
+        "number": 4,
+        "precision": 0.6666666666666666,
+        "recall": 0.5
+    },
+    "eval_p.Manner-p.Manner": {
+        "f1": 0.8333333333333334,
+        "number": 6,
+        "precision": 0.8333333333333334,
+        "recall": 0.8333333333333334
+    },
+    "eval_p.Means-p.Means": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Org-p.Ancillary": {
+        "f1": 0.8571428571428571,
+        "number": 3,
+        "precision": 0.75,
+        "recall": 1.0
+    },
+    "eval_p.Org-p.Locus": {
+        "f1": 0.8571428571428571,
+        "number": 7,
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571
+    },
+    "eval_p.OrgMember-p.Gestalt": {
+        "f1": 1.0,
+        "number": 2,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.OrgMember-p.Possessor": {
+        "f1": 0.8571428571428571,
+        "number": 8,
+        "precision": 1.0,
+        "recall": 0.75
+    },
+    "eval_p.Originator-p.Agent": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Originator-p.Gestalt": {
+        "f1": 0.8,
+        "number": 3,
+        "precision": 1.0,
+        "recall": 0.6666666666666666
+    },
+    "eval_p.Originator-p.Source": {
+        "f1": 0.8333333333333333,
+        "number": 5,
+        "precision": 0.7142857142857143,
+        "recall": 1.0
+    },
+    "eval_p.PartPortion-p.Goal": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.PartPortion-p.PartPortion": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.PartPortion-p.Source": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Path-p.Locus": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Path-p.Path": {
+        "f1": 1.0,
+        "number": 3,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Possession-p.Ancillary": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Possession-p.Theme": {
+        "f1": 0.8571428571428571,
+        "number": 3,
+        "precision": 0.75,
+        "recall": 1.0
+    },
+    "eval_p.Possessor-p.Possessor": {
+        "f1": 0.9666666666666666,
+        "number": 29,
+        "precision": 0.9354838709677419,
+        "recall": 1.0
+    },
+    "eval_p.Purpose-p.Goal": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Purpose-p.Purpose": {
+        "f1": 0.888888888888889,
+        "number": 26,
+        "precision": 0.8571428571428571,
+        "recall": 0.9230769230769231
+    },
+    "eval_p.QuantityItem-p.Gestalt": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.QuantityItem-p.QuantityItem": {
+        "f1": 0.9090909090909091,
+        "number": 11,
+        "precision": 0.9090909090909091,
+        "recall": 0.9090909090909091
+    },
+    "eval_p.QuantityItem-p.Stuff": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.QuantityItem-p.Whole": {
+        "f1": 0.9411764705882353,
+        "number": 8,
+        "precision": 0.8888888888888888,
+        "recall": 1.0
+    },
+    "eval_p.Recipient-p.Gestalt": {
+        "f1": 0.3333333333333333,
+        "number": 3,
+        "precision": 0.3333333333333333,
+        "recall": 0.3333333333333333
+    },
+    "eval_p.Recipient-p.Goal": {
+        "f1": 0.9090909090909091,
+        "number": 11,
+        "precision": 0.9090909090909091,
+        "recall": 0.9090909090909091
+    },
+    "eval_p.SocialRel-p.Ancillary": {
+        "f1": 0.7499999999999999,
+        "number": 5,
+        "precision": 1.0,
+        "recall": 0.6
+    },
+    "eval_p.SocialRel-p.Gestalt": {
+        "f1": 0.9142857142857143,
+        "number": 18,
+        "precision": 0.9411764705882353,
+        "recall": 0.8888888888888888
+    },
+    "eval_p.SocialRel-p.Source": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Source-p.Source": {
+        "f1": 0.5,
+        "number": 2,
+        "precision": 0.5,
+        "recall": 0.5
+    },
+    "eval_p.Species-p.Species": {
+        "f1": 1.0,
+        "number": 2,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.StartTime-p.StartTime": {
+        "f1": 1.0,
+        "number": 5,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Stimulus-p.Direction": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Stimulus-p.Goal": {
+        "f1": 0.888888888888889,
+        "number": 4,
+        "precision": 0.8,
+        "recall": 1.0
+    },
+    "eval_p.Stimulus-p.Source": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Stimulus-p.Topic": {
+        "f1": 0.9,
+        "number": 9,
+        "precision": 0.8181818181818182,
+        "recall": 1.0
+    },
+    "eval_p.Theme-p.Ancillary": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Theme-p.ComparisonRef": {
+        "f1": 0.6666666666666666,
+        "number": 1,
+        "precision": 0.5,
+        "recall": 1.0
+    },
+    "eval_p.Theme-p.Gestalt": {
+        "f1": 0.7499999999999999,
+        "number": 3,
+        "precision": 0.6,
+        "recall": 1.0
+    },
+    "eval_p.Theme-p.Purpose": {
+        "f1": 0.6666666666666666,
+        "number": 2,
+        "precision": 1.0,
+        "recall": 0.5
+    },
+    "eval_p.Theme-p.Theme": {
+        "f1": 0.75,
+        "number": 7,
+        "precision": 0.6666666666666666,
+        "recall": 0.8571428571428571
+    },
+    "eval_p.Time-p.Direction": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Time-p.Duration": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Time-p.Interval": {
+        "f1": 0.8,
+        "number": 2,
+        "precision": 0.6666666666666666,
+        "recall": 1.0
+    },
+    "eval_p.Time-p.Time": {
+        "f1": 0.9230769230769231,
+        "number": 19,
+        "precision": 0.9,
+        "recall": 0.9473684210526315
+    },
+    "eval_p.Time-p.Whole": {
+        "f1": 1.0,
+        "number": 1,
+        "precision": 1.0,
+        "recall": 1.0
+    },
+    "eval_p.Topic-p.Goal": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Topic-p.Topic": {
+        "f1": 0.7878787878787877,
+        "number": 18,
+        "precision": 0.8666666666666667,
+        "recall": 0.7222222222222222
+    },
+    "eval_p.Whole-p.Circumstance": {
+        "f1": 0.0,
+        "number": 1,
+        "precision": 0.0,
+        "recall": 0.0
+    },
+    "eval_p.Whole-p.Gestalt": {
+        "f1": 0.8571428571428571,
+        "number": 4,
+        "precision": 1.0,
+        "recall": 0.75
+    },
+    "eval_p.Whole-p.Locus": {
+        "f1": 0.5,
+        "number": 2,
+        "precision": 0.5,
+        "recall": 0.5
+    },
+    "eval_p.Whole-p.Whole": {
+        "f1": 0.8333333333333333,
+        "number": 5,
+        "precision": 0.7142857142857143,
+        "recall": 1.0
+    },
+    "eval_precision": 0.8202020202020202,
+    "eval_recall": 0.8319672131147541,
+    "eval_runtime": 1.9109,
+    "eval_samples_per_second": 279.977,
+    "eval_scene_accuracy": 0.979929381155919,
+    "eval_scene_f1": 0.832146490335707,
+    "eval_scene_precision": 0.8262626262626263,
+    "eval_scene_recall": 0.8381147540983607,
+    "eval_steps_per_second": 17.793
+}
