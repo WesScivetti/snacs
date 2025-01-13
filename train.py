@@ -881,21 +881,184 @@ def hyper_sweep(args):
 
     wandb.agent(sweep_id, train2, count=75)
 
+BEST_HYPERS = {
+    "en": {
+        "mono":
+            {
+                "xlm-roberta-large": {
+                    "batch_size": 24,
+                    "lr": 4.7e-5,
+                    "lr_scheduler": "cosine",
+                    "warmup_steps": 28,
+                    "weight_decay": .1
+                },
+                "roberta-large": {
+                    "batch_size": 16,
+                    "lr": 4.9e-5,
+                    "lr_scheduler": "cosine",
+                    "warmup_steps": 390,
+                    "weight_decay": .1
+                }
+            }
+    },
+    "zh":{
+        "mono":
+            {
+                "xlm-roberta-large": {
+                    "batch_size": 16,
+                    "lr": 6.4e-5,
+                    "lr_scheduler": "cosine",
+                    "warmup_steps": 457,
+                    "weight_decay": 0
+                },
+                "bert-base-chinese": {
+                    "batch_size": 24,
+                    "lr": 5.5e-5,
+                    "lr_scheduler": "cosine",
+                    "warmup_steps": 49,
+                    "weight_decay": .1
+                }
+            },
+        "add_en":
+            {
+                "xlm-roberta-large": {
+                    "batch_size": 8,
+                    "lr": 5.7e-5,
+                    "lr_scheduler": "cosine",
+                    "warmup_steps": 225,
+                    "weight_decay": 0
+                }
+        }
+    },
+    "gu":{
+       "mono":{
+           "xlm-roberta-large":{
+               "batch_size": 16,
+               "lr": 5.0e-5,
+               "lr_scheduler": "linear",
+               "warmup_steps": 244,
+               "weight_decay": .1
+           },
+           "muRIL-large":{
+               "batch_size": 4,
+               "lr": 3.3e-5,
+               "lr_scheduler": "linear",
+               "warmup_steps": 296,
+               "weight_decay": .1
+           }
+       },
+        "add_en":{
+            "xlm-roberta-large": {
+                "batch_size": 16,
+                "lr": 3.8e-5,
+                "lr_scheduler": "linear",
+                "warmup_steps": 65,
+                "weight_decay": .01
+            }
+        },
+        "add_hi":{
+            "xlm-roberta-large": {
+                "batch_size": 24,
+                "lr": 1.9e-5,
+                "lr_scheduler": "cosine",
+                "warmup_steps": 82,
+                "weight_decay": .1
+            },
+        }
+    },
+    "hi":{
+        "mono":{
+            "xlm-roberta-large": {
+                "batch_size": 24,
+                "lr": 7.3e-5,
+                "lr_scheduler": "linear",
+                "warmup_steps": 442,
+                "weight_decay": .1
+            },
+            "muRIL-large": {
+                "batch_size": 24,
+                "lr": 4.0e-5,
+                "lr_scheduler": "linear",
+                "warmup_steps": 18,
+                "weight_decay": .1
+            }
+        },
+        "add_en":{
+            "xlm-roberta-large": {
+                "batch_size": 24,
+                "lr": 1.6e-5,
+                "lr_scheduler": "linear",
+                "warmup_steps": 312,
+                "weight_decay": .1
+            }
+        },
+        "add_gu":{
+            "xlm-roberta-large": {
+                "batch_size": 24,
+                "lr": 1.9e-5,
+                "lr_scheduler": "cosine",
+                "warmup_steps": 82,
+                "weight_decay": .1
+            }
+        }
+    },
+    "jp":{
+        "mono":{
+            "xlm-roberta-large": {
+                "batch_size": 8,
+                "lr": 4.4e-5,
+                "lr_scheduler": "linear",
+                "warmup_steps": 113,
+                "weight_decay": .01
+            },
+            "nlp-waseda/roberta-large-japanese": {
+                "batch_size": 16,
+                "lr": 1.0e-4,
+                "lr_scheduler": "cosine",
+                "warmup_steps": 325,
+                "weight_decay": .1
+            }
+        },
+        "add_en":{
+            "xlm-roberta-large": {
+                "batch_size": 8,
+                "lr": 1.9e-5,
+                "lr_scheduler": "cosine",
+                "warmup_steps": 469,
+                "weight_decay": .1
+            }
+        }
+    },
+    "all":
+        {
+            "all":{
+                "xlm-roberta-large": {
+                    "batch_size": 24,
+                    "lr": 2.5e-5,
+                    "lr_scheduler": "linear",
+                    "warmup_steps": 419,
+                    "weight_decay": 0
+                }
+            }
+        }
+
+}
+
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model_name", type=str, default="roberta-large")
+    parser.add_argument("--model_name", type=str, default="xlm-roberta-large")
     parser.add_argument("--loss_fn", type=str, default=None) #overwritten by wandb sweep
-    parser.add_argument("--file", type=str, default="en-streusle_train.conllulex")
-    parser.add_argument("--learning_rate", type=float, default=4.9e-5) #overwritten by wandb sweep
-    parser.add_argument("--batch_size", type=int, default=16) #overwritten by wandb sweep
+    parser.add_argument("--file", type=str, default="hi-lp_c_train.conllulex")
+    parser.add_argument("--learning_rate", type=float, default=1.6e-5) #overwritten by wandb sweep
+    parser.add_argument("--batch_size", type=int, default=24) #overwritten by wandb sweep
     parser.add_argument("--epochs", type=int, default=10) #overwritten by wandb sweep
     parser.add_argument("--weight_decay", type=float, default=0.1) #overwritten by wandb sweep
     parser.add_argument("--freeze", action="store_true") #overwritten by wandb sweep
-    parser.add_argument("--warmup_steps", type=int, default=390)
-    parser.add_argument("--lr_scheduler", type=str, default="cosine")
-    parser.add_argument("--test_file", type=str, default="en-streusle_test.conllulex", help="Need to put file for test split")
-    parser.add_argument("--dev_file", type=str, default="en-streusle_dev.conllulex", help="Need to put file for dev split")
+    parser.add_argument("--warmup_steps", type=int, default=312)
+    parser.add_argument("--lr_scheduler", type=str, default="linear")
+    parser.add_argument("--test_file", type=str, default="hi-lp_c_test.conllulex", help="Need to put file for test split")
+    parser.add_argument("--dev_file", type=str, default="hi-lp_c_dev.conllulex", help="Need to put file for dev split")
     parser.add_argument("--extra_file", type=str, default=None, help="If you want to add an extra file to add more data during the fine-tuning stage. Evaluation is still only perfomed on the original file test split.")
     parser.add_argument("--extra_dev_file", type=str, default=None, help="Add in an extra dev file (another lang for data sharing)")
     parser.add_argument("--extra_test_file", type=str, default=None, help="Add in an extra test file (another lang for data sharing)")
@@ -904,6 +1067,11 @@ def main():
     parser.add_argument("--do_sweep", action="store_true")  #this flag makes the sweep happen versus an individual training run
     parser.add_argument("--eval_only", action="store_true")  # this flag makes the sweep happen versus an individual training run
     parser.add_argument("--predict_only", action="store_true")  # this flag makes the sweep happen versus an individual training run
+    parser.add_argument("--use_best_hypers", action="store_true", help="Use this to automatically use the best hyperparameters for a language and extra language. Overwrites other arguments.")
+    parser.add_argument("--extra_lang", type=str, default=None, help="The language that you want to use for supplemental data. Overwrites extra file argument.")
+
+
+
 
 
     args = parser.parse_args()
@@ -913,6 +1081,8 @@ def main():
 
     else:
 
+
+
         if args.eval_only:
             load_trained_model(args.lang, args.file, args.dev_file, args.test_file, do_eval=True)
 
@@ -920,10 +1090,29 @@ def main():
             load_trained_model(args.lang, args.file, args.dev_file, args.test_file, do_eval=False)
 
         else:
+            if args.use_best_hypers:
+                model_name = args.model_name
+                if args.extra_lang:
+                    setting = "add_" + args.extra_lang
+                else:
+                    setting = "mono"
 
-            for number in range(20,200):
-                train(args.model_name, args.file, args.learning_rate, args.batch_size, args.epochs,
-                      args.weight_decay, args.freeze, args.test_file, args.dev_file, args.extra_file, warmup_steps=args.warmup_steps, lr_scheduler=args.lr_scheduler, number=number)
+                lr = BEST_HYPERS[args.lang][setting][model_name]["lr"]
+                epochs = 10
+                decay = BEST_HYPERS[args.lang][setting][model_name]["weight_decay"]
+                warmup = BEST_HYPERS[args.lang][setting][model_name]["warmup_steps"]
+                batch_size = BEST_HYPERS[args.lang][setting][model_name]["batch_size"]
+                scheduler = BEST_HYPERS[args.lang][setting][model_name]["lr_scheduler"]
+
+                train(args.model_name, args.file, lr, batch_size, epochs,
+                      decay, False, args.test_file, args.dev_file, args.extra_file,
+                      warmup_steps=warmup, lr_scheduler=scheduler, number=0)
+
+            else:
+                for number in range(20,200):
+                    train(args.model_name, args.file, args.learning_rate, args.batch_size, args.epochs,
+                          args.weight_decay, args.freeze, args.test_file, args.dev_file, args.extra_file, warmup_steps=args.warmup_steps, lr_scheduler=args.lr_scheduler, number=number)
+
 
         # model_name: str,  # need - added
         # file: str,  # need - added
