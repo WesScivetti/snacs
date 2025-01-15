@@ -25,7 +25,7 @@ To generate such a file, please run preprocess.py in the following way:
 
 python preprocess.py --input_file 'your_input_file' --input_format 'conllu' --lang en
 
-```bash
+```
 
 If you are starting from plain text, change the input format to 'plain'. The script will then use [stanza] (https://stanfordnlp.github.io/stanza/) to generate a CoNLL-U file before the CoNLL-ULex. 
 Please add the two character language code. 
