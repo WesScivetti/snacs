@@ -35,23 +35,7 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 
 
-def write_back_to_file(test_file, test_data, predictions):
-    """
-    function for writing the predictions back to a file given the predictions on a dataset
-    """
 
-    conllulex = ['id', 'form', 'lemma', 'upos', 'xpos', 'feats', 'head', 'deprel', 'deps',
-                 'misc', 'smwe', 'lexcat', 'lexlemma', 'ss', 'ss2', 'wmwe', 'wcat', 'wlemma', 'lextag']
-
-    new_file_name = test_file.split(".") + "_predictions.conllulex"
-
-    assert len(test_data) == len(predictions) #need to have same number of rows
-
-    with open(test_file, 'r') as fin:
-        sent_num = 0
-        for sent in tqdm(conllu.parse_incr(fin, fields=conllulex)):
-            text = sent.metadata['text']
-            gold_mask = test_data[sent_num][""]
 
 
 
@@ -331,9 +315,26 @@ def load_trained_model(
     print("NUM labels after dev", len(label_to_id), file=sys.stderr)
 
     if test_file:
-        test_data, _, _, _ = load_data(f"data/splits/{test_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #don't need label to id for this
+        test_data, _, _, _ = load_data(f"{test_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #don't need label to id for this
 
     print("NUM labels after test", len(label_to_id), file=sys.stderr)
+
+
+    # l2id_path = lang_path + 'label2id.json'
+    # with open(l2id_path, 'r') as file:
+    #     label_to_id = json.load(file)
+    #
+    # id2l_path = lang_path + 'id2label.json'
+    # with open(id2l_path, 'r') as file:
+    #     id_to_label = json.load(file)
+    #     id_to_label = {int(k): v for k,v in id_to_label.items()}
+    #
+    # freq_path = lang_path + 'freqs.json'
+    # with open(freq_path, 'r') as file:
+    #     freqs = json.load(file)
+
+    print("NUM labels after test", len(label_to_id), file=sys.stderr)
+
 
     model = AutoModelForTokenClassification.from_pretrained(
         model_path,
@@ -378,6 +379,26 @@ def load_trained_model(
     # print(predicted_labels[0].shape, file=sys.stderr)
     # print(predicted_labels[0][0], file=sys.stderr)
     # print(predicted_labels[0][0].shape, file=sys.stderr)
+
+
+def write_back_to_file(test_file, test_data, predictions):
+    """
+    function for writing the predictions back to a file given the predictions on a dataset
+    """
+
+    conllulex = ['id', 'form', 'lemma', 'upos', 'xpos', 'feats', 'head', 'deprel', 'deps',
+                 'misc', 'smwe', 'lexcat', 'lexlemma', 'ss', 'ss2', 'wmwe', 'wcat', 'wlemma', 'lextag']
+
+    new_file_name = test_file.split(".") + "_predictions.conllulex"
+
+    assert len(test_data) == len(predictions) #need to have same number of rows
+
+    with open(test_file, 'r') as fin:
+        sent_num = 0
+        for sent in tqdm(conllu.parse_incr(fin, fields=conllulex)):
+            text = sent.metadata['text']
+            gold_mask = test_data[sent_num][""]
+
 
 
 # model training

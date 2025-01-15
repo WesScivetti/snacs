@@ -6,40 +6,44 @@ This codebase houses the SNACS classifiers for Chinese, English, Gujarati, Hindi
 
 See [paper](https://people.cs.georgetown.edu/nschneid/p/xlingsnacs.pdf) for scores.
 
+## How to Use
+
+You can use this repo to do multiple things, primarily:
+ - Train new models on existing snacs annotated data
+ - Run existing models on new annotated or unannotated data
+
+We will start by going over how to run an existing model if you would like to generate predictions on a new file.
+
+## Data Preprocessing
+
+If you would like to run an existing model, you need to have data in the conllulex file format. This is an extension of the CoNLL-U format that is used for SNACS annotations. The actual CoNLL-ULex format contains
+rich information (see [this link] (https://github.com/nert-nlp/streusle/blob/master/CONLLULEX.md) for details), but you will just need a shell with the appropriate columns for the script to run correctly. 
+To generate such a file, please run preprocess.py in the following way:
+
+```bash
+## Bash Example
+
+python preprocess.py --input_file 'your_input_file' --input_format 'conllu' --lang en
+
+```bash
+
+If you are starting from plain text, change the input format to 'plain'. The script will then use [stanza] (https://stanfordnlp.github.io/stanza/) to generate a CoNLL-U file before the CoNLL-ULex. 
+Please add the two character language code. 
 
 
-## Replicating Results From the Paper
+## Running an Existing Model
 
-### Single Model (Optimal Hyperparameters)
-We report scores for the best performing models. To fine-tune a model with the hyperparameters we found to be optimal, run the following code:
+The first step to running an existing model is preprocessing the data into the 
 
-```
-python train.py --model_name [MODEL NAME] --file [GOLD TRAIN FILE] --dev_file [DEV FILE] --test_file [TEST FILE] --extra_dev_file [EXTRA DEV FILE] --extra_test_file [EXTRA TEST FILE] --extra_file [EXTRA TRAIN FILE] --do_sweep
-```
+If you'd like to run an existing model, you need to run train.py with the --eval_only or --predict_only flags. 
 
 
-Each of these fine-tuning runs should take well under an hour on a GPU. There are a bunch of optional arguments:
+```markdown
+## Bash Example
 
+Here is an example of a Bash command in a Markdown file:
 
-### Hyperparameter Sweep
-In order to achieve the results above, we tuned hyperparameters across 50-100 runs in each classification setting. To run a hyperparameter tuning sweep yourself, run the following command:
-```
-python train.py --model_name [MODEL NAME] --file [GOLD TRAIN FILE] --dev_file [DEV FILE] --test_file [TEST FILE] --extra_dev_file [EXTRA DEV FILE] --extra_test_file [EXTRA TEST FILE] --extra_file [EXTRA TRAIN FILE] --do_sweep
-```
-
-The main thing to note is that you need to add the --do_sweep flag, otherwise all the arguments are the same as with a single run.
-
-Example usage:
-
-
-## File Description
-
-- descriptive_stats.py: Used for printing some basic descriptive stats for the SNACS datasets.
-- add_chapter_metadata.py: Added chapter information to the metadata for the conllulex files, coming from sentence IDs. Don't need to run again as the versions with the chapter metadata are in the data folder already.
-- load_data.py: The script for loading the conllulex data into dataloaders for input into the classifiers. Does not need to be run separately as it is called by train.py
-- train.py: The main script for running all experiments (see above).
-
-
+```bash
 
 
 
