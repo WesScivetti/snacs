@@ -21,10 +21,7 @@ rich information (see [this link] (https://github.com/nert-nlp/streusle/blob/mas
 To generate such a file, please run preprocess.py in the following way:
 
 ```bash
-## Bash Example
-
 python preprocess.py --input_file 'your_input_file' --input_format 'conllu' --lang en
-
 ```
 
 If you are starting from plain text, change the input format to 'plain'. The script will then use [stanza] (https://stanfordnlp.github.io/stanza/) to generate a CoNLL-U file before the CoNLL-ULex. 
@@ -38,12 +35,6 @@ The first step to running an existing model is preprocessing the data into the
 If you'd like to run an existing model, you need to run train.py with the --eval_only or --predict_only flags. 
 
 
-```markdown
-## Bash Example
-
-Here is an example of a Bash command in a Markdown file:
-
-```bash
 
 
 
