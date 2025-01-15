@@ -32,9 +32,19 @@ Please add the two character language code.
 
 The first step to running an existing model is preprocessing the data into the 
 
-If you'd like to run an existing model, you need to run train.py with the --eval_only or --predict_only flags. 
+If you'd like to run an existing model, you need to run train.py with the --eval_only or --predict_only flags. Add the file you want to predict on after the --test_file flag.
 
+```bash
+python train.py --predict_only --test_file 'your_test_file.conllulex' --lang en
+```
 
+If this works, it should write the results to '{your_test_file}_predicted.conllulex' with the predicted lextags in the last column. 
+
+## Training a Model
+
+If you'd like to train a model, then simply run train.py and supply a train, dev and test file, as well as a pretrained model name. Most hyperparameters have defaults, but you can set those optionally with the available flags. If you'd like to use the hyperparameters that we used in the paper, use the --use_best_hypers flag which will override the necessary hyperparameters. 
+
+If you'd like to supply additional supplemental training data, you can specify that with the --extra_file flag.
 
 
 
