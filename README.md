@@ -42,7 +42,31 @@ If this works, it should write the results to '{your_test_file}_predicted.conllu
 
 ## Training a Model
 
-If you'd like to train a model, then simply run train.py and supply a train, dev and test file, as well as a pretrained model name. Most hyperparameters have defaults, but you can set those optionally with the available flags. If you'd like to use the hyperparameters that we used in the paper, use the --use_best_hypers flag which will override the necessary hyperparameters. 
+If you'd like to train a model, then simply run train.py and supply a train, dev and test file, as well as a pretrained model name. Most hyperparameters have defaults, but you can set those optionally with the available flags. All of the flags are listed below:
+ - --model_name: specify the pretrained model name that you want to load off huggingface.
+ - --loss_fn: if you want to add a custom loss function here. Probably won't need to do this.
+ - --file: The training file that you want to train on. Should be located in the data/splits/ subdirectory.
+ - --learning_rate
+ - --batch_size
+ - --epochs
+ - --weight_decay
+ - --freeze: if you want to freeze the parameters of the pretrained model (will train faster)
+ - --warmup_steps
+ - --lr_scheduler: scheduler type, the two we use are "linear" and "cosine".
+ - --test_file: the
+ - --dev_file:
+ - --extra_file:
+ - --extra_dev_file: Only used if you'd like to evaluate on multiple languages simultaneously.
+ - --extra_test_file: Only used if you'd like to evaluate on multiple languages simultaneously.
+ - --lang: The two character language code.
+ - --multilingual: If supplying an extra lang file, put true to include that language in eval. Otherwise it will only test on original lang
+ - --do_sweep: run Bayesian hyperparameter sweep. Need to login to wandb prior to this for this to work.
+ - --eval_only:
+ - --predict_only:
+ - --use_best_hypers:
+ - --extra_lang: 
+ 
+If you'd like to use the hyperparameters that we used in the paper, use the --use_best_hypers flag which will override the necessary hyperparameters. 
 
 If you'd like to supply additional supplemental training data, you can specify that with the --extra_file flag.
 
