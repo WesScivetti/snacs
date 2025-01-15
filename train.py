@@ -265,8 +265,6 @@ def compute_metrics(p, id_to_label, eval_dataset):
 
 def load_trained_model(
         lang:str,
-        train_file:str,
-        dev_file:str,
         test_file:str,
         do_eval=False):
     """
@@ -277,7 +275,7 @@ def load_trained_model(
     do_eval: if you want to eval against existing labels, or just predict. If using a dataset with no snacs annotations, set to False
     """
 
-    print(train_file)
+    # print(train_file)
 
     lang_path = "./best_models/" + lang + "/"
     model_path = lang_path + "model/"
@@ -304,34 +302,47 @@ def load_trained_model(
     # with open(freq_path, 'r') as file:
     #     freqs = json.load(file)
 
+    l2id_path = lang_path + 'label2id.json'
+    with open(l2id_path, 'r') as file:
+        label_to_id = json.load(file)
 
-    data, label_to_id, id_to_label, freqs = load_data(f"data/splits/{train_file}", tokenizer)
+    id2l_path = lang_path + 'id2label.json'
+    with open(id2l_path, 'r') as file:
+        id_to_label = json.load(file)
+        id_to_label = {int(k): v for k,v in id_to_label.items()}
 
-    print("NUM labels just train", len(label_to_id), file=sys.stderr)
+    freq_path = lang_path + 'freqs.json'
+    with open(freq_path, 'r') as file:
+        freqs = json.load(file)
 
-    if dev_file:
-        dev_data, _, _, _ = load_data(f"data/splits/{dev_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #don't need label to id for this
-
-    print("NUM labels after dev", len(label_to_id), file=sys.stderr)
+    #
+    # data, label_to_id, id_to_label, freqs = load_data(f"data/splits/{train_file}", tokenizer)
+    #
+    # print("NUM labels just train", len(label_to_id), file=sys.stderr)
+    #
+    # if dev_file:
+    #     dev_data, _, _, _ = load_data(f"data/splits/{dev_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #don't need label to id for this
+    #
+    # print("NUM labels after dev", len(label_to_id), file=sys.stderr)
 
     if test_file:
-        test_data, _, _, _ = load_data(f"{test_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs) #don't need label to id for this
+        test_data, _, _, _ = load_data(f"{test_file}", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label, freqs=freqs, shuffle=False) #don't need label to id for this
 
     print("NUM labels after test", len(label_to_id), file=sys.stderr)
 
 
-    # l2id_path = lang_path + 'label2id.json'
-    # with open(l2id_path, 'r') as file:
-    #     label_to_id = json.load(file)
-    #
-    # id2l_path = lang_path + 'id2label.json'
-    # with open(id2l_path, 'r') as file:
-    #     id_to_label = json.load(file)
-    #     id_to_label = {int(k): v for k,v in id_to_label.items()}
-    #
-    # freq_path = lang_path + 'freqs.json'
-    # with open(freq_path, 'r') as file:
-    #     freqs = json.load(file)
+    l2id_path = lang_path + 'label2id.json'
+    with open(l2id_path, 'r') as file:
+        label_to_id = json.load(file)
+
+    id2l_path = lang_path + 'id2label.json'
+    with open(id2l_path, 'r') as file:
+        id_to_label = json.load(file)
+        id_to_label = {int(k): v for k,v in id_to_label.items()}
+
+    freq_path = lang_path + 'freqs.json'
+    with open(freq_path, 'r') as file:
+        freqs = json.load(file)
 
     print("NUM labels after test", len(label_to_id), file=sys.stderr)
 
@@ -344,7 +355,7 @@ def load_trained_model(
     )
 
 
-    print(test_data[0])
+    print(test_data[1])
 
     trainer_args = {
         "model": model,
@@ -370,14 +381,17 @@ def load_trained_model(
 
     # print(test_data[0].shape, file=sys.stderr)
     # print(predicted_labels.shape, file=sys.stderr)
-    print(predicted_labels[3], file=sys.stderr)
+    print(predicted_labels[1], file=sys.stderr)
     print(len(test_data))
-    print(test_data[3]["input_ids"], file=sys.stderr)
-    print(tokenizer.convert_ids_to_tokens(test_data[3]["input_ids"]))
-    print(test_data[3]["labels"], file=sys.stderr)
-    print(test_data[3]["mask"], file=sys.stderr)
+    print(test_data[1]["input_ids"], file=sys.stderr)
+    print(tokenizer.convert_ids_to_tokens(test_data[1]["input_ids"]))
+    print(test_data[1]["labels"], file=sys.stderr)
+    print(test_data[1]["mask"], file=sys.stderr)
     # print(predicted_labels[0].shape, file=sys.stderr)
-    # print(predicted_labels[0][0], file=sys.stderr)
+    print(predicted_labels[1][0], file=sys.stderr)
+
+    print(id_to_label[181])
+    
     # print(predicted_labels[0][0].shape, file=sys.stderr)
 
 
@@ -1105,10 +1119,10 @@ def main():
 
 
         if args.eval_only:
-            load_trained_model(args.lang, args.file, args.dev_file, args.test_file, do_eval=True)
+            load_trained_model(args.lang, args.test_file, do_eval=True)
 
         elif args.predict_only:
-            load_trained_model(args.lang, args.file, args.dev_file, args.test_file, do_eval=False)
+            load_trained_model(args.lang, args.test_file, do_eval=False)
 
         else:
             if args.use_best_hypers:
