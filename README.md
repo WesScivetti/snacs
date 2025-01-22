@@ -1,6 +1,6 @@
 # Multilingual SNACS Classification Experiments
 
-This codebase houses the SNACS classifiers for Chinese, English, Gujarati, Hindi, and Japanese. These results are described in [Scivetti et al. 2025](https://people.cs.georgetown.edu/nschneid/p/xlingsnacs.pdf) (COLING 2025).
+This codebase houses the SNACS classifiers for Chinese, English, Gujarati, Hindi, and Japanese. These results are described in [Scivetti et al. 2025](https://aclanthology.org/2025.coling-main.247/) (COLING 2025).
 
 ## Help
 
@@ -8,7 +8,7 @@ If you'd like to use this repo and are having issues, please reach out directly 
 
 ## Results
 
-See [paper](https://people.cs.georgetown.edu/nschneid/p/xlingsnacs.pdf) for scores.
+See [paper](https://aclanthology.org/2025.coling-main.247/) for scores.
 
 ## How to Use
 
