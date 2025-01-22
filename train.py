@@ -379,20 +379,24 @@ def load_trained_model(
 
     predicted_labels = np.argmax(res.predictions, axis=2)
 
-    # print(test_data[0].shape, file=sys.stderr)
-    # print(predicted_labels.shape, file=sys.stderr)
-    print(predicted_labels[1], file=sys.stderr)
-    print(len(test_data))
-    print(test_data[1]["input_ids"], file=sys.stderr)
-    print(tokenizer.convert_ids_to_tokens(test_data[1]["input_ids"]))
-    print(test_data[1]["labels"], file=sys.stderr)
-    print(test_data[1]["mask"], file=sys.stderr)
-    # print(predicted_labels[0].shape, file=sys.stderr)
-    print(predicted_labels[1][0], file=sys.stderr)
+    print("PREDICTIONS:",predicted_labels)
 
-    print(id_to_label[181])
+    # print(test_data[0].shape, file=sys.stderr)
+    # # print(predicted_labels.shape, file=sys.stderr)
+    # print(predicted_labels[1], file=sys.stderr)
+    # print(len(test_data))
+    # print(test_data[1]["input_ids"], file=sys.stderr)
+    # print(tokenizer.convert_ids_to_tokens(test_data[1]["input_ids"]))
+    # print(test_data[1]["labels"], file=sys.stderr)
+    # print(test_data[1]["mask"], file=sys.stderr)
+    # # print(predicted_labels[0].shape, file=sys.stderr)
+    # print(predicted_labels[1][0], file=sys.stderr)
+    #
+    # print(id_to_label[181])
     
     # print(predicted_labels[0][0].shape, file=sys.stderr)
+
+    #write_back_to_file(test_file, test_data, predicted_labels)
 
 
 def write_back_to_file(test_file, test_data, predictions):
@@ -406,12 +410,27 @@ def write_back_to_file(test_file, test_data, predictions):
     new_file_name = test_file.split(".") + "_predictions.conllulex"
 
     assert len(test_data) == len(predictions) #need to have same number of rows
+    with open(new_file_name, "w") as fout:
+        with open(test_file, 'r') as fin:
+            sent_num = 0
+            for sent in tqdm(conllu.parse_incr(fin, fields=conllulex)):
+                text = sent.metadata['text']
+                gold_mask = test_data[sent_num][""]
+                predictions_sent = predictions[sent_num]
+                tok_counter = 0
+                mask_counter = 0
+                for token in sent:
 
-    with open(test_file, 'r') as fin:
-        sent_num = 0
-        for sent in tqdm(conllu.parse_incr(fin, fields=conllulex)):
-            text = sent.metadata['text']
-            gold_mask = test_data[sent_num][""]
+                    while test_data[sent_num]["mask"][tok_counter+mask_counter] == "":
+                        mask_counter += 1
+
+                    pred = predictions_sent[tok_counter+mask_counter]
+                    tok["misc"] = tok["misc"] + "|" + pred
+                    tok_counter += 1
+
+
+
+
 
 
 
