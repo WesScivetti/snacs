@@ -2,6 +2,10 @@
 
 This codebase houses the SNACS classifiers for Chinese, English, Gujarati, Hindi, and Japanese. These results are described in [Scivetti et al. 2025](https://people.cs.georgetown.edu/nschneid/p/xlingsnacs.pdf) (COLING 2025).
 
+## Help
+
+If you'd like to use this repo and are having issues, please reach out directly to me via email at wss37@georgetown.edu.
+
 ## Results
 
 See [paper](https://people.cs.georgetown.edu/nschneid/p/xlingsnacs.pdf) for scores.
@@ -30,15 +34,27 @@ Please add the two character language code.
 
 ## Running an Existing Model
 
-The first step to running an existing model is preprocessing the data into the 
+The first step to running an existing model is preprocessing the data into the conllulex format. That is described above. 
 
-If you'd like to run an existing model, you need to run train.py with the --eval_only or --predict_only flags. Add the file you want to predict on after the --test_file flag.
+If you'd like to run an existing model, you need to run train.py with the --eval_only or --predict_only flags. Add the file you want to predict on after the --test_file flag. The existing models are in this repo as zip files, except for the english model which is unzipped. 
+
+Alternatively, you can download the models off the huggingface hub:
+
+- [Chinese](https://huggingface.co/WesScivetti/SNACS_Chinese)
+- [English](https://huggingface.co/WesScivetti/SNACS_English)
+- [Gujarati](https://huggingface.co/WesScivetti/SNACS_Gujarati)
+- [Hindi](https://huggingface.co/WesScivetti/SNACS_Hindi)
+- [Japanese](https://huggingface.co/WesScivetti/SNACS_Japanese)
+
+You will want to load those models in the same way as any other huggingface model. After loading the model, you can run the following script:
 
 ```bash
 python train.py --predict_only --test_file 'your_test_file.conllulex' --lang en
 ```
 
 If this works, it should write the results to '{your_test_file}_predicted.conllulex' with the predicted lextags in the last column. 
+
+## 
 
 ## Training a Model
 
@@ -53,18 +69,18 @@ If you'd like to train a model, then simply run train.py and supply a train, dev
  - --freeze: if you want to freeze the parameters of the pretrained model (will train faster)
  - --warmup_steps
  - --lr_scheduler: scheduler type, the two we use are "linear" and "cosine".
- - --test_file: the
- - --dev_file:
- - --extra_file:
+ - --test_file: The file to test or predict on. 
+ - --dev_file: The file which hyperparameters are tuned on, used for evaluation during training
+ - --extra_file: Additional training data file, probably from another language.
  - --extra_dev_file: Only used if you'd like to evaluate on multiple languages simultaneously.
  - --extra_test_file: Only used if you'd like to evaluate on multiple languages simultaneously.
  - --lang: The two character language code.
  - --multilingual: If supplying an extra lang file, put true to include that language in eval. Otherwise it will only test on original lang
  - --do_sweep: run Bayesian hyperparameter sweep. Need to login to wandb prior to this for this to work.
- - --eval_only:
- - --predict_only:
- - --use_best_hypers:
- - --extra_lang: 
+ - --eval_only: Include if you want to load an existing model and evaluate on the provided test set. No training involved.
+ - --predict_only: Include if you want to load an existing model and predict on the provided test set. Evaluation is not provided (appropriate for data where no gold labels exist), No training involved.
+ - --use_best_hypers: Use the best performing hyperparameters from our sweeps. Overwrites flags from above.
+ - --extra_lang: Two letter language code of the additional language which is being added. 
  
 If you'd like to use the hyperparameters that we used in the paper, use the --use_best_hypers flag which will override the necessary hyperparameters. 
 
