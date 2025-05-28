@@ -93,19 +93,13 @@ The following files are located in the data directory:
 - de-lp-new.conllulex (German SNACS in conllulex. See [the paper](https://link.springer.com/article/10.1007/s13218-021-00712-y) for description. NOT up to date with SNACS 2.6)
 - de-lp.conllulex (German SNACS in conllulex. See [the paper](https://link.springer.com/article/10.1007/s13218-021-00712-y) for description. NOT up to date with SNACS 2.6)
 - en-lp.conllu (English LPP, base conllu with no SNACS columns. Up to date.)
-- en-lp.conllulex (English LPP, all chapters combined. Up to date in SNACS 2.6)
 - en-lp_c.conllulex (English LPP, all chapters combined and chapter metadata added. Up to date in SNACS 2.6)
 - en-pastrie.conllulex (English Pastrie full corpus. Not used in experiments for paper. See [the PASTRIE repo](https://github.com/nert-nlp/pastrie) and [the paper](https://aclanthology.org/2020.law-1.10/))
 - en-streusle.conllulex (English Streusle corpus. Used as supplemental data in some experiments. For train,dev, and test splits, see [the STREUSLE repo](https://github.com/nert-nlp/streusle/))
-- en-test.conllulex (Small test English file. Not used for anything.)
-- gu-lp.conllulex (Gujarati LPP. Up to date. See [the paper](https://aclanthology.org/2023.findings-acl.696/))
-- gu-lp_c.conllulex (Gujarati LPP, same as above but with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2023.findings-acl.696/))
-- hi-lp.conllulex (Hindi LPP, up to date. See [the paper](https://aclanthology.org/2022.lrec-1.612/))
-- hi-lp_c.conllulex (Hindi LPP, same as above but with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2022.lrec-1.612/))
-- lpp_jp.conllulex (Japanese LPP excerpt. Up to date. See [the paper](https://aclanthology.org/2024.lrec-main.839/))
-- jp-lp_c.conllulex (Japanese LPP excerpt, same as above but with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2024.lrec-main.839/))
-- zh-lp.conllulex (Chinese LPP. Up to date. See [the paper](https://aclanthology.org/2020.lrec-1.733/))
-- zh-lp_c.conllulex (Chinese LPP, same as above but with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2020.lrec-1.733/))
+- gu-lp_c.conllulex (Gujarati LPP with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2023.findings-acl.696/))
+- hi-lp_c.conllulex (Hindi LPP with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2022.lrec-1.612/))
+- jp-lp_c.conllulex (Japanese LPP excerpt with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2024.lrec-main.839/))
+- zh-lp_c.conllulex (Chinese LPP with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2020.lrec-1.733/))
 
 These resources are generally a subset of those listed under the CARMLS datasets in [this repo](https://github.com/carmls/datasets).
 
