@@ -354,6 +354,8 @@ def load_trained_model(
         label2id=label_to_id,
     )
 
+    device = "cuda"
+    model.to(device)
 
     print(test_data[1])
 
@@ -365,10 +367,12 @@ def load_trained_model(
         "data_collator": data_collator,
         "compute_metrics": lambda x: compute_metrics(x, id_to_label, test_data),
     }
+
+    # print("CONFIG", trainer.args.accelerator_config)
     
     trainer = Trainer(**trainer_args)
 
-
+    print("CONFIG", trainer.args.accelerator_config)
 
     if do_eval:
         res = trainer.predict(test_data)
@@ -525,11 +529,69 @@ def train(
                 train_dataset = data[len(data) // 5:] + extra_data #combine extra only with training
                 eval_dataset = data[:len(data) // 5]
 
+        # if you have dev data, use that for eval
         #this is most simple case: 1 file, split it into train + eval
         else:
-            train_dataset = data["train"]
-            eval_dataset = data["dev"]
-            test_dataset = data["test"]
+            if multilingual:
+                data, label_to_id, id_to_label, freqs = None, None, None, None
+                model = None
+
+                # read in ALLLLL the files
+                gu_train, label_to_id, id_to_label, freqs = load_data(f"data/splits/gu-lp_c_train.conllulex", tokenizer)
+                en_train, label_to_id, id_to_label, freqs = load_data(f"data/splits/en-lp_c_train.conllulex", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label)
+                en_train2, label_to_id, id_to_label, freqs = load_data(f"data/splits/en-streusle_train.conllulex", tokenizer, label_to_id=label_to_id, id_to_label=id_to_label)
+                zh_train, label_to_id, id_to_label, freqs = load_data(f"data/splits/zh-lp_c_train.conllulex", tokenizer,
+                                                                      label_to_id=label_to_id, id_to_label=id_to_label)
+                jp_train, label_to_id, id_to_label, freqs = load_data(f"data/splits/jp-lp_c_train.conllulex", tokenizer,
+                                                                      label_to_id=label_to_id, id_to_label=id_to_label)
+
+                hi_train, label_to_id, id_to_label, freqs = load_data(f"data/splits/hi-lp_c_train.conllulex", tokenizer,
+                                                                      label_to_id=label_to_id, id_to_label=id_to_label)
+
+                zh_dev, _, _, _ = load_data(f"data/splits/zh-lp_c_dev.conllulex", tokenizer, label_to_id=label_to_id,
+                                            id_to_label=id_to_label)
+                zh_test, _, _, _ = load_data(f"data/splits/zh-lp_c_test.conllulex", tokenizer, label_to_id=label_to_id,
+                                             id_to_label=id_to_label)
+
+                en_dev, _, _, _ = load_data(f"data/splits/en-lp_c_dev.conllulex", tokenizer, label_to_id=label_to_id,
+                                            id_to_label=id_to_label)
+                en_test, _, _, _ = load_data(f"data/splits/en-lp_c_test.conllulex", tokenizer, label_to_id=label_to_id,
+                                             id_to_label=id_to_label)
+
+                en_dev2, _, _, _ = load_data(f"data/splits/en-streusle_dev.conllulex", tokenizer,
+                                             label_to_id=label_to_id, id_to_label=id_to_label)
+                en_test2, _, _, _ = load_data(f"data/splits/en-streusle_test.conllulex", tokenizer,
+                                              label_to_id=label_to_id, id_to_label=id_to_label)
+
+                jp_dev, _, _, _ = load_data(f"data/splits/jp-lp_c_dev.conllulex", tokenizer, label_to_id=label_to_id,
+                                            id_to_label=id_to_label)
+                jp_test, _, _, _ = load_data(f"data/splits/jp-lp_c_test.conllulex", tokenizer, label_to_id=label_to_id,
+                                             id_to_label=id_to_label)
+
+                hi_dev, _, _, _ = load_data(f"data/splits/hi-lp_c_dev.conllulex", tokenizer, label_to_id=label_to_id,
+                                            id_to_label=id_to_label)
+                hi_test, _, _, _ = load_data(f"data/splits/hi-lp_c_test.conllulex", tokenizer, label_to_id=label_to_id,
+                                             id_to_label=id_to_label)
+
+                gu_dev, _, _, _ = load_data(f"data/splits/gu-lp_c_dev.conllulex", tokenizer, label_to_id=label_to_id,
+                                            id_to_label=id_to_label)
+                gu_test, _, _, _ = load_data(f"data/splits/gu-lp_c_test.conllulex", tokenizer, label_to_id=label_to_id,
+                                             id_to_label=id_to_label)
+
+                train_dataset = gu_train + en_train + en_train2 + zh_train + jp_train + hi_train
+                eval_dataset = gu_dev + en_dev + en_dev2 + zh_dev + jp_dev + hi_dev
+                test_dataset = gu_test + en_test + en_test2 + zh_test + jp_test + hi_test
+
+                model = AutoModelForTokenClassification.from_pretrained(
+                    config.model_name,
+                    num_labels=len(label_to_id),
+                    id2label=id_to_label,
+                    label2id=label_to_id,
+                )
+            else:
+                train_dataset = data["train"]
+                eval_dataset = data["dev"]
+                test_dataset = data["test"]
 
     #if you supply a test file separately, you will test on that, and train on training data
     else:
@@ -1098,18 +1160,30 @@ BEST_HYPERS = {
 
 }
 
+# "all":
+# {
+#     "all": {
+#         "xlm-roberta-large": {
+#             "batch_size": 24,
+#             "lr": 2.5e-5,
+#             "lr_scheduler": "linear",
+#             "warmup_steps": 419,
+#             "weight_decay": 0
+#         }
+#     }
+# }
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_name", type=str, default="xlm-roberta-large")
     parser.add_argument("--loss_fn", type=str, default=None) #overwritten by wandb sweep
     parser.add_argument("--file", type=str, default="hi-lp_c_train.conllulex")
-    parser.add_argument("--learning_rate", type=float, default=1.6e-5) #overwritten by wandb sweep
+    parser.add_argument("--learning_rate", type=float, default=2.5e-5) #overwritten by wandb sweep
     parser.add_argument("--batch_size", type=int, default=24) #overwritten by wandb sweep
     parser.add_argument("--epochs", type=int, default=10) #overwritten by wandb sweep
-    parser.add_argument("--weight_decay", type=float, default=0.1) #overwritten by wandb sweep
+    parser.add_argument("--weight_decay", type=float, default=0.0) #overwritten by wandb sweep
     parser.add_argument("--freeze", action="store_true") #overwritten by wandb sweep
-    parser.add_argument("--warmup_steps", type=int, default=312)
+    parser.add_argument("--warmup_steps", type=int, default=419)
     parser.add_argument("--lr_scheduler", type=str, default="linear")
     parser.add_argument("--test_file", type=str, default="hi-lp_c_test.conllulex", help="Need to put file for test split")
     parser.add_argument("--dev_file", type=str, default="hi-lp_c_dev.conllulex", help="Need to put file for dev split")
@@ -1159,13 +1233,13 @@ def main():
                 scheduler = BEST_HYPERS[args.lang][setting][model_name]["lr_scheduler"]
 
                 train(args.model_name, args.file, lr, batch_size, epochs,
-                      decay, False, args.test_file, args.dev_file, args.extra_file,
+                      decay, False, args.test_file, args.dev_file, args.extra_file, multilingual=args.multilingual,
                       warmup_steps=warmup, lr_scheduler=scheduler, number=0)
 
             else:
                 for number in range(20,200):
                     train(args.model_name, args.file, args.learning_rate, args.batch_size, args.epochs,
-                          args.weight_decay, args.freeze, args.test_file, args.dev_file, args.extra_file, warmup_steps=args.warmup_steps, lr_scheduler=args.lr_scheduler, number=number)
+                          args.weight_decay, args.freeze, args.test_file, args.dev_file, args.extra_file, multilingual=args.multilingual, warmup_steps=args.warmup_steps, lr_scheduler=args.lr_scheduler, number=number)
 
 
         # model_name: str,  # need - added
