@@ -13,15 +13,15 @@ See [paper](https://aclanthology.org/2025.coling-main.247/) for scores.
 ## How to Use
 
 You can use this repo to do multiple things, primarily:
- - Train new models on existing snacs annotated data
+ - Train new models on existing SNACS annotated data
  - Run existing models on new annotated or unannotated data
 
 We will start by going over how to run an existing model if you would like to generate predictions on a new file.
 
 ## Data Preprocessing
 
-If you would like to run an existing model, you need to have data in the conllulex file format. This is an extension of the CoNLL-U format that is used for SNACS annotations. The actual CoNLL-ULex format contains
-rich information (see [this link](https://github.com/nert-nlp/streusle/blob/master/CONLLULEX.md) for details), but you will just need a shell with the appropriate columns for the script to run correctly. 
+If you would like to run an existing model, you need to have data in the conllulex file format. This is an extension of the CoNLL-U format that is used for SNACS annotations. The actual CoNLL-U-Lex format contains
+rich information (see [this link](https://github.com/nert-nlp/streusle/blob/v4.7.1/CONLLULEX.md) for details), but you will just need a shell with the appropriate columns for the script to run correctly. 
 To generate such a file, please run preprocess.py in the following way:
 
 ```bash
@@ -54,7 +54,6 @@ python train.py --predict_only --test_file 'your_test_file.conllulex' --lang en
 
 If this works, it should write the results to '{your_test_file}_predicted.conllulex' with the predicted lextags in the last column. 
 
-## 
 
 ## Training a Model
 
@@ -92,19 +91,30 @@ If you'd like to supply additional supplemental training data, you can specify t
 The following files are located in the data directory:
 - de-lp-new.conllulex (German SNACS in conllulex. See [the paper](https://link.springer.com/article/10.1007/s13218-021-00712-y) for description. NOT up to date with SNACS 2.6)
 - de-lp.conllulex (German SNACS in conllulex. See [the paper](https://link.springer.com/article/10.1007/s13218-021-00712-y) for description. NOT up to date with SNACS 2.6)
-- en-lp.conllu (English LPP, base conllu with no SNACS columns. Up to date.)
-- en-lp_c.conllulex (English LPP, all chapters combined and chapter metadata added. Up to date in SNACS 2.6)
-- en-pastrie.conllulex (English Pastrie full corpus. Not used in experiments for paper. See [the PASTRIE repo](https://github.com/nert-nlp/pastrie) and [the paper](https://aclanthology.org/2020.law-1.10/))
-- en-streusle.conllulex (English Streusle corpus. Used as supplemental data in some experiments. For train,dev, and test splits, see [the STREUSLE repo](https://github.com/nert-nlp/streusle/))
-- gu-lp_c.conllulex (Gujarati LPP with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2023.findings-acl.696/))
-- hi-lp_c.conllulex (Hindi LPP with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2022.lrec-1.612/))
-- jp-lp_c.conllulex (Japanese LPP excerpt with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2024.lrec-main.839/))
-- zh-lp_c.conllulex (Chinese LPP with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2020.lrec-1.733/))
+- en-lp.conllu (English LP, base conllu with no SNACS columns. Up to date.)
+- **en-lp_c.conllulex** (English LP, all chapters combined and chapter metadata added. Up to date in SNACS 2.6)
+- en-pastrie.conllulex (English PASTRIE full corpus. Not used in experiments for paper. See [the PASTRIE repo](https://github.com/nert-nlp/pastrie) and [the paper](https://aclanthology.org/2020.law-1.10/))
+- **en-streusle.conllulex** (English STREUSLE corpus. Used as supplemental data in some experiments. For train,dev, and test splits, see [the STREUSLE repo](https://github.com/nert-nlp/streusle/))
+- **gu-lp_c.conllulex** (Gujarati LP with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2023.findings-acl.696/))
+- **hi-lp_c.conllulex** (Hindi LP with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2022.lrec-1.612/))
+- **jp-lp_c.conllulex** (Japanese LP excerpt with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2024.lrec-main.839/))
+- **zh-lp_c.conllulex** (Chinese LP with chapter metadata added. Up to date. See [the paper](https://aclanthology.org/2020.lrec-1.733/))
 
 These resources are generally a subset of those listed under the CARMLS datasets in [this repo](https://github.com/carmls/datasets).
 
-# Chapter Metadata
-A lot of the files above have chapter metadata added in. This is because the load_data script uses this metadata to conduct train, dev, and test splits by chapter. 
+LP = _The Little Prince_ (translated from French _Le Petit Prince_)
+
+## Statistics
+
+The 6 datasets listed in bold were used by [Scivetti et al. 2025](https://aclanthology.org/2025.coling-main.247/), which gave the following summary:
+<img width="1054" alt="image" src="https://github.com/user-attachments/assets/7d2cd88a-b569-4bba-b3ce-133a1ba05870" />
+
+## File Format
+
+The `.conllulex` format combines 10 columns of the `.conllu` format for Universal Dependencies with additional columns for lexical semantic annotation. It was first used for STREUSLE and is described [here](https://github.com/nert-nlp/streusle/blob/v4.7.1/CONLLULEX.md).
+
+## Chapter Metadata
+Most of the LP files above have chapter metadata added in. This is because the load_data script uses this metadata to conduct train, dev, and test splits by chapter. 
 
 
 
