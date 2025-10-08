@@ -116,6 +116,7 @@ The `.conllulex` format combines 10 columns of the `.conllu` format for Universa
 ## Chapter Metadata
 Most of the LP files above have chapter metadata added in. This is because the load_data script uses this metadata to conduct train, dev, and test splits by chapter. 
 
-
+## Tagger
+The best performing multilingual tagger has been uploaded to huggingface and can be found [here](https://huggingface.co/WesScivetti/SNACS_Multilingual).
 
 
