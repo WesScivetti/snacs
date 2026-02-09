@@ -15,7 +15,7 @@ from torch.nn import CrossEntropyLoss
 import torch
 import sys
 from collections import defaultdict
-# import wandb
+#import wandb
 import json
 import glob
 import shutil
@@ -583,7 +583,7 @@ def train(
                 test_dataset = gu_test + en_test + en_test2 + zh_test + jp_test + hi_test
 
                 model = AutoModelForTokenClassification.from_pretrained(
-                    config.model_name,
+                    model_name,
                     num_labels=len(label_to_id),
                     id2label=id_to_label,
                     label2id=label_to_id,
@@ -807,12 +807,12 @@ def train2(config=None):
                     label2id=label_to_id,
                 )
 
-                # random.seed(42)
-                # random.shuffle(train_dataset)
-                # random.seed(42)
-                # random.shuffle(eval_dataset)
-                # random.seed(42)
-                # random.shuffle(test_dataset)
+                random.seed(42)
+                random.shuffle(train_dataset)
+                random.seed(42)
+                random.shuffle(eval_dataset)
+                random.seed(42)
+                random.shuffle(test_dataset)
 
 
 
@@ -924,7 +924,7 @@ def train2(config=None):
     wandb.finish()
 
     # #remove model checkpoints, already saved the best one
-    # shutil.rmtree("./models/")
+    shutil.rmtree("./models/")
 
 
 
@@ -944,10 +944,10 @@ def hyper_sweep(args):
                 'max': 1e-3
             },
             'batch_size': {
-                'values': [4, 8, 16, 24]
+                'values': [2, 4, 8, 16, 24, 48, 96]
             },
             'weight_decay': {
-                'values': [0.0, 0.01, 0.1]
+                'values': [0.0, 0.01, 0.05, 0.1]
             },
             'file': {
                 'value': args.file
@@ -993,9 +993,9 @@ def hyper_sweep(args):
     }
 
 
-    sweep_id = wandb.sweep(sweep_config, project="huggingface")
+    sweep_id = wandb.sweep(sweep_config, project="SNACS_mmbert")
 
-    wandb.agent(sweep_id, train2, count=75)
+    wandb.agent(sweep_id, train2, count=100)
 
 BEST_HYPERS = {
     "en": {
@@ -1237,9 +1237,8 @@ def main():
                       warmup_steps=warmup, lr_scheduler=scheduler, number=0)
 
             else:
-                for number in range(20,200):
-                    train(args.model_name, args.file, args.learning_rate, args.batch_size, args.epochs,
-                          args.weight_decay, args.freeze, args.test_file, args.dev_file, args.extra_file, multilingual=args.multilingual, warmup_steps=args.warmup_steps, lr_scheduler=args.lr_scheduler, number=number)
+                train(args.model_name, args.file, args.learning_rate, args.batch_size, args.epochs,
+                      args.weight_decay, args.freeze, args.test_file, args.dev_file, args.extra_file, multilingual=args.multilingual, warmup_steps=args.warmup_steps, lr_scheduler=args.lr_scheduler, number=42)
 
 
         # model_name: str,  # need - added
