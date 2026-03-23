@@ -15,7 +15,7 @@ from torch.nn import CrossEntropyLoss
 import torch
 import sys
 from collections import defaultdict
-#import wandb
+import wandb
 import json
 import glob
 import shutil
@@ -120,6 +120,22 @@ def load_data(file: str, tokenizer: AutoTokenizer, id_to_label = None, label_to_
 def combine_datasets(file_list: list, train_only=False):
     """basically, reads multiple language files in and then combines them into one larger dataset. Useful if you want to """
     return
+
+def flatten_metrics(metrics: dict) -> dict:
+    """Flatten nested metrics dictionary. For reporting to wandb."""
+    flat = {}
+    for k, v in metrics.items():
+        if isinstance(v, dict):
+            for kk, vv in v.items():
+                flat[f"{k}/{kk}"] = float(vv)
+        else:
+            # handle numpy scalars / torch scalars if needed
+            try:
+                flat[k] = float(v)
+            except Exception:
+                flat[k] = v
+    return flat
+
 
 
 def compute_metrics(p, id_to_label, eval_dataset):
@@ -260,7 +276,9 @@ def compute_metrics(p, id_to_label, eval_dataset):
     # for key in lexlemma:
     #     ret[f"{key}.acc"] = lexlemma[key]["correct"] / lexlemma[key]["total"]
 
-    return ret
+    #print(flatten_metrics(ret))
+
+    return flatten_metrics(ret)
 
 
 def load_trained_model(
@@ -506,12 +524,13 @@ def train(
         per_device_eval_batch_size=batch_size,
         num_train_epochs=epochs,
         weight_decay=weight_decay,
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",
         save_strategy="epoch",
         lr_scheduler_type=lr_scheduler,  # dynamic scheduler type
         warmup_steps=warmup_steps,
         load_best_model_at_end=False,
         push_to_hub=False,
+        torch_compile=False
     )
 
     # split the file into train and eval if not separate eval file
@@ -657,7 +676,7 @@ def train2(config=None):
 
 
 
-    wandb.init()
+    wandb.init(project="SNACS_mmbert")
     config = wandb.config
 
     filename = config.file
@@ -705,6 +724,7 @@ def train2(config=None):
         id2label=id_to_label,
         label2id=label_to_id,
     )
+    model.config.reference_compile = False
 
     print("NUM labels", len(label_to_id), file=sys.stderr)
 
@@ -725,11 +745,13 @@ def train2(config=None):
         weight_decay=config.weight_decay,
         lr_scheduler_type=config.scheduler_type,  # dynamic scheduler type
         warmup_steps=config.warmup_steps,
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",
         save_strategy="epoch",
         save_total_limit=1,
         load_best_model_at_end=True, #change to True
-        push_to_hub=False
+        push_to_hub=False,
+        report_to=["wandb"],
+        torch_compile=False
     )
 
     # split the file into train and eval if not separate eval file
@@ -806,6 +828,7 @@ def train2(config=None):
                     id2label=id_to_label,
                     label2id=label_to_id,
                 )
+                model.config.reference_compile = False
 
                 random.seed(42)
                 random.shuffle(train_dataset)
@@ -859,6 +882,7 @@ def train2(config=None):
         #adding in manually supplied stuff
         trainer = Trainer(**trainer_args)
 
+    wandb.log({"debug/proof_of_life": 1.0})
     # train
     trainer.train()
 
@@ -1185,7 +1209,7 @@ def main():
     parser.add_argument("--freeze", action="store_true") #overwritten by wandb sweep
     parser.add_argument("--warmup_steps", type=int, default=419)
     parser.add_argument("--lr_scheduler", type=str, default="linear")
-    parser.add_argument("--test_file", type=str, default="hi-lp_c_test.conllulex", help="Need to put file for test split")
+    parser.add_argument("--test_file", type=str, default=None, help="Need to put file for test split")
     parser.add_argument("--dev_file", type=str, default="hi-lp_c_dev.conllulex", help="Need to put file for dev split")
     parser.add_argument("--extra_file", type=str, default=None, help="If you want to add an extra file to add more data during the fine-tuning stage. Evaluation is still only perfomed on the original file test split.")
     parser.add_argument("--extra_dev_file", type=str, default=None, help="Add in an extra dev file (another lang for data sharing)")

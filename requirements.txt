@@ -1,6 +1,8 @@
 transformers==4.57.1
-pytorch==2.7.0
+torch==2.7.0
 wandb==0.24.2
 tqdm==4.67.1
 conllu==4.4.1
 seqeval==1.2.2
+evaluate==0.4.6
+accelerate>=0.26.0

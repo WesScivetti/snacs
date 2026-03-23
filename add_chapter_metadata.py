@@ -1,14 +1,13 @@
 import re
 
 def add_chapters(target_files: list):
-    data_dir = "./data/"
     for i, filename in enumerate(target_files):
         if i == 0:
             #ENGLISH
             chap_num = 0
-            out_name = data_dir + "en-lp_c.conllulex"
+            out_name = "en-lp_full_c.conllulex"
             with open(out_name, "w") as outf:
-                with open(data_dir + filename, "r") as inf:
+                with open(filename, "r") as inf:
                     for line in inf:
                         if line.startswith("# text"):
                             if re.search("Chapter", line):
@@ -64,7 +63,7 @@ def add_chapters(target_files: list):
             out_name = data_dir + "zh-lp_c.conllulex"
             current_chap = ""
             with open(out_name, "w") as outf:
-                with open(data_dir + filename, "r") as inf:
+                with open(filename, "r") as inf:
                     for line in inf:
                         if line.startswith("# newdoc_id"):
                             chap = line.split("_")[4].split("-")[1]
